@@ -8,7 +8,7 @@ lang: es
 
 $\TeX$ es un sistema de composición de documentos de alta calidad, orientado especialmente a la creación de documentos científicos y técnicos que incluyen fórmulas matemáticas. Fue creado por [Donald Knuth](https://es.wikipedia.org/wiki/Donald_Knuth) en 1978.
 
-A diferencia de un procesador de textos como por ejemplo Microsoft Word, $\TeX$ no es una aplicación sino un lenguaje de programación que require compilar el código fuente para obtener el documento final. Esto, que a priori podría parecer una desventaja, en realidad es la gran ventaja de $\TeX$ frente a los procesadores de texto que siguen el paradigma [WYSIWYG](https://es.wikipedia.org/wiki/WYSIWYG) (_What You See Is What You Get_), ya que permite separar fácilmente el contenido y la estructura de un documento, de su formato. De hecho, $\TeX$ incorpora un potente [lenguaje de marcado](https://es.wikipedia.org/wiki/Lenguaje_de_marcado) para estructurar y formatear el texto de un documento. Por ejemplo, mientras que para poner una palabra en negrita con un procesador de textos como Microsoft Word, bastaría con seleccionar la palabra y hacer clic en el botón de negrita para ver automáticamente la palabra en negrita en la pantalla del ordenador, en $\TeX$ habría que escribir en el fichero con el código fuente `{\bf palabra}` y después compilar el código fuente para obtener un documento final con la palabra en negrita (el comando `\bf`, que permite aplicar la negrita, se conoce como _marca_ o _tag_ en inglés.)
+A diferencia de un procesador de textos como por ejemplo Microsoft Word, $\TeX$ no es una aplicación sino un lenguaje de programación que require compilar el código fuente para obtener el documento final. Esto, que a priori podría parecer una desventaja, en realidad es la gran ventaja de $\TeX$ frente a los procesadores de texto que siguen el paradigma [WYSIWYG](https://es.wikipedia.org/wiki/WYSIWYG) (_What You See Is What You Get_), ya que permite separar fácilmente el contenido y la estructura de un documento, de su formato, de manera que el usuario puede centrarse en el contenido y la estructura del documento, y dejar que $\TeX$ se encargue del formato. De hecho, $\TeX$ incorpora un potente [lenguaje de marcado](https://es.wikipedia.org/wiki/Lenguaje_de_marcado) para estructurar y formatear el texto de un documento. Por ejemplo, mientras que para poner una palabra en negrita con un procesador de textos como Microsoft Word, bastaría con seleccionar la palabra y hacer clic en el botón de negrita para ver automáticamente la palabra en negrita en la pantalla del ordenador, en $\TeX$ habría que escribir en el fichero con el código fuente `{\bf palabra}` y después compilar el código fuente para obtener un documento final con la palabra en negrita (el comando `\bf`, que permite aplicar la negrita, se conoce como _marca_ o _tag_ en inglés.)
 
 La página principal con información sobre $\TeX$ es la del [TeX Users Group](https://www.tug.org/).
 
@@ -49,7 +49,7 @@ Pero también se puede empezar a componer documentos sin necesidad de instalar n
 
 A modo de ejemplo, empezaremos por crear un sencillo documento con el texto "Hola $\LaTeX$".
 
-Para ello tendremos que crear un fichero de texto con el nombre `main.tex` y el siguiente contenido:
+Para ello tendremos que crear un fichero de texto con el nombre `main.tex` (es importante que la extensión de los ficheros con código fuente de $\LaTeX$ sea `.tex`) y el siguiente contenido:
 
 ```latex
 \documentclass{article}
@@ -67,7 +67,15 @@ Aunque más adelante se verá la estructura general del código fuente de un doc
 4. La cuarta línea contiene el texto del documento. `\LaTeX` es un comando que produce la salida $\LaTeX$.
 5. La quinta línea marca el final del documento.
 
-Para obtener el documento final hay que compilar el fichero fuente. Existen diferentes formas de hacerlo y en los editores anteriores suele ser tan sencillo como hacer clic en un botón o pulsar una combinación de teclas, pero en última instancia todos ellos hacen una llamada al compilador de $\LaTeX$ que es quien se encarga de convertir el código fuente en el documento final. En una terminal, la compilación de este documento sería tecleando el comando `pdflatex main.tex`. La salida de este comando se muestra a continuación:
+Para obtener el documento final hay que compilar el fichero fuente. Existen diferentes formas de hacerlo y en los editores anteriores suele ser tan sencillo como hacer clic en un botón o pulsar una combinación de teclas, pero en última instancia todos ellos hacen una llamada al compilador de $\LaTeX$ que es quien se encarga de convertir el código fuente en el documento final. 
+
+Cada distribución de $\LaTeX$ viene con varios compiladores. Los más habituales son:
+
+- `latex`: Es el compilador más antiguo y genera documentos en [formato `dvi`](https://es.wikipedia.org/wiki/DVI_(TeX)), que es un formato independiente creado mucho antes que el formato `pdf`.
+- [`pdflatex`](https://www.tug.org/applications/pdftex/): Es el compilador más usado y genera documentos en formato `pdf`.
+- [`xelatex`](https://tug.org/xetex/): Es un compilador más moderno que admite caracteres Unicode en el código fuente y el uso de tipografías más modernas.
+
+En una terminal, la compilación de este documento sería tecleando el comando `latex main.tex`, `pdflatex main.tex` o `xelatex main.tex`, dependiendo del compilador que se quiera usar. A continuación se muestra la salida que general el compilador `pdflatex` al compilar el fichero `main.tex`.
 
 ```sh
 > pdflatex main.tex 
@@ -95,5 +103,6 @@ Transcript written on main.log.
 En la @fig-overleaf-hola-latex se puede apreciar el documento final que se obtiene tras compilar el código fuente en Overleaf.
 
 ![Creación de un documento en Overleaf.](img/introduccion/overleaf-hola-latex.png){#fig-overleaf-hola-latex}
+
 
 

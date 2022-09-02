@@ -290,7 +290,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>La cuarta línea contiene el texto del documento. <code>\LaTeX</code> es un comando que produce la salida <span class="math inline">\(\LaTeX\)</span>.</li>
 <li>La quinta línea marca el final del documento.</li>
 </ol>
-<p>Para obtener el documento final hay que compilar el fichero fuente. Existen diferentes formas de hacerlo y en los editores anteriores suele ser tan sencillo como hacer clic en un botón o pulsar una combinación de teclas, pero en última instancia todos ellos hacen una llamada al compilador de <span class="math inline">\(\LaTeX\)</span> que es quien se encarga de convertir el código fuente en el documento final. En una terminal, la compilación de este documento sería tecleando el comando <code>pdflatex main.tex</code>. La salida de este comando se muestra a continuación:</p>
+<p>Para obtener el documento final hay que compilar el fichero fuente. Existen diferentes formas de hacerlo y en los editores anteriores suele ser tan sencillo como hacer clic en un botón o pulsar una combinación de teclas, pero en última instancia todos ellos hacen una llamada al compilador de <span class="math inline">\(\LaTeX\)</span> que es quien se encarga de convertir el código fuente en el documento final.</p>
+<p>Cada distribución de <span class="math inline">\(\LaTeX\)</span> viene con varios compiladores. Los más habituales son:</p>
+<ul>
+<li><code>latex</code>: Es el compilador más antiguo y genera documentos en <a href="https://es.wikipedia.org/wiki/DVI_(TeX)">formato <code>dvi</code></a>, que es un formato independiente creado mucho antes que el formato <code>pdf</code>.</li>
+<li><a href="https://www.tug.org/applications/pdftex/"><code>pdflatex</code></a>: Es el compilador más usado y genera documentos en formato <code>pdf</code>.</li>
+<li><a href="https://tug.org/xetex/"><code>xelatex</code></a>: Es un compilador más moderno que admite caracteres Unicode en el código fuente y el uso de tipografías más modernas.</li>
+</ul>
+<p>En una terminal, la compilación de este documento sería tecleando el comando <code>latex main.tex</code>, <code>pdflatex main.tex</code> o <code>xelatex main.tex</code>, dependiendo del compilador que se quiera usar. A continuación se muestra la salida que general el compilador <code>pdflatex</code> al compilar el fichero <code>main.tex</code>.</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> pdflatex <span class="ex">main.tex</span> </span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">s</span> is pdfTeX, Version 3.141592653-2.6-1.40.22 <span class="er">(</span><span class="ex">TeX</span> Live 2021<span class="kw">)</span> <span class="kw">(</span><span class="ex">preloaded</span> format=pdflatex<span class="kw">)</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a> <span class="ex">restricted</span> <span class="dt">\w</span>rite18 enabled.</span>
@@ -319,25 +326,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p></p><figcaption class="figure-caption">Figura 1.1: Creación de un documento en Overleaf.</figcaption><p></p>
 </figure>
 </div>
-<section id="ahora-si-a-decir-hola-universo-latex" class="level4" data-number="1.2.2.1">
-<h4 data-number="1.2.2.1" class="anchored" data-anchor-id="ahora-si-a-decir-hola-universo-latex"><span class="header-section-number">1.2.2.1</span> Ahora si a decir “Hola Universo LaTeX”</h4>
-<p>Algún día llegaremos a construir documentos propios y completamente desde cero, pero esa no es la mejor entrada al universo LaTeX, así es que la manera en que vamos a entrar en el universo LaTeX es a través del uso de plantillas, léase por plantilla un documento pre - formateado en el cual simplemente se modifica el contenido y la forma no es necesario tocarla.</p>
-<p>Para empezar, trabajaremos sobre una plantilla para cartas.</p>
-<p>Como ya lo mencioné, Overleaf tiene un importante [repositorio de plantillas][9] disponibles para descarga gratuita y la mayoría bajo los términos de licencias libres como la LPPL, CC-By-SA, etc. claro, el repositorio de plantillas de ShareLaTeX no es el único, otro buen repositorio es el de [latextemplates.com][10] aunque al parecer a éste hace un buen tiempo que no le hacen aportes nuevos. También [Overleaf][11] es (además de un editor LaTeX en línea con más funcionalidades en su versión gratuita que ShareLaTeX) un buen repositorio donde encontrar cientos de plantillas. En fin, en esta oportunidad vamos a utilizar la [plantilla <em>Moderncv Casual</em>][12] de ShareLaTeX, esta plantilla puede cargarse en el editor en línea de ShareLaTeX o bien descargarla en un archivo <code>.zip</code>, aquí se seguirá la edición a partir de la versión descargada en zip.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="./images/ShareLaTeX_repos.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Plantilla para cartas</figcaption><p></p>
-</figure>
-</div>
-<p>Una vez descargada la plantilla y descomprimido el contenido del archivo zip correspondiente se dispondrá de los archivos de estilo que definen el color y la distribución del contenido (archivos de extensión <code>.sty</code>) y del archivo <code>main.tex</code> que es la carta propiamente dicha. Como recomendación, es bueno copiar este archivo con un nombre específico para cada carta y así dejar la plantilla original sin modificar y poder entonces utilizarla cada vez que sea necesario.</p>
-<p>El idioma original de la plantilla es el inglés por tanto, si va a escribir en español tendrá que hacer algunos ajustes a la plantilla o bien utilizar la versión traducida hecha por este servidor y disponible [aquí para su descarga][13].</p>
-<p>Pues muy bien, para empezar es más que suficiente que ya pueda escribir todas sus cartas en LaTeX. Simplemente renombre el archivo main.tex (sin cambiarlo de ubicación), ábralo con el editor de LaTeX de su elección y siga las instrucciónes, la plantilla es completamente auto - explicada. En el caso de estar utilizando Texmaker puede compilar y ver el resultado en pdf simplemente accionando la tecla <code>F1</code>. Tenga presente que no es necesario que abra o modifique todos los demás archivos, por ahora solamente necesita modificar el contenido de la carta en el archivo .tex correspondiente, ya luego aprenderá a revisar y modificar los archivos de estilo.</p>
-<p>Lic. Fausto Mauricio Lagos Suárez Mg. Ingeniería Computacional y Matemáticas <span class="citation" data-cites="piratax007">@piratax007</span></p>
-<p>[1]: [2]: https://www.latex-project.org/lppl.txt [3]: https://www.gnu.org/philosophy/free-sw.html [4]: http://www.xm1math.net/texmaker/ [5]: http://www.texstudio.org/ [6]: https://es.sharelatex.com/ [7]: https://www.gnu.org/software/emacs/ [8]: http://wps-community.org/download/dicts [9]: https://es.sharelatex.com/templates [10]: http://www.latextemplates.com/ [11]: https://www.overleaf.com/latex/templates/ [12]: https://es.sharelatex.com/templates/cover-letters/moderncv-casual [13]: https://drive.google.com/file/d/0B3grR36BkHEFZlQwdk1yMkY3VVk/view?usp=sharing [14]: https://www.overleaf.com</p>
 
 
-</section>
 </section>
 </section>
 

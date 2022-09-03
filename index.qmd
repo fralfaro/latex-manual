@@ -1,5 +1,7 @@
-# Preface {.unnumbered}
+---
+lang: es
+---
 
-This is a Quarto book.
+# Prefacio {.unnumbered}
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+Bienvenidos al manual de $\LaTeX$.

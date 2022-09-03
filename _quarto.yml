@@ -16,7 +16,7 @@ book:
   date: "1/6/2022"
   output-file: "manual-latex"
   image: cover.png
-  cover-image: cover.png
+  cover-image: img/logos/logo-latex.png
   sharing: [twitter, linkedin]
   downloads: [pdf, epub]
   favicon: "img/logos/favicon.ico"
@@ -31,6 +31,15 @@ book:
   chapters:
     - index.qmd
     - introduccion.qmd
+    - estructura.qmd
+    - secciones.qmd
+    - formateo.qmd
+    - listas.qmd
+    - tablas.qmd
+    - figuras.qmd
+    - formulas.qmd
+    #- referencias.qmd
+    #- bibliografia.qmd
     
 #bibliography: references.bib
 

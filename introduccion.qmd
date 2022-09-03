@@ -25,7 +25,7 @@ Otra de las grandes ventajas de $\LaTeX$ es que existen multitud de paquetes de 
 La página principal sobre $\LaTeX$ es [The LaTeX project](https://www.latex-project.org/).
 
 
-### Instalación
+## Instalación
 
 Existen distintas distribuciones de $\LaTeX$ y algunas de ellas son multiplataforma, es decir, están disponibles para diferentes sistemas operativos. Las distribuciones más comunes son:
 
@@ -45,11 +45,11 @@ Junto a la distribución de $\LaTeX$ es también habitual instalar algún editor
 
 Pero también se puede empezar a componer documentos sin necesidad de instalar nada en el ordenador, usando un editor on-line como por ejemplo [Overleaf](https://www.overleaf.com/)
 
-### Hola LaTeX
+## Hola LaTeX
 
 A modo de ejemplo, empezaremos por crear un sencillo documento con el texto "Hola $\LaTeX$".
 
-Para ello tendremos que crear un fichero de texto con el nombre `main.tex` (es importante que la extensión de los ficheros con código fuente de $\LaTeX$ sea `.tex`) y el siguiente contenido:
+Para ello utilizaremos nuestro editor de texto preferido para crear un fichero de texto con el nombre `main.tex` y el siguiente contenido:
 
 ```latex
 \documentclass{article}
@@ -59,6 +59,10 @@ Hola \LaTeX
 \end{document}
 ```
 
+:::{.callout-important}
+El nombre del fichero de texto con el código fuente de $\LaTeX$ puede ser el que queramos, pero es importante que la extensión sea `.tex`,
+:::
+
 Aunque más adelante se verá la estructura general del código fuente de un documento en $\LaTeX$, a continuación se explica brevemente el contenido de este fichero:
 
 1. En la primera línea se especifica el tipo de documento (`article`).
@@ -66,6 +70,8 @@ Aunque más adelante se verá la estructura general del código fuente de un doc
 3. La tercera línea marca el comienzo del documento.
 4. La cuarta línea contiene el texto del documento. `\LaTeX` es un comando que produce la salida $\LaTeX$.
 5. La quinta línea marca el final del documento.
+
+### Compilación
 
 Para obtener el documento final hay que compilar el fichero fuente. Existen diferentes formas de hacerlo y en los editores anteriores suele ser tan sencillo como hacer clic en un botón o pulsar una combinación de teclas, pero en última instancia todos ellos hacen una llamada al compilador de $\LaTeX$ que es quien se encarga de convertir el código fuente en el documento final. 
 

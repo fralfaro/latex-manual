@@ -109,6 +109,3 @@ Transcript written on main.log.
 En la @fig-overleaf-hola-latex se puede apreciar el documento final que se obtiene tras compilar el código fuente en Overleaf.
 
 ![Creación de un documento en Overleaf.](img/introduccion/overleaf-hola-latex.png){#fig-overleaf-hola-latex}
-
-
-

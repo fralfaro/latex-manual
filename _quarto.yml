@@ -13,7 +13,7 @@ website:
 book:
   title: "Manual de LaTeX"
   author: "Alfredo Sánchez Alberca"
-  date: "1/6/2022"
+  date: "6/1/2022"
   output-file: "manual-latex"
   image: cover.png
   cover-image: img/logos/logo-latex.png
@@ -39,10 +39,12 @@ book:
     - tablas.qmd
     - imagenes.qmd
     - formulas.qmd
-    #- referencias.qmd
+    - entornos-flotantes.qmd
+    - referencias-cruzadas.qmd
     #- bibliografia.qmd
+    - referencias.qmd
     
-#bibliography: references.bib
+bibliography: referencias.bib
 
 
 format:

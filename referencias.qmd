@@ -1,0 +1,9 @@
+# Bibliografía {.unnumbered}
+
+<!-- ::: {#refs}
+::: -->
+
+- Cascales, B. y otros (2003). _El libro de Latex_. Pearson Educación.
+- Cascales, B. y otros (2000). _LaTeX: una imprenta en sus manos_. Aula Documental de Investigación.
+- Lamport, Leslie (1994). _LaTeX: A Document Preparation System_, 2nd Edition. 2nd ed. Addison-Wesley Professional. .
+- Mittelbach, F. et al. (2004). _LaTeX Companion, The, 2nd Edition_. 2nd ed. Addison-Wesley Professional.

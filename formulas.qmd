@@ -41,7 +41,7 @@ x+y=0
 
 ## Símbolos matemáticos
 
-Existe una infinidad de símbolos matemáticos que escriben mediante comandos. A continuación se muestran los más habituales.[^1]
+Existe una infinidad de símbolos matemáticos que escriben mediante comandos. A continuación se muestran los más habituales.[^2]
 
 ### Letras griegas
 
@@ -331,8 +331,55 @@ $$
 ## Salida
 ![](img/formulas/determinante.png)
 :::
+
+## Teoremas
+
+Para crear denificiones, teoremas, proposiciones, corolarios y otros tipos de enunciados de sebe cargar el paquete `amsthm` y definir los tipos de enunciados en el preámbulo con el comando `\newtheorem{entorno}{texo}`, donde `entorno` es el nombre del entorno y `texto` el texto que aparerá en el documento final como encabezado del enunciado.
+
+Estos entornos admiten como argumento opcional un texto que se utiliza para dar nombre al enunciado. 
+
+Los enunciados definidos con este comando aparecen por defecto numerados para poder referenciarlos en otras partes del documento, pero se pueden definir entornos no numerados con la variante del comando anterior `\newtheorem*{entorno}{texo}`
+
+Para demostraciones se puede utilizar el entorno `proof`.
+
+**Ejemplo**
+
+```latex
+% PREÁMBULO
+\usepackage{amsmath}
+\DeclareMathOperator{\sen}{sen}
+\usepackage{amsthm}
+\newtheorem{midef}{Definición}
+\newtheorem{teo}{Teorema}
+
+% CUERPO
+\begin{document}
+
+\begin{midef}
+Dado un triángulo rectángulo de catetos $a$, $b$ e hipotenusa $c$, se define el seno del ángulo $\alpha$ opuesto al cateto $b$ como 
+
+$$
+\sen{\alpha}= \frac{b}{c}.
+$$
+\end{midef}
+
+\begin{teo}
+Para cualquier ángulo $\alpha$ se cumple $\sen(\alpha)^2 + \cos(\alpha)^2 = 1$.
+\end{teo}
+
+\begin{proof}
+Es una consecuencia directa del teorema de Pitágoras.
+\end{proof}
+\end{document}
+```
+
+:::{.callout-note collapse="true" icon=false}
+## Salida
+![](img/formulas/teoremas.png)
+:::
  
+:::{.callout-tip}
+Se recomienda cargar los paquetes `amsmath`, `amssymb` y `amsthm` para documentos extensos o con muchas fórmulas matemáticas.
+:::
 
-
-
-[^1]: Para un listado más exhaustivo de los símbolos matemáticos de $\LaTeX$, puede consultarse el documento [The Great, Big List of $\LaTeX$ Symbols](https://www3.nd.edu/~nmark/UsefulFacts/LaTeX_symbols.pdf).
+[^2]: Para un listado más exhaustivo de los símbolos matemáticos de $\LaTeX$, puede consultarse el documento [The Great, Big List of $\LaTeX$ Symbols](https://www3.nd.edu/~nmark/UsefulFacts/LaTeX_symbols.pdf).

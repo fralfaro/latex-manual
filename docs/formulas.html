@@ -88,6 +88,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./entornos-flotantes.html" rel="next">
 <link href="./imagenes.html" rel="prev">
 <link href="./img/logos/favicon.ico" rel="icon">
 <script src="site_libs/quarto-html/quarto.js"></script>
@@ -239,6 +240,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <a href="./formulas.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Fórmulas matemáticas</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./entornos-flotantes.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Entornos flotantes</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./referencias-cruzadas.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Referencias cruzadas y notas a pie</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./referencias.html" class="sidebar-item-text sidebar-link">Bibliografía</a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -265,6 +281,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <li><a href="#sumatorios-productorios-e-integrales" id="toc-sumatorios-productorios-e-integrales" class="nav-link" data-scroll-target="#sumatorios-productorios-e-integrales"> <span class="header-section-number">8.4</span> Sumatorios, productorios e integrales</a></li>
   <li><a href="#sombreros" id="toc-sombreros" class="nav-link" data-scroll-target="#sombreros"> <span class="header-section-number">8.5</span> Sombreros</a></li>
   <li><a href="#matrices" id="toc-matrices" class="nav-link" data-scroll-target="#matrices"> <span class="header-section-number">8.6</span> Matrices</a></li>
+  <li><a href="#teoremas" id="toc-teoremas" class="nav-link" data-scroll-target="#teoremas"> <span class="header-section-number">8.7</span> Teoremas</a></li>
   </ul>
 </nav>
     </div>
@@ -830,7 +847,7 @@ Salida
 </section>
 <section id="matrices" class="level2" data-number="8.6">
 <h2 data-number="8.6" class="anchored" data-anchor-id="matrices"><span class="header-section-number">8.6</span> Matrices</h2>
-<p>Las matrices se crean de manera similar a como se crean las tablas (ver <a href="tablas.html"><span>Capítulo&nbsp;6</span></a>), pero utilizando el entorno <code>array</code> en lugar del entorno <code>tabular</code>. Para encerrar la matriz entre paréntesis se pone el comando <code>\left(</code> antes del entorno y el comando <code>\right)</code> después.</p>
+<p>Las matrices se crean de manera similar a como se crean las tablas (ver <a href="#sec-tablas"><span class="quarto-unresolved-ref">sec-tablas</span></a>), pero utilizando el entorno <code>array</code> en lugar del entorno <code>tabular</code>. Para encerrar la matriz entre paréntesis se pone el comando <code>\left(</code> antes del entorno y el comando <code>\right)</code> después.</p>
 <p><strong>Ejemplo</strong></p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode latex code-with-copy"><code class="sourceCode latex"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">% CUERPO</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="kw">\begin</span>{<span class="ex">document</span>}</span>
@@ -902,6 +919,71 @@ Salida
 <div class="callout-body-container callout-body">
 <p><img src="img/formulas/determinante.png" class="img-fluid"></p>
 </div>
+</div>
+</div>
+</section>
+<section id="teoremas" class="level2" data-number="8.7">
+<h2 data-number="8.7" class="anchored" data-anchor-id="teoremas"><span class="header-section-number">8.7</span> Teoremas</h2>
+<p>Para crear denificiones, teoremas, proposiciones, corolarios y otros tipos de enunciados de sebe cargar el paquete <code>amsthm</code> y definir los tipos de enunciados en el preámbulo con el comando <code>\newtheorem{entorno}{texo}</code>, donde <code>entorno</code> es el nombre del entorno y <code>texto</code> el texto que aparerá en el documento final como encabezado del enunciado.</p>
+<p>Estos entornos admiten como argumento opcional un texto que se utiliza para dar nombre al enunciado.</p>
+<p>Los enunciados definidos con este comando aparecen por defecto numerados para poder referenciarlos en otras partes del documento, pero se pueden definir entornos no numerados con la variante del comando anterior <code>\newtheorem*{entorno}{texo}</code></p>
+<p>Para demostraciones se puede utilizar el entorno <code>proof</code>.</p>
+<p><strong>Ejemplo</strong></p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode latex code-with-copy"><code class="sourceCode latex"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">% PREÁMBULO</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="bu">\usepackage</span>{<span class="ex">amsmath</span>}</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="fu">\DeclareMathOperator</span>{<span class="fu">\sen</span>}{sen}</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="bu">\usepackage</span>{<span class="ex">amsthm</span>}</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="fu">\newtheorem</span>{midef}{Definición}</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="fu">\newtheorem</span>{teo}{Teorema}</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="co">% CUERPO</span></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="kw">\begin</span>{<span class="ex">document</span>}</span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a><span class="kw">\begin</span>{<span class="ex">midef</span>}</span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>Dado un triángulo rectángulo de catetos <span class="ss">$a$</span>, <span class="ss">$b$</span> e hipotenusa <span class="ss">$c$</span>, se define el seno del ángulo <span class="ss">$</span><span class="sc">\alpha</span><span class="ss">$</span> opuesto al cateto <span class="ss">$b$</span> como </span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a><span class="ss">$$</span></span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a><span class="sc">\sen</span><span class="ss">{</span><span class="sc">\alpha</span><span class="ss">}= </span><span class="sc">\frac</span><span class="ss">{b}{c}.</span></span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a><span class="ss">$$</span></span>
+<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a><span class="kw">\end</span>{<span class="ex">midef</span>}</span>
+<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a><span class="kw">\begin</span>{<span class="ex">teo</span>}</span>
+<span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a>Para cualquier ángulo <span class="ss">$</span><span class="sc">\alpha</span><span class="ss">$</span> se cumple <span class="ss">$</span><span class="sc">\sen</span><span class="ss">(</span><span class="sc">\alpha</span><span class="ss">)^2 + </span><span class="sc">\cos</span><span class="ss">(</span><span class="sc">\alpha</span><span class="ss">)^2 = 1$</span>.</span>
+<span id="cb9-23"><a href="#cb9-23" aria-hidden="true" tabindex="-1"></a><span class="kw">\end</span>{<span class="ex">teo</span>}</span>
+<span id="cb9-24"><a href="#cb9-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-25"><a href="#cb9-25" aria-hidden="true" tabindex="-1"></a><span class="kw">\begin</span>{<span class="ex">proof</span>}</span>
+<span id="cb9-26"><a href="#cb9-26" aria-hidden="true" tabindex="-1"></a>Es una consecuencia directa del teorema de Pitágoras.</span>
+<span id="cb9-27"><a href="#cb9-27" aria-hidden="true" tabindex="-1"></a><span class="kw">\end</span>{<span class="ex">proof</span>}</span>
+<span id="cb9-28"><a href="#cb9-28" aria-hidden="true" tabindex="-1"></a><span class="kw">\end</span>{<span class="ex">document</span>}</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="callout-note callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Salida
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><img src="img/formulas/teoremas.png" class="img-fluid"></p>
+</div>
+</div>
+</div>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Se recomienda cargar los paquetes <code>amsmath</code>, <code>amssymb</code> y <code>amsthm</code> para documentos extensos o con muchas fórmulas matemáticas.</p>
 </div>
 </div>
 
@@ -1019,6 +1101,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="./entornos-flotantes.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Entornos flotantes</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->

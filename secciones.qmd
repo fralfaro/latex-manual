@@ -101,7 +101,7 @@ Este es el último párrafo del documento y aparece justificado en el centro ent
 
 :::{.callout-note collapse="true" icon=false}
 ## Salida
-![](img/estructura/justificacion.png)
+![](img/secciones/justificacion.png)
 :::
 
 :::{.callout-warning}

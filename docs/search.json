@@ -117,5 +117,82 @@
     "title": "6  Tablas",
     "section": "",
     "text": "Para crear una tabla se utiliza el entorno tabular. Este entorno tiene como argumento obligatorio el número de columnas de la tabla y su justificación, que se indica con una letra: l izquierda, r derecha y c centrada, (por ejemplo lcr indica tres columnas, la primera justificada a la izquierda, la segunda centrada y la tercera justificada a la derecha).\nA continuación se introduce el contenido de la tabla, separando las filas con el comando de cambio de línea \\\\ y dentro de cada línea separando las celdas con el comando &.\nEjemplo\n% CUERPO\n\\begin{document}\n% Tabla con tres columnas, justificadas a la izquierda, centrada y derecha, respectivamente.\n\\begin{tabular}{lcr}\nNombre & Ciudad & Edad \\\\\nMaría & Valencia & 22 \\\\\nJuan & Madrid & 50 \\\\\nCarmen & Barcelona & 35 \\\\\n\\end{tabular}\n\\end{document}\n\n\n\n\n\n\nSalida\n\n\n\n\n\n\n\n\n\nPara añadir líneas de división entre columnas, se introduce el carácter de barra vertical | entre las letras que definen la justificación de las columnas en el argumento obligatorio del entorno tabular. Mientras que para añadir líneas de división entre filas, se utiliza el comando \\hline al principio de cada línea. Se insertarán tantas líneas divisorias como veces se introduzca el comando \\hline.\nEjemplo\n% CUERPO\n\\begin{document}\n% Tabla con líneas divisorias de filas y columnas.\n\\begin{tabular}{|l|c|r|}\n\\hline\nNombre & Ciudad & Edad \\\\ \n\\hline\n\\hline\nMaría & Valencia & 22 \\\\\n\\hline\nJuan & Madrid & 50 \\\\\n\\hline\nCarmen & Barcelona & 35 \\\\\n\\hline\n\\end{tabular}\n\\end{document}\n\n\n\n\n\n\nSalida\n\n\n\n\n\n\n\n\n\nEl comando \\multicolumn{num}{col}{texto} permite crear celdas que se extienden a lo largo de varias columnas, donde num es el número de columnas a ocupar, col es el carácter que define la justificación de la celda (l, r o c), y texto es el contenido de la celda.\nTambién es posible utilizar el comando \\cline{n-m} para dibujar líneas horizontales divisorias que no abarquen toda la fila, sino desde la columna n hasta la m.\nEjemplo\n% CUERPO\n\\begin{document}\n\\begin{tabular}{lrrcrr}\n\\hline\n & \\multicolumn{2}{c}{Enero} & & \\multicolumn{2}{c}{Febrero}\\\\\n\\cline{2-3}\\cline{5-6}\nCiudad & Ingresos & Gastos & & Ingresos & Gastos\\\\ \n\\hline\nMadrid & 2500 & 1750 & & 2600 & 1800\\\\ \nBarcelona & 2250 & 1500 & & 2400 & 1650\\\\ \n\\hline\n\\end{tabular}\n\\end{document}\n\n\n\n\n\n\nSalida"
+  },
+  {
+    "objectID": "imagenes.html",
+    "href": "imagenes.html",
+    "title": "7  Imágenes",
+    "section": "",
+    "text": "Una vez cargado el paquete, para insertar una imagen en el documento basta con utilizar el comando \\includegraphics[opiones]{fichero}. Este comando tiene como argumento obligatorio es el nombre del fichero con la imagen (incluyendo la ruta en el sistema de ficheros local) y los siguientes argumentos opcionales para modificar el aspecto de la imagen:\n\nheight: Indica la altura de la imagen. Escala la imagen hasta esa altura.\nwidth: Indica la anchura de la imagen. Escala la imagen hasta esa anchura.\nscale: Factor de escalado de la imagen de 0 a 1.\nangle: Ángulo de rotación de la imagen. Rota la imagen en el sentido de las agujas del reloj los grados indicados.\n\nEjemplo\n% PREÁMBULO\n\\usepackage{graphicx}\n% CUERPO\n\\begin{document}\nEjemplo de imagen en línea \n\\includegraphics{img/logo-aprendeconalf.png}, \nescalada\n\\includegraphics[height=1cm]{img/logo-aprendeconalf.png},\ny rotada\n\\includegraphics[angle=90]{img/logo-aprendeconalf.png}\n\nEjemplo de imagen centrada:\n\n\\begin{center}\n\\includegraphics{img/logo-aprendeconalf.png}\n\\end{center}\n\\end{document}\n\n\n\n\n\n\nSalida"
+  },
+  {
+    "objectID": "listas.html",
+    "href": "listas.html",
+    "title": "5  Listas",
+    "section": "",
+    "text": "itemize: Crea un lista sin numerar.\nenumerate: Crea una lista enumerada.\ndescription: Crea una lista de tipo descripción.\n\nDentro de estos entornos, cada elemento de la lista debe empezar en una línea nueva con el comando \\item. En el caso de las listas descriptivas, hay que proporcionar el texto del item de la lista como un argumento obligatorio.\nEjemplos\nEjemplo de lista no ordenada.\n% CUERPO\n\\begin{document}\nEjemplo de lista no ordenada:\n\\begin{itemize}\n\\item Este es un item.\n\\item Este es otro item.\n\\item Y otro item más.\n\\end{itemize}\n\\end{document}\n\n\n\n\n\n\nSalida\n\n\n\n\n\n\n\n\n\nEjemplo de lista ordenada.\n% CUERPO\n\\begin{document}\nEjemplo de lista ordenada:\n\\begin{enumerate}\n\\item Primer item.\n\\item Segundo item.\n\\item Tercer item.\n\\end{enumerate}\n\\end{document}\n\n\n\n\n\n\nSalida\n\n\n\n\n\n\n\n\n\nEjemplo de lista descriptiva.\n% CUERPO\n\\begin{document}\nEjemplo de lista descriptiva:\n\\begin{description}\n\\item{\\textbf{latex}} Genera documentos en formato dvi.\n\\item{\\textbf{pdflatex}} Genera documentos en formato pdf.\n\\item{\\textbf{xelatex}} Genera documentos en formato pdf que admiten codificación Unicode.\n\\end{description}\n\\end{document}\n\n\n\n\n\n\nSalida\n\n\n\n\n\n\n\n\n\nSe pueden crear sublistas anidando unos entornos dentro de otros.\nEjemplo\n% CUERPO\n\\begin{document}\nEjemplo de listas anidadas:\n\\begin{enumerate}\n\\item Primer item.\n    \\begin{enumerate}\n    \\item Primer subitem.\n    \\item Segundo subitem.\n    \\end{enumerate}\n\\item Segundo item.\n    \\begin{itemize}\n    \\item Un item.\n    \\item Otro item.\n    \\end{itemize}\n\\end{enumerate}\n\\end{document}\n\n\n\n\n\n\nSalida\n\n\n\n\n\n\n\n\n\nLa indentación en el código fuente del ejemplo anterior no es obligatoria pero ayuda a ver mejor la estructura de anidamiento de entornos."
+  },
+  {
+    "objectID": "formulas.html",
+    "href": "formulas.html",
+    "title": "8  Fórmulas matemáticas",
+    "section": "",
+    "text": "La escritura de fórmulas matemáticas es uno de los puntos fuertes de \\(\\LaTeX\\), y es por ello que se utiliza tanto para la creación de documentos científicos o técnicos con contenido matemático.\nPara escribir una fórmula es necesario cambiar al modo matemático. Existen distintas formas de activar el modo matemático:\nEjemplo"
+  },
+  {
+    "objectID": "formulas.html#símbolos-matemáticos",
+    "href": "formulas.html#símbolos-matemáticos",
+    "title": "8  Fórmulas matemáticas",
+    "section": "8.1 Símbolos matemáticos",
+    "text": "8.1 Símbolos matemáticos\nExiste una infinidad de símbolos matemáticos que escriben mediante comandos. A continuación se muestran los más habituales.1\n\n8.1.1 Letras griegas\nPara escribir letras griegas se utilizan los siguientes comandos:\nMinúsculas\n\n\n\n\n\n\n\n\n\n\\alpha \\(\\alpha\\)\n\\theta \\(\\theta\\)\no \\(o\\)\n\\tau \\(\\tau\\)\n\n\n\\beta \\(\\beta\\)\n\\vartheta \\(\\vartheta\\)\n\\pi \\(\\pi\\)\n\\upsilon \\(\\upsilon\\)\n\n\n\\gamma \\(\\gamma\\)\n\\iota \\(\\iota\\)\n\\varpi \\(\\varpi\\)\n\\phi \\(\\phi\\)\n\n\n\\delta \\(\\delta\\)\n\\kappa \\(\\kappa\\)\n\\rho \\(\\rho\\)\n\\varphi \\(\\varphi\\)\n\n\n\\epsilon \\(\\epsilon\\)\n\\lambda \\(\\lambda\\)\n\\varrho \\(\\varrho\\)\n\\chi \\(\\chi\\)\n\n\n\\varepsilon \\(\\varepsilon\\)\n\\mu \\(\\mu\\)\n\\sigma \\(\\sigma\\)\n\\psi \\(\\psi\\)\n\n\n\\zeta \\(\\zeta\\)\n\\nu \\(\\nu\\)\n\\varsigma \\(\\varsigma\\)\n\\omega \\(\\omega\\)\n\n\n\\eta \\(\\eta\\)\n\\xi \\(\\xi\\)\n\n\n\n\n\nMayúsculas\n\n\n\n\n\n\n\n\n\n\\Gamma \\(\\Gamma\\)\n\\Lambda \\(\\Lambda\\)\n\\Sigma \\(\\Sigma\\)\n\\Psi \\(\\Psi\\)\n\n\n\\Delta \\(\\Delta\\)\n\\Xi \\(\\Xi\\)\n\\Upsilon \\(\\Upsilon\\)\n\\Omega \\(\\Omega\\)\n\n\n\\Theta \\(\\Theta\\)\n\\Pi \\(\\Pi\\)\n\\Phi \\(Phi\\)\n\n\n\n\n\n\n8.1.2 Operadores aritméticos\n\n\n\n+ \\(+\\)\n- \\(-\\)\n\\times \\(\\times\\)\n\\cdot \\(\\cdot\\)\n\n\n/ \\(/\\)\n\\div \\(\\div\\)\n\\sqrt{...} \\(\\sqrt{}\\)\n\\pm \\(\\pm\\)\n\n\n\n\n\n8.1.3 Relaciones\n\n\n\n\n\n\n\n\n\n= \\(=\\)\n\\neq \\(\\neq\\)\n< \\(<\\)\n\\leq \\(\\leq\\)\n\n\n> \\(>\\)\n\\geq \\(\\geq\\)\n\\approx \\(\\approx\\)\n\\sim \\(\\sim\\)\n\n\n\\equiv \\(\\equiv\\)\n\\in \\(\\in\\)\n\\not\\in \\(\\not\\in\\)\n\\subset \\(\\subset\\)\n\n\n\\not\\subset \\(\\not\\subset\\)\n\\subseteq \\(\\subseteq\\)\n\\subsetneq \\(\\subsetneq\\)\n\n\n\n\n\n\n8.1.4 Operadores binarios\n\n\n\n\n\n\n\n\n\n\\cup \\(\\cup\\)\n\\cap \\(\\cap\\)\n\\setminus \\(\\setminus\\)\n\\circ \\(\\circ\\)\n\n\n\n\n\n8.1.5 Lógica\n\n\n\n\n\n\n\n\n\n\n\\exists \\(\\exists\\)\n\\forall \\(\\forall\\)\n\\neg \\(\\neg\\)\n\\lor \\(lor\\)\n\\land \\(\\land\\)\n\n\n\n\n\n8.1.6 Conjuntos\n\n\n\n\n\n\n\n\n\n\\emptyset \\(\\emptyset\\)\n\\mathbb{N} \\(\\mathbb{N}\\)\n\\mathbb{Z} \\(\\mathbb{Z}\\)\n\\mathbb{Q} \\(\\mathbb{Q}\\)\n\n\n\\mathbb{R} \\(\\mathbb{R}\\)\n\\mathbb{C} \\(\\mathbb{C}\\)\n\n\n\n\n\n\n\n8.1.7 Flechas\n\n\n\n\n\n\n\n\n\n\\rightarrow \\(\\to\\)\n\\Rightarrow \\(\\Rightarrow\\)\n\\longrightarrow \\(\\longrightarrow\\)\n\\Longrightarrow \\(\\Longrightarrow\\)\n\n\n\\leftarrow \\(\\leftarrow\\)\n\\Leftarrow \\(\\Leftarrow\\)\n\\longleftarrow \\(\\longleftarrow\\)\n\\Longleftarrow \\(\\Longleftarrow\\)\n\n\n\\leftrightarrow \\(\\leftrightarrow\\)\n\\Leftrightarrow \\(\\Leftrightarrow\\)\n\\longleftrightarrow \\(\\longleftrightarrow\\)\n\\Longleftrightarrow \\(\\Longleftrightarrow\\)\n\n\n\\uparrow \\(\\uparrow\\)\n\\Uparrow \\(\\Uparrow\\)\n\\downarrow \\(\\downarrow\\)\n\\Downarrow \\(\\Downarrow\\)\n\n\n\\updownarrow \\(\\updownarrow\\)\n\\Updownarrow \\(\\Updownarrow\\)\n\n\n\n\n\n\n\n8.1.8 Otros símbolos\n\n\n\n\\infty \\(\\infty\\)\n\\partial \\(\\partial\\)\n\\nabla \\(\\nabla\\)\n\n\n\n\n\n8.1.9 Funciones\n\n\n\n\n\n\n\n\n\n\\sin \\(\\sin\\)\n\\arcsin \\(\\arcsin\\)\n\\csc \\(\\csc\\)\n\\operatorname{arccsc} \\(\\operatorname{arccsc}\\)\n\n\n\\cos \\(\\cos\\)\n\\arccos \\(\\arccos\\)\n\\sec \\(\\sec\\)\n\\operatorname{arcsec} \\(\\operatorname{arcsec}\\)\n\n\n\\tan \\(\\tan\\)\n\\arctan \\(\\arctan\\)\n\\cot \\(\\cot\\)\n\\operatorname{arccot} \\(\\operatorname{arccot}\\)\n\n\n\\exp \\(\\exp\\)\n\\log \\(\\log\\)\n\\ln \\(\\ln\\)\n\n\n\n\nEs posible declarar nuevos operadores o funciones cargando el paquete amsmath con el comando DeclareMathOperator{comando}{texto}. Por ejemplo, para obtener las versión de la función seno en español se puede definir DeclareMathOperator{\\sen}{sen} en el preámbulo y luego utilizar el comando \\sen en el cuerpo para obtener la función seno en español.\nOtro paquete que incorpora aún más símbolos es amssymb."
+  },
+  {
+    "objectID": "formulas.html#subíndices-y-superíndices",
+    "href": "formulas.html#subíndices-y-superíndices",
+    "title": "8  Fórmulas matemáticas",
+    "section": "8.2 Subíndices y superíndices",
+    "text": "8.2 Subíndices y superíndices\nPara poner subíndices se utiliza el comando _ y para superíndices ^. Si el subíndice o superíndice afecta a más de un carácter, hay que ponerlos entre llaves.\nEjemplo\n% CUERPO\n\\begin{document}\nEjemplo de fórmula con subíndices\n\n$$ \nx_i+y_j=0\n$$\n\n\n\nEjemplo de fórmula con superíndices\n\n$$ \nx^2+y^2=0\n$$\n\n\n\nEjemplo de fórmula con subíndices y superíndices\n\n$$ \nx_i^2+y_j^2=0\n$$\n\n\n\n\\end{document}\n\n\n\n\n\n\nSalida\n\n\n\n\n\n\n\n\n\nSe pueden escribir subíndices de subíndices o superíndices de superíndices anidando los comandos."
+  },
+  {
+    "objectID": "formulas.html#section",
+    "href": "formulas.html#section",
+    "title": "8  Fórmulas matemáticas",
+    "section": "8.3 ",
+    "text": "8.3"
+  },
+  {
+    "objectID": "formulas.html#section-1",
+    "href": "formulas.html#section-1",
+    "title": "8  Fórmulas matemáticas",
+    "section": "8.3 ",
+    "text": "8.3"
+  },
+  {
+    "objectID": "formulas.html#fracciones",
+    "href": "formulas.html#fracciones",
+    "title": "8  Fórmulas matemáticas",
+    "section": "8.3 Fracciones",
+    "text": "8.3 Fracciones\nPara escribir fracciones simples en línea se puede usar el operador aritmético \\(/\\) (por ejemplo \\(3/4\\)), pero para fracciones más complejas o fracciones en modo display, conviene utilizar el comando \\frac{num}{den}, donde num es el numerador y den el denominador.\nA su vez, se pueden escribir más fracciones en el numerador o el denominador, anidando este comando.\nEjemplo\n% CUERPO\n\\begin{document}\nEjemplo de fracción en línea $\\frac{x+2}{x^2-2x+1}$.\n\nEjemplo de fracción en modo desplegado\n\n$$\n\\frac{\\frac{x}{2}+\\frac{2}{3}}{x^2-2x+1}\n$$\n\n\n\n\\end{document}\n\n\n\n\n\n\nSalida"
+  },
+  {
+    "objectID": "formulas.html#sumatorios-productorios-e-integrales",
+    "href": "formulas.html#sumatorios-productorios-e-integrales",
+    "title": "8  Fórmulas matemáticas",
+    "section": "8.4 Sumatorios, productorios e integrales",
+    "text": "8.4 Sumatorios, productorios e integrales\nPara escribir sumatorios se utiliza el comando \\sum_{sub}^{sup}, donde \\(sub\\) es el subíndice que indica el inicio de la suma y \\(sup\\) es el superíndice que indica el final de la suma. Si se quieren omitir los índices de inicio y final de la suma, basta con el comando \\sum.\nDe manera análoga, para escribir productorios se utiliza el comando \\prod_{sub}^{sup}, donde sub es el subíndice que indica el inicio del producto y sup es el superíndice que indica el final del producto. Si se quieren omitir los índices de inicio y final del producto, basta con el comando \\prod.\nEjemplo\n% CUERPO\n\\begin{document}\nEjemplo de sumatorio\n$$\n\\sum_{i=1}^{\\infty} x^i\n$$\n\n\n\nEjemplo de productorio\n$$\n\\prod_{i=1}^n i\n$$\n\n\n\\end{document}\n\n\n\n\n\n\nSalida\n\n\n\n\n\n\n\n\n\nDel mismo modo, para escribir integrales definidas se utiliza el comando \\int_{sub}^{sup}, donde \\(sub\\) es el subíndice que indica el inicio de la integral y \\(sup\\) es el superíndice que indica el final de la integral. Para integrales indefinidas, basta con el comando \\int.\nEjemplo\n% CUERPO\n\\begin{document}\nEjemplo de integral definida\n$$\n\\int_a^b f(x)\\,dx\n$$\n\n\n\nEjemplo de integral indefinida\n$$\n\\int f(x)\\,dx\n$$\n\n\n\\end{document}\n\n\n\n\n\n\nSalida"
+  },
+  {
+    "objectID": "formulas.html#matrices",
+    "href": "formulas.html#matrices",
+    "title": "8  Fórmulas matemáticas",
+    "section": "8.6 Matrices",
+    "text": "8.6 Matrices\nLas matrices se crean de manera similar a como se crean las tablas (ver Capítulo 6), pero utilizando el entorno array en lugar del entorno tabular. Para encerrar la matriz entre paréntesis se pone el comando \\left( antes del entorno y el comando \\right) después.\nEjemplo\n% CUERPO\n\\begin{document}\nEjemplo de matriz\n$$\n\\left(\n\\begin{array}{rrr}\n1 & 2 & 3 \\\\\nx & y & z \\\\\n\\end{array}\n\\right)\n$$\n\n\n\\end{document}\n\n\n\n\n\n\nSalida\n\n\n\n\n\n\n\n\n\nEl paquete amsmath incorpora varios entornos más específicos para matrices donde no es necesario especificar el número de columnas, y tampoco los delimitadores:\n\nmatrix: Matriz sin delimitadores (equivalente al entorno array)\npmatrix: Matriz encerrada entre paréntesis.\nvmatrix: Matriz encerrada entre barras verticales (por ejemplo para determinates).\nVmatrix: Matriz encerrada ente dobles barras verticales.\nbmatrix: Matriz encerrada entre corchetes.\nBmatrix: Matriz encerrada entre llaves.\n\nEjemplo\n% PREÁMBULO\n\\usepackage{amsmath}\n% CUERPO\n\\begin{document}\nEjemplo de determinante\n\n$$\n\\begin{vmatrix}\n1 & x & \\alpha \\\\\n2 & y & \\beta \\\\\n3 & z &\\gamma\n\\end{vmatrix}\n$$\n\n\n\\end{document}\n\n\n\n\n\n\nSalida"
+  },
+  {
+    "objectID": "formulas.html#sombreros",
+    "href": "formulas.html#sombreros",
+    "title": "8  Fórmulas matemáticas",
+    "section": "8.5 Sombreros",
+    "text": "8.5 Sombreros\nEs posible poner símbolos encima de otros símbolos, más conocidos como sombreros. Los siguientes comandos sirven para poner distintos tipos de sombreros:\n\n\\bar{...}: Linea horizontal para un carácter.\n\\overline{...}: Línea horizontal para varios caracteres.\n\\hat: Ángulo para un carácter.\n\\widehat: Ángulo para varios caracteres.\n\\vec{...}: Flecha para un carácter.\n\\overrightarrow{...}: Flecha para varios caracteres.\n\nEjemplo\n% CUERPO\n\\begin{document}\nEjemplos de sombreros: $\\overline{xy}$, $\\hat{a}$, $\\widehat{abc}$, $\\vec{u}$.\n\\end{document}\n\n\n\n\n\n\nSalida"
   }
 ]

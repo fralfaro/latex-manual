@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Manual de LaTeX - 6&nbsp; Tablas</title>
+<title>Manual de LaTeX - 7&nbsp; Imágenes</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -88,8 +88,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./imagenes.html" rel="next">
-<link href="./listas.html" rel="prev">
+<link href="./formulas.html" rel="next">
+<link href="./tablas.html" rel="prev">
 <link href="./img/logos/favicon.ico" rel="icon">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -120,13 +120,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   }
 }</script>
 
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<meta property="og:title" content="Manual de LaTeX - 6&nbsp; Tablas">
-<meta property="og:description" content="Las tablas son uno de los elementos más complejos de \(\LaTeX\), ya que, aunque es fácil crear una tabla sencilla, aplicarles un formato más avanzado con justificación de columnas, fusión de…">
+<meta property="og:title" content="Manual de LaTeX - 7&nbsp; Imágenes">
+<meta property="og:description" content="Para incluir una imagen o figura en un documento, además de disponer de la imagen del fichero en un formato gráfico adecuado, es necesario cargar en el preámbulo el paquete graphicx.">
 <meta property="og:site-name" content="Manual de LaTeX">
-<meta name="twitter:title" content="Manual de LaTeX - 6&nbsp; Tablas">
-<meta name="twitter:description" content="Las tablas son uno de los elementos más complejos de \(\LaTeX\), ya que, aunque es fácil crear una tabla sencilla, aplicarles un formato más avanzado con justificación de columnas, fusión de…">
+<meta name="twitter:title" content="Manual de LaTeX - 7&nbsp; Imágenes">
+<meta name="twitter:description" content="Para incluir una imagen o figura en un documento, además de disponer de la imagen del fichero en un formato gráfico adecuado, es necesario cargar en el preámbulo el paquete graphicx.">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -136,7 +135,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Tablas</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Imágenes</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -227,12 +226,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./tablas.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Tablas</span></a>
+  <a href="./tablas.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Tablas</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./imagenes.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Imágenes</span></a>
+  <a href="./imagenes.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Imágenes</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -252,7 +251,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="sec-tablas" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Tablas</span></span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Imágenes</span></h1>
 </div>
 
 
@@ -266,20 +265,32 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </header>
 
-<p>Las tablas son uno de los elementos más complejos de <span class="math inline">\(\LaTeX\)</span>, ya que, aunque es fácil crear una tabla sencilla, aplicarles un formato más avanzado con justificación de columnas, fusión de columnas o filas, márgenes de columnas, líneas de división, etc. suele ser bastante más difícil, aunque algunos entornos de edición facilitan la tarea. Existen multitud de paquetes para personalizar las tablas pero en esta sección solo veremos lo más básico.</p>
-<p>Para crear una tabla se utiliza el entorno <code>tabular</code>. Este entorno tiene como argumento obligatorio el número de columnas de la tabla y su justificación, que se indica con una letra: <code>l</code> izquierda, <code>r</code> derecha y <code>c</code> centrada, (por ejemplo <code>lcr</code> indica tres columnas, la primera justificada a la izquierda, la segunda centrada y la tercera justificada a la derecha).</p>
-<p>A continuación se introduce el contenido de la tabla, separando las filas con el comando de cambio de línea <code>\\</code> y dentro de cada línea separando las celdas con el comando <code>&amp;</code>.</p>
+<p>Para incluir una imagen o figura en un documento, además de disponer de la imagen del fichero en un formato gráfico adecuado, es necesario cargar en el preámbulo el paquete <code>graphicx</code>. Este paquete permite gestionar imágenes en los formatos gráficos <code>jpg</code>, <code>png</code>, <code>tiff</code>, <code>eps</code> y <code>pdf</code> (los tres primeros son formatos de mapas de bits y los dos últimos vectoriales).</p>
+<p>Una vez cargado el paquete, para insertar una imagen en el documento basta con utilizar el comando <code>\includegraphics[opiones]{fichero}</code>. Este comando tiene como argumento obligatorio es el nombre del fichero con la imagen (incluyendo la ruta en el sistema de ficheros local) y los siguientes argumentos opcionales para modificar el aspecto de la imagen:</p>
+<ul>
+<li><code>height</code>: Indica la altura de la imagen. Escala la imagen hasta esa altura.</li>
+<li><code>width</code>: Indica la anchura de la imagen. Escala la imagen hasta esa anchura.</li>
+<li><code>scale</code>: Factor de escalado de la imagen de 0 a 1.</li>
+<li><code>angle</code>: Ángulo de rotación de la imagen. Rota la imagen en el sentido de las agujas del reloj los grados indicados.</li>
+</ul>
 <p><strong>Ejemplo</strong></p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode latex code-with-copy"><code class="sourceCode latex"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">% CUERPO</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">\begin</span>{<span class="ex">document</span>}</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">% Tabla con tres columnas, justificadas a la izquierda, centrada y derecha, respectivamente.</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="kw">\begin</span>{<span class="ex">tabular</span>}{lcr}</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>Nombre <span class="op">&amp;</span> Ciudad <span class="op">&amp;</span> Edad <span class="fu">\\</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>María <span class="op">&amp;</span> Valencia <span class="op">&amp;</span> 22 <span class="fu">\\</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>Juan <span class="op">&amp;</span> Madrid <span class="op">&amp;</span> 50 <span class="fu">\\</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>Carmen <span class="op">&amp;</span> Barcelona <span class="op">&amp;</span> 35 <span class="fu">\\</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="kw">\end</span>{<span class="ex">tabular</span>}</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="kw">\end</span>{<span class="ex">document</span>}</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode latex code-with-copy"><code class="sourceCode latex"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">% PREÁMBULO</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">\usepackage</span>{<span class="ex">graphicx</span>}</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">% CUERPO</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="kw">\begin</span>{<span class="ex">document</span>}</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>Ejemplo de imagen en línea </span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="bu">\includegraphics</span>{<span class="ex">img/logo-aprendeconalf.png</span>}, </span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>escalada</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="bu">\includegraphics</span>[height=1cm]{<span class="ex">img/logo-aprendeconalf.png</span>},</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>y rotada</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="bu">\includegraphics</span>[angle=90]{<span class="ex">img/logo-aprendeconalf.png</span>}</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>Ejemplo de imagen centrada:</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="kw">\begin</span>{<span class="ex">center</span>}</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="bu">\includegraphics</span>{<span class="ex">img/logo-aprendeconalf.png</span>}</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="kw">\end</span>{<span class="ex">center</span>}</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="kw">\end</span>{<span class="ex">document</span>}</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="callout-note callout callout-style-default no-icon callout-captioned">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -292,73 +303,7 @@ Salida
 </div>
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><img src="img/tablas/tabla-simple.png" class="img-fluid"></p>
-</div>
-</div>
-</div>
-<p>Para añadir líneas de división entre columnas, se introduce el carácter de barra vertical <code>|</code> entre las letras que definen la justificación de las columnas en el argumento obligatorio del entorno <code>tabular</code>. Mientras que para añadir líneas de división entre filas, se utiliza el comando <code>\hline</code> al principio de cada línea. Se insertarán tantas líneas divisorias como veces se introduzca el comando <code>\hline</code>.</p>
-<p><strong>Ejemplo</strong></p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode latex code-with-copy"><code class="sourceCode latex"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">% CUERPO</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="kw">\begin</span>{<span class="ex">document</span>}</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co">% Tabla con líneas divisorias de filas y columnas.</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="kw">\begin</span>{<span class="ex">tabular</span>}{|l|c|r|}</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">\hline</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>Nombre <span class="op">&amp;</span> Ciudad <span class="op">&amp;</span> Edad <span class="fu">\\</span> </span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="fu">\hline</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="fu">\hline</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>María <span class="op">&amp;</span> Valencia <span class="op">&amp;</span> 22 <span class="fu">\\</span></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="fu">\hline</span></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>Juan <span class="op">&amp;</span> Madrid <span class="op">&amp;</span> 50 <span class="fu">\\</span></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="fu">\hline</span></span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>Carmen <span class="op">&amp;</span> Barcelona <span class="op">&amp;</span> 35 <span class="fu">\\</span></span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="fu">\hline</span></span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="kw">\end</span>{<span class="ex">tabular</span>}</span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="kw">\end</span>{<span class="ex">document</span>}</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="callout-note callout callout-style-default no-icon callout-captioned">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Salida
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p><img src="img/tablas/tabla-delimitada.png" class="img-fluid"></p>
-</div>
-</div>
-</div>
-<p>El comando <code>\multicolumn{num}{col}{texto}</code> permite crear celdas que se extienden a lo largo de varias columnas, donde <code>num</code> es el número de columnas a ocupar, <code>col</code> es el carácter que define la justificación de la celda (<code>l</code>, <code>r</code> o <code>c</code>), y <code>texto</code> es el contenido de la celda.</p>
-<p>También es posible utilizar el comando <code>\cline{n-m}</code> para dibujar líneas horizontales divisorias que no abarquen toda la fila, sino desde la columna <code>n</code> hasta la <code>m</code>.</p>
-<p><strong>Ejemplo</strong></p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode latex code-with-copy"><code class="sourceCode latex"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">% CUERPO</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="kw">\begin</span>{<span class="ex">document</span>}</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="kw">\begin</span>{<span class="ex">tabular</span>}{lrrcrr}</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">\hline</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a> <span class="op">&amp;</span> <span class="fu">\multicolumn</span>{2}{c}{Enero} <span class="op">&amp;</span> <span class="op">&amp;</span> <span class="fu">\multicolumn</span>{2}{c}{Febrero}<span class="fu">\\</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="fu">\cline</span>{2-3}<span class="fu">\cline</span>{5-6}</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>Ciudad <span class="op">&amp;</span> Ingresos <span class="op">&amp;</span> Gastos <span class="op">&amp;</span> <span class="op">&amp;</span> Ingresos <span class="op">&amp;</span> Gastos<span class="fu">\\</span> </span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="fu">\hline</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>Madrid <span class="op">&amp;</span> 2500 <span class="op">&amp;</span> 1750 <span class="op">&amp;</span> <span class="op">&amp;</span> 2600 <span class="op">&amp;</span> 1800<span class="fu">\\</span> </span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>Barcelona <span class="op">&amp;</span> 2250 <span class="op">&amp;</span> 1500 <span class="op">&amp;</span> <span class="op">&amp;</span> 2400 <span class="op">&amp;</span> 1650<span class="fu">\\</span> </span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="fu">\hline</span></span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="kw">\end</span>{<span class="ex">tabular</span>}</span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="kw">\end</span>{<span class="ex">document</span>}</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="callout-note callout callout-style-default no-icon callout-captioned">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Salida
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p><img src="img/tablas/tabla-multicolumna.png" class="img-fluid"></p>
+<p><img src="img/imagenes/imganes.png" class="img-fluid"></p>
 </div>
 </div>
 </div>
@@ -465,13 +410,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./listas.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Listas</span></span>
+      <a href="./tablas.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Tablas</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./imagenes.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Imágenes</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./formulas.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Fórmulas matemáticas</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

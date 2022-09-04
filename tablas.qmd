@@ -2,7 +2,7 @@
 lang: es
 ---
 
-# Tablas
+# Tablas {#sec-tablas}
 
 Las tablas son uno de los elementos más complejos de $\LaTeX$, ya que, aunque es fácil crear una tabla sencilla, aplicarles un formato más avanzado con justificación de columnas, fusión de columnas o filas, márgenes de columnas, líneas de división, etc. suele ser bastante más difícil, aunque algunos entornos de edición facilitan la tarea.  Existen multitud de paquetes para personalizar las tablas pero en esta sección solo veremos lo más básico.
 

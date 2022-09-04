@@ -28,6 +28,7 @@ book:
   open-graph: true
   twitter-card: 
     site: "@aprendeconalf"
+  number-sections: true
   chapters:
     - index.qmd
     - introduccion.qmd
@@ -36,7 +37,7 @@ book:
     - formateo.qmd
     - listas.qmd
     - tablas.qmd
-    - figuras.qmd
+    - imagenes.qmd
     - formulas.qmd
     #- referencias.qmd
     #- bibliografia.qmd

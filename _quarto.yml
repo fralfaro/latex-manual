@@ -44,7 +44,7 @@ book:
     - formulas.qmd
     - entornos-flotantes.qmd
     - referencias-cruzadas.qmd
-    #- bibliografia.qmd
+    - bibliografia.qmd
     - referencias.qmd
     
 bibliography: referencias.bib

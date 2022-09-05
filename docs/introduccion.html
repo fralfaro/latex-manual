@@ -252,7 +252,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./referencias.html" class="sidebar-item-text sidebar-link">Bibliografía</a>
+  <a href="./referencias.html" class="sidebar-item-text sidebar-link">Bibliografía y recursos</a>
   </div>
 </li>
     </ul>
@@ -301,7 +301,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </section>
 <section id="qué-es-latex" class="level2" data-number="1.2">
 <h2 data-number="1.2" class="anchored" data-anchor-id="qué-es-latex"><span class="header-section-number">1.2</span> ¿Qué es <span class="math inline">\(\LaTeX\)</span></h2>
-<p><img src="https://www.latex-project.org/img/latex-project-logo.svg" class="img-fluid"></p>
+<p><img src="img/logos/latex-project-logo.png" class="img-fluid"></p>
 <p><span class="math inline">\(\LaTeX\)</span> es un conjunto de macros para <span class="math inline">\(\TeX\)</span> debido originalmente a <a href="https://en.wikipedia.org/wiki/Leslie_Lamport">Leslie Lamport</a> para facilitar el uso de <span class="math inline">\(\TeX\)</span>.</p>
 <p>Tanto <span class="math inline">\(\TeX\)</span> como <span class="math inline">\(\LaTeX\)</span> son programas de código abierto, liberados bajo la <a href="https://www.latex-project.org/lppl.txt">licencia LPPL</a>.</p>
 <p>Otra de las grandes ventajas de <span class="math inline">\(\LaTeX\)</span> es que existen multitud de paquetes de código libre para generar distintos tipos de documentos que pueden descargarse desde el repositorio <a href="https://ctan.org/">CRAN</a>.</p>
@@ -311,9 +311,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2 data-number="1.3" class="anchored" data-anchor-id="instalación"><span class="header-section-number">1.3</span> Instalación</h2>
 <p>Existen distintas distribuciones de <span class="math inline">\(\LaTeX\)</span> y algunas de ellas son multiplataforma, es decir, están disponibles para diferentes sistemas operativos. Las distribuciones más comunes son:</p>
 <ul>
-<li><a href="https://tug.org/texlive/"><span class="math inline">\(\TeX\)</span>Live</a> para Windows, Mac OSX y Linux.</li>
-<li><a href="">MiK<span class="math inline">\(\TeX\)</span></a> para Windows, Mac OSX y Linux.</li>
-<li><a href="https://www.tug.org/mactex/">Mac<span class="math inline">\(\TeX\)</span></a> para Mac OSX.</li>
+<li><a href="https://tug.org/texlive/">TeXLive</a> para Windows, Mac OSX y Linux.</li>
+<li><a href="">MiKTeX</a> para Windows, Mac OSX y Linux.</li>
+<li><a href="https://www.tug.org/mactex/">MacTeX</a> para Mac OSX.</li>
 </ul>
 <p>En sus respectivas páginas está explicado el procedimiento de instalación de cada una.</p>
 <p>Junto a la distribución de <span class="math inline">\(\LaTeX\)</span> es también habitual instalar algún editor de texto para escribir el código fuente. En realidad puede usarse cualquier editor de texto que ya esté instalado en nuestro sistema operativo, pero los existen entornos de edición especializados que facilitan muchas de las tareas del proceso de composición de documentos con <span class="math inline">\(\LaTeX\)</span>. Los más comunes son:</p>
@@ -331,10 +331,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>A modo de ejemplo, empezaremos por crear un sencillo documento con el texto “Hola <span class="math inline">\(\LaTeX\)</span>”.</p>
 <p>Para ello utilizaremos nuestro editor de texto preferido para crear un fichero de texto con el nombre <code>main.tex</code> y el siguiente contenido:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode latex code-with-copy"><code class="sourceCode latex"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">\documentclass</span>{<span class="ex">article</span>}</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">\usepackage</span>[spanish]{<span class="ex">babel</span>}</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">\begin</span>{<span class="ex">document</span>}</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>Hola <span class="fu">\LaTeX</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">\end</span>{<span class="ex">document</span>}</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">\begin</span>{<span class="ex">document</span>}</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>Hola <span class="fu">\LaTeX</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="kw">\end</span>{<span class="ex">document</span>}</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="callout-important callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -393,6 +392,38 @@ Importante
 <p><img src="img/introduccion/overleaf-hola-latex.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Figura 1.1: Creación de un documento en Overleaf.</figcaption><p></p>
 </figure>
+</div>
+<p>Al principio es muy habitual cometer errores en el código fuente, por lo que el proceso de compilación fallará. En ese caso es importante leer los mensajes de salida del compilador donde informará sobre el tipo de error y la línea donde se produjo el error, lo que facilitará su corrección. Algunos entornos de edición como por ejemplo Overleaf son capaces de anticiparse a los errores de compilación y detectan errores de sintaxis o gramaticales indicando el lugar exacto del error.</p>
+<p><strong>Ejemplo</strong></p>
+<p>Si en el documento anterior cambiamos el comando <code>\LaTeX</code> por otro que no existe, por ejemplo <code>\error</code>, al compilar el documento tendremos el siguiente error.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> pdflatex <span class="ex">main.tex</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">This</span> is pdfTeX, Version 3.141592653-2.6-1.40.22 <span class="er">(</span><span class="ex">TeX</span> Live 2021<span class="kw">)</span> <span class="kw">(</span><span class="ex">preloaded</span> format=pdflatex<span class="kw">)</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a> <span class="ex">restricted</span> <span class="dt">\w</span>rite18 enabled.</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="ex">entering</span> extended mode</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">./main.tex</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="ex">LaTeX2e</span> <span class="op">&lt;</span>2021-06-01<span class="op">&gt;</span> patch level 1</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="ex">L3</span> programming layer <span class="op">&lt;</span>2021-06-18<span class="op">&gt;</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">/usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="ex">Document</span> Class: article 2021/02/12 v1.4n Standard LaTeX document class</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">/usr/local/texlive/2021/texmf-dist/tex/latex/base/size10.clo</span><span class="kw">))</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">/usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def</span><span class="kw">)</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">./main.aux</span><span class="kw">)</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="ot">! </span><span class="ex">Undefined</span> control sequence.</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="ex">l.6</span> Ejemplo de documento con un error. <span class="dt">\e</span>rror</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>                                             </span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="ex">?</span> </span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="callout-warning callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Advertencia
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Si el documento contiene referencias cruzadas, citaciones bibliográficas, tabla de contenidos o índices, es necesario compilar el documento dos o tres veces para que se generen automáticamente esas partes.</p>
+</div>
 </div>
 
 

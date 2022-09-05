@@ -5,6 +5,9 @@ project:
 website:
   favicon: "img/logos/favicon.ico"
   reader-mode: true
+  search:
+    location: sidebar
+    type: overlay
   comments: 
     hypothesis:
       theme: clean

@@ -46,7 +46,7 @@ Texto de la sección.
 
 :::{.callout-note collapse="true" icon=false}
 ## Salida
-![](img/estructura/secciones.png)
+![](img/secciones/secciones.png)
 :::
 
 ## Párrafos y cambios de línea
@@ -69,7 +69,7 @@ Este es el segundo párrafo del documento. Obsérvese que cada vez que se comien
 
 :::{.callout-note collapse="true" icon=false}
 ## Salida
-![](img/estructura/parrafos.png)
+![](img/secciones/parrafos.png)
 :::
 
 ## Justificación

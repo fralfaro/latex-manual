@@ -12,7 +12,7 @@ Para resaltar un texto habitualmente se utiliza negrita, cursiva o subrayado. Es
 
 - `\textbf{...}`: Pone el texto en negrita.
 - `\textit{...}`: Pone el texto en cursiva o itálica.
-- `emph{...}`: Enfatiza el texto cambiando de estilo (si estamos en un entorno de cursiva pasa a normal y si estamos en un entorno de texto normal pasa a cursiva).
+- `\emph{...}`: Enfatiza el texto cambiando de estilo (si estamos en un entorno de cursiva pasa a normal y si estamos en un entorno de texto normal pasa a cursiva).
 - `\underline{...}`: Subraya el texto.
 
 **Ejemplo**

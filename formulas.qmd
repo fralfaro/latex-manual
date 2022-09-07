@@ -94,7 +94,7 @@ Para escribir letras griegas se utilizan los siguientes comandos:
 
 | | | | | |
 |:-|:-|:-|:-|:-|
-|`\exists` $\exists$ | `\forall` $\forall$ | `\neg` $\neg$ | `\lor` $lor$ | `\land` $\land$ |
+|`\exists` $\exists$ | `\forall` $\forall$ | `\neg` $\neg$ | `\lor` $\lor$ | `\land` $\land$ |
 
 ### Conjuntos
 
@@ -113,6 +113,12 @@ Para escribir letras griegas se utilizan los siguientes comandos:
 | `\uparrow` $\uparrow$ | `\Uparrow` $\Uparrow$ | `\downarrow` $\downarrow$ | `\Downarrow` $\Downarrow$ |
 | `\updownarrow` $\updownarrow$ | `\Updownarrow` $\Updownarrow$ |
 
+### Puntos suspensivos
+
+| | | | |
+|:-|:-|:-|:-|
+`\ldots` $\ldots$ |`\cdots` $\cdots$ | `\vdots` $\vdots$ | `\ddots` $\ddots$ |
+
 ### Otros símbolos
 
 | | | |
@@ -127,8 +133,8 @@ Para escribir letras griegas se utilizan los siguientes comandos:
 |`\cos` $\cos$ | `\arccos` $\arccos$ | `\sec` $\sec$ | `\operatorname{arcsec}` $\operatorname{arcsec}$ |
 | `\tan` $\tan$ | `\arctan` $\arctan$ | `\cot` $\cot$ | `\operatorname{arccot}` $\operatorname{arccot}$ |
 | `\exp` $\exp$ | `\log` $\log$ | `\ln` $\ln$ | 
-
-Es posible declarar nuevos operadores o funciones cargando el paquete `amsmath` con el comando `DeclareMathOperator{comando}{texto}`. Por ejemplo, para obtener las versión de la función seno en español se puede definir `DeclareMathOperator{\sen}{sen}` en el preámbulo y luego utilizar el comando `\sen` en el cuerpo para obtener la función seno en español.
+f
+Es posible declarar nuevos operadores o funciones cargando el paquete `amsmath` con el comando `\DeclareMathOperator{comando}{texto}`. Por ejemplo, para obtener las versión de la función seno en español se puede definir `DeclareMathOperator{\sen}{sen}` en el preámbulo y luego utilizar el comando `\sen` en el cuerpo para obtener la función seno en español.
 
 Otro paquete que incorpora aún más símbolos es `amssymb`.
 

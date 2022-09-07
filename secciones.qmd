@@ -33,7 +33,7 @@ Texto de la sección.
 Texto de la subsección.
 
 % Encabezado de subsección sin numerar
-\subseccion*{Subsección segunda}
+\subsection*{Subsección segunda}
 Texto de la subsección.
 
 \subsection{Subsección tercera}

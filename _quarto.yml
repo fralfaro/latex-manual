@@ -45,6 +45,7 @@ book:
     - entornos-flotantes.qmd
     - referencias-cruzadas.qmd
     - bibliografia.qmd
+    - diseño-pagina.qmd
     - referencias.qmd
     
 bibliography: referencias.bib

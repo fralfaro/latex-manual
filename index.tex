@@ -216,7 +216,7 @@
 
 \begin{document}
 \maketitle
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[frame hidden, enhanced, interior hidden, borderline west={3pt}{0pt}{shadecolor}, boxrule=0pt, sharp corners, breakable]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[sharp corners, breakable, boxrule=0pt, enhanced, borderline west={3pt}{0pt}{shadecolor}, interior hidden, frame hidden]}{\end{tcolorbox}}\fi
 
 \renewcommand*\contentsname{Indice de contenidos}
 {
@@ -419,7 +419,7 @@ contenido:
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, colframe=quarto-callout-important-color-frame, title=\textcolor{quarto-callout-important-color}{\faExclamation}\hspace{0.5em}{Importante}, bottomtitle=1mm, colbacktitle=quarto-callout-important-color!10!white, bottomrule=.15mm, titlerule=0mm, opacityback=0, toptitle=1mm, arc=.35mm, left=2mm, rightrule=.15mm, toprule=.15mm, coltitle=black, leftrule=.75mm, opacitybacktitle=0.6, breakable]
+\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-important-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-important-color!10!white, title=\textcolor{quarto-callout-important-color}{\faExclamation}\hspace{0.5em}{Importante}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
 El nombre del fichero de texto con el código fuente de \(\LaTeX\) puede
 ser el que queramos, pero es importante que la extensión sea
 \texttt{.tex},
@@ -560,7 +560,7 @@ siguiente error.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, colframe=quarto-callout-warning-color-frame, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Advertencia}, bottomtitle=1mm, colbacktitle=quarto-callout-warning-color!10!white, bottomrule=.15mm, titlerule=0mm, opacityback=0, toptitle=1mm, arc=.35mm, left=2mm, rightrule=.15mm, toprule=.15mm, coltitle=black, leftrule=.75mm, opacitybacktitle=0.6, breakable]
+\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-warning-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-warning-color!10!white, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Advertencia}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
 Si el documento contiene referencias cruzadas, citaciones
 bibliográficas, tabla de contenidos o índices, es necesario compilar el
 documento dos o tres veces para que se generen automáticamente esas
@@ -833,7 +833,7 @@ sección sin numerar y que tampoco aparecerán en la tabla de contenidos.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, colframe=quarto-callout-note-color-frame, title={Salida}, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, bottomrule=.15mm, titlerule=0mm, opacityback=0, toptitle=1mm, arc=.35mm, left=2mm, rightrule=.15mm, toprule=.15mm, coltitle=black, leftrule=.75mm, opacitybacktitle=0.6, breakable]
+\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
 \includegraphics{./img/secciones/secciones.png}
 \end{tcolorbox}
 
@@ -861,7 +861,7 @@ utiliza el comando \texttt{\textbackslash{}newline} o
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, colframe=quarto-callout-note-color-frame, title={Salida}, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, bottomrule=.15mm, titlerule=0mm, opacityback=0, toptitle=1mm, arc=.35mm, left=2mm, rightrule=.15mm, toprule=.15mm, coltitle=black, leftrule=.75mm, opacitybacktitle=0.6, breakable]
+\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
 \includegraphics{./img/secciones/parrafos.png}
 \end{tcolorbox}
 
@@ -906,11 +906,11 @@ Para ello se utilizan los siguientes entornos:
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, colframe=quarto-callout-note-color-frame, title={Salida}, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, bottomrule=.15mm, titlerule=0mm, opacityback=0, toptitle=1mm, arc=.35mm, left=2mm, rightrule=.15mm, toprule=.15mm, coltitle=black, leftrule=.75mm, opacitybacktitle=0.6, breakable]
+\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
 \includegraphics{./img/secciones/justificacion.png}
 \end{tcolorbox}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, colframe=quarto-callout-warning-color-frame, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Advertencia}, bottomtitle=1mm, colbacktitle=quarto-callout-warning-color!10!white, bottomrule=.15mm, titlerule=0mm, opacityback=0, toptitle=1mm, arc=.35mm, left=2mm, rightrule=.15mm, toprule=.15mm, coltitle=black, leftrule=.75mm, opacitybacktitle=0.6, breakable]
+\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-warning-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-warning-color!10!white, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Advertencia}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
 El algoritmo para partir palabras al final de una línea funciona muy
 bien, pero si alguna vez divide mal una palabra, se puede indicar por
 dónde partir la palabra con el comando \texttt{\textbackslash{}-} (por
@@ -960,7 +960,7 @@ subrayado. Estos formatos se aplican con los siguientes comandos:
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, colframe=quarto-callout-note-color-frame, title={Salida}, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, bottomrule=.15mm, titlerule=0mm, opacityback=0, toptitle=1mm, arc=.35mm, left=2mm, rightrule=.15mm, toprule=.15mm, coltitle=black, leftrule=.75mm, opacitybacktitle=0.6, breakable]
+\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
 \includegraphics{./img/formateo/resaltado.png}
 \end{tcolorbox}
 
@@ -993,7 +993,7 @@ Existen tres tipos de letra que se activan con los siguientes comandos:
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, colframe=quarto-callout-note-color-frame, title={Salida}, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, bottomrule=.15mm, titlerule=0mm, opacityback=0, toptitle=1mm, arc=.35mm, left=2mm, rightrule=.15mm, toprule=.15mm, coltitle=black, leftrule=.75mm, opacitybacktitle=0.6, breakable]
+\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
 \includegraphics{./img/formateo/tipos-letra.png}
 \end{tcolorbox}
 
@@ -1015,7 +1015,7 @@ comandos:
   Establece la fuente para el tipo de letra monoespaciado.
 \end{itemize}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, colframe=quarto-callout-caution-color-frame, title=\textcolor{quarto-callout-caution-color}{\faFire}\hspace{0.5em}{Precaución}, bottomtitle=1mm, colbacktitle=quarto-callout-caution-color!10!white, bottomrule=.15mm, titlerule=0mm, opacityback=0, toptitle=1mm, arc=.35mm, left=2mm, rightrule=.15mm, toprule=.15mm, coltitle=black, leftrule=.75mm, opacitybacktitle=0.6, breakable]
+\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-caution-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-caution-color!10!white, title=\textcolor{quarto-callout-caution-color}{\faFire}\hspace{0.5em}{Precaución}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
 Las fuentes utilizadas en un documento deben estar previamente
 instaladas en el sistema operativo donde se compile el documento.
 \end{tcolorbox}
@@ -1037,7 +1037,7 @@ instaladas en el sistema operativo donde se compile el documento.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, colframe=quarto-callout-note-color-frame, title={Salida}, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, bottomrule=.15mm, titlerule=0mm, opacityback=0, toptitle=1mm, arc=.35mm, left=2mm, rightrule=.15mm, toprule=.15mm, coltitle=black, leftrule=.75mm, opacitybacktitle=0.6, breakable]
+\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
 \includegraphics{./img/formateo/tipos-letra-xelatex.png}
 \end{tcolorbox}
 
@@ -1077,7 +1077,7 @@ con los siguientes comandos:
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, colframe=quarto-callout-note-color-frame, title={Salida}, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, bottomrule=.15mm, titlerule=0mm, opacityback=0, toptitle=1mm, arc=.35mm, left=2mm, rightrule=.15mm, toprule=.15mm, coltitle=black, leftrule=.75mm, opacitybacktitle=0.6, breakable]
+\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
 \includegraphics{./img/formateo/perfiles-letra.png}
 \end{tcolorbox}
 
@@ -1135,7 +1135,7 @@ pero no suelen ser necesarios en un documento normal.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, colframe=quarto-callout-note-color-frame, title={Salida}, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, bottomrule=.15mm, titlerule=0mm, opacityback=0, toptitle=1mm, arc=.35mm, left=2mm, rightrule=.15mm, toprule=.15mm, coltitle=black, leftrule=.75mm, opacitybacktitle=0.6, breakable]
+\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
 \includegraphics{./img/formateo/tamaño-fuente.png}
 \end{tcolorbox}
 
@@ -1181,7 +1181,7 @@ Ejemplo de lista no ordenada.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, colframe=quarto-callout-note-color-frame, title={Salida}, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, bottomrule=.15mm, titlerule=0mm, opacityback=0, toptitle=1mm, arc=.35mm, left=2mm, rightrule=.15mm, toprule=.15mm, coltitle=black, leftrule=.75mm, opacitybacktitle=0.6, breakable]
+\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
 \includegraphics{./img/listas/lista-no-ordenad.png}
 \end{tcolorbox}
 
@@ -1201,7 +1201,7 @@ Ejemplo de lista ordenada.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, colframe=quarto-callout-note-color-frame, title={Salida}, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, bottomrule=.15mm, titlerule=0mm, opacityback=0, toptitle=1mm, arc=.35mm, left=2mm, rightrule=.15mm, toprule=.15mm, coltitle=black, leftrule=.75mm, opacitybacktitle=0.6, breakable]
+\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
 \includegraphics{./img/listas/lista-ordenada.png}
 \end{tcolorbox}
 
@@ -1221,7 +1221,7 @@ Ejemplo de lista descriptiva.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, colframe=quarto-callout-note-color-frame, title={Salida}, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, bottomrule=.15mm, titlerule=0mm, opacityback=0, toptitle=1mm, arc=.35mm, left=2mm, rightrule=.15mm, toprule=.15mm, coltitle=black, leftrule=.75mm, opacitybacktitle=0.6, breakable]
+\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
 \includegraphics{./img/listas/lista-desciptiva.png}
 \end{tcolorbox}
 
@@ -1250,7 +1250,7 @@ Se pueden crear sublistas anidando unos entornos dentro de otros.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, colframe=quarto-callout-note-color-frame, title={Salida}, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, bottomrule=.15mm, titlerule=0mm, opacityback=0, toptitle=1mm, arc=.35mm, left=2mm, rightrule=.15mm, toprule=.15mm, coltitle=black, leftrule=.75mm, opacitybacktitle=0.6, breakable]
+\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
 \includegraphics{./img/listas/listas-anidadas.png}
 \end{tcolorbox}
 
@@ -1300,7 +1300,7 @@ separando las celdas con el comando \texttt{\&}.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, colframe=quarto-callout-note-color-frame, title={Salida}, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, bottomrule=.15mm, titlerule=0mm, opacityback=0, toptitle=1mm, arc=.35mm, left=2mm, rightrule=.15mm, toprule=.15mm, coltitle=black, leftrule=.75mm, opacitybacktitle=0.6, breakable]
+\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
 \includegraphics{./img/tablas/tabla-simple.png}
 \end{tcolorbox}
 
@@ -1335,7 +1335,7 @@ introduzca el comando \texttt{\textbackslash{}hline}.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, colframe=quarto-callout-note-color-frame, title={Salida}, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, bottomrule=.15mm, titlerule=0mm, opacityback=0, toptitle=1mm, arc=.35mm, left=2mm, rightrule=.15mm, toprule=.15mm, coltitle=black, leftrule=.75mm, opacitybacktitle=0.6, breakable]
+\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
 \includegraphics{./img/tablas/tabla-delimitada.png}
 \end{tcolorbox}
 
@@ -1370,7 +1370,7 @@ divisorias que no abarquen toda la fila, sino desde la columna
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, colframe=quarto-callout-note-color-frame, title={Salida}, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, bottomrule=.15mm, titlerule=0mm, opacityback=0, toptitle=1mm, arc=.35mm, left=2mm, rightrule=.15mm, toprule=.15mm, coltitle=black, leftrule=.75mm, opacitybacktitle=0.6, breakable]
+\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
 \includegraphics{./img/tablas/tabla-multicolumna.png}
 \end{tcolorbox}
 
@@ -1432,7 +1432,7 @@ siguientes argumentos opcionales para modificar el aspecto de la imagen:
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, colframe=quarto-callout-note-color-frame, title={Salida}, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, bottomrule=.15mm, titlerule=0mm, opacityback=0, toptitle=1mm, arc=.35mm, left=2mm, rightrule=.15mm, toprule=.15mm, coltitle=black, leftrule=.75mm, opacitybacktitle=0.6, breakable]
+\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
 \includegraphics{./img/imagenes/imganes.png}
 \end{tcolorbox}
 
@@ -1484,7 +1484,7 @@ Existen distintas formas de activar el modo matemático:
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, colframe=quarto-callout-note-color-frame, title={Salida}, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, bottomrule=.15mm, titlerule=0mm, opacityback=0, toptitle=1mm, arc=.35mm, left=2mm, rightrule=.15mm, toprule=.15mm, coltitle=black, leftrule=.75mm, opacitybacktitle=0.6, breakable]
+\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
 \includegraphics{./img/formulas/entornos-matematicos.png}
 \end{tcolorbox}
 
@@ -1785,7 +1785,7 @@ de un carácter, hay que ponerlos entre llaves.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, colframe=quarto-callout-note-color-frame, title={Salida}, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, bottomrule=.15mm, titlerule=0mm, opacityback=0, toptitle=1mm, arc=.35mm, left=2mm, rightrule=.15mm, toprule=.15mm, coltitle=black, leftrule=.75mm, opacitybacktitle=0.6, breakable]
+\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
 \includegraphics{./img/formulas/indices.png}
 \end{tcolorbox}
 
@@ -1822,7 +1822,7 @@ denominador, anidando este comando.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, colframe=quarto-callout-note-color-frame, title={Salida}, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, bottomrule=.15mm, titlerule=0mm, opacityback=0, toptitle=1mm, arc=.35mm, left=2mm, rightrule=.15mm, toprule=.15mm, coltitle=black, leftrule=.75mm, opacitybacktitle=0.6, breakable]
+\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
 \includegraphics{./img/formulas/fracciones.png}
 \end{tcolorbox}
 
@@ -1863,7 +1863,7 @@ superíndice que indica el final del producto. Si se quieren omitir los
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, colframe=quarto-callout-note-color-frame, title={Salida}, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, bottomrule=.15mm, titlerule=0mm, opacityback=0, toptitle=1mm, arc=.35mm, left=2mm, rightrule=.15mm, toprule=.15mm, coltitle=black, leftrule=.75mm, opacitybacktitle=0.6, breakable]
+\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
 \includegraphics{./img/formulas/sumatorio.png}
 \end{tcolorbox}
 
@@ -1892,7 +1892,7 @@ indefinidas, basta con el comando \texttt{\textbackslash{}int}.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, colframe=quarto-callout-note-color-frame, title={Salida}, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, bottomrule=.15mm, titlerule=0mm, opacityback=0, toptitle=1mm, arc=.35mm, left=2mm, rightrule=.15mm, toprule=.15mm, coltitle=black, leftrule=.75mm, opacitybacktitle=0.6, breakable]
+\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
 \includegraphics{./img/formulas/integral.png}
 \end{tcolorbox}
 
@@ -1933,7 +1933,7 @@ tipos de sombreros:
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, colframe=quarto-callout-note-color-frame, title={Salida}, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, bottomrule=.15mm, titlerule=0mm, opacityback=0, toptitle=1mm, arc=.35mm, left=2mm, rightrule=.15mm, toprule=.15mm, coltitle=black, leftrule=.75mm, opacitybacktitle=0.6, breakable]
+\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
 \includegraphics{./img/formulas/sombreros.png}
 \end{tcolorbox}
 
@@ -1965,7 +1965,7 @@ entorno y el comando \texttt{\textbackslash{}right)} después.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, colframe=quarto-callout-note-color-frame, title={Salida}, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, bottomrule=.15mm, titlerule=0mm, opacityback=0, toptitle=1mm, arc=.35mm, left=2mm, rightrule=.15mm, toprule=.15mm, coltitle=black, leftrule=.75mm, opacitybacktitle=0.6, breakable]
+\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
 \includegraphics{./img/formulas/matriz.png}
 \end{tcolorbox}
 
@@ -2012,7 +2012,7 @@ tampoco los delimitadores:
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, colframe=quarto-callout-note-color-frame, title={Salida}, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, bottomrule=.15mm, titlerule=0mm, opacityback=0, toptitle=1mm, arc=.35mm, left=2mm, rightrule=.15mm, toprule=.15mm, coltitle=black, leftrule=.75mm, opacitybacktitle=0.6, breakable]
+\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
 \includegraphics{./img/formulas/determinante.png}
 \end{tcolorbox}
 
@@ -2069,11 +2069,11 @@ Para demostraciones se puede utilizar el entorno \texttt{proof}.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, colframe=quarto-callout-note-color-frame, title={Salida}, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, bottomrule=.15mm, titlerule=0mm, opacityback=0, toptitle=1mm, arc=.35mm, left=2mm, rightrule=.15mm, toprule=.15mm, coltitle=black, leftrule=.75mm, opacitybacktitle=0.6, breakable]
+\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
 \includegraphics{./img/formulas/teoremas.png}
 \end{tcolorbox}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, colframe=quarto-callout-tip-color-frame, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, bottomtitle=1mm, colbacktitle=quarto-callout-tip-color!10!white, bottomrule=.15mm, titlerule=0mm, opacityback=0, toptitle=1mm, arc=.35mm, left=2mm, rightrule=.15mm, toprule=.15mm, coltitle=black, leftrule=.75mm, opacitybacktitle=0.6, breakable]
+\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-tip-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-tip-color!10!white, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
 Se recomienda cargar los paquetes \texttt{amsmath}, \texttt{amssymb} y
 \texttt{amsthm} para documentos extensos o con muchas fórmulas
 matemáticas.
@@ -2145,7 +2145,7 @@ leyenda de la figura.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, colframe=quarto-callout-note-color-frame, title={Salida}, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, bottomrule=.15mm, titlerule=0mm, opacityback=0, toptitle=1mm, arc=.35mm, left=2mm, rightrule=.15mm, toprule=.15mm, coltitle=black, leftrule=.75mm, opacitybacktitle=0.6, breakable]
+\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
 \includegraphics{./img/entornos-flotantes/figura-flotante.png}
 \end{tcolorbox}
 
@@ -2201,7 +2201,7 @@ pueden referenciarse después asignándoles una etiqueta con el comando
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, colframe=quarto-callout-note-color-frame, title={Salida}, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, bottomrule=.15mm, titlerule=0mm, opacityback=0, toptitle=1mm, arc=.35mm, left=2mm, rightrule=.15mm, toprule=.15mm, coltitle=black, leftrule=.75mm, opacitybacktitle=0.6, breakable]
+\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
 \includegraphics{./img/entornos-flotantes/tabla-flotante.png}
 \end{tcolorbox}
 
@@ -2258,7 +2258,7 @@ documento se utiliza el comando
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, colframe=quarto-callout-note-color-frame, title={Salida}, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, bottomrule=.15mm, titlerule=0mm, opacityback=0, toptitle=1mm, arc=.35mm, left=2mm, rightrule=.15mm, toprule=.15mm, coltitle=black, leftrule=.75mm, opacitybacktitle=0.6, breakable]
+\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
 \includegraphics{./img/referencias-cruzadas/referencias-cruzadas.png}
 \end{tcolorbox}
 
@@ -2279,7 +2279,7 @@ Para insertar una nota a pié de página se utiliza el comando
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, colframe=quarto-callout-note-color-frame, title={Salida}, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, bottomrule=.15mm, titlerule=0mm, opacityback=0, toptitle=1mm, arc=.35mm, left=2mm, rightrule=.15mm, toprule=.15mm, coltitle=black, leftrule=.75mm, opacitybacktitle=0.6, breakable]
+\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
 \includegraphics{./img/referencias-cruzadas/nota-pie.png}
 \end{tcolorbox}
 
@@ -2383,7 +2383,7 @@ documento basta con insertar el comando
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, colframe=quarto-callout-note-color-frame, title={Salida}, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, bottomrule=.15mm, titlerule=0mm, opacityback=0, toptitle=1mm, arc=.35mm, left=2mm, rightrule=.15mm, toprule=.15mm, coltitle=black, leftrule=.75mm, opacitybacktitle=0.6, breakable]
+\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
 \includegraphics{./img/bibliografia/bibliografia.png}
 \end{tcolorbox}
 
@@ -2419,8 +2419,118 @@ opcional \texttt{backend=biber}.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, colback=white, colframe=quarto-callout-note-color-frame, title={Salida}, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, bottomrule=.15mm, titlerule=0mm, opacityback=0, toptitle=1mm, arc=.35mm, left=2mm, rightrule=.15mm, toprule=.15mm, coltitle=black, leftrule=.75mm, opacitybacktitle=0.6, breakable]
+\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
 \includegraphics{./img/bibliografia/bibliografia2.png}
+\end{tcolorbox}
+
+\bookmarksetup{startatroot}
+
+\hypertarget{diseuxf1o-de-puxe1gina}{%
+\chapter{Diseño de página}\label{diseuxf1o-de-puxe1gina}}
+
+Existen distintos parámetros que determinan el aspecto final de una
+página con texto. En este capítulo veremos como modificar las
+dimensiones de la página, los márgenes, y cómo introducir encabezados y
+pies.
+
+\hypertarget{dimensiones-y-muxe1rgenes}{%
+\section{Dimensiones y márgenes}\label{dimensiones-y-muxe1rgenes}}
+
+Aunque es posible definir el tamaño de la página como un argumento del
+comando que define la clase del documento
+\texttt{\textbackslash{}documentclass}, si queremos tener mayor control
+sobre las dimensiones del documento, así como de los márgenes, conviene
+utilizar el paquete \texttt{geometry}.
+
+El paquete \texttt{geometry} permite definir las dimensiones de la
+página mediante un argumento opcional con distintos tamaños de página
+predefinidos (\texttt{a4paper}, \texttt{a5paper}, \texttt{b1paper},
+\texttt{letterpaper}, etc.), pero también es posible definir nuestras
+propias dimensiones con los siguientes argumentos:
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{paperheight=x} establece la longitud vertical de la página en
+  \texttt{x} (es necesario indicar las unidades \texttt{pt},\texttt{mm}
+  o \texttt{cm})
+\item
+  \texttt{paperwidth=x} establece la longitud horizontal de la página en
+  \texttt{x}.
+\end{itemize}
+
+Por defecto la orientación del documento es vertical, pero puede ponerse
+en formato horizontal o apaisado con el argumento \texttt{landscape}.
+
+\textbf{Ejemplo}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\% PREÁMBULO}
+\BuiltInTok{\textbackslash{}usepackage}\NormalTok{\{}\ExtensionTok{fontspec}\NormalTok{\}}
+\BuiltInTok{\textbackslash{}usepackage}\NormalTok{\{}\ExtensionTok{polyglossia}\NormalTok{\}}
+\FunctionTok{\textbackslash{}setdefaultlanguage}\NormalTok{\{spanish\}}
+\BuiltInTok{\textbackslash{}usepackage}\NormalTok{[a5paper, landscape]\{}\ExtensionTok{geometry}\NormalTok{\}}
+\BuiltInTok{\textbackslash{}usepackage}\NormalTok{\{}\ExtensionTok{blindtext}\NormalTok{\}}
+
+\CommentTok{\% CUERPO}
+\KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
+\KeywordTok{\textbackslash{}section}\NormalTok{\{Introducción\}}
+\NormalTok{Esta es una página de tamaño A5 apaisada.}
+
+\KeywordTok{\textbackslash{}subsection}\NormalTok{\{Texto de relleno\}}
+\FunctionTok{\textbackslash{}blindtext}\NormalTok{[2]}
+
+\KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
+\includegraphics{./img/diseño-pagina/pagina-a5-apaisada.png}
+\end{tcolorbox}
+
+También permite definir los márgenes del documento mediante los
+siguientes argumentos:
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{margin=x} establece los cuatro márgenes (izquierdo, derecho,
+  superior e inferior) con tamaño \texttt{x} (es necesario indicar las
+  unidades \texttt{pt},\texttt{mm} o \texttt{cm}).
+\item
+  \texttt{left=x} establece el margen izquierdo con tamaño \texttt{x}.
+\item
+  \texttt{right=x} establece el margen derecho con tamaño \texttt{x}.
+\item
+  \texttt{top=x} establece el margen superior con tamaño \texttt{x}.
+\item
+  \texttt{bottom=x} establece el margen inferior con tamaño \texttt{x}.
+\end{itemize}
+
+\textbf{Ejemplo}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\% PREÁMBULO}
+\BuiltInTok{\textbackslash{}usepackage}\NormalTok{\{}\ExtensionTok{fontspec}\NormalTok{\}}
+\BuiltInTok{\textbackslash{}usepackage}\NormalTok{\{}\ExtensionTok{polyglossia}\NormalTok{\}}
+\FunctionTok{\textbackslash{}setdefaultlanguage}\NormalTok{\{spanish\}}
+\BuiltInTok{\textbackslash{}usepackage}\NormalTok{[a4paper, left=2.5cm, right=3.5cm, top=45mm, bottom=20mm]\{}\ExtensionTok{geometry}\NormalTok{\}}
+\BuiltInTok{\textbackslash{}usepackage}\NormalTok{\{}\ExtensionTok{blindtext}\NormalTok{\}}
+
+\CommentTok{\% CUERPO}
+\KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
+\KeywordTok{\textbackslash{}section}\NormalTok{\{Introducción\}}
+\NormalTok{Este es una página con márgenes personalizados.}
+\KeywordTok{\textbackslash{}subsection}\NormalTok{\{Texto de relleno\}}
+\FunctionTok{\textbackslash{}blindtext}\NormalTok{[7]}
+\KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
+\includegraphics{./img/diseño-pagina/pagina-margenes-personalizados.png}
 \end{tcolorbox}
 
 \bookmarksetup{startatroot}

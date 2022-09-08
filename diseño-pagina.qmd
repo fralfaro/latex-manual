@@ -1,0 +1,78 @@
+---
+lang: es
+---
+
+# Diseño de página
+
+Existen distintos parámetros que determinan el aspecto final de una página con texto. En este capítulo veremos como modificar las dimensiones de la página, los márgenes, y cómo introducir encabezados y pies.
+
+## Dimensiones y márgenes
+
+Aunque es posible definir el tamaño de la página como un argumento del comando que define la clase del documento `\documentclass`, si queremos tener mayor control sobre las dimensiones del documento, así como de los márgenes, conviene utilizar el paquete `geometry`.
+
+El paquete `geometry` permite definir las dimensiones de la página mediante un argumento opcional con distintos tamaños de página predefinidos (`a4paper`, `a5paper`, `b1paper`, `letterpaper`, etc.), pero también es posible definir nuestras propias dimensiones con los siguientes argumentos:
+
+- `paperheight=x` establece la longitud vertical de la página en `x` (es necesario indicar las unidades `pt`,`mm` o `cm`)
+- `paperwidth=x` establece la longitud horizontal de la página en `x`.
+
+Por defecto la orientación del documento es vertical, pero puede ponerse en formato horizontal o apaisado con el argumento `landscape`.
+
+**Ejemplo**
+
+```latex
+% PREÁMBULO
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setdefaultlanguage{spanish}
+\usepackage[a5paper, landscape]{geometry}
+\usepackage{blindtext}
+
+% CUERPO
+\begin{document}
+\section{Introducción}
+Esta es una página de tamaño A5 apaisada.
+
+\subsection{Texto de relleno}
+\blindtext[2]
+
+\end{document}
+```
+
+:::{.callout-note collapse="true" icon=false}
+## Salida
+![](img/dise%C3%B1o-pagina/pagina-a5-apaisada.png)
+:::
+
+También permite definir los márgenes del documento mediante los siguientes argumentos:
+
+- `margin=x` establece los cuatro márgenes (izquierdo, derecho, superior e inferior) con tamaño `x` (es necesario indicar las unidades `pt`,`mm` o `cm`).
+- `left=x` establece el margen izquierdo con tamaño `x`.
+- `right=x` establece el margen derecho con tamaño `x`.
+- `top=x` establece el margen superior con tamaño `x`.
+- `bottom=x` establece el margen inferior con tamaño `x`.
+
+
+**Ejemplo**
+
+```latex
+% PREÁMBULO
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setdefaultlanguage{spanish}
+\usepackage[a4paper, left=2.5cm, right=3.5cm, top=45mm, bottom=20mm]{geometry}
+\usepackage{blindtext}
+
+% CUERPO
+\begin{document}
+\section{Introducción}
+Este es una página con márgenes personalizados.
+\subsection{Texto de relleno}
+\blindtext[7]
+\end{document}
+```
+
+:::{.callout-note collapse="true" icon=false}
+## Salida
+![](img/dise%C3%B1o-pagina/pagina-margenes-personalizados.png)
+:::
+

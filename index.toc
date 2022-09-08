@@ -1,0 +1,57 @@
+\babel@toc {spanish}{}
+\contentsline {chapter}{Prefacio}{3}{chapter*.2}%
+\contentsline {section}{Licencia}{3}{section*.3}%
+\contentsline {chapter}{\numberline {1}Introducción}{4}{chapter.1}%
+\contentsline {section}{\numberline {1.1}¿Qué es \(\TeX \)?}{4}{section.1.1}%
+\contentsline {section}{\numberline {1.2}¿Qué es \(\LaTeX \)}{4}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Instalación}{5}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Hola LaTeX}{6}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Compilación}{6}{subsection.1.4.1}%
+\contentsline {chapter}{\numberline {2}Estructura de un documento}{10}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Esqueleto básico para \texttt {pdflatex}}{10}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Clase de un documento}{11}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Preámbulo}{12}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Cuerpo}{12}{subsection.2.1.3}%
+\contentsline {section}{\numberline {2.2}Esqueleto básico para \texttt {xelatex}}{12}{section.2.2}%
+\contentsline {chapter}{\numberline {3}Secciones y párrafos}{14}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Secciones y subsecciones}{14}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Párrafos y cambios de línea}{16}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Justificación}{16}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Formateo básico}{19}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Negrita, cursiva y subrayado}{19}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Familias de tipos de letra}{20}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Perfiles de letra}{21}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Tamaños de letra}{22}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Listas}{24}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Tablas}{28}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Imágenes}{31}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Fórmulas matemáticas}{33}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Símbolos matemáticos}{34}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}Letras griegas}{34}{subsection.8.1.1}%
+\contentsline {subsection}{\numberline {8.1.2}Operadores aritméticos}{35}{subsection.8.1.2}%
+\contentsline {subsection}{\numberline {8.1.3}Relaciones}{35}{subsection.8.1.3}%
+\contentsline {subsection}{\numberline {8.1.4}Operadores binarios}{35}{subsection.8.1.4}%
+\contentsline {subsection}{\numberline {8.1.5}Lógica}{35}{subsection.8.1.5}%
+\contentsline {subsection}{\numberline {8.1.6}Conjuntos}{35}{subsection.8.1.6}%
+\contentsline {subsection}{\numberline {8.1.7}Flechas}{35}{subsection.8.1.7}%
+\contentsline {subsection}{\numberline {8.1.8}Puntos suspensivos}{36}{subsection.8.1.8}%
+\contentsline {subsection}{\numberline {8.1.9}Otros símbolos}{36}{subsection.8.1.9}%
+\contentsline {subsection}{\numberline {8.1.10}Funciones}{36}{subsection.8.1.10}%
+\contentsline {section}{\numberline {8.2}Subíndices y superíndices}{36}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Fracciones}{37}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Sumatorios, productorios e integrales}{38}{section.8.4}%
+\contentsline {section}{\numberline {8.5}Sombreros}{40}{section.8.5}%
+\contentsline {section}{\numberline {8.6}Matrices}{41}{section.8.6}%
+\contentsline {section}{\numberline {8.7}Teoremas}{42}{section.8.7}%
+\contentsline {chapter}{\numberline {9}Entornos flotantes}{45}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Entorno flotante para figuras}{45}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Entorno flotante para tablas}{46}{section.9.2}%
+\contentsline {chapter}{\numberline {10}Referencias cruzadas y notas a pie}{49}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Referencias cruzadas}{49}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Notas a pie de página}{50}{section.10.2}%
+\contentsline {chapter}{\numberline {11}Citas y referencias bibliográficas}{51}{chapter.11}%
+\contentsline {chapter}{\numberline {12}Diseño de página}{55}{chapter.12}%
+\contentsline {section}{\numberline {12.1}Dimensiones y márgenes}{55}{section.12.1}%
+\contentsline {chapter}{Bibliografía y recursos}{59}{chapter*.6}%
+\contentsline {section}{Libros}{59}{section*.7}%
+\contentsline {section}{Sitios Web}{59}{section*.8}%

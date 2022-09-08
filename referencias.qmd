@@ -17,4 +17,4 @@
 - [Comprehensive $\TeX$ Archive Network](https://ctan.org/). Principal repositorios de paquetes para $\TeX$ y $\LaTeX$.
 - [CervanTeX](www.cervantex.es/). Grupos de usuarios de TeX hispanoablantes.
 - [Awesome LaTeX](https://project-awesome.org/egeerardyn/awesome-LaTeX). Sitio web con multitud de recursos curados para escribir documentos con $\LaTeX$.
-- [LaTeX cheat sheet](http://wch.github.io/latexsheet/). Resumen de los principales comandos y entornos de $\LaTeX$.
+- [Chuleta de $\LaTeX$](chulatex.pdf). Resumen de los principales comandos y entornos de $\LaTeX$.

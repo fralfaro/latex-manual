@@ -362,7 +362,8 @@ Para demostraciones se puede utilizar el entorno `proof`.
 \begin{document}
 
 \begin{midef}
-Dado un triángulo rectángulo de catetos $a$, $b$ e hipotenusa $c$, se define el seno del ángulo $\alpha$ opuesto al cateto $b$ como 
+Dado un triángulo rectángulo de catetos $a$, $b$ e hipotenusa $c$, se define
+el seno del ángulo $\alpha$ opuesto al cateto $b$ como 
 
 $$
 \sen{\alpha}= \frac{b}{c}.
@@ -370,7 +371,8 @@ $$
 \end{midef}
 
 \begin{teo}
-Para cualquier ángulo $\alpha$ se cumple $\sen(\alpha)^2 + \cos(\alpha)^2 = 1$.
+Para cualquier ángulo $\alpha$ se cumple 
+$\sen(\alpha)^2 + \cos(\alpha)^2 = 1$.
 \end{teo}
 
 \begin{proof}

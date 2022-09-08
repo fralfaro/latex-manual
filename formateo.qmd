@@ -20,7 +20,8 @@ Para resaltar un texto habitualmente se utiliza negrita, cursiva o subrayado. Es
 ```latex
 % CUERPO
 \begin{document}
-Este texto está en \textbf{negrita}, este en \textit{cursiva} y este \underline{subrayado}. 
+Este texto está en \textbf{negrita}, este en \textit{cursiva} y este 
+\underline{subrayado}. 
 
 \textit{Este texto está \emph{enfatizado}}.
 \end{document}
@@ -74,7 +75,8 @@ Las fuentes utilizadas en un documento deben estar previamente instaladas en el 
 
 % CUERPO
 \begin{document}
-Este texto es normal, \textsf{este es sin adornos}, \texttt{y este de máquina de escribir}.
+Este texto es normal, \textsf{este es sin adornos}, 
+\texttt{y este de máquina de escribir}.
 \end{document}
 ```
 
@@ -97,11 +99,14 @@ Para cada tipo de letra existen también varios perfiles que se activan con los 
 ```latex
 % CUERPO
 \begin{document}
-Texto normal con perfil recto, \textit{itálica}, \textsl{inclinado} y \textsc{versalita}.
+Texto normal con perfil recto, \textit{itálica}, \textsl{inclinado} y 
+\textsc{versalita}.
 
-\textsf{Texto sin adorno con perfil recto, \textit{itálica}, \textsl{inclinado} y \textsc{versalita}.}
+\textsf{Texto sin adorno con perfil recto, \textit{itálica}, 
+\textsl{inclinado} y \textsc{versalita}.}
 
-\texttt{Texto monoespaciado con perfil recto, \textit{itálica}, \textsl{inclinado} y \textsc{versalita}.}
+\texttt{Texto monoespaciado con perfil recto, \textit{itálica}, 
+\textsl{inclinado} y \textsc{versalita}.}
 \end{document}
 ```
 

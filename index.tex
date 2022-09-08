@@ -216,7 +216,7 @@
 
 \begin{document}
 \maketitle
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[sharp corners, breakable, boxrule=0pt, enhanced, borderline west={3pt}{0pt}{shadecolor}, interior hidden, frame hidden]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[breakable, interior hidden, frame hidden, boxrule=0pt, borderline west={3pt}{0pt}{shadecolor}, enhanced, sharp corners]}{\end{tcolorbox}}\fi
 
 \renewcommand*\contentsname{Indice de contenidos}
 {
@@ -230,10 +230,10 @@
 \chapter*{Prefacio}\label{prefacio}}
 \addcontentsline{toc}{chapter}{Prefacio}
 
-¡Bienvenida/os al manual de \(\LaTeX\).!
+¡Bienvenida/os al manual de \LaTeX.!
 
 Este libro presenta una introducción al lenguaje de composición de
-textos \href{https://www.latex-project.org/}{\(\LaTeX\)} con un enfoque
+textos \href{https://www.latex-project.org/}{\LaTeX} con un enfoque
 orientado a la creación de documentos científicos y técnicos con
 contenido matemático.
 
@@ -289,64 +289,64 @@ autor.
 
 \hypertarget{quuxe9-es-tex}{%
 \section{\texorpdfstring{¿Qué es
-\(\TeX\)?}{¿Qué es \textbackslash TeX?}}\label{quuxe9-es-tex}}
+\TeX?}{¿Qué es \textbackslash TeX?}}\label{quuxe9-es-tex}}
 
-\(\TeX\) es un sistema de composición de documentos de alta calidad,
+\TeX es un sistema de composición de documentos de alta calidad,
 orientado especialmente a la creación de documentos científicos y
 técnicos que incluyen fórmulas matemáticas. Fue creado por
 \href{https://es.wikipedia.org/wiki/Donald_Knuth}{Donald Knuth} en 1978.
 
 A diferencia de un procesador de textos como por ejemplo Microsoft Word,
-\(\TeX\) no es una aplicación sino un lenguaje de programación que
+\TeX no es una aplicación sino un lenguaje de programación que
 require compilar el código fuente para obtener el documento final. Esto,
 que a priori podría parecer una desventaja, en realidad es la gran
-ventaja de \(\TeX\) frente a los procesadores de texto que siguen el
+ventaja de \TeX frente a los procesadores de texto que siguen el
 paradigma \href{https://es.wikipedia.org/wiki/WYSIWYG}{WYSIWYG}
 (\emph{What You See Is What You Get}), ya que permite separar fácilmente
 el contenido y la estructura de un documento, de su formato, de manera
 que el usuario puede centrarse en el contenido y la estructura del
-documento, y dejar que \(\TeX\) se encargue del formato. De hecho,
-\(\TeX\) incorpora un potente
+documento, y dejar que \TeX se encargue del formato. De hecho,
+\TeX incorpora un potente
 \href{https://es.wikipedia.org/wiki/Lenguaje_de_marcado}{lenguaje de
 marcado} para estructurar y formatear el texto de un documento. Por
 ejemplo, mientras que para poner una palabra en negrita con un
 procesador de textos como Microsoft Word, bastaría con seleccionar la
 palabra y hacer clic en el botón de negrita para ver automáticamente la
-palabra en negrita en la pantalla del ordenador, en \(\TeX\) habría que
+palabra en negrita en la pantalla del ordenador, en \TeX habría que
 escribir en el fichero con el código fuente
 \texttt{\{\textbackslash{}bf\ palabra\}} y después compilar el código
 fuente para obtener un documento final con la palabra en negrita (el
 comando \texttt{\textbackslash{}bf}, que permite aplicar la negrita, se
 conoce como \emph{marca} o \emph{tag} en inglés.)
 
-La página principal con información sobre \(\TeX\) es la del
+La página principal con información sobre \TeX es la del
 \href{https://www.tug.org/}{TeX Users Group}.
 
 \hypertarget{quuxe9-es-latex}{%
 \section{\texorpdfstring{¿Qué es
-\(\LaTeX\)}{¿Qué es \textbackslash LaTeX}}\label{quuxe9-es-latex}}
+\LaTeX}{¿Qué es \textbackslash LaTeX}}\label{quuxe9-es-latex}}
 
 \includegraphics{./img/logos/latex-project-logo.png}
 
-\(\LaTeX\) es un conjunto de macros para \(\TeX\) debido originalmente a
+\LaTeX es un conjunto de macros para \TeX debido originalmente a
 \href{https://en.wikipedia.org/wiki/Leslie_Lamport}{Leslie Lamport} para
-facilitar el uso de \(\TeX\).
+facilitar el uso de \TeX.
 
-Tanto \(\TeX\) como \(\LaTeX\) son programas de código abierto,
+Tanto \TeX como \LaTeX son programas de código abierto,
 liberados bajo la \href{https://www.latex-project.org/lppl.txt}{licencia
 LPPL}.
 
-Otra de las grandes ventajas de \(\LaTeX\) es que existen multitud de
+Otra de las grandes ventajas de \LaTeX es que existen multitud de
 paquetes de código libre para generar distintos tipos de documentos que
 pueden descargarse desde el repositorio \href{https://ctan.org/}{CRAN}.
 
-La página principal sobre \(\LaTeX\) es
+La página principal sobre \LaTeX es
 \href{https://www.latex-project.org/}{The LaTeX project}.
 
 \hypertarget{instalaciuxf3n}{%
 \section{Instalación}\label{instalaciuxf3n}}
 
-Existen distintas distribuciones de \(\LaTeX\) y algunas de ellas son
+Existen distintas distribuciones de \LaTeX y algunas de ellas son
 multiplataforma, es decir, están disponibles para diferentes sistemas
 operativos. Las distribuciones más comunes son:
 
@@ -364,12 +364,12 @@ operativos. Las distribuciones más comunes son:
 En sus respectivas páginas está explicado el procedimiento de
 instalación de cada una.
 
-Junto a la distribución de \(\LaTeX\) es también habitual instalar algún
+Junto a la distribución de \LaTeX es también habitual instalar algún
 editor de texto para escribir el código fuente. En realidad puede usarse
 cualquier editor de texto que ya esté instalado en nuestro sistema
 operativo, pero los existen entornos de edición especializados que
 facilitan muchas de las tareas del proceso de composición de documentos
-con \(\LaTeX\). Los más comunes son:
+con \LaTeX. Los más comunes son:
 
 \begin{itemize}
 \tightlist
@@ -384,7 +384,7 @@ con \(\LaTeX\). Los más comunes son:
   \href{https://www.vim.org/}{Vim} Es un editor de texto simple de
   propósito general que también es libre y multiplataforma. Incorpora
   paquetes o plugins específicos para facilitar la creación de
-  documentos con \(\LaTeX\). Especialmente indicado para trabajar desde
+  documentos con \LaTeX. Especialmente indicado para trabajar desde
   la terminal.
 \item
   \href{https://www.gnu.org/software/emacs/}{Emacs}. Es otro editor
@@ -393,7 +393,7 @@ con \(\LaTeX\). Los más comunes son:
 \item
   \href{https://code.visualstudio.com/}{Visual Studio Code}. Es un
   potente entorno de desarrollo multipropósito. Dispone de paquetes para
-  los lenguajes de programación más comunes, entre ellos \(\LaTeX\).
+  los lenguajes de programación más comunes, entre ellos \LaTeX.
 \end{itemize}
 
 Pero también se puede empezar a componer documentos sin necesidad de
@@ -404,7 +404,7 @@ instalar nada en el ordenador, usando un editor on-line como por ejemplo
 \section{Hola LaTeX}\label{hola-latex}}
 
 A modo de ejemplo, empezaremos por crear un sencillo documento con el
-texto ``Hola \(\LaTeX\)''.
+texto ``Hola \LaTeX''.
 
 Para ello utilizaremos nuestro editor de texto preferido para crear un
 fichero de texto con el nombre \texttt{main.tex} y el siguiente
@@ -419,14 +419,14 @@ contenido:
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-important-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-important-color!10!white, title=\textcolor{quarto-callout-important-color}{\faExclamation}\hspace{0.5em}{Importante}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
-El nombre del fichero de texto con el código fuente de \(\LaTeX\) puede
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-important-color!10!white, breakable, colframe=quarto-callout-important-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-important-color}{\faExclamation}\hspace{0.5em}{Importante}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
+El nombre del fichero de texto con el código fuente de \LaTeX puede
 ser el que queramos, pero es importante que la extensión sea
 \texttt{.tex},
 \end{tcolorbox}
 
 Aunque más adelante se verá la estructura general del código fuente de
-un documento en \(\LaTeX\), a continuación se explica brevemente el
+un documento en \LaTeX, a continuación se explica brevemente el
 contenido de este fichero:
 
 \begin{enumerate}
@@ -443,7 +443,7 @@ contenido de este fichero:
 \item
   La cuarta línea contiene el texto del documento.
   \texttt{\textbackslash{}LaTeX} es un comando que produce la salida
-  \(\LaTeX\).
+  \LaTeX.
 \item
   La quinta línea marca el final del documento.
 \end{enumerate}
@@ -455,10 +455,10 @@ Para obtener el documento final hay que compilar el fichero fuente.
 Existen diferentes formas de hacerlo y en los editores anteriores suele
 ser tan sencillo como hacer clic en un botón o pulsar una combinación de
 teclas, pero en última instancia todos ellos hacen una llamada al
-compilador de \(\LaTeX\) que es quien se encarga de convertir el código
+compilador de \LaTeX que es quien se encarga de convertir el código
 fuente en el documento final.
 
-Cada distribución de \(\LaTeX\) viene con varios compiladores. Los más
+Cada distribución de \LaTeX viene con varios compiladores. Los más
 habituales son:
 
 \begin{itemize}
@@ -486,8 +486,8 @@ usar. A continuación se muestra la salida que general el compilador
 \begin{Shaded}
 \begin{Highlighting}[]
 \OperatorTok{\textgreater{}}\NormalTok{ pdflatex }\ExtensionTok{main.tex} 
-\ExtensionTok{s}\NormalTok{ is pdfTeX, Version 3.141592653{-}2.6{-}1.40.22 }\ErrorTok{(}\ExtensionTok{TeX}\NormalTok{ Live 2021}\KeywordTok{)} \KeywordTok{(}\ExtensionTok{preloaded}\NormalTok{ format=pdflatex}\KeywordTok{)}
- \ExtensionTok{restricted} \DataTypeTok{\textbackslash{}w}\NormalTok{rite18 enabled.}
+\ExtensionTok{s}\NormalTok{ is pdfTeX, Version 3.141592653{-}2.6{-}1.40.22 }\ErrorTok{(}\ExtensionTok{TeX}\NormalTok{ Live 2021}\KeywordTok{)} \KeywordTok{(}\ExtensionTok{preloaded} 
+\VariableTok{format}\OperatorTok{=}\NormalTok{pdflatex}\KeywordTok{)} \ExtensionTok{restricted} \DataTypeTok{\textbackslash{}w}\NormalTok{rite18 enabled.}
 \ExtensionTok{entering}\NormalTok{ extended mode}
 \KeywordTok{(}\ExtensionTok{./main.tex}
 \ExtensionTok{LaTeX2e} \OperatorTok{\textless{}}\NormalTok{2021{-}06{-}01}\OperatorTok{\textgreater{}}\NormalTok{ patch level 1}
@@ -500,10 +500,10 @@ usar. A continuación se muestra la salida que general el compilador
 \KeywordTok{(}\ExtensionTok{/usr/local/texlive/2021/texmf{-}dist/tex/generic/babel/txtbabel.def}\KeywordTok{))}
 \KeywordTok{(}\ExtensionTok{/usr/local/texlive/2021/texmf{-}dist/tex/generic/babel{-}spanish/spanish.ldf}\KeywordTok{))}
 \KeywordTok{(}\ExtensionTok{/usr/local/texlive/2021/texmf{-}dist/tex/latex/l3backend/l3backend{-}pdftex.def}\KeywordTok{)}
-\KeywordTok{(}\ExtensionTok{./main.aux}\KeywordTok{)} \ExtensionTok{[1\{/usr/local/texlive/2021/texmf{-}var/fonts/map/pdftex/updmap/pdfte}
-\ExtensionTok{x.map\}]} \ErrorTok{(}\ExtensionTok{./main.aux}\KeywordTok{)} \KeywordTok{)}\OperatorTok{\textless{}}\NormalTok{/usr/local/texlive/2021/texmf{-}dist/fonts/type1/public/am}
-\ExtensionTok{sfonts/cm/cmr10.pfb}\OperatorTok{\textgreater{}\textless{}}\NormalTok{/usr/local/texlive/2021/texmf{-}dist/fonts/type1/public/amsf}
-\ExtensionTok{onts/cm/cmr7.pfb}\OperatorTok{\textgreater{}}
+\KeywordTok{(}\ExtensionTok{./main.aux}\KeywordTok{)} \ExtensionTok{[1\{/usr/local/texlive/2021/texmf{-}var/fonts/map/pdftex/updmap/}
+\ExtensionTok{pdftex.map\}]} \ErrorTok{(}\ExtensionTok{./main.aux}\KeywordTok{)} \KeywordTok{)}\OperatorTok{\textless{}}\NormalTok{/usr/local/texlive/2021/texmf{-}dist/fonts/type1/}
+\ExtensionTok{public/amsfonts/cm/cmr10.pfb}\OperatorTok{\textgreater{}\textless{}}\NormalTok{/usr/local/texlive/2021/texmf{-}dist/fonts/type1/}
+\ExtensionTok{public/amsfonts/cm/cmr7.pfb}\OperatorTok{\textgreater{}}
 \ExtensionTok{Output}\NormalTok{ written on main.pdf }\ErrorTok{(}\ExtensionTok{1}\NormalTok{ page, 20106 bytes}\KeywordTok{)}\BuiltInTok{.}
 \ExtensionTok{Transcript}\NormalTok{ written on main.log.}
 \end{Highlighting}
@@ -542,8 +542,8 @@ siguiente error.
 \begin{Shaded}
 \begin{Highlighting}[]
 \OperatorTok{\textgreater{}}\NormalTok{ pdflatex }\ExtensionTok{main.tex}
-\ExtensionTok{This}\NormalTok{ is pdfTeX, Version 3.141592653{-}2.6{-}1.40.22 }\ErrorTok{(}\ExtensionTok{TeX}\NormalTok{ Live 2021}\KeywordTok{)} \KeywordTok{(}\ExtensionTok{preloaded}\NormalTok{ format=pdflatex}\KeywordTok{)}
- \ExtensionTok{restricted} \DataTypeTok{\textbackslash{}w}\NormalTok{rite18 enabled.}
+\ExtensionTok{This}\NormalTok{ is pdfTeX, Version 3.141592653{-}2.6{-}1.40.22 }\ErrorTok{(}\ExtensionTok{TeX}\NormalTok{ Live 2021}\KeywordTok{)} \KeywordTok{(}\ExtensionTok{preloaded} 
+\VariableTok{format}\OperatorTok{=}\NormalTok{pdflatex}\KeywordTok{)} \ExtensionTok{restricted} \DataTypeTok{\textbackslash{}w}\NormalTok{rite18 enabled.}
 \ExtensionTok{entering}\NormalTok{ extended mode}
 \KeywordTok{(}\ExtensionTok{./main.tex}
 \ExtensionTok{LaTeX2e} \OperatorTok{\textless{}}\NormalTok{2021{-}06{-}01}\OperatorTok{\textgreater{}}\NormalTok{ patch level 1}
@@ -560,7 +560,7 @@ siguiente error.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-warning-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-warning-color!10!white, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Advertencia}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-warning-color!10!white, breakable, colframe=quarto-callout-warning-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Advertencia}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
 Si el documento contiene referencias cruzadas, citaciones
 bibliográficas, tabla de contenidos o índices, es necesario compilar el
 documento dos o tres veces para que se generen automáticamente esas
@@ -678,7 +678,7 @@ A continuación se explican las partes del esqueleto anterior.
 \hypertarget{clase-de-un-documento}{%
 \subsection{Clase de un documento}\label{clase-de-un-documento}}
 
-La primera línea de un fichero con código \(\LaTeX\) indica la clase de
+La primera línea de un fichero con código \LaTeX indica la clase de
 documento que se va a generar mediante el comando
 \texttt{\textbackslash{}documentclass}. En el ejemplo aparece un
 argumento obligatorio que indica el tipo de documento que se desea
@@ -713,7 +713,7 @@ A continuación, se suelen configurar algunos aspectos del documento como
 podrían ser los márgenes, encabezados y pies, el título, autor y fecha,
 y otras muchas posibilidades.
 
-En el preámbulo también se pueden definir nuevos comandos \(\LaTeX\) o
+En el preámbulo también se pueden definir nuevos comandos \LaTeX o
 redefinir los ya existentes.
 
 \hypertarget{cuerpo}{%
@@ -833,7 +833,7 @@ sección sin numerar y que tampoco aparecerán en la tabla de contenidos.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
 \includegraphics{./img/secciones/secciones.png}
 \end{tcolorbox}
 
@@ -856,12 +856,14 @@ utiliza el comando \texttt{\textbackslash{}newline} o
 \NormalTok{Este es el primer párrafo del documento, con un }\FunctionTok{\textbackslash{}\textbackslash{}}
 \NormalTok{cambio de linea.}
 
-\NormalTok{Este es el segundo párrafo del documento. Obsérvese que cada vez que se comienza un párrafo la primera línea de desplaza un poco hacia la derecha. Esto se conoce como }\FunctionTok{\textbackslash{}emph}\NormalTok{\{sangría\}.}
+\NormalTok{Este es el segundo párrafo del documento. Obsérvese que cada vez que se }
+\NormalTok{comienza un párrafo la primera línea de desplaza un poco hacia la derecha. }
+\NormalTok{Esto se conoce como }\FunctionTok{\textbackslash{}emph}\NormalTok{\{sangría\}.}
 \KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
 \includegraphics{./img/secciones/parrafos.png}
 \end{tcolorbox}
 
@@ -869,7 +871,7 @@ utiliza el comando \texttt{\textbackslash{}newline} o
 \section{Justificación}\label{justificaciuxf3n}}
 
 Los párrafos se justifican por defecto a la izquierda y a la derecha.
-\(\LaTeX\) utiliza un algoritmo que permite partir las palabras al final
+\LaTeX utiliza un algoritmo que permite partir las palabras al final
 de una línea para obtener párrafos con una buena estética (sin grandes
 espacios en blanco entre palabras). Pero también se pueden justificar
 solo a la izquierda, solo a la derecha o centrados entre los márgenes.
@@ -889,28 +891,37 @@ Para ello se utilizan los siguientes entornos:
 \begin{Highlighting}[]
 \CommentTok{\% CUERPO}
 \KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
-\NormalTok{Este es el primer párrafo del documento, y aparece justificado a ambos lados (márgenes izquierdo y derecho) por defecto. Para que las líneas tengan la misma longitud, se utiliza un algoritmo que permite partir las palabras al final de una línea.}
+\NormalTok{Este es el primer párrafo del documento, y aparece justificado a ambos lados}
+\NormalTok{(márgenes izquierdo y derecho) por defecto. Para que las líneas tengan la }
+\NormalTok{misma longitud, se utiliza un algoritmo que permite partir las palabras al }
+\NormalTok{final de una línea.}
 
 \KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{flushleft}\NormalTok{\}}
-\NormalTok{Este es el segundo párrafo del documento y aparece justificado a la izquierda, es decir alineado con el margen izquierdo del documento. Obsérvese que no todas las líneas acaban a la misma altura.}
+\NormalTok{Este es el segundo párrafo del documento y aparece justificado a la }
+\NormalTok{izquierda, es decir alineado con el margen izquierdo del documento. }
+\NormalTok{Obsérvese que no todas las líneas acaban a la misma altura.}
 \KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{flushleft}\NormalTok{\}}
 
 \KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{flushright}\NormalTok{\}}
-\NormalTok{Este es el tercer párrafo del documento y aparece justificado a la derecha, es decir alineado con el margen derecho del documento. Obsérvese que no todas las líneas empiezan a la misma altura.}
+\NormalTok{Este es el tercer párrafo del documento y aparece justificado a la derecha,}
+\NormalTok{es decir alineado con el margen derecho del documento. Obsérvese que no }
+\NormalTok{todas las líneas empiezan a la misma altura.}
 \KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{flushright}\NormalTok{\}}
 
 \KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{center}\NormalTok{\}}
-\NormalTok{Este es el último párrafo del documento y aparece justificado en el centro entre los márgenes del documento. Obsérvese que ahora las líneas no empiezan ni terminan a la misma altura. }
+\NormalTok{Este es el último párrafo del documento y aparece justificado en el centro}
+\NormalTok{entre los márgenes del documento. Obsérvese que ahora las líneas no }
+\NormalTok{empiezan ni terminan a la misma altura. }
 \KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{center}\NormalTok{\}}
 \KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
 \includegraphics{./img/secciones/justificacion.png}
 \end{tcolorbox}
 
-\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-warning-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-warning-color!10!white, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Advertencia}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-warning-color!10!white, breakable, colframe=quarto-callout-warning-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Advertencia}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
 El algoritmo para partir palabras al final de una línea funciona muy
 bien, pero si alguna vez divide mal una palabra, se puede indicar por
 dónde partir la palabra con el comando \texttt{\textbackslash{}-} (por
@@ -953,14 +964,15 @@ subrayado. Estos formatos se aplican con los siguientes comandos:
 \begin{Highlighting}[]
 \CommentTok{\% CUERPO}
 \KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
-\NormalTok{Este texto está en }\FunctionTok{\textbackslash{}textbf}\NormalTok{\{negrita\}, este en }\FunctionTok{\textbackslash{}textit}\NormalTok{\{cursiva\} y este }\FunctionTok{\textbackslash{}underline}\NormalTok{\{subrayado\}. }
+\NormalTok{Este texto está en }\FunctionTok{\textbackslash{}textbf}\NormalTok{\{negrita\}, este en }\FunctionTok{\textbackslash{}textit}\NormalTok{\{cursiva\} y este }
+\FunctionTok{\textbackslash{}underline}\NormalTok{\{subrayado\}. }
 
 \FunctionTok{\textbackslash{}textit}\NormalTok{\{Este texto está }\FunctionTok{\textbackslash{}emph}\NormalTok{\{enfatizado\}\}.}
 \KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
 \includegraphics{./img/formateo/resaltado.png}
 \end{tcolorbox}
 
@@ -993,7 +1005,7 @@ Existen tres tipos de letra que se activan con los siguientes comandos:
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
 \includegraphics{./img/formateo/tipos-letra.png}
 \end{tcolorbox}
 
@@ -1015,7 +1027,7 @@ comandos:
   Establece la fuente para el tipo de letra monoespaciado.
 \end{itemize}
 
-\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-caution-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-caution-color!10!white, title=\textcolor{quarto-callout-caution-color}{\faFire}\hspace{0.5em}{Precaución}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-caution-color!10!white, breakable, colframe=quarto-callout-caution-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-caution-color}{\faFire}\hspace{0.5em}{Precaución}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
 Las fuentes utilizadas en un documento deben estar previamente
 instaladas en el sistema operativo donde se compile el documento.
 \end{tcolorbox}
@@ -1032,12 +1044,13 @@ instaladas en el sistema operativo donde se compile el documento.
 
 \CommentTok{\% CUERPO}
 \KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
-\NormalTok{Este texto es normal, }\FunctionTok{\textbackslash{}textsf}\NormalTok{\{este es sin adornos\}, }\FunctionTok{\textbackslash{}texttt}\NormalTok{\{y este de máquina de escribir\}.}
+\NormalTok{Este texto es normal, }\FunctionTok{\textbackslash{}textsf}\NormalTok{\{este es sin adornos\}, }
+\FunctionTok{\textbackslash{}texttt}\NormalTok{\{y este de máquina de escribir\}.}
 \KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
 \includegraphics{./img/formateo/tipos-letra-xelatex.png}
 \end{tcolorbox}
 
@@ -1068,16 +1081,19 @@ con los siguientes comandos:
 \begin{Highlighting}[]
 \CommentTok{\% CUERPO}
 \KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
-\NormalTok{Texto normal con perfil recto, }\FunctionTok{\textbackslash{}textit}\NormalTok{\{itálica\}, }\FunctionTok{\textbackslash{}textsl}\NormalTok{\{inclinado\} y }\FunctionTok{\textbackslash{}textsc}\NormalTok{\{versalita\}.}
+\NormalTok{Texto normal con perfil recto, }\FunctionTok{\textbackslash{}textit}\NormalTok{\{itálica\}, }\FunctionTok{\textbackslash{}textsl}\NormalTok{\{inclinado\} y }
+\FunctionTok{\textbackslash{}textsc}\NormalTok{\{versalita\}.}
 
-\FunctionTok{\textbackslash{}textsf}\NormalTok{\{Texto sin adorno con perfil recto, }\FunctionTok{\textbackslash{}textit}\NormalTok{\{itálica\}, }\FunctionTok{\textbackslash{}textsl}\NormalTok{\{inclinado\} y }\FunctionTok{\textbackslash{}textsc}\NormalTok{\{versalita\}.\}}
+\FunctionTok{\textbackslash{}textsf}\NormalTok{\{Texto sin adorno con perfil recto, }\FunctionTok{\textbackslash{}textit}\NormalTok{\{itálica\}, }
+\FunctionTok{\textbackslash{}textsl}\NormalTok{\{inclinado\} y }\FunctionTok{\textbackslash{}textsc}\NormalTok{\{versalita\}.\}}
 
-\FunctionTok{\textbackslash{}texttt}\NormalTok{\{Texto monoespaciado con perfil recto, }\FunctionTok{\textbackslash{}textit}\NormalTok{\{itálica\}, }\FunctionTok{\textbackslash{}textsl}\NormalTok{\{inclinado\} y }\FunctionTok{\textbackslash{}textsc}\NormalTok{\{versalita\}.\}}
+\FunctionTok{\textbackslash{}texttt}\NormalTok{\{Texto monoespaciado con perfil recto, }\FunctionTok{\textbackslash{}textit}\NormalTok{\{itálica\}, }
+\FunctionTok{\textbackslash{}textsl}\NormalTok{\{inclinado\} y }\FunctionTok{\textbackslash{}textsc}\NormalTok{\{versalita\}.\}}
 \KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
 \includegraphics{./img/formateo/perfiles-letra.png}
 \end{tcolorbox}
 
@@ -1085,7 +1101,7 @@ con los siguientes comandos:
 \section{Tamaños de letra}\label{tamauxf1os-de-letra}}
 
 A diferencia de otros procesadores donde el tamaño de la fuente se
-indica en puntos o pixels, en \(\LaTeX\) existen 10 tamaños predefinidos
+indica en puntos o pixels, en \LaTeX existen 10 tamaños predefinidos
 que se activan con los siguientes comandos, de menor a mayor tamaño:
 
 \begin{itemize}
@@ -1135,7 +1151,7 @@ pero no suelen ser necesarios en un documento normal.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
 \includegraphics{./img/formateo/tamaño-fuente.png}
 \end{tcolorbox}
 
@@ -1181,7 +1197,7 @@ Ejemplo de lista no ordenada.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
 \includegraphics{./img/listas/lista-no-ordenad.png}
 \end{tcolorbox}
 
@@ -1201,7 +1217,7 @@ Ejemplo de lista ordenada.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
 \includegraphics{./img/listas/lista-ordenada.png}
 \end{tcolorbox}
 
@@ -1215,13 +1231,14 @@ Ejemplo de lista descriptiva.
 \KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{description}\NormalTok{\}}
 \FunctionTok{\textbackslash{}item}\NormalTok{\{}\FunctionTok{\textbackslash{}textbf}\NormalTok{\{latex\}\} Genera documentos en formato dvi.}
 \FunctionTok{\textbackslash{}item}\NormalTok{\{}\FunctionTok{\textbackslash{}textbf}\NormalTok{\{pdflatex\}\} Genera documentos en formato pdf.}
-\FunctionTok{\textbackslash{}item}\NormalTok{\{}\FunctionTok{\textbackslash{}textbf}\NormalTok{\{xelatex\}\} Genera documentos en formato pdf que admiten codificación Unicode.}
+\FunctionTok{\textbackslash{}item}\NormalTok{\{}\FunctionTok{\textbackslash{}textbf}\NormalTok{\{xelatex\}\} Genera documentos en formato pdf que admiten }
+\NormalTok{codificación Unicode.}
 \KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{description}\NormalTok{\}}
 \KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
 \includegraphics{./img/listas/lista-desciptiva.png}
 \end{tcolorbox}
 
@@ -1250,7 +1267,7 @@ Se pueden crear sublistas anidando unos entornos dentro de otros.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
 \includegraphics{./img/listas/listas-anidadas.png}
 \end{tcolorbox}
 
@@ -1263,7 +1280,7 @@ entornos.
 \hypertarget{sec-tablas}{%
 \chapter{Tablas}\label{sec-tablas}}
 
-Las tablas son uno de los elementos más complejos de \(\LaTeX\), ya que,
+Las tablas son uno de los elementos más complejos de \LaTeX, ya que,
 aunque es fácil crear una tabla sencilla, aplicarles un formato más
 avanzado con justificación de columnas, fusión de columnas o filas,
 márgenes de columnas, líneas de división, etc. suele ser bastante más
@@ -1289,7 +1306,7 @@ separando las celdas con el comando \texttt{\&}.
 \begin{Highlighting}[]
 \CommentTok{\% CUERPO}
 \KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
-\CommentTok{\% Tabla con tres columnas, justificadas a la izquierda, centrada y derecha, respectivamente.}
+\CommentTok{\% Tabla con tres columnas, justificadas a la izquierda, centrada y derecha.}
 \KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{tabular}\NormalTok{\}\{lcr\}}
 \NormalTok{Nombre }\OperatorTok{\&}\NormalTok{ Ciudad }\OperatorTok{\&}\NormalTok{ Edad }\FunctionTok{\textbackslash{}\textbackslash{}}
 \NormalTok{María }\OperatorTok{\&}\NormalTok{ Valencia }\OperatorTok{\&}\NormalTok{ 22 }\FunctionTok{\textbackslash{}\textbackslash{}}
@@ -1300,7 +1317,7 @@ separando las celdas con el comando \texttt{\&}.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
 \includegraphics{./img/tablas/tabla-simple.png}
 \end{tcolorbox}
 
@@ -1335,7 +1352,7 @@ introduzca el comando \texttt{\textbackslash{}hline}.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
 \includegraphics{./img/tablas/tabla-delimitada.png}
 \end{tcolorbox}
 
@@ -1370,7 +1387,7 @@ divisorias que no abarquen toda la fila, sino desde la columna
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
 \includegraphics{./img/tablas/tabla-multicolumna.png}
 \end{tcolorbox}
 
@@ -1432,7 +1449,7 @@ siguientes argumentos opcionales para modificar el aspecto de la imagen:
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
 \includegraphics{./img/imagenes/imganes.png}
 \end{tcolorbox}
 
@@ -1442,7 +1459,7 @@ siguientes argumentos opcionales para modificar el aspecto de la imagen:
 \chapter{Fórmulas matemáticas}\label{fuxf3rmulas-matemuxe1ticas}}
 
 La escritura de fórmulas matemáticas es uno de los puntos fuertes de
-\(\LaTeX\), y es por ello que se utiliza tanto para la creación de
+\LaTeX, y es por ello que se utiliza tanto para la creación de
 documentos científicos o técnicos con contenido matemático.
 
 Para escribir una fórmula es necesario cambiar al modo matemático.
@@ -1475,6 +1492,9 @@ Existen distintas formas de activar el modo matemático:
 \SpecialStringTok{$$ }
 \SpecialStringTok{x+y=0}
 \SpecialStringTok{$$}
+
+
+
 \NormalTok{Ejemplo de fórmula con el entorno }\FunctionTok{\textbackslash{}texttt}\NormalTok{\{equation\}}
 
 \KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{equation}\NormalTok{\}}
@@ -1484,7 +1504,7 @@ Existen distintas formas de activar el modo matemático:
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
 \includegraphics{./img/formulas/entornos-matematicos.png}
 \end{tcolorbox}
 
@@ -1493,10 +1513,10 @@ Existen distintas formas de activar el modo matemático:
 
 Existe una infinidad de símbolos matemáticos que escriben mediante
 comandos. A continuación se muestran los más habituales.\footnote{Para
-  un listado más exhaustivo de los símbolos matemáticos de \(\LaTeX\),
+  un listado más exhaustivo de los símbolos matemáticos de \LaTeX,
   puede consultarse el documento
   \href{https://www3.nd.edu/~nmark/UsefulFacts/LaTeX_symbols.pdf}{The
-  Great, Big List of \(\LaTeX\) Symbols}.}
+  Great, Big List of \LaTeX Symbols}.}
 
 \hypertarget{letras-griegas}{%
 \subsection{Letras griegas}\label{letras-griegas}}
@@ -1769,11 +1789,17 @@ de un carácter, hay que ponerlos entre llaves.
 \SpecialStringTok{x\_i+y\_j=0}
 \SpecialStringTok{$$}
 
+
+
+
 \NormalTok{Ejemplo de fórmula con superíndices}
 
 \SpecialStringTok{$$ }
 \SpecialStringTok{x\^{}2+y\^{}2=0}
 \SpecialStringTok{$$}
+
+
+
 
 \NormalTok{Ejemplo de fórmula con subíndices y superíndices}
 
@@ -1781,11 +1807,14 @@ de un carácter, hay que ponerlos entre llaves.
 \SpecialStringTok{x\_i\^{}2+y\_j\^{}2=0}
 \SpecialStringTok{$$}
 
+
+
+
 \KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
 \includegraphics{./img/formulas/indices.png}
 \end{tcolorbox}
 
@@ -1818,11 +1847,14 @@ denominador, anidando este comando.
 \SpecialCharTok{\textbackslash{}frac}\SpecialStringTok{\{}\SpecialCharTok{\textbackslash{}frac}\SpecialStringTok{\{x\}\{2\}+}\SpecialCharTok{\textbackslash{}frac}\SpecialStringTok{\{2\}\{3\}\}\{x\^{}2{-}2x+1\}}
 \SpecialStringTok{$$}
 
+
+
+
 \KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
 \includegraphics{./img/formulas/fracciones.png}
 \end{tcolorbox}
 
@@ -1855,15 +1887,21 @@ superíndice que indica el final del producto. Si se quieren omitir los
 \SpecialCharTok{\textbackslash{}sum}\SpecialStringTok{\_\{i=1\}\^{}\{}\SpecialCharTok{\textbackslash{}infty}\SpecialStringTok{\} x\^{}i}
 \SpecialStringTok{$$}
 
+
+
+
 \NormalTok{Ejemplo de productorio}
 \SpecialStringTok{$$}
 \SpecialCharTok{\textbackslash{}prod}\SpecialStringTok{\_\{i=1\}\^{}n i}
 \SpecialStringTok{$$}
+
+
+
 \KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
 \includegraphics{./img/formulas/sumatorio.png}
 \end{tcolorbox}
 
@@ -1884,15 +1922,21 @@ indefinidas, basta con el comando \texttt{\textbackslash{}int}.
 \SpecialCharTok{\textbackslash{}int}\SpecialStringTok{\_a\^{}b f(x)}\SpecialCharTok{\textbackslash{},}\SpecialStringTok{dx}
 \SpecialStringTok{$$}
 
+
+
+
 \NormalTok{Ejemplo de integral indefinida}
 \SpecialStringTok{$$}
 \SpecialCharTok{\textbackslash{}int}\SpecialStringTok{ f(x)}\SpecialCharTok{\textbackslash{},}\SpecialStringTok{dx}
 \SpecialStringTok{$$}
+
+
+
 \KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
 \includegraphics{./img/formulas/integral.png}
 \end{tcolorbox}
 
@@ -1933,7 +1977,7 @@ tipos de sombreros:
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
 \includegraphics{./img/formulas/sombreros.png}
 \end{tcolorbox}
 
@@ -1961,11 +2005,14 @@ entorno y el comando \texttt{\textbackslash{}right)} después.
 \KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{array}\NormalTok{\}}
 \SpecialCharTok{\textbackslash{}right}\SpecialStringTok{)}
 \SpecialStringTok{$$}
+
+
+
 \KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
 \includegraphics{./img/formulas/matriz.png}
 \end{tcolorbox}
 
@@ -2008,11 +2055,14 @@ tampoco los delimitadores:
 \SpecialStringTok{3 \& z \&}\SpecialCharTok{\textbackslash{}gamma}
 \KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{vmatrix}\NormalTok{\}}
 \SpecialStringTok{$$}
+
+
+
 \KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
 \includegraphics{./img/formulas/determinante.png}
 \end{tcolorbox}
 
@@ -2051,15 +2101,20 @@ Para demostraciones se puede utilizar el entorno \texttt{proof}.
 \KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
 
 \KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{midef}\NormalTok{\}}
-\NormalTok{Dado un triángulo rectángulo de catetos }\SpecialStringTok{$a$}\NormalTok{, }\SpecialStringTok{$b$}\NormalTok{ e hipotenusa }\SpecialStringTok{$c$}\NormalTok{, se define el seno del ángulo }\SpecialStringTok{$}\SpecialCharTok{\textbackslash{}alpha}\SpecialStringTok{$}\NormalTok{ opuesto al cateto }\SpecialStringTok{$b$}\NormalTok{ como }
+\NormalTok{Dado un triángulo rectángulo de catetos }\SpecialStringTok{$a$}\NormalTok{, }\SpecialStringTok{$b$}\NormalTok{ e hipotenusa }\SpecialStringTok{$c$}\NormalTok{, se define}
+\NormalTok{el seno del ángulo }\SpecialStringTok{$}\SpecialCharTok{\textbackslash{}alpha}\SpecialStringTok{$}\NormalTok{ opuesto al cateto }\SpecialStringTok{$b$}\NormalTok{ como }
 
 \SpecialStringTok{$$}
 \SpecialCharTok{\textbackslash{}sen}\SpecialStringTok{\{}\SpecialCharTok{\textbackslash{}alpha}\SpecialStringTok{\}= }\SpecialCharTok{\textbackslash{}frac}\SpecialStringTok{\{b\}\{c\}.}
 \SpecialStringTok{$$}
+
+
+
 \KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{midef}\NormalTok{\}}
 
 \KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{teo}\NormalTok{\}}
-\NormalTok{Para cualquier ángulo }\SpecialStringTok{$}\SpecialCharTok{\textbackslash{}alpha}\SpecialStringTok{$}\NormalTok{ se cumple }\SpecialStringTok{$}\SpecialCharTok{\textbackslash{}sen}\SpecialStringTok{(}\SpecialCharTok{\textbackslash{}alpha}\SpecialStringTok{)\^{}2 + }\SpecialCharTok{\textbackslash{}cos}\SpecialStringTok{(}\SpecialCharTok{\textbackslash{}alpha}\SpecialStringTok{)\^{}2 = 1$}\NormalTok{.}
+\NormalTok{Para cualquier ángulo }\SpecialStringTok{$}\SpecialCharTok{\textbackslash{}alpha}\SpecialStringTok{$}\NormalTok{ se cumple }
+\SpecialStringTok{$}\SpecialCharTok{\textbackslash{}sen}\SpecialStringTok{(}\SpecialCharTok{\textbackslash{}alpha}\SpecialStringTok{)\^{}2 + }\SpecialCharTok{\textbackslash{}cos}\SpecialStringTok{(}\SpecialCharTok{\textbackslash{}alpha}\SpecialStringTok{)\^{}2 = 1$}\NormalTok{.}
 \KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{teo}\NormalTok{\}}
 
 \KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{proof}\NormalTok{\}}
@@ -2069,11 +2124,11 @@ Para demostraciones se puede utilizar el entorno \texttt{proof}.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
 \includegraphics{./img/formulas/teoremas.png}
 \end{tcolorbox}
 
-\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-tip-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-tip-color!10!white, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-tip-color!10!white, breakable, colframe=quarto-callout-tip-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
 Se recomienda cargar los paquetes \texttt{amsmath}, \texttt{amssymb} y
 \texttt{amsthm} para documentos extensos o con muchas fórmulas
 matemáticas.
@@ -2117,7 +2172,7 @@ esqueleto.
 
 El argumento opcional indica la preferencia de ubicación de la figura en
 la página (\texttt{h} en el lugar en el que aparece en el código fuente,
-\texttt{t} arriba, \texttt{b} abajo). \(\LaTeX\) intentará ubicar la
+\texttt{t} arriba, \texttt{b} abajo). \LaTeX intentará ubicar la
 figura en esa posición salvo que no sea posible.
 
 Las figuras flotantes se numeran automáticamente y el comando
@@ -2132,7 +2187,9 @@ leyenda de la figura.
 \BuiltInTok{\textbackslash{}usepackage}\NormalTok{\{}\ExtensionTok{graphicx}\NormalTok{\}}
 \CommentTok{\% CUERPO}
 \KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
-\NormalTok{Ejemplo de imagen flotante. Como se puede apreciar la imagen aparece al principio de la página aunque va después de este párrafo en el código fuente.}
+\NormalTok{Ejemplo de imagen flotante. Como se puede apreciar la imagen aparece al }
+\NormalTok{principio de la página aunque va después de este párrafo en el código }
+\NormalTok{fuente.}
 
 \KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{figure}\NormalTok{\}[t]}
 \KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{center}\NormalTok{\}}
@@ -2145,7 +2202,7 @@ leyenda de la figura.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
 \includegraphics{./img/entornos-flotantes/figura-flotante.png}
 \end{tcolorbox}
 
@@ -2177,7 +2234,9 @@ pueden referenciarse después asignándoles una etiqueta con el comando
 \begin{Highlighting}[]
 \CommentTok{\% CUERPO}
 \KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
-\NormalTok{Ejemplo de tabla flotante. Como se puede apreciar la tabla aparece al principio de la página aunque va después de este párrafo en el código fuente.}
+\NormalTok{Ejemplo de tabla flotante. Como se puede apreciar la tabla aparece al }
+\NormalTok{principio de la página aunque va después de este párrafo en el código }
+\NormalTok{fuente.}
 
 \KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{table}\NormalTok{\}[t]}
 \KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{center}\NormalTok{\}}
@@ -2201,7 +2260,7 @@ pueden referenciarse después asignándoles una etiqueta con el comando
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
 \includegraphics{./img/entornos-flotantes/tabla-flotante.png}
 \end{tcolorbox}
 
@@ -2214,7 +2273,7 @@ utiliza el comando \texttt{\textbackslash{}listoftables}.
 \chapter{Referencias cruzadas y notas a
 pie}\label{referencias-cruzadas-y-notas-a-pie}}
 
-Otro de los puntos fuertes de \(\LaTeX\) es la gestión de las
+Otro de los puntos fuertes de \LaTeX es la gestión de las
 referencias cruzadas, es decir, referencias a otras partes del
 documento, así como las notas a pie de página.
 
@@ -2253,12 +2312,13 @@ documento se utiliza el comando
 \KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{equation}\NormalTok{\}}
 \KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{teo}\NormalTok{\}}
 
-\NormalTok{Ejemplo de referencia cruzada. La ecuación }\KeywordTok{\textbackslash{}ref}\NormalTok{\{}\ExtensionTok{eq{-}trigo}\NormalTok{\} del teorema }\KeywordTok{\textbackslash{}ref}\NormalTok{\{}\ExtensionTok{teo{-}trigo}\NormalTok{\} es una ecuación básica en trigonometría.}
+\NormalTok{Ejemplo de referencia cruzada. La ecuación }\KeywordTok{\textbackslash{}ref}\NormalTok{\{}\ExtensionTok{eq{-}trigo}\NormalTok{\} del teorema }
+\KeywordTok{\textbackslash{}ref}\NormalTok{\{}\ExtensionTok{teo{-}trigo}\NormalTok{\} es una ecuación básica en trigonometría.}
 \KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
 \includegraphics{./img/referencias-cruzadas/referencias-cruzadas.png}
 \end{tcolorbox}
 
@@ -2279,7 +2339,7 @@ Para insertar una nota a pié de página se utiliza el comando
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
 \includegraphics{./img/referencias-cruzadas/nota-pie.png}
 \end{tcolorbox}
 
@@ -2289,11 +2349,11 @@ Para insertar una nota a pié de página se utiliza el comando
 \chapter{Citas y referencias
 bibliográficas}\label{citas-y-referencias-bibliogruxe1ficas}}
 
-Al igual que con las referencias cruzadas, \(\LaTeX\) hace un
+Al igual que con las referencias cruzadas, \LaTeX hace un
 maravilloso trabajo con las citas de referencias bibliográficas. Para
 ello se apoya en otro programa de gestión de referencias bibliográficas
 llamado \href{http://www.bibtex.org/}{BibTeX}, que viene incluido en la
-distribución estándar de \(\LaTeX\). BibTeX permite crear una base de
+distribución estándar de \LaTeX. BibTeX permite crear una base de
 datos de distintos tipos de documentos que después se pueden citar en
 nuestro documento y después listar al final del documento las
 referencias bibliográficas citadas con diferentes formatos.
@@ -2376,14 +2436,15 @@ documento basta con insertar el comando
 \FunctionTok{\textbackslash{}addbibresource}\NormalTok{\{bibliografia.bib\}}
 \CommentTok{\% CUERPO}
 \KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
-\NormalTok{El principal libro sobre latex es }\KeywordTok{\textbackslash{}cite}\NormalTok{\{}\ExtensionTok{lamport\_latex\_1994}\NormalTok{\}, aunque también es muy interesante el artículo }\KeywordTok{\textbackslash{}cite}\NormalTok{\{}\ExtensionTok{borbon\_latex\_2022}\NormalTok{\}}
+\NormalTok{El principal libro sobre latex es }\KeywordTok{\textbackslash{}cite}\NormalTok{\{}\ExtensionTok{lamport\_latex\_1994}\NormalTok{\}, aunque también }
+\NormalTok{es muy interesante el artículo }\KeywordTok{\textbackslash{}cite}\NormalTok{\{}\ExtensionTok{borbon\_latex\_2022}\NormalTok{\}}
 
 \FunctionTok{\textbackslash{}printbibliography}
 \KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
 \includegraphics{./img/bibliografia/bibliografia.png}
 \end{tcolorbox}
 
@@ -2412,14 +2473,15 @@ opcional \texttt{backend=biber}.
 \FunctionTok{\textbackslash{}addbibresource}\NormalTok{\{bibliografia.bib\}}
 \CommentTok{\% CUERPO}
 \KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
-\NormalTok{El principal libro sobre latex es }\KeywordTok{\textbackslash{}cite}\NormalTok{\{}\ExtensionTok{lamport\_latex\_1994}\NormalTok{\}, aunque también es muy interesante el artículo }\KeywordTok{\textbackslash{}cite}\NormalTok{\{}\ExtensionTok{borbon\_latex\_2022}\NormalTok{\}}
+\NormalTok{El principal libro sobre latex es }\KeywordTok{\textbackslash{}cite}\NormalTok{\{}\ExtensionTok{lamport\_latex\_1994}\NormalTok{\}, aunque también }
+\NormalTok{es muy interesante el artículo }\KeywordTok{\textbackslash{}cite}\NormalTok{\{}\ExtensionTok{borbon\_latex\_2022}\NormalTok{\}}
 
 \FunctionTok{\textbackslash{}printbibliography}
 \KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
 \includegraphics{./img/bibliografia/bibliografia2.png}
 \end{tcolorbox}
 
@@ -2467,9 +2529,6 @@ en formato horizontal o apaisado con el argumento \texttt{landscape}.
 \begin{Shaded}
 \begin{Highlighting}[]
 \CommentTok{\% PREÁMBULO}
-\BuiltInTok{\textbackslash{}usepackage}\NormalTok{\{}\ExtensionTok{fontspec}\NormalTok{\}}
-\BuiltInTok{\textbackslash{}usepackage}\NormalTok{\{}\ExtensionTok{polyglossia}\NormalTok{\}}
-\FunctionTok{\textbackslash{}setdefaultlanguage}\NormalTok{\{spanish\}}
 \BuiltInTok{\textbackslash{}usepackage}\NormalTok{[a5paper, landscape]\{}\ExtensionTok{geometry}\NormalTok{\}}
 \BuiltInTok{\textbackslash{}usepackage}\NormalTok{\{}\ExtensionTok{blindtext}\NormalTok{\}}
 
@@ -2485,7 +2544,7 @@ en formato horizontal o apaisado con el argumento \texttt{landscape}.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
 \includegraphics{./img/diseño-pagina/pagina-a5-apaisada.png}
 \end{tcolorbox}
 
@@ -2513,9 +2572,6 @@ siguientes argumentos:
 \begin{Shaded}
 \begin{Highlighting}[]
 \CommentTok{\% PREÁMBULO}
-\BuiltInTok{\textbackslash{}usepackage}\NormalTok{\{}\ExtensionTok{fontspec}\NormalTok{\}}
-\BuiltInTok{\textbackslash{}usepackage}\NormalTok{\{}\ExtensionTok{polyglossia}\NormalTok{\}}
-\FunctionTok{\textbackslash{}setdefaultlanguage}\NormalTok{\{spanish\}}
 \BuiltInTok{\textbackslash{}usepackage}\NormalTok{[a4paper, left=2.5cm, right=3.5cm, top=45mm, bottom=20mm]\{}\ExtensionTok{geometry}\NormalTok{\}}
 \BuiltInTok{\textbackslash{}usepackage}\NormalTok{\{}\ExtensionTok{blindtext}\NormalTok{\}}
 
@@ -2529,8 +2585,135 @@ siguientes argumentos:
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, colback=white, left=2mm, toprule=.15mm, coltitle=black, titlerule=0mm, opacityback=0, colframe=quarto-callout-note-color-frame, breakable, toptitle=1mm, colbacktitle=quarto-callout-note-color!10!white, title={Salida}, rightrule=.15mm, bottomtitle=1mm, arc=.35mm, bottomrule=.15mm, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
 \includegraphics{./img/diseño-pagina/pagina-margenes-personalizados.png}
+\end{tcolorbox}
+
+\hypertarget{encabezados-y-pies-de-puxe1gina}{%
+\section{Encabezados y pies de
+página}\label{encabezados-y-pies-de-puxe1gina}}
+
+\LaTeX incluye encabezados y pies de página automáticos dependiendo
+del tipo de documento. Para las clases \texttt{article} y
+\texttt{report} no hay encabezado y el pie es el número de página,
+mientras que para la clase \texttt{book} el encabezado incluye la página
+y la sección a la que corresponde la página. No obstante, el usuario
+puede definir sus propios encabezados y pies mediante el paquete
+\texttt{fancyhdr}.
+
+Una vez cargado este paquete y antes de definir el texto del encabezado
+y del pie, hay que cambiar el estilo de página (\texttt{plain} por
+defecto) a \texttt{fancy}, y para ello se utiliza el comando
+\texttt{\textbackslash{}pagestyle\{fancy\}} que indica al compilador que
+se van a usar un encabezado y pie personalizados.
+
+A continuación hay definir el texto del encabezado y del pie. El paquete
+\texttt{fancyhdr} divide tanto el encabezado como el pie de página en
+tres areas (izquierda, centro y derecha) e incorpora comandos para
+escribir en cada una de ellas. El texto del área de la izquierda siempre
+se justifica a la izquierda, el del área del centro se justifica
+centrado y el del área derecha justificado a la derecha. Por otro lado,
+para documentos a doble cara, se distingue también entre encabezados y
+pies de páginas pares e impares.
+
+Para definir el encabezado y el pie de página se utilizan los comandos
+
+-\texttt{\textbackslash{}fancyhead{[}opcion{]}\{texo\}} añade el
+\texttt{texto} al encabezado de página en el area que se indique en el
+argumento opcional \texttt{opcion}, que puede ser \texttt{L} (área de la
+izquierda), \texttt{C} (área del centro) o \texttt{R} (área de la
+derecha), aunque para documentos a doble cara también se puede
+especificar el encabezado para páginas pares añadiendo una \texttt{E} o
+impares añadiendo una \texttt{O}.
+
+-\texttt{\textbackslash{}fancyfoot{[}opcion{]}\{texo\}} añade el
+\texttt{texto} al pie en el area que se indique en el argumento opcional
+\texttt{opcion}.
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-warning-color!10!white, breakable, colframe=quarto-callout-warning-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Advertencia}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
+El paquete \texttt{fancyhdr} no elimina los encabezados por defecto de
+cada tipo de documento, por lo que si se van a definir encabezados o
+pies personalizados, conviene utilizar los comandos
+\texttt{\textbackslash{}fancyhead\{\}} y
+\texttt{\textbackslash{}fancyfoot\{\}} para eliminar el encabezado y pie
+por defecto antes de definir los propios.
+\end{tcolorbox}
+
+\textbf{Ejemplo}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\% PREÁMBULO}
+\BuiltInTok{\textbackslash{}usepackage}\NormalTok{\{}\ExtensionTok{blindtext}\NormalTok{\}}
+\BuiltInTok{\textbackslash{}usepackage}\NormalTok{\{}\ExtensionTok{fancyhdr}\NormalTok{\}}
+\FunctionTok{\textbackslash{}pagestyle}\NormalTok{\{fancy\}}
+\FunctionTok{\textbackslash{}fancyhead}\NormalTok{\{\} }\CommentTok{\% Borra el encabezado por defecto}
+\FunctionTok{\textbackslash{}fancyhead}\NormalTok{[RO,LE]\{}\FunctionTok{\textbackslash{}textbf}\NormalTok{\{Mi encabezado\}\}}
+\FunctionTok{\textbackslash{}fancyhead}\NormalTok{[C]\{Alfredo Sánchez\}}
+\FunctionTok{\textbackslash{}fancyfoot}\NormalTok{\{\} }\CommentTok{\% Borra el pie por defecto}
+\FunctionTok{\textbackslash{}fancyfoot}\NormalTok{[LE,RO]\{}\FunctionTok{\textbackslash{}thepage}\NormalTok{\}}
+\FunctionTok{\textbackslash{}fancyfoot}\NormalTok{[LO,RE]\{}\FunctionTok{\textbackslash{}texttt}\NormalTok{\{http://aprendeconalf.es\}\}}
+
+\CommentTok{\% CUERPO}
+\KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
+\KeywordTok{\textbackslash{}section}\NormalTok{\{Introducción\}}
+\NormalTok{Este es una página con encabezado y pie personalizado.}
+
+\KeywordTok{\textbackslash{}subsection}\NormalTok{\{Texto de relleno\}}
+
+\FunctionTok{\textbackslash{}blindtext}\NormalTok{[9]}
+\KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
+\includegraphics{./img/diseño-pagina/encabezado-pie.png}
+\end{tcolorbox}
+
+Como se puede observar, por defecto \texttt{fancyhdr} introduce una
+línea horizontal para separar el encabezado. Es posible modificar el
+grosor de la línea redefiniendo los comandos
+\texttt{\textbackslash{}headrulewith} y
+\texttt{\textbackslash{}footrulewith}. Por ejemplo, si no queremos que
+aparezca la línea se escribiría
+\texttt{\textbackslash{}renewcommand\{\textbackslash{}headrulewidth\}\{0pt\}}.
+
+Finalmente, el espacio entre el encabezado y el cuerpo del texto también
+se controla con el paquete \texttt{geometry} con la opción
+\texttt{headsep=x}. Del mismo modo, la separación entre el pie y el
+cuerpo se controla con la opción \texttt{footskip=x}.
+
+\textbf{Ejemplo}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\% PREÁMBULO}
+\BuiltInTok{\textbackslash{}usepackage}\NormalTok{\{}\ExtensionTok{blindtext}\NormalTok{\}}
+\BuiltInTok{\textbackslash{}usepackage}\NormalTok{[top= 4cm, headsep=2cm]\{}\ExtensionTok{geometry}\NormalTok{\}}
+\BuiltInTok{\textbackslash{}usepackage}\NormalTok{\{}\ExtensionTok{fancyhdr}\NormalTok{\}}
+\FunctionTok{\textbackslash{}pagestyle}\NormalTok{\{fancy\}}
+\FunctionTok{\textbackslash{}fancyhead}\NormalTok{\{\} }\CommentTok{\% Borra el encabezado por defecto}
+\FunctionTok{\textbackslash{}fancyhead}\NormalTok{[R]\{}\FunctionTok{\textbackslash{}textbf}\NormalTok{\{Mi encabezado\}\}}
+\FunctionTok{\textbackslash{}fancyhead}\NormalTok{[C]\{Alfredo Sánchez\}}
+\FunctionTok{\textbackslash{}fancyfoot}\NormalTok{\{\} }\CommentTok{\% Borra el pie por defecto}
+\FunctionTok{\textbackslash{}fancyfoot}\NormalTok{[R]\{}\FunctionTok{\textbackslash{}thepage}\NormalTok{\}}
+\FunctionTok{\textbackslash{}fancyfoot}\NormalTok{[L]\{}\FunctionTok{\textbackslash{}texttt}\NormalTok{\{http://aprendeconalf.es\}\}}
+\FunctionTok{\textbackslash{}renewcommand}\NormalTok{\{}\ExtensionTok{\textbackslash{}headrulewidth}\NormalTok{\}\{0pt\}}
+
+\CommentTok{\% CUERPO}
+\KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
+\KeywordTok{\textbackslash{}section}\NormalTok{\{Introducción\}}
+\NormalTok{Este es una página con encabezado y pie personalizado.}
+
+\KeywordTok{\textbackslash{}subsection}\NormalTok{\{Texto de relleno\}}
+
+\FunctionTok{\textbackslash{}blindtext}\NormalTok{[9]}
+\KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
+\includegraphics{./img/diseño-pagina/encabezado-pie-2.png}
 \end{tcolorbox}
 
 \bookmarksetup{startatroot}
@@ -2570,22 +2753,22 @@ siguientes argumentos:
 \begin{itemize}
 \tightlist
 \item
-  \href{https://www.latex-project.org/}{The \(\LaTeX\) project}. Sito
-  web principal del proyecto \(\LaTeX\) con multitud de materiales para
+  \href{https://www.latex-project.org/}{The \LaTeX project}. Sito
+  web principal del proyecto \LaTeX con multitud de materiales para
   aprender y noticias sobre el desarrollo de nuevas versiones.
 \item
-  \href{https://ctan.org/}{Comprehensive \(\TeX\) Archive Network}.
-  Principal repositorios de paquetes para \(\TeX\) y \(\LaTeX\).
+  \href{https://ctan.org/}{Comprehensive \TeX Archive Network}.
+  Principal repositorios de paquetes para \TeX y \LaTeX.
 \item
   \href{www.cervantex.es/}{CervanTeX}. Grupos de usuarios de TeX
   hispanoablantes.
 \item
   \href{https://project-awesome.org/egeerardyn/awesome-LaTeX}{Awesome
   LaTeX}. Sitio web con multitud de recursos curados para escribir
-  documentos con \(\LaTeX\).
+  documentos con \LaTeX.
 \item
-  \href{http://wch.github.io/latexsheet/}{LaTeX cheat sheet}. Resumen de
-  los principales comandos y entornos de \(\LaTeX\).
+  \href{chulatex.pdf}{Chuleta de \LaTeX}. Resumen de los principales
+  comandos y entornos de \LaTeX.
 \end{itemize}
 
 

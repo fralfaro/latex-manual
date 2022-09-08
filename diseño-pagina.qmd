@@ -21,9 +21,6 @@ Por defecto la orientación del documento es vertical, pero puede ponerse en for
 
 ```latex
 % PREÁMBULO
-\usepackage{fontspec}
-\usepackage{polyglossia}
-\setdefaultlanguage{spanish}
 \usepackage[a5paper, landscape]{geometry}
 \usepackage{blindtext}
 
@@ -56,9 +53,6 @@ También permite definir los márgenes del documento mediante los siguientes arg
 
 ```latex
 % PREÁMBULO
-\usepackage{fontspec}
-\usepackage{polyglossia}
-\setdefaultlanguage{spanish}
 \usepackage[a4paper, left=2.5cm, right=3.5cm, top=45mm, bottom=20mm]{geometry}
 \usepackage{blindtext}
 
@@ -76,3 +70,85 @@ Este es una página con márgenes personalizados.
 ![](img/dise%C3%B1o-pagina/pagina-margenes-personalizados.png)
 :::
 
+## Encabezados y pies de página
+
+$\LaTeX$ incluye encabezados y pies de página automáticos dependiendo del tipo de documento. Para las clases `article` y `report` no hay encabezado y el pie es el número de página, mientras que para la clase `book` el encabezado incluye la página y la sección a la que corresponde la página. No obstante, el usuario puede definir sus propios encabezados y pies mediante el paquete `fancyhdr`. 
+
+Una vez cargado este paquete y antes de definir el texto del encabezado y del pie, hay que cambiar el estilo de página (`plain` por defecto) a `fancy`, y para ello se utiliza el comando `\pagestyle{fancy}` que indica al compilador que se van a usar un encabezado y pie personalizados.
+
+A continuación hay definir el texto del encabezado y del pie. El paquete `fancyhdr` divide tanto el encabezado como el pie de página en tres areas (izquierda, centro y derecha) e incorpora comandos para escribir en cada una de ellas. El texto del área de la izquierda siempre se justifica a la izquierda, el del área del centro se justifica centrado y el del área derecha justificado a la derecha. Por otro lado, para documentos a doble cara, se distingue también entre encabezados y pies de páginas pares e impares. 
+
+Para definir el encabezado y el pie de página se utilizan los comandos
+
+-`\fancyhead[opcion]{texo}` añade el `texto` al encabezado de página en el area que se indique en el argumento opcional `opcion`, que puede ser `L` (área de la izquierda), `C` (área del centro) o `R` (área de la derecha), aunque para documentos a doble cara también se puede especificar el encabezado para páginas pares añadiendo una `E` o impares añadiendo una `O`.
+
+-`\fancyfoot[opcion]{texo}` añade el `texto` al pie en el area que se indique en el argumento opcional `opcion`.
+
+:::{.callout-warning}
+El paquete `fancyhdr` no elimina los encabezados por defecto de cada tipo de documento, por lo que si se van a definir encabezados o pies personalizados, conviene utilizar los comandos `\fancyhead{}` y `\fancyfoot{}` para eliminar el encabezado y pie por defecto antes de definir los propios.
+:::
+
+**Ejemplo**
+
+```latex
+% PREÁMBULO
+\usepackage{blindtext}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{} % Borra el encabezado por defecto
+\fancyhead[RO,LE]{\textbf{Mi encabezado}}
+\fancyhead[C]{Alfredo Sánchez}
+\fancyfoot{} % Borra el pie por defecto
+\fancyfoot[LE,RO]{\thepage}
+\fancyfoot[LO,RE]{\texttt{http://aprendeconalf.es}}
+
+% CUERPO
+\begin{document}
+\section{Introducción}
+Este es una página con encabezado y pie personalizado.
+
+\subsection{Texto de relleno}
+
+\blindtext[9]
+\end{document}
+```
+:::{.callout-note collapse="true" icon=false}
+## Salida
+![](img/diseño-pagina/encabezado-pie.png)
+:::
+
+Como se puede observar, por defecto `fancyhdr` introduce una línea horizontal para separar el encabezado. Es posible modificar el grosor de la línea redefiniendo los comandos `\headrulewith` y `\footrulewith`. Por ejemplo, si no queremos que aparezca la línea se escribiría `\renewcommand{\headrulewidth}{0pt}`. 
+
+Finalmente, el espacio entre el encabezado y el cuerpo del texto también se controla con el paquete `geometry` con la opción `headsep=x`. Del mismo modo, la separación entre el pie y el cuerpo se controla con la opción `footskip=x`. 
+
+
+**Ejemplo**
+
+```latex
+% PREÁMBULO
+\usepackage{blindtext}
+\usepackage[top= 4cm, headsep=2cm]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{} % Borra el encabezado por defecto
+\fancyhead[R]{\textbf{Mi encabezado}}
+\fancyhead[C]{Alfredo Sánchez}
+\fancyfoot{} % Borra el pie por defecto
+\fancyfoot[R]{\thepage}
+\fancyfoot[L]{\texttt{http://aprendeconalf.es}}
+\renewcommand{\headrulewidth}{0pt}
+
+% CUERPO
+\begin{document}
+\section{Introducción}
+Este es una página con encabezado y pie personalizado.
+
+\subsection{Texto de relleno}
+
+\blindtext[9]
+\end{document}
+```
+:::{.callout-note collapse="true" icon=false}
+## Salida
+![](img/diseño-pagina/encabezado-pie-2.png)
+:::

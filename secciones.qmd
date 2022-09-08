@@ -63,7 +63,9 @@ Si se quiere hacer un cambio de línea dentro de un mismo párrafo, se utiliza e
 Este es el primer párrafo del documento, con un \\
 cambio de linea.
 
-Este es el segundo párrafo del documento. Obsérvese que cada vez que se comienza un párrafo la primera línea de desplaza un poco hacia la derecha. Esto se conoce como \emph{sangría}.
+Este es el segundo párrafo del documento. Obsérvese que cada vez que se 
+comienza un párrafo la primera línea de desplaza un poco hacia la derecha. 
+Esto se conoce como \emph{sangría}.
 \end{document}
 ```
 
@@ -83,18 +85,27 @@ Los párrafos se justifican por defecto a la izquierda y a la derecha. $\LaTeX$ 
 ```latex
 % CUERPO
 \begin{document}
-Este es el primer párrafo del documento, y aparece justificado a ambos lados (márgenes izquierdo y derecho) por defecto. Para que las líneas tengan la misma longitud, se utiliza un algoritmo que permite partir las palabras al final de una línea.
+Este es el primer párrafo del documento, y aparece justificado a ambos lados
+(márgenes izquierdo y derecho) por defecto. Para que las líneas tengan la 
+misma longitud, se utiliza un algoritmo que permite partir las palabras al 
+final de una línea.
 
 \begin{flushleft}
-Este es el segundo párrafo del documento y aparece justificado a la izquierda, es decir alineado con el margen izquierdo del documento. Obsérvese que no todas las líneas acaban a la misma altura.
+Este es el segundo párrafo del documento y aparece justificado a la 
+izquierda, es decir alineado con el margen izquierdo del documento. 
+Obsérvese que no todas las líneas acaban a la misma altura.
 \end{flushleft}
 
 \begin{flushright}
-Este es el tercer párrafo del documento y aparece justificado a la derecha, es decir alineado con el margen derecho del documento. Obsérvese que no todas las líneas empiezan a la misma altura.
+Este es el tercer párrafo del documento y aparece justificado a la derecha,
+es decir alineado con el margen derecho del documento. Obsérvese que no 
+todas las líneas empiezan a la misma altura.
 \end{flushright}
 
 \begin{center}
-Este es el último párrafo del documento y aparece justificado en el centro entre los márgenes del documento. Obsérvese que ahora las líneas no empiezan ni terminan a la misma altura. 
+Este es el último párrafo del documento y aparece justificado en el centro
+entre los márgenes del documento. Obsérvese que ahora las líneas no 
+empiezan ni terminan a la misma altura. 
 \end{center}
 \end{document}
 ```

@@ -31,7 +31,8 @@ $\alpha$ se cumple
 \end{equation}
 \end{teo}
 
-Ejemplo de referencia cruzada. La ecuación \ref{eq-trigo} del teorema \ref{teo-trigo} es una ecuación básica en trigonometría.
+Ejemplo de referencia cruzada. La ecuación \ref{eq-trigo} del teorema 
+\ref{teo-trigo} es una ecuación básica en trigonometría.
 \end{document}
 ```
 

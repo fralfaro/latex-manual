@@ -51,7 +51,8 @@ Finalmente para listar las referencias bibliográficas citadas en el documento b
 \addbibresource{bibliografia.bib}
 % CUERPO
 \begin{document}
-El principal libro sobre latex es \cite{lamport_latex_1994}, aunque también es muy interesante el artículo \cite{borbon_latex_2022}
+El principal libro sobre latex es \cite{lamport_latex_1994}, aunque también 
+es muy interesante el artículo \cite{borbon_latex_2022}
 
 \printbibliography
 \end{document}
@@ -75,7 +76,8 @@ backend=biber, style=alphabetic]{biblatex}
 \addbibresource{bibliografia.bib}
 % CUERPO
 \begin{document}
-El principal libro sobre latex es \cite{lamport_latex_1994}, aunque también es muy interesante el artículo \cite{borbon_latex_2022}
+El principal libro sobre latex es \cite{lamport_latex_1994}, aunque también 
+es muy interesante el artículo \cite{borbon_latex_2022}
 
 \printbibliography
 \end{document}

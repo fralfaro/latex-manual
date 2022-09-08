@@ -61,7 +61,8 @@ Ejemplo de lista descriptiva:
 \begin{description}
 \item{\textbf{latex}} Genera documentos en formato dvi.
 \item{\textbf{pdflatex}} Genera documentos en formato pdf.
-\item{\textbf{xelatex}} Genera documentos en formato pdf que admiten codificación Unicode.
+\item{\textbf{xelatex}} Genera documentos en formato pdf que admiten 
+codificación Unicode.
 \end{description}
 \end{document}
 ```

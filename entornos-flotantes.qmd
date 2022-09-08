@@ -31,7 +31,9 @@ Las figuras flotantes se numeran automáticamente y el comando `\label{...}` asi
 \usepackage{graphicx}
 % CUERPO
 \begin{document}
-Ejemplo de imagen flotante. Como se puede apreciar la imagen aparece al principio de la página aunque va después de este párrafo en el código fuente.
+Ejemplo de imagen flotante. Como se puede apreciar la imagen aparece al 
+principio de la página aunque va después de este párrafo en el código 
+fuente.
 
 \begin{figure}[t]
 \begin{center}
@@ -67,7 +69,9 @@ Las tablas, al igual que las figuras, se enumeran automáticamente y pueden refe
 ```latex
 % CUERPO
 \begin{document}
-Ejemplo de tabla flotante. Como se puede apreciar la tabla aparece al principio de la página aunque va después de este párrafo en el código fuente.
+Ejemplo de tabla flotante. Como se puede apreciar la tabla aparece al 
+principio de la página aunque va después de este párrafo en el código 
+fuente.
 
 \begin{table}[t]
 \begin{center}

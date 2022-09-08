@@ -1,39 +1,46 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.9.9)  8 SEP 2022 11:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.27)  8 SEP 2022 22:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **/run/media/alf/datos/misrepositorios/docencia/latex-manual/index.tex
 (/run/media/alf/datos/misrepositorios/docencia/latex-manual/index.tex
-LaTeX2e <2020-02-02> patch level 5
-L3 programming layer <2020-09-06> (/usr/local/texlive/2020/texmf-dist/tex/latex/koma-script/scrreport.cls
-Document Class: scrreport 2020/07/22 v3.31 KOMA-Script document class (report)
-(/usr/local/texlive/2020/texmf-dist/tex/latex/koma-script/scrreprt.cls
-Document Class: scrreprt 2020/07/22 v3.31 KOMA-Script document class (report)
-(/usr/local/texlive/2020/texmf-dist/tex/latex/koma-script/scrkbase.sty
-Package: scrkbase 2020/07/22 v3.31 KOMA-Script package (KOMA-Script-dependent basics and keyval usage)
- (/usr/local/texlive/2020/texmf-dist/tex/latex/koma-script/scrbase.sty
-Package: scrbase 2020/07/22 v3.31 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
- (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
+LaTeX2e <2021-06-01> patch level 1
+L3 programming layer <2021-06-18> (/usr/local/texlive/2021/texmf-dist/tex/latex/koma-script/scrreport.cls
+Document Class: scrreport 2021/03/17 v3.33 KOMA-Script document class (report)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/koma-script/scrreprt.cls
+Document Class: scrreprt 2021/03/17 v3.33 KOMA-Script document class (report)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/koma-script/scrkbase.sty
+Package: scrkbase 2021/03/17 v3.33 KOMA-Script package (KOMA-Script-dependent basics and keyval usage)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2021/03/17 v3.33 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2021/03/17 v3.33 KOMA-Script package (file load hooks)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/koma-script/scrlfile-hook.sty
+Package: scrlfile-hook 2021/03/17 v3.33 KOMA-Script package (using LaTeX hooks)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/koma-script/scrlogo.sty
+Package: scrlogo 2021/03/17 v3.33 KOMA-Script package (logo)
+))) (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks15
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/koma-script/scrlfile.sty
-Package: scrlfile 2020/07/22 v3.31 KOMA-Script package (loading files)
-))) (/usr/local/texlive/2020/texmf-dist/tex/latex/koma-script/tocbasic.sty
-Package: tocbasic 2020/07/22 v3.31 KOMA-Script package (handling toc-files)
+\KV@toks@=\toks16
+)
+Applying: [2021/05/01] Usage of raw option list on input line 252.
+Already applied: [0000/00/00] compatibility for LaTeX before 2021/05/01 on input line 337.
+)) (/usr/local/texlive/2021/texmf-dist/tex/latex/koma-script/tocbasic.sty
+Package: tocbasic 2021/03/17 v3.33 KOMA-Script package (handling toc-files)
 \scr@dte@tocline@numberwidth=\skip47
-\scr@dte@tocline@numbox=\box45
+\scr@dte@tocline@numbox=\box50
 )
 Package tocbasic Info: babel extension for `toc' omitted
 (tocbasic)             because of missing \bbl@set@language on input line 137.
 Class scrreprt Info: File `scrsize11pt.clo' used instead of
-(scrreprt)           file `scrsize11.clo' to setup font sizes on input line 2433.
- (/usr/local/texlive/2020/texmf-dist/tex/latex/koma-script/scrsize11pt.clo
-File: scrsize11pt.clo 2020/07/22 v3.31 KOMA-Script font size class option (11pt)
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/koma-script/typearea.sty
-Package: typearea 2020/07/22 v3.31 KOMA-Script package (type area)
+(scrreprt)           file `scrsize11.clo' to setup font sizes on input line 2451.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/koma-script/scrsize11pt.clo
+File: scrsize11pt.clo 2021/03/17 v3.33 KOMA-Script font size class option (11pt)
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/koma-script/typearea.sty
+Package: typearea 2021/03/17 v3.33 KOMA-Script package (type area)
 \ta@bcor=\skip48
-\ta@div=\count168
+\ta@div=\count182
 Package typearea Info: You've used standard option `letterpaper'.
 (typearea)             This is correct!
 (typearea)             Internally I'm using `paper=letter'.
@@ -60,124 +67,124 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 11.0pt
 (typearea)              \footskip       = 47.6pt
 (typearea)              \baselineskip   = 13.6pt
-(typearea)              on input line 1739.
+(typearea)              on input line 1741.
 )
-\c@part=\count169
-\c@chapter=\count170
-\c@section=\count171
-\c@subsection=\count172
-\c@subsubsection=\count173
-\c@paragraph=\count174
-\c@subparagraph=\count175
+\c@part=\count183
+\c@chapter=\count184
+\c@section=\count185
+\c@subsection=\count186
+\c@subsubsection=\count187
+\c@paragraph=\count188
+\c@subparagraph=\count189
 \scr@dte@chapter@maxnumwidth=\skip53
 Class scrreprt Info: using compatibility default `afterindent=bysign'
-(scrreprt)           for `\chapter on input line 5626.
+(scrreprt)           for `\chapter on input line 5678.
 \scr@dte@section@maxnumwidth=\skip54
 Class scrreprt Info: using compatibility default `runin=bysign'
-(scrreprt)           for `\section on input line 5637.
+(scrreprt)           for `\section on input line 5689.
 Class scrreprt Info: using compatibility default `afterindent=bysign'
-(scrreprt)           for `\section on input line 5637.
+(scrreprt)           for `\section on input line 5689.
 \scr@dte@part@maxnumwidth=\skip55
 Class scrreprt Info: using compatibility default `afterindent=true'
-(scrreprt)           for `\part on input line 5646.
+(scrreprt)           for `\part on input line 5698.
 \scr@dte@subsection@maxnumwidth=\skip56
 Class scrreprt Info: using compatibility default `runin=bysign'
-(scrreprt)           for `\subsection on input line 5656.
+(scrreprt)           for `\subsection on input line 5708.
 Class scrreprt Info: using compatibility default `afterindent=bysign'
-(scrreprt)           for `\subsection on input line 5656.
+(scrreprt)           for `\subsection on input line 5708.
 \scr@dte@subsubsection@maxnumwidth=\skip57
 Class scrreprt Info: using compatibility default `runin=bysign'
-(scrreprt)           for `\subsubsection on input line 5666.
+(scrreprt)           for `\subsubsection on input line 5718.
 Class scrreprt Info: using compatibility default `afterindent=bysign'
-(scrreprt)           for `\subsubsection on input line 5666.
+(scrreprt)           for `\subsubsection on input line 5718.
 \scr@dte@paragraph@maxnumwidth=\skip58
 Class scrreprt Info: using compatibility default `runin=bysign'
-(scrreprt)           for `\paragraph on input line 5677.
+(scrreprt)           for `\paragraph on input line 5729.
 Class scrreprt Info: using compatibility default `afterindent=bysign'
-(scrreprt)           for `\paragraph on input line 5677.
+(scrreprt)           for `\paragraph on input line 5729.
 \scr@dte@subparagraph@maxnumwidth=\skip59
 Class scrreprt Info: using compatibility default `runin=bysign'
-(scrreprt)           for `\subparagraph on input line 5687.
+(scrreprt)           for `\subparagraph on input line 5739.
 Class scrreprt Info: using compatibility default `afterindent=bysign'
-(scrreprt)           for `\subparagraph on input line 5687.
+(scrreprt)           for `\subparagraph on input line 5739.
 \abovecaptionskip=\skip60
 \belowcaptionskip=\skip61
-\c@pti@nb@sid@b@x=\box46
+\c@pti@nb@sid@b@x=\box51
 Package tocbasic Info: babel extension for `lof' omitted
-(tocbasic)             because of missing \bbl@set@language on input line 6924.
+(tocbasic)             because of missing \bbl@set@language on input line 6976.
 \scr@dte@figure@maxnumwidth=\skip62
-\c@figure=\count176
+\c@figure=\count190
 Package tocbasic Info: babel extension for `lot' omitted
-(tocbasic)             because of missing \bbl@set@language on input line 6941.
+(tocbasic)             because of missing \bbl@set@language on input line 6993.
 \scr@dte@table@maxnumwidth=\skip63
-\c@table=\count177
-Class scrreprt Info: Redefining `\numberline' on input line 7110.
-\bibindent=\dimen134
-)) (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2020/01/20 v2.17e AMS math features
+\c@table=\count191
+Class scrreprt Info: Redefining `\numberline' on input line 7162.
+\bibindent=\dimen138
+)) (/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2021/04/20 v2.17j AMS math features
 \@mathmargin=\skip64
 
 For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
- (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsgen.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks16
-\ex@=\dimen135
-)) (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsbsy.sty
+\@emptytoks=\toks17
+\ex@=\dimen139
+)) (/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen136
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
+\pmbraise@=\dimen140
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count178
-LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count179
-\leftroot@=\count180
-LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count181
-\DOTSCASE@=\count182
-LaTeX Info: Redefining \ldots on input line 486.
-LaTeX Info: Redefining \dots on input line 489.
-LaTeX Info: Redefining \cdots on input line 610.
-\Mathstrutbox@=\box47
-\strutbox@=\box48
-\big@size=\dimen137
-LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count183
-\c@MaxMatrixCols=\count184
+\inf@bad=\count192
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count193
+\leftroot@=\count194
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count195
+\DOTSCASE@=\count196
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box52
+\strutbox@=\box53
+\big@size=\dimen141
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count197
+\c@MaxMatrixCols=\count198
 \dotsspace@=\muskip16
-\c@parentequation=\count185
-\dspbrk@lvl=\count186
-\tag@help=\toks17
-\row@=\count187
-\column@=\count188
-\maxfields@=\count189
-\andhelp@=\toks18
-\eqnshift@=\dimen138
-\alignsep@=\dimen139
-\tagshift@=\dimen140
-\tagwidth@=\dimen141
-\totwidth@=\dimen142
-\lineht@=\dimen143
-\@envbody=\toks19
+\c@parentequation=\count199
+\dspbrk@lvl=\count266
+\tag@help=\toks18
+\row@=\count267
+\column@=\count268
+\maxfields@=\count269
+\andhelp@=\toks19
+\eqnshift@=\dimen142
+\alignsep@=\dimen143
+\tagshift@=\dimen144
+\tagwidth@=\dimen145
+\totwidth@=\dimen146
+\lineht@=\dimen147
+\@envbody=\toks20
 \multlinegap=\skip65
 \multlinetaggap=\skip66
-\mathdisplay@stack=\toks20
-LaTeX Info: Redefining \[ on input line 2859.
-LaTeX Info: Redefining \] on input line 2860.
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/amssymb.sty
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2923.
+LaTeX Info: Redefining \] on input line 2924.
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
- (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (/usr/local/texlive/2020/texmf-dist/tex/latex/lm/lmodern.sty
-Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
+)) (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/lmodern.sty
+Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
 LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
@@ -210,46 +217,46 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
-) (/usr/local/texlive/2020/texmf-dist/tex/generic/iftex/iftex.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2020/03/06 v1.0d TeX engine tests
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 112.
- (/usr/local/texlive/2020/texmf-dist/tex/latex/lm/t1lmr.fd
-File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)) (/usr/local/texlive/2020/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2018/08/11 v1.3c Input encoding file
-\inpenc@prehook=\toks21
-\inpenc@posthook=\toks22
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/base/textcomp.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)) (/usr/local/texlive/2021/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks22
+\inpenc@posthook=\toks23
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/upquote/upquote.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/upquote/upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verbatim
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/microtype/microtype.sty
-Package: microtype 2019/11/18 v2.7d Micro-typographical refinements (RS)
-\MT@toks=\toks23
-\MT@count=\count190
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2021/03/14 v2.8c Micro-typographical refinements (RS)
+\MT@toks=\toks24
+\MT@count=\count270
 LaTeX Info: Redefining \textls on input line 790.
-\MT@outer@kern=\dimen144
-LaTeX Info: Redefining \textmicrotypecontext on input line 1354.
-\MT@listname@count=\count191
- (/usr/local/texlive/2020/texmf-dist/tex/latex/microtype/microtype-pdftex.def
-File: microtype-pdftex.def 2019/11/18 v2.7d Definitions specific to pdftex (RS)
-LaTeX Info: Redefining \lsstyle on input line 914.
-LaTeX Info: Redefining \lslig on input line 914.
+\MT@outer@kern=\dimen148
+LaTeX Info: Redefining \textmicrotypecontext on input line 1374.
+\MT@listname@count=\count271
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+File: microtype-pdftex.def 2021/03/14 v2.8c Definitions specific to pdftex (RS)
+LaTeX Info: Redefining \lsstyle on input line 915.
+LaTeX Info: Redefining \lslig on input line 915.
 \MT@outer@space=\skip67
 )
 Package microtype Info: Loading configuration file microtype.cfg.
- (/usr/local/texlive/2020/texmf-dist/tex/latex/microtype/microtype.cfg
-File: microtype.cfg 2019/11/18 v2.7d microtype main configuration file (RS)
-)) (/usr/local/texlive/2020/texmf-dist/tex/latex/xcolor/xcolor.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2021/03/14 v2.8c microtype main configuration file (RS)
+)) (/usr/local/texlive/2021/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
- (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
- (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2020/08/26 v1.2 Graphics/color driver for pdftex
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 )
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
@@ -260,526 +267,527 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
- (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/dvipsnam.def
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/dvipsnam.def
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/xcolor/svgnam.def
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/xcolor/svgnam.def
 File: svgnam.def 2016/05/11 v2.12 Predefined colors according to SVG 1.1 (UK)
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/xcolor/x11nam.def
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/xcolor/x11nam.def
 File: x11nam.def 2016/05/11 v2.12 Predefined colors according to Unix/X11 (UK)
-)) (/usr/local/texlive/2020/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
-Package: fancyvrb 2020/05/03 v3.6 verbatim text (tvz,hv)
-\FV@CodeLineNo=\count192
+)) (/usr/local/texlive/2021/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2021/01/20 v3.7 verbatim text (tvz,hv)
+\FV@CodeLineNo=\count272
 \FV@InFile=\read2
-\FV@TabBox=\box49
-\c@FancyVerbLine=\count193
-\FV@StepNumber=\count194
+\FV@TabBox=\box54
+\c@FancyVerbLine=\count273
+\FV@StepNumber=\count274
 \FV@OutFile=\write3
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/framed/framed.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/framed/framed.sty
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \OuterFrameSep=\skip68
-\fb@frw=\dimen145
-\fb@frh=\dimen146
-\FrameRule=\dimen147
-\FrameSep=\dimen148
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/longtable.sty
-Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
+\fb@frw=\dimen149
+\fb@frh=\dimen150
+\FrameRule=\dimen151
+\FrameSep=\dimen152
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2021-05-07 v4.16 Multi-page Table package (DPC)
 \LTleft=\skip69
 \LTright=\skip70
 \LTpre=\skip71
 \LTpost=\skip72
-\LTchunksize=\count195
-\LTcapwidth=\dimen149
-\LT@head=\box50
-\LT@firsthead=\box51
-\LT@foot=\box52
-\LT@lastfoot=\box53
-\LT@cols=\count196
-\LT@rows=\count197
-\c@LT@tables=\count198
-\c@LT@chunks=\count199
-\LT@p@ftn=\toks24
+\LTchunksize=\count275
+\LTcapwidth=\dimen153
+\LT@head=\box55
+\LT@firsthead=\box56
+\LT@foot=\box57
+\LT@lastfoot=\box58
+\LT@gbox=\box59
+\LT@cols=\count276
+\LT@rows=\count277
+\c@LT@tables=\count278
+\c@LT@chunks=\count279
+\LT@p@ftn=\toks25
 )
 Class scrreprt Info: longtable captions redefined on input line 95.
- (/usr/local/texlive/2020/texmf-dist/tex/latex/booktabs/booktabs.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen150
-\lightrulewidth=\dimen151
-\cmidrulewidth=\dimen152
-\belowrulesep=\dimen153
-\belowbottomsep=\dimen154
-\aboverulesep=\dimen155
-\abovetopsep=\dimen156
-\cmidrulesep=\dimen157
-\cmidrulekern=\dimen158
-\defaultaddspace=\dimen159
-\@cmidla=\count266
-\@cmidlb=\count267
-\@aboverulesep=\dimen160
-\@belowrulesep=\dimen161
-\@thisruleclass=\count268
-\@lastruleclass=\count269
-\@thisrulewidth=\dimen162
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/array.sty
-Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
-\col@sep=\dimen163
-\ar@mcellbox=\box54
-\extrarowheight=\dimen164
-\NC@list=\toks25
+\heavyrulewidth=\dimen154
+\lightrulewidth=\dimen155
+\cmidrulewidth=\dimen156
+\belowrulesep=\dimen157
+\belowbottomsep=\dimen158
+\aboverulesep=\dimen159
+\abovetopsep=\dimen160
+\cmidrulesep=\dimen161
+\cmidrulekern=\dimen162
+\defaultaddspace=\dimen163
+\@cmidla=\count280
+\@cmidlb=\count281
+\@aboverulesep=\dimen164
+\@belowrulesep=\dimen165
+\@thisruleclass=\count282
+\@lastruleclass=\count283
+\@thisrulewidth=\dimen166
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/tools/array.sty
+Package: array 2021/04/20 v2.5e Tabular extension package (FMi)
+\col@sep=\dimen167
+\ar@mcellbox=\box60
+\extrarowheight=\dimen168
+\NC@list=\toks26
 \extratabsurround=\skip73
 \backup@length=\skip74
-\ar@cellbox=\box55
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/calc.sty
+\ar@cellbox=\box61
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count270
-\calc@Bcount=\count271
-\calc@Adimen=\dimen165
-\calc@Bdimen=\dimen166
+\calc@Acount=\count284
+\calc@Bcount=\count285
+\calc@Adimen=\dimen169
+\calc@Bdimen=\dimen170
 \calc@Askip=\skip75
 \calc@Bskip=\skip76
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count272
+\calc@Ccount=\count286
 \calc@Cskip=\skip77
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2020/08/24 v2.5j e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count273
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/footnotehyper/footnotehyper.sty
-Package: footnotehyper 2019/11/07 v1.1a hyperref aware footnote.sty (JFB)
-\FNH@notes=\box56
-\FNH@width=\dimen167
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
- (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
- (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/trig.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count287
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/footnotehyper/footnotehyper.sty
+Package: footnotehyper 2021/02/04 v1.1d hyperref aware footnote.sty (JFB)
+\FNH@notes=\box62
+\FNH@width=\dimen171
+\FNH@toks=\toks27
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2020/12/05 v1.2c Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 105.
+Package graphics Info: Driver file: pdftex.def on input line 107.
 )
-\Gin@req@height=\dimen168
-\Gin@req@width=\dimen169
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
-Package: tcolorbox 2020/07/31 version 4.31 text color boxes
- (/usr/local/texlive/2020/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/local/texlive/2020/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks26
-\pgfutil@tempdima=\dimen170
-\pgfutil@tempdimb=\dimen171
- (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box57
- (/usr/local/texlive/2020/texmf-dist/tex/latex/ms/everyshi.sty
-Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
-)) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/pgf.revision.tex)
-Package: pgfrcs 2020/01/08 v3.1.5b (3.1.5b)
+\Gin@req@height=\dimen172
+\Gin@req@width=\dimen173
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2021/06/14 version 4.51 text color boxes
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/local/texlive/2021/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks28
+\pgfutil@tempdima=\dimen174
+\pgfutil@tempdimb=\dimen175
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box63
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
 ))
-Package: pgf 2020/01/08 v3.1.5b (3.1.5b)
- (/usr/local/texlive/2020/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/local/texlive/2020/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
-Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
- (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks27
-\pgfkeys@temptoks=\toks28
- (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
-\pgfkeys@tmptoks=\toks29
+Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/local/texlive/2021/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks29
+\pgfkeys@temptoks=\toks30
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks31
 ))
-\pgf@x=\dimen172
-\pgf@y=\dimen173
-\pgf@xa=\dimen174
-\pgf@ya=\dimen175
-\pgf@xb=\dimen176
-\pgf@yb=\dimen177
-\pgf@xc=\dimen178
-\pgf@yc=\dimen179
-\pgf@xd=\dimen180
-\pgf@yd=\dimen181
+\pgf@x=\dimen176
+\pgf@y=\dimen177
+\pgf@xa=\dimen178
+\pgf@ya=\dimen179
+\pgf@xb=\dimen180
+\pgf@yb=\dimen181
+\pgf@xc=\dimen182
+\pgf@yc=\dimen183
+\pgf@xd=\dimen184
+\pgf@yd=\dimen185
 \w@pgf@writea=\write4
 \r@pgf@reada=\read3
-\c@pgf@counta=\count274
-\c@pgf@countb=\count275
-\c@pgf@countc=\count276
-\c@pgf@countd=\count277
-\t@pgf@toka=\toks30
-\t@pgf@tokb=\toks31
-\t@pgf@tokc=\toks32
-\pgf@sys@id@count=\count278
- (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
-File: pgf.cfg 2020/01/08 v3.1.5b (3.1.5b)
+\c@pgf@counta=\count288
+\c@pgf@countb=\count289
+\c@pgf@countc=\count290
+\c@pgf@countd=\count291
+\t@pgf@toka=\toks32
+\t@pgf@tokb=\toks33
+\t@pgf@tokc=\toks34
+\pgf@sys@id@count=\count292
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
 )
 Driver file for pgf: pgfsys-pdftex.def
- (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
-File: pgfsys-pdftex.def 2020/01/08 v3.1.5b (3.1.5b)
- (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
-File: pgfsys-common-pdf.def 2020/01/08 v3.1.5b (3.1.5b)
-))) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
-File: pgfsyssoftpath.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfsyssoftpath@smallbuffer@items=\count279
-\pgfsyssoftpath@bigbuffer@items=\count280
-) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
-File: pgfsysprotocol.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-)) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
-Package: pgfcore 2020/01/08 v3.1.5b (3.1.5b)
- (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen182
-\pgfmath@count=\count281
-\pgfmath@box=\box58
-\pgfmath@toks=\toks33
-\pgfmath@stack@operand=\toks34
-\pgfmath@stack@operation=\toks35
-) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex))) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count282
-)) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
-File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@picminx=\dimen183
-\pgf@picmaxx=\dimen184
-\pgf@picminy=\dimen185
-\pgf@picmaxy=\dimen186
-\pgf@pathminx=\dimen187
-\pgf@pathmaxx=\dimen188
-\pgf@pathminy=\dimen189
-\pgf@pathmaxy=\dimen190
-\pgf@xx=\dimen191
-\pgf@xy=\dimen192
-\pgf@yx=\dimen193
-\pgf@yy=\dimen194
-\pgf@zx=\dimen195
-\pgf@zy=\dimen196
-) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
-File: pgfcorepathconstruct.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@path@lastx=\dimen197
-\pgf@path@lasty=\dimen198
-) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
-File: pgfcorepathusage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@shorten@end@additional=\dimen199
-\pgf@shorten@start@additional=\dimen256
-) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
-File: pgfcorescopes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfpic=\box59
-\pgf@hbox=\box60
-\pgf@layerbox@main=\box61
-\pgf@picture@serial@count=\count283
-) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
-File: pgfcoregraphicstate.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgflinewidth=\dimen257
-) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
-File: pgfcoretransformations.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@pt@x=\dimen258
-\pgf@pt@y=\dimen259
-\pgf@pt@temp=\dimen260
-) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
-File: pgfcorequick.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
-File: pgfcoreobjects.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
-File: pgfcorepathprocessing.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
-File: pgfcorearrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfarrowsep=\dimen261
-) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
-File: pgfcoreshade.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@max=\dimen262
-\pgf@sys@shading@range@num=\count284
-\pgf@shadingcount=\count285
-) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
-File: pgfcoreimage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
- (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
-File: pgfcoreexternal.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfexternal@startupbox=\box62
-)) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
-File: pgfcorelayers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
-File: pgfcoretransparency.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
-File: pgfcorepatterns.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
-File: pgfcorerdf.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-))) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
-File: pgfmoduleshapes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfnodeparttextbox=\box63
-) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
-File: pgfmoduleplot.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
-Package: pgfcomp-version-0-65 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@nodesepstart=\dimen263
-\pgf@nodesepend=\dimen264
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
-Package: pgfcomp-version-1-18 2020/01/08 v3.1.5b (3.1.5b)
-)) (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/verbatim.sty
-Package: verbatim 2019/11/10 v1.5r LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks36
-\verbatim@line=\toks37
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2021/05/15 v3.1.9a (3.1.9a)
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
+))) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfsyssoftpath@smallbuffer@items=\count293
+\pgfsyssoftpath@bigbuffer@items=\count294
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen186
+\pgfmath@count=\count295
+\pgfmath@box=\box64
+\pgfmath@toks=\toks35
+\pgfmath@stack@operand=\toks36
+\pgfmath@stack@operation=\toks37
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex))) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count296
+)) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@picminx=\dimen187
+\pgf@picmaxx=\dimen188
+\pgf@picminy=\dimen189
+\pgf@picmaxy=\dimen190
+\pgf@pathminx=\dimen191
+\pgf@pathmaxx=\dimen192
+\pgf@pathminy=\dimen193
+\pgf@pathmaxy=\dimen194
+\pgf@xx=\dimen195
+\pgf@xy=\dimen196
+\pgf@yx=\dimen197
+\pgf@yy=\dimen198
+\pgf@zx=\dimen199
+\pgf@zy=\dimen256
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@path@lastx=\dimen257
+\pgf@path@lasty=\dimen258
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@shorten@end@additional=\dimen259
+\pgf@shorten@start@additional=\dimen260
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfpic=\box65
+\pgf@hbox=\box66
+\pgf@layerbox@main=\box67
+\pgf@picture@serial@count=\count297
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgflinewidth=\dimen261
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@pt@x=\dimen262
+\pgf@pt@y=\dimen263
+\pgf@pt@temp=\dimen264
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfarrowsep=\dimen265
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@max=\dimen266
+\pgf@sys@shading@range@num=\count298
+\pgf@shadingcount=\count299
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfexternal@startupbox=\box68
+)) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfnodeparttextbox=\box69
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@nodesepstart=\dimen267
+\pgf@nodesepend=\dimen268
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
+)) (/usr/local/texlive/2021/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks38
+\verbatim@line=\toks39
 \verbatim@in@stream=\read4
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/environ/environ.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/environ/environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
- (/usr/local/texlive/2020/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
-\tcb@titlebox=\box64
-\tcb@upperbox=\box65
-\tcb@lowerbox=\box66
-\tcb@phantombox=\box67
-\c@tcbbreakpart=\count286
-\c@tcblayer=\count287
-\c@tcolorbox@number=\count288
-\tcb@temp=\box68
-\tcb@temp=\box69
-\tcb@temp=\box70
-\tcb@temp=\box71
-\tcb@out=\write5
-\tcb@record@out=\write6
- (/usr/local/texlive/2020/texmf-dist/tex/latex/tcolorbox/tcbraster.code.tex
-Library (tcolorbox): 'tcbraster.code.tex' version '4.31'
-\c@tcbrastercolumn=\count289
-\c@tcbrasterrow=\count290
-\c@tcbraster=\count291
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
-Library (tcolorbox): 'tcbskins.code.tex' version '4.31'
-(/usr/local/texlive/2020/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/local/texlive/2020/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr/local/texlive/2020/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/usr/local/texlive/2020/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
-Package: pgffor 2020/01/08 v3.1.5b (3.1.5b)
- (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen265
-\pgffor@skip=\dimen266
-\pgffor@stack=\toks38
-\pgffor@toks=\toks39
-)) (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
-Package: tikz 2020/01/08 v3.1.5b (3.1.5b)
- (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
-File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@plot@mark@count=\count292
-\pgfplotmarksize=\dimen267
+\tcb@titlebox=\box70
+\tcb@upperbox=\box71
+\tcb@lowerbox=\box72
+\tcb@phantombox=\box73
+\c@tcbbreakpart=\count300
+\c@tcblayer=\count301
+\c@tcolorbox@number=\count302
+\tcb@temp=\box74
+\tcb@temp=\box75
+\tcb@temp=\box76
+\tcb@temp=\box77
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/tcolorbox/tcbraster.code.tex
+Library (tcolorbox): 'tcbraster.code.tex' version '4.51'
+\c@tcbrastercolumn=\count303
+\c@tcbrasterrow=\count304
+\c@tcbrasternum=\count305
+\c@tcbraster=\count306
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
+Library (tcolorbox): 'tcbskins.code.tex' version '4.51'
+(/usr/local/texlive/2021/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/local/texlive/2021/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr/local/texlive/2021/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/usr/local/texlive/2021/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen269
+\pgffor@skip=\dimen270
+\pgffor@stack=\toks40
+\pgffor@toks=\toks41
+)) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@plot@mark@count=\count307
+\pgfplotmarksize=\dimen271
 )
-\tikz@lastx=\dimen268
-\tikz@lasty=\dimen269
-\tikz@lastxsaved=\dimen270
-\tikz@lastysaved=\dimen271
-\tikz@lastmovetox=\dimen272
-\tikz@lastmovetoy=\dimen273
-\tikzleveldistance=\dimen274
-\tikzsiblingdistance=\dimen275
-\tikz@figbox=\box72
-\tikz@figbox@bg=\box73
-\tikz@tempbox=\box74
-\tikz@tempbox@bg=\box75
-\tikztreelevel=\count293
-\tikznumberofchildren=\count294
-\tikznumberofcurrentchild=\count295
-\tikz@fig@count=\count296
- (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
-File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfmatrixcurrentrow=\count297
-\pgfmatrixcurrentcolumn=\count298
-\pgf@matrix@numberofcolumns=\count299
+\tikz@lastx=\dimen272
+\tikz@lasty=\dimen273
+\tikz@lastxsaved=\dimen274
+\tikz@lastysaved=\dimen275
+\tikz@lastmovetox=\dimen276
+\tikz@lastmovetoy=\dimen277
+\tikzleveldistance=\dimen278
+\tikzsiblingdistance=\dimen279
+\tikz@figbox=\box78
+\tikz@figbox@bg=\box79
+\tikz@tempbox=\box80
+\tikz@tempbox@bg=\box81
+\tikztreelevel=\count308
+\tikznumberofchildren=\count309
+\tikznumberofcurrentchild=\count310
+\tikz@fig@count=\count311
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfmatrixcurrentrow=\count312
+\pgfmatrixcurrentcolumn=\count313
+\pgf@matrix@numberofcolumns=\count314
 )
-\tikz@expandcount=\count300
- (/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\tikz@expandcount=\count315
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )))
-\tcb@waterbox=\box76
- (/usr/local/texlive/2020/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
-Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '4.31'
-)) (/usr/local/texlive/2020/texmf-dist/tex/latex/tcolorbox/tcbbreakable.code.tex
-Library (tcolorbox): 'tcbbreakable.code.tex' version '4.31'
-\tcb@testbox=\box77
-\tcb@totalupperbox=\box78
-\tcb@totallowerbox=\box79
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/tcolorbox/tcbhooks.code.tex
-Library (tcolorbox): 'tcbhooks.code.tex' version '4.31'
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/tcolorbox/tcbtheorems.code.tex
-Library (tcolorbox): 'tcbtheorems.code.tex' version '4.31'
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/tcolorbox/tcbfitting.code.tex
-Library (tcolorbox): 'tcbfitting.code.tex' version '4.31'
-\tcbfitdim=\dimen276
-\tcb@lowerfitdim=\dimen277
-\tcb@upperfitdim=\dimen278
-\tcb@cur@hbadness=\count301
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/tcolorbox/tcbxparse.code.tex
-Library (tcolorbox): 'tcbxparse.code.tex' version '4.31'
-(/usr/local/texlive/2020/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (/usr/local/texlive/2020/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2020-09-06 L3 programming layer (loader) 
- (/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2020-09-01 L3 backend support: PDF output (pdfTeX)
-\l__kernel_color_stack_int=\count302
-\l__pdf_internal_box=\box80
-))
-Package: xparse 2020-05-15 L3 Experimental document command parser
- (/usr/local/texlive/2020/texmf-dist/tex/latex/l3packages/xparse/xparse-generic.tex
-\l__xparse_current_arg_int=\count303
-\g__xparse_grabber_int=\count304
-\l__xparse_m_args_int=\count305
-\l__xparse_v_nesting_int=\count306
-)))) (/usr/local/texlive/2020/texmf-dist/tex/latex/fontawesome5/fontawesome5.sty
-Package: fontawesome5 2020/03/24 v5.13.0 Font Awesome 5
- (/usr/local/texlive/2020/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-Package: l3keys2e 2020-05-15 LaTeX2e option processing using LaTeX3 keys
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/fontawesome5/fontawesome5-generic-helper.sty
-Package: fontawesome5-generic-helper 2020/03/24 v5.13.0 non-uTeX helper for fontawesome5
- (/usr/local/texlive/2020/texmf-dist/tex/latex/fontawesome5/fontawesome5-mapping.def))) (/usr/local/texlive/2020/texmf-dist/tex/latex/bookmark/bookmark.sty
-Package: bookmark 2019/12/03 v1.28 PDF bookmarks (HO)
- (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2020-05-15 v7.00e Hypertext links for LaTeX
- (/usr/local/texlive/2020/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
-) (/usr/local/texlive/2020/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
- (/usr/local/texlive/2020/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+\tcb@waterbox=\box82
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '4.51'
+)) (/usr/local/texlive/2021/texmf-dist/tex/latex/tcolorbox/tcbbreakable.code.tex
+Library (tcolorbox): 'tcbbreakable.code.tex' version '4.51'
+(/usr/local/texlive/2021/texmf-dist/tex/generic/oberdiek/pdfcol.sty
+Package: pdfcol 2019/12/29 v1.6 Handle new color stacks for pdfTeX (HO)
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-)
+))
+Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
+\tcb@testbox=\box83
+\tcb@totalupperbox=\box84
+\tcb@totallowerbox=\box85
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/tcolorbox/tcbhooks.code.tex
+Library (tcolorbox): 'tcbhooks.code.tex' version '4.51'
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/tcolorbox/tcbtheorems.code.tex
+Library (tcolorbox): 'tcbtheorems.code.tex' version '4.51'
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/tcolorbox/tcbfitting.code.tex
+Library (tcolorbox): 'tcbfitting.code.tex' version '4.51'
+\tcbfitdim=\dimen280
+\tcb@lowerfitdim=\dimen281
+\tcb@upperfitdim=\dimen282
+\tcb@cur@hbadness=\count316
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/tcolorbox/tcbxparse.code.tex
+Library (tcolorbox): 'tcbxparse.code.tex' version '4.51'
+(/usr/local/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (/usr/local/texlive/2021/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2021-06-18 L3 programming layer (loader) 
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2021-05-07 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count317
+\l__pdf_internal_box=\box86
+))
+Package: xparse 2021-06-18 L3 Experimental document command parser
+))) (/usr/local/texlive/2021/texmf-dist/tex/latex/fontawesome5/fontawesome5.sty
+Package: fontawesome5 2021/06/04 v5.15.3 Font Awesome 5
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2021-06-18 LaTeX2e option processing using LaTeX3 keys
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/fontawesome5/fontawesome5-generic-helper.sty
+Package: fontawesome5-generic-helper 2021/06/04 v5.15.3 non-uTeX helper for fontawesome5
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/fontawesome5/fontawesome5-mapping.def))) (/usr/local/texlive/2021/texmf-dist/tex/latex/bookmark/bookmark.sty
+Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-) (/usr/local/texlive/2020/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
-) (/usr/local/texlive/2020/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-) (/usr/local/texlive/2020/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/pdfescape/pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/hycolor/hycolor.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/hycolor/hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/auxhook/auxhook.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
-\@linkdim=\dimen279
-\Hy@linkcounter=\count307
-\Hy@pagecounter=\count308
- (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
+\@linkdim=\dimen283
+\Hy@linkcounter=\count318
+\Hy@pagecounter=\count319
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
-) (/usr/local/texlive/2020/texmf-dist/tex/generic/intcalc/intcalc.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def
+File: hyperref-langpatches.def 2021-06-07 v7.00m Hyperref: patches for babel languages
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
-) (/usr/local/texlive/2020/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count309
-Package hyperref Info: Option `unicode' set `true' on input line 4338.
- (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2020-05-15 v7.00e Hyperref: PDF Unicode definition (HO)
+\Hy@SavedSpaceFactor=\count320
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Hyper figures OFF on input line 4464.
-Package hyperref Info: Link nesting OFF on input line 4469.
-Package hyperref Info: Hyper index ON on input line 4472.
-Package hyperref Info: Plain pages OFF on input line 4479.
-Package hyperref Info: Backreferencing OFF on input line 4484.
+Package hyperref Info: Option `unicode' set `true' on input line 4073.
+Package hyperref Info: Hyper figures OFF on input line 4192.
+Package hyperref Info: Link nesting OFF on input line 4197.
+Package hyperref Info: Hyper index ON on input line 4200.
+Package hyperref Info: Plain pages OFF on input line 4207.
+Package hyperref Info: Backreferencing OFF on input line 4212.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4717.
-\c@Hy@tempcnt=\count310
- (/usr/local/texlive/2020/texmf-dist/tex/latex/url/url.sty
+Package hyperref Info: Bookmarks ON on input line 4445.
+\c@Hy@tempcnt=\count321
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 5076.
-\XeTeXLinkMargin=\dimen280
- (/usr/local/texlive/2020/texmf-dist/tex/generic/bitset/bitset.sty
+LaTeX Info: Redefining \url on input line 4804.
+\XeTeXLinkMargin=\dimen284
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
- (/usr/local/texlive/2020/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count311
-\Field@Width=\dimen281
-\Fld@charsize=\dimen282
-Package hyperref Info: Hyper figures OFF on input line 6347.
-Package hyperref Info: Link nesting OFF on input line 6352.
-Package hyperref Info: Hyper index ON on input line 6355.
-Package hyperref Info: backreferencing OFF on input line 6362.
-Package hyperref Info: Link coloring OFF on input line 6367.
-Package hyperref Info: Link coloring with OCG OFF on input line 6372.
-Package hyperref Info: PDF/A mode OFF on input line 6377.
-LaTeX Info: Redefining \ref on input line 6417.
-LaTeX Info: Redefining \pageref on input line 6421.
- (/usr/local/texlive/2020/texmf-dist/tex/generic/atbegshi/atbegshi.sty
-Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
+\Fld@menulength=\count322
+\Field@Width=\dimen285
+\Fld@charsize=\dimen286
+Package hyperref Info: Hyper figures OFF on input line 6076.
+Package hyperref Info: Link nesting OFF on input line 6081.
+Package hyperref Info: Hyper index ON on input line 6084.
+Package hyperref Info: backreferencing OFF on input line 6091.
+Package hyperref Info: Link coloring OFF on input line 6096.
+Package hyperref Info: Link coloring with OCG OFF on input line 6101.
+Package hyperref Info: PDF/A mode OFF on input line 6106.
+LaTeX Info: Redefining \ref on input line 6146.
+LaTeX Info: Redefining \pageref on input line 6150.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
 )
-\Hy@abspage=\count312
-\c@Item=\count313
-\c@Hfootnote=\count314
+\Hy@abspage=\count323
+\c@Item=\count324
+\c@Hfootnote=\count325
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
- (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2020-05-15 v7.00e Hyperref driver for pdfTeX
- (/usr/local/texlive/2020/texmf-dist/tex/latex/atveryend/atveryend.sty
-Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2021-06-07 v7.00m Hyperref driver for pdfTeX
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery package
+with kernel methods
 )
-\Fld@listcount=\count315
-\c@bookmark@seq@number=\count316
- (/usr/local/texlive/2020/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+\Fld@listcount=\count326
+\c@bookmark@seq@number=\count327
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
- (/usr/local/texlive/2020/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
 )
 \Hy@SectionHShift=\skip78
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
-File: bkm-pdftex.def 2019/12/03 v1.28 bookmark driver for pdfTeX (HO)
-\BKM@id=\count317
-)) (/usr/local/texlive/2020/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2020/09/02 v3.5a Customizing captions (AR)
- (/usr/local/texlive/2020/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2020/08/30 v2.0 caption3 kernel (AR)
-\captionmargin=\dimen283
-\captionmargin@=\dimen284
-\captionwidth=\dimen285
-\caption@tempdima=\dimen286
-\caption@indent=\dimen287
-\caption@parindent=\dimen288
-\caption@hangindent=\dimen289
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
+File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
+\BKM@id=\count328
+)) (/usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen287
+\captionmargin@=\dimen288
+\captionwidth=\dimen289
+\caption@tempdima=\dimen290
+\caption@indent=\dimen291
+\caption@parindent=\dimen292
+\caption@hangindent=\dimen293
 Package caption Info: KOMA-Script document class detected.
- (/usr/local/texlive/2020/texmf-dist/tex/latex/caption/caption-koma.sto
-File: caption-koma.sto 2020/08/22 v2.0 Adaption of the caption package to the KOMA-Script document classes (AR)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption-koma.sto
+File: caption-koma.sto 2020/09/21 v2.0b Adaption of the caption package to the KOMA-Script document classes (AR)
 ))
-\c@caption@flags=\count318
-\c@continuedfloat=\count319
+\c@caption@flags=\count329
+\c@continuedfloat=\count330
 Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
- (/usr/local/texlive/2020/texmf-dist/tex/latex/caption/ltcaption.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
-)) (/usr/local/texlive/2020/texmf-dist/tex/latex/float/float.sty
+)) (/usr/local/texlive/2021/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count320
-\float@exts=\toks40
-\float@box=\box81
-\@float@everytoks=\toks41
-\@floatcapt=\box82
+\c@float@type=\count331
+\float@exts=\toks42
+\float@box=\box87
+\@float@everytoks=\toks43
+\@floatcapt=\box88
 )
-\@float@every@codelisting=\toks42
-\c@codelisting=\count321
- (/usr/local/texlive/2020/texmf-dist/tex/latex/caption/subcaption.sty
-Package: subcaption 2020/08/23 v1.3g Sub-captions (AR)
-\c@subfigure=\count322
-\c@subtable=\count323
-) (/usr/local/texlive/2020/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2020/09/01 3.48 The Babel package
- (/usr/local/texlive/2020/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2020/09/01 3.48 Babel common definitions
-\babel@savecnt=\count324
-\U@D=\dimen290
-\l@babelnohyphens=\language8
- (/usr/local/texlive/2020/texmf-dist/tex/generic/babel/txtbabel.def)
+\@float@every@codelisting=\toks44
+\c@codelisting=\count332
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
+\c@subfigure=\count333
+\c@subtable=\count334
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2021/06/02 3.60 The Babel package
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2021/06/02 3.60 Babel common definitions
+\babel@savecnt=\count335
+\U@D=\dimen294
+\l@unhyphenated=\language8
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read5
 )
-\bbl@dirlevel=\count325
+\bbl@dirlevel=\count336
 Package babel Info: You haven't specified a language. I'll use 'nil'
-(babel)             as the main language. Reported on input line 1073.
- (/usr/local/texlive/2020/texmf-dist/tex/generic/babel/nil.ldf
-Language: nil 2020/09/01 3.48 Nil language
+(babel)             as the main language. Reported on input line 1173.
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/babel/nil.ldf
+Language: nil 2021/06/02 3.60 Nil language
 \l@nil=\language9
 ))
-\everypar=\toks43
- (/usr/local/texlive/2020/texmf-dist/tex/generic/babel/locale/es/babel-spanish.tex)
+\everypar=\toks45
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/babel/locale/es/babel-spanish.tex)
 Package babel Info: Importing data for spanish
 (babel)             from babel-es.ini. Reported on input line 192.
-Package babel Info: \l@spanish = using hyphenrules for spanish
-(babel)             (\language7) on input line 192.
- (/usr/local/texlive/2020/texmf-dist/tex/latex/xurl/xurl.sty
-Package: xurl 2020/01/24 v 0.09 modify URL breaks
+Package babel Info: Hyphen rules for 'spanish' set to \l@spanish
+(babel)             (\language7). Reported on input line 192.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/xurl/xurl.sty
+Package: xurl 2020/12/30 v 0.09a modify URL breaks
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 211.
- (/run/media/alf/datos/misrepositorios/docencia/latex-manual/index.aux)
+ (./index.aux)
 \openout1 = `index.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 217.
@@ -806,42 +814,41 @@ Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using protrusion set `basicmath'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
-Package microtype Info: Using default expansion set `basictext'.
+Package microtype Info: Using default expansion set `alltext-nott'.
 LaTeX Info: Redefining \showhyphens on input line 217.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
- (/usr/local/texlive/2020/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
-) (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+) (/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count326
-\scratchdimen=\dimen291
-\scratchbox=\box83
-\nofMPsegments=\count327
-\nofMParguments=\count328
-\everyMPshowfont=\toks44
-\MPscratchCnt=\count329
-\MPscratchDim=\dimen292
-\MPnumerator=\count330
-\makeMPintoPDFobject=\count331
-\everyMPtoPDFconversion=\toks45
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+\scratchcounter=\count337
+\scratchdimen=\dimen295
+\scratchbox=\box89
+\nofMPsegments=\count338
+\nofMParguments=\count339
+\everyMPshowfont=\toks46
+\MPscratchCnt=\count340
+\MPscratchDim=\dimen296
+\MPnumerator=\count341
+\makeMPintoPDFobject=\count342
+\everyMPtoPDFconversion=\toks47
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (/usr/local/texlive/2020/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
-)) ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box84
+))
 Package hyperref Info: Link coloring ON on input line 217.
- (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
- (/usr/local/texlive/2020/texmf-dist/tex/latex/refcount/refcount.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-) (/usr/local/texlive/2020/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count332
+\c@section@level=\count343
 )
 LaTeX Info: Redefining \ref on input line 217.
 LaTeX Info: Redefining \pageref on input line 217.
@@ -850,28 +857,28 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Trying to load font information for T1+lmss on input line 219.
- (/usr/local/texlive/2020/texmf-dist/tex/latex/lm/t1lmss.fd
-File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/t1lmss.fd
+File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 219.
- (/usr/local/texlive/2020/texmf-dist/tex/latex/lm/ot1lmr.fd
-File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 219.
- (/usr/local/texlive/2020/texmf-dist/tex/latex/lm/omllmm.fd
-File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 219.
- (/usr/local/texlive/2020/texmf-dist/tex/latex/lm/omslmsy.fd
-File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 219.
- (/usr/local/texlive/2020/texmf-dist/tex/latex/lm/omxlmex.fd
-File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <14.4> on input line 219.
@@ -880,73 +887,43 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 219.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 219.
- (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/microtype/mt-msa.cfg
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 219.
- (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (/usr/local/texlive/2020/texmf-dist/tex/latex/microtype/mt-msb.cfg
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ) [1
 
 
 
-{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Package tocbasic Info: character protrusion at toc deactivated on input line 225.
-\tf@toc=\write7
-\openout7 = `index.toc'.
-
- [2
-
-]
+ (./index.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 233.
+(Font)              <10.95> on input line 3.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 233.
+(Font)              <8> on input line 3.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 233.
+(Font)              <6> on input line 3.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 11.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) [2
 
+])
+\tf@toc=\write5
+\openout5 = `index.toc'.
 
-LaTeX Warning: Command \LaTeX invalid in math mode on input line 233.
-
-
-LaTeX Warning: Command \TeX invalid in math mode on input line 233.
-
-/run/media/alf/datos/misrepositorios/docencia/latex-manual/index.tex:233: You can't use `\spacefactor' in math mode.
-\@->\spacefactor 
-                 \@m {}
-l.233 ¬°Bienvenida/os al manual de \(\LaTeX
-                                           \).!
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no Ë in font lmex10!
-
-LaTeX Warning: Command \LaTeX invalid in math mode on input line 236.
-
-
-LaTeX Warning: Command \TeX invalid in math mode on input line 236.
-
-/run/media/alf/datos/misrepositorios/docencia/latex-manual/index.tex:236: You can't use `\spacefactor' in math mode.
-\@->\spacefactor 
-                 \@m {}
-l.236 ...tps://www.latex-project.org/}{\(\LaTeX\)}
-                                                   con un enfoque
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no Ë in font lmex10!
+ [3]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 254.
-(/usr/local/texlive/2020/texmf-dist/tex/latex/lm/ts1lmr.fd
-File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [3
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) [4
 
 ]
 chapter 1.
@@ -965,1146 +942,334 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              a package that still implements the
 (scrreprt)              deprecated \float@addtolist interface.
 
-
-LaTeX Warning: Command \TeX invalid in math mode on input line 292.
-
-/run/media/alf/datos/misrepositorios/docencia/latex-manual/index.tex:292: You can't use `\spacefactor' in math mode.
-\@->\spacefactor 
-                 \@m {}
-l.292 ...extbackslash TeX?}}\label{quuxe9-es-tex}}
-                                                  
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no Ë in font lmex10!
-
-LaTeX Warning: Command \TeX invalid in math mode on input line 294.
-
-/run/media/alf/datos/misrepositorios/docencia/latex-manual/index.tex:294: You can't use `\spacefactor' in math mode.
-\@->\spacefactor 
-                 \@m {}
-l.294 \(\TeX
-            \) es un sistema de composici√≥n de documentos de alta calidad,
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no Ë in font lmex10!
-
-LaTeX Warning: Command \TeX invalid in math mode on input line 300.
-
-/run/media/alf/datos/misrepositorios/docencia/latex-manual/index.tex:300: You can't use `\spacefactor' in math mode.
-\@->\spacefactor 
-                 \@m {}
-l.300 \(\TeX
-            \) no es una aplicaci√≥n sino un lenguaje de programaci√≥n que
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no Ë in font lmex10!
-
-LaTeX Warning: Command \TeX invalid in math mode on input line 303.
-
-/run/media/alf/datos/misrepositorios/docencia/latex-manual/index.tex:303: You can't use `\spacefactor' in math mode.
-\@->\spacefactor 
-                 \@m {}
-l.303 ventaja de \(\TeX
-                       \) frente a los procesadores de texto que siguen el
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no Ë in font lmex10!
-
-LaTeX Warning: Command \TeX invalid in math mode on input line 308.
-
-/run/media/alf/datos/misrepositorios/docencia/latex-manual/index.tex:308: You can't use `\spacefactor' in math mode.
-\@->\spacefactor 
-                 \@m {}
-l.308 documento, y dejar que \(\TeX
-                                   \) se encargue del formato. De hecho,
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no Ë in font lmex10!
-
-LaTeX Warning: Command \TeX invalid in math mode on input line 309.
-
-/run/media/alf/datos/misrepositorios/docencia/latex-manual/index.tex:309: You can't use `\spacefactor' in math mode.
-\@->\spacefactor 
-                 \@m {}
-l.309 \(\TeX
-            \) incorpora un potente
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no Ë in font lmex10!
-
-LaTeX Warning: Command \TeX invalid in math mode on input line 315.
-
-/run/media/alf/datos/misrepositorios/docencia/latex-manual/index.tex:315: You can't use `\spacefactor' in math mode.
-\@->\spacefactor 
-                 \@m {}
-l.315 ...a en la pantalla del ordenador, en \(\TeX
-                                                  \) habr√≠a que
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no Ë in font lmex10!
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 317.
-(/usr/local/texlive/2020/texmf-dist/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-
-LaTeX Warning: Command \TeX invalid in math mode on input line 322.
-
-/run/media/alf/datos/misrepositorios/docencia/latex-manual/index.tex:322: You can't use `\spacefactor' in math mode.
-\@->\spacefactor 
-                 \@m {}
-l.322 ...a principal con informaci√≥n sobre \(\TeX
-                                                  \) es la del
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no Ë in font lmex10!
-
-LaTeX Warning: Command \LaTeX invalid in math mode on input line 327.
-
-
-LaTeX Warning: Command \TeX invalid in math mode on input line 327.
-
-/run/media/alf/datos/misrepositorios/docencia/latex-manual/index.tex:327: You can't use `\spacefactor' in math mode.
-\@->\spacefactor 
-                 \@m {}
-l.327 ...backslash LaTeX}}\label{quuxe9-es-latex}}
-                                                  
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no Ë in font lmex10!
-<./img/logos/latex-project-logo.png, id=40, 225.84375pt x 85.06781pt>
+<./img/logos/latex-project-logo.png, id=156, 225.84375pt x 85.06781pt>
 File: ./img/logos/latex-project-logo.png Graphic file (type png)
 <use ./img/logos/latex-project-logo.png>
 Package pdftex.def Info: ./img/logos/latex-project-logo.png  used on input line 329.
 (pdftex.def)             Requested size: 225.85352pt x 85.07149pt.
+[5
 
-LaTeX Warning: Command \LaTeX invalid in math mode on input line 331.
-
-
-LaTeX Warning: Command \TeX invalid in math mode on input line 331.
-
-/run/media/alf/datos/misrepositorios/docencia/latex-manual/index.tex:331: You can't use `\spacefactor' in math mode.
-\@->\spacefactor 
-                 \@m {}
-l.331 \(\LaTeX
-              \) es un conjunto de macros para \(\TeX\) debido originalmente a
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no Ë in font lmex10!
-
-LaTeX Warning: Command \TeX invalid in math mode on input line 331.
-
-/run/media/alf/datos/misrepositorios/docencia/latex-manual/index.tex:331: You can't use `\spacefactor' in math mode.
-\@->\spacefactor 
-                 \@m {}
-l.331 ...eX\) es un conjunto de macros para \(\TeX
-                                                  \) debido originalmente a
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no Ë in font lmex10!
-
-LaTeX Warning: Command \TeX invalid in math mode on input line 333.
-
-/run/media/alf/datos/misrepositorios/docencia/latex-manual/index.tex:333: You can't use `\spacefactor' in math mode.
-\@->\spacefactor 
-                 \@m {}
-l.333 facilitar el uso de \(\TeX
-                                \).
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no Ë in font lmex10!
-
-LaTeX Warning: Command \TeX invalid in math mode on input line 335.
-
-/run/media/alf/datos/misrepositorios/docencia/latex-manual/index.tex:335: You can't use `\spacefactor' in math mode.
-\@->\spacefactor 
-                 \@m {}
-l.335 Tanto \(\TeX
-                  \) como \(\LaTeX\) son programas de c√≥digo abierto,
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no Ë in font lmex10!
-
-LaTeX Warning: Command \LaTeX invalid in math mode on input line 335.
-
-
-LaTeX Warning: Command \TeX invalid in math mode on input line 335.
-
-/run/media/alf/datos/misrepositorios/docencia/latex-manual/index.tex:335: You can't use `\spacefactor' in math mode.
-\@->\spacefactor 
-                 \@m {}
-l.335 Tanto \(\TeX\) como \(\LaTeX
-                                  \) son programas de c√≥digo abierto,
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no Ë in font lmex10!
-[4
-
- </run/media/alf/datos/misrepositorios/docencia/latex-manual/./img/logos/latex-project-logo.png>]
-
-LaTeX Warning: Command \LaTeX invalid in math mode on input line 339.
-
-
-LaTeX Warning: Command \TeX invalid in math mode on input line 339.
-
-/run/media/alf/datos/misrepositorios/docencia/latex-manual/index.tex:339: You can't use `\spacefactor' in math mode.
-\@->\spacefactor 
-                 \@m {}
-l.339 Otra de las grandes ventajas de \(\LaTeX
-                                              \) es que existen multitud de
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no Ë in font lmex10!
-
-LaTeX Warning: Command \LaTeX invalid in math mode on input line 343.
-
-
-LaTeX Warning: Command \TeX invalid in math mode on input line 343.
-
-/run/media/alf/datos/misrepositorios/docencia/latex-manual/index.tex:343: You can't use `\spacefactor' in math mode.
-\@->\spacefactor 
-                 \@m {}
-l.343 La p√°gina principal sobre \(\LaTeX
-                                         \) es
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no Ë in font lmex10!
-
-LaTeX Warning: Command \LaTeX invalid in math mode on input line 349.
-
-
-LaTeX Warning: Command \TeX invalid in math mode on input line 349.
-
-/run/media/alf/datos/misrepositorios/docencia/latex-manual/index.tex:349: You can't use `\spacefactor' in math mode.
-\@->\spacefactor 
-                 \@m {}
-l.349 Existen distintas distribuciones de \(\LaTeX
-                                                  \) y algunas de ellas son
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no Ë in font lmex10!
+ <./img/logos/latex-project-logo.png>]
 
 Package hyperref Warning: Suppressing link with empty target on input line 359.
 
-
-LaTeX Warning: Command \LaTeX invalid in math mode on input line 367.
-
-
-LaTeX Warning: Command \TeX invalid in math mode on input line 367.
-
-/run/media/alf/datos/misrepositorios/docencia/latex-manual/index.tex:367: You can't use `\spacefactor' in math mode.
-\@->\spacefactor 
-                 \@m {}
-l.367 Junto a la distribuci√≥n de \(\LaTeX
-                                          \) es tambi√©n habitual instalar a...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no Ë in font lmex10!
-
-LaTeX Warning: Command \LaTeX invalid in math mode on input line 372.
-
-
-LaTeX Warning: Command \TeX invalid in math mode on input line 372.
-
-/run/media/alf/datos/misrepositorios/docencia/latex-manual/index.tex:372: You can't use `\spacefactor' in math mode.
-\@->\spacefactor 
-                 \@m {}
-l.372 con \(\LaTeX
-                  \). Los m√°s comunes son:
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no Ë in font lmex10!
-
-LaTeX Warning: Command \LaTeX invalid in math mode on input line 387.
-
-
-LaTeX Warning: Command \TeX invalid in math mode on input line 387.
-
-/run/media/alf/datos/misrepositorios/docencia/latex-manual/index.tex:387: You can't use `\spacefactor' in math mode.
-\@->\spacefactor 
-                 \@m {}
-l.387   documentos con \(\LaTeX
-                               \). Especialmente indicado para trabajar desde
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no Ë in font lmex10!
-
-LaTeX Warning: Command \LaTeX invalid in math mode on input line 396.
-
-
-LaTeX Warning: Command \TeX invalid in math mode on input line 396.
-
-/run/media/alf/datos/misrepositorios/docencia/latex-manual/index.tex:396: You can't use `\spacefactor' in math mode.
-\@->\spacefactor 
-                 \@m {}
-l.396 ...aci√≥n m√°s comunes, entre ellos \(\LaTeX
-                                                  \).
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no Ë in font lmex10!
-
-LaTeX Warning: Command \LaTeX invalid in math mode on input line 407.
-
-
-LaTeX Warning: Command \TeX invalid in math mode on input line 407.
-
-/run/media/alf/datos/misrepositorios/docencia/latex-manual/index.tex:407: You can't use `\spacefactor' in math mode.
-\@->\spacefactor 
-                 \@m {}
-l.407 texto ``Hola \(\LaTeX
-                           \)''.
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no Ë in font lmex10!
-[5]
-LaTeX Font Info:    Trying to load font information for U+fontawesomefree1 on input line 422.
- (/usr/local/texlive/2020/texmf-dist/tex/latex/fontawesome5/ufontawesomefree1.fd)
-
-LaTeX Warning: Command \LaTeX invalid in math mode on input line 423.
-
-
-LaTeX Warning: Command \TeX invalid in math mode on input line 423.
-
-/run/media/alf/datos/misrepositorios/docencia/latex-manual/index.tex:423: You can't use `\spacefactor' in math mode.
-\@->\spacefactor 
-                 \@m {}
-l.423 ...e texto con el c√≥digo fuente de \(\LaTeX
-                                                  \) puede
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no Ë in font lmex10!
-
-LaTeX Warning: Command \LaTeX invalid in math mode on input line 429.
-
-
-LaTeX Warning: Command \TeX invalid in math mode on input line 429.
-
-/run/media/alf/datos/misrepositorios/docencia/latex-manual/index.tex:429: You can't use `\spacefactor' in math mode.
-\@->\spacefactor 
-                 \@m {}
-l.429 un documento en \(\LaTeX
-                              \), a continuaci√≥n se explica brevemente el
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no Ë in font lmex10!
-
-LaTeX Warning: Command \LaTeX invalid in math mode on input line 446.
-
-
-LaTeX Warning: Command \TeX invalid in math mode on input line 446.
-
-/run/media/alf/datos/misrepositorios/docencia/latex-manual/index.tex:446: You can't use `\spacefactor' in math mode.
-\@->\spacefactor 
-                 \@m {}
-l.446   \(\LaTeX
-                \).
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no Ë in font lmex10!
-
-LaTeX Warning: Command \LaTeX invalid in math mode on input line 458.
-
-
-LaTeX Warning: Command \TeX invalid in math mode on input line 458.
-
-/run/media/alf/datos/misrepositorios/docencia/latex-manual/index.tex:458: You can't use `\spacefactor' in math mode.
-\@->\spacefactor 
-                 \@m {}
-l.458 compilador de \(\LaTeX
-                            \) que es quien se encarga de convertir el c√≥digo
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no Ë in font lmex10!
-
-LaTeX Warning: Command \LaTeX invalid in math mode on input line 461.
-
-
-LaTeX Warning: Command \TeX invalid in math mode on input line 461.
-
-/run/media/alf/datos/misrepositorios/docencia/latex-manual/index.tex:461: You can't use `\spacefactor' in math mode.
-\@->\spacefactor 
-                 \@m {}
-l.461 Cada distribuci√≥n de \(\LaTeX
-                                    \) viene con varios compiladores. Los m√°s
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no Ë in font lmex10!
 [6]
-
-LaTeX Warning: Reference `fig-overleaf-hola-latex' on page 7 undefined on input line 512.
-
-<./img/introduccion/overleaf-hola-latex.png, id=90, 1276.01718pt x 808.52063pt>
+LaTeX Font Info:    Trying to load font information for U+fontawesomefree1 on input line 422.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/fontawesome5/ufontawesomefree1.fd) [7]
+<./img/introduccion/overleaf-hola-latex.png, id=201, 1276.01718pt x 808.52063pt>
 File: ./img/introduccion/overleaf-hola-latex.png Graphic file (type png)
 <use ./img/introduccion/overleaf-hola-latex.png>
 Package pdftex.def Info: ./img/introduccion/overleaf-hola-latex.png  used on input line 518.
 (pdftex.def)             Requested size: 446.749pt x 283.07281pt.
-[7] [8 </run/media/alf/datos/misrepositorios/docencia/latex-manual/./img/introduccion/overleaf-hola-latex.png>] [9]
+ [8] [9 <./img/introduccion/overleaf-hola-latex.png>] [10]
 chapter 2.
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/lmtt/b/n' tried instead on input line 577.
-[10
+[11
 
 ]
-
-LaTeX Warning: Command \LaTeX invalid in math mode on input line 681.
-
-
-LaTeX Warning: Command \TeX invalid in math mode on input line 681.
-
-/run/media/alf/datos/misrepositorios/docencia/latex-manual/index.tex:681: You can't use `\spacefactor' in math mode.
-\@->\spacefactor 
-                 \@m {}
-l.681 ...l√≠nea de un fichero con c√≥digo \(\LaTeX
-                                                  \) indica la clase de
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no Ë in font lmex10!
-[11]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 710.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 710.
-
-
-LaTeX Warning: Command \LaTeX invalid in math mode on input line 716.
-
-
-LaTeX Warning: Command \TeX invalid in math mode on input line 716.
-
-/run/media/alf/datos/misrepositorios/docencia/latex-manual/index.tex:716: You can't use `\spacefactor' in math mode.
-\@->\spacefactor 
-                 \@m {}
-l.716 ...e pueden definir nuevos comandos \(\LaTeX
-                                                  \) o
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no Ë in font lmex10!
-[12]
-
-LaTeX Warning: Reference `fig-overleaf-documento-base' on page 13 undefined on input line 754.
-
-<./img/estructura/overleaf-documento-base.png, id=136, 1358.82657pt x 722.7pt>
+ [12]
+<./img/estructura/overleaf-documento-base.png, id=232, 1358.82657pt x 722.7pt>
 File: ./img/estructura/overleaf-documento-base.png Graphic file (type png)
 <use ./img/estructura/overleaf-documento-base.png>
 Package pdftex.def Info: ./img/estructura/overleaf-documento-base.png  used on input line 760.
 (pdftex.def)             Requested size: 446.75543pt x 237.60953pt.
-[13 </run/media/alf/datos/misrepositorios/docencia/latex-manual/./img/estructura/overleaf-documento-base.png>]
+ [13] [14 <./img/estructura/overleaf-documento-base.png>]
 chapter 3.
-[14
+[15
 
 ]
-<./img/secciones/secciones.png, id=153, 489.32813pt x 366.61969pt>
+<./img/secciones/secciones.png, id=255, 489.32813pt x 366.61969pt>
 File: ./img/secciones/secciones.png Graphic file (type png)
 <use ./img/secciones/secciones.png>
 Package pdftex.def Info: ./img/secciones/secciones.png  used on input line 837.
 (pdftex.def)             Requested size: 421.44862pt x 315.76228pt.
- [15 </run/media/alf/datos/misrepositorios/docencia/latex-manual/./img/secciones/secciones.png>]
-<./img/secciones/parrafos.png, id=160, 540.51938pt x 132.495pt>
+ [16 <./img/secciones/secciones.png>]
+<./img/secciones/parrafos.png, id=262, 540.51938pt x 132.495pt>
 File: ./img/secciones/parrafos.png Graphic file (type png)
 <use ./img/secciones/parrafos.png>
-Package pdftex.def Info: ./img/secciones/parrafos.png  used on input line 865.
+Package pdftex.def Info: ./img/secciones/parrafos.png  used on input line 867.
 (pdftex.def)             Requested size: 421.4467pt x 103.30725pt.
-
-
-LaTeX Warning: Command \LaTeX invalid in math mode on input line 872.
-
-
-LaTeX Warning: Command \TeX invalid in math mode on input line 872.
-
-/run/media/alf/datos/misrepositorios/docencia/latex-manual/index.tex:872: You can't use `\spacefactor' in math mode.
-\@->\spacefactor 
-                 \@m {}
-l.872 \(\LaTeX
-              \) utiliza un algoritmo que permite partir las palabras al final
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no Ë in font lmex10!
-[16 </run/media/alf/datos/misrepositorios/docencia/latex-manual/./img/secciones/parrafos.png>]
-<./img/secciones/justificacion.png, id=169, 550.30594pt x 300.3722pt>
+ [17 <./img/secciones/parrafos.png>]
+<./img/secciones/justificacion.png, id=269, 550.30594pt x 300.3722pt>
 File: ./img/secciones/justificacion.png Graphic file (type png)
 <use ./img/secciones/justificacion.png>
-Package pdftex.def Info: ./img/secciones/justificacion.png  used on input line 910.
+Package pdftex.def Info: ./img/secciones/justificacion.png  used on input line 921.
 (pdftex.def)             Requested size: 421.4529pt x 230.04063pt.
- [17 </run/media/alf/datos/misrepositorios/docencia/latex-manual/./img/secciones/justificacion.png>] [18]
+ [18] [19 <./img/secciones/justificacion.png>]
 chapter 4.
-<./img/formateo/resaltado.png, id=180, 529.22719pt x 127.22531pt>
+<./img/formateo/resaltado.png, id=281, 529.22719pt x 127.22531pt>
 File: ./img/formateo/resaltado.png Graphic file (type png)
 <use ./img/formateo/resaltado.png>
-Package pdftex.def Info: ./img/formateo/resaltado.png  used on input line 964.
+Package pdftex.def Info: ./img/formateo/resaltado.png  used on input line 976.
 (pdftex.def)             Requested size: 421.43616pt x 101.31252pt.
-[19
+[20
 
- </run/media/alf/datos/misrepositorios/docencia/latex-manual/./img/formateo/resaltado.png>]
-<./img/formateo/tipos-letra.png, id=192, 583.42969pt x 71.51718pt>
+ <./img/formateo/resaltado.png>]
+<./img/formateo/tipos-letra.png, id=290, 583.42969pt x 71.51718pt>
 File: ./img/formateo/tipos-letra.png Graphic file (type png)
 <use ./img/formateo/tipos-letra.png>
-Package pdftex.def Info: ./img/formateo/tipos-letra.png  used on input line 997.
+Package pdftex.def Info: ./img/formateo/tipos-letra.png  used on input line 1009.
 (pdftex.def)             Requested size: 421.44891pt x 51.66147pt.
- [20 </run/media/alf/datos/misrepositorios/docencia/latex-manual/./img/formateo/tipos-letra.png>]
-<./img/formateo/tipos-letra-xelatex.png, id=199, 584.1825pt x 67.0003pt>
+ [21 <./img/formateo/tipos-letra.png>]
+<./img/formateo/tipos-letra-xelatex.png, id=297, 584.1825pt x 67.0003pt>
 File: ./img/formateo/tipos-letra-xelatex.png Graphic file (type png)
 <use ./img/formateo/tipos-letra-xelatex.png>
-Package pdftex.def Info: ./img/formateo/tipos-letra-xelatex.png  used on input line 1041.
+Package pdftex.def Info: ./img/formateo/tipos-letra-xelatex.png  used on input line 1054.
 (pdftex.def)             Requested size: 421.44897pt x 48.33626pt.
-<./img/formateo/perfiles-letra.png, id=200, 583.42969pt x 96.36pt>
+<./img/formateo/perfiles-letra.png, id=298, 583.42969pt x 96.36pt>
 File: ./img/formateo/perfiles-letra.png Graphic file (type png)
 <use ./img/formateo/perfiles-letra.png>
-Package pdftex.def Info: ./img/formateo/perfiles-letra.png  used on input line 1081.
+Package pdftex.def Info: ./img/formateo/perfiles-letra.png  used on input line 1097.
 (pdftex.def)             Requested size: 421.44891pt x 69.60703pt.
- [21 </run/media/alf/datos/misrepositorios/docencia/latex-manual/./img/formateo/tipos-letra-xelatex.png>]
-
-LaTeX Warning: Command \LaTeX invalid in math mode on input line 1088.
-
-
-LaTeX Warning: Command \TeX invalid in math mode on input line 1088.
-
-/run/media/alf/datos/misrepositorios/docencia/latex-manual/index.tex:1088: You can't use `\spacefactor' in math mode.
-\@->\spacefactor 
-                 \@m {}
-l.1088 indica en puntos o pixels, en \(\LaTeX
-                                             \) existen 10 tama√±os predefin...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no Ë in font lmex10!
-[22 </run/media/alf/datos/misrepositorios/docencia/latex-manual/./img/formateo/perfiles-letra.png>]
-<./img/formateo/tama√±o-fuente.png, id=215, 602.25pt x 115.18031pt>
+ [22 <./img/formateo/tipos-letra-xelatex.png>] [23 <./img/formateo/perfiles-letra.png>]
+<./img/formateo/tama√±o-fuente.png, id=311, 602.25pt x 115.18031pt>
 File: ./img/formateo/tama√±o-fuente.png Graphic file (type png)
 <use ./img/formateo/tama√±o-fuente.png>
-Package pdftex.def Info: ./img/formateo/tama√±o-fuente.png  used on input line 1139.
+Package pdftex.def Info: ./img/formateo/tama√±o-fuente.png  used on input line 1155.
 (pdftex.def)             Requested size: 421.45265pt x 80.6028pt.
- [23 </run/media/alf/datos/misrepositorios/docencia/latex-manual/./img/formateo/tama√±o-fuente.png>]
+ [24 <./img/formateo/tama√±o-fuente.png>]
 chapter 5.
-<./img/listas/lista-no-ordenad.png, id=222, 564.60938pt x 154.32657pt>
+<./img/listas/lista-no-ordenad.png, id=318, 564.60938pt x 154.32657pt>
 File: ./img/listas/lista-no-ordenad.png Graphic file (type png)
 <use ./img/listas/lista-no-ordenad.png>
-Package pdftex.def Info: ./img/listas/lista-no-ordenad.png  used on input line 1185.
+Package pdftex.def Info: ./img/listas/lista-no-ordenad.png  used on input line 1201.
 (pdftex.def)             Requested size: 421.44002pt x 115.19359pt.
-[24
+[25
 
 ]
-<./img/listas/lista-ordenada.png, id=228, 578.91281pt x 149.05687pt>
+<./img/listas/lista-ordenada.png, id=324, 578.91281pt x 149.05687pt>
 File: ./img/listas/lista-ordenada.png Graphic file (type png)
 <use ./img/listas/lista-ordenada.png>
-Package pdftex.def Info: ./img/listas/lista-ordenada.png  used on input line 1205.
+Package pdftex.def Info: ./img/listas/lista-ordenada.png  used on input line 1221.
 (pdftex.def)             Requested size: 421.43681pt x 108.51038pt.
- [25 </run/media/alf/datos/misrepositorios/docencia/latex-manual/./img/listas/lista-no-ordenad.png> </run/media/alf/datos/misrepositorios/docencia/latex-manual/./img/listas/lista-ordenada.png>]
-<./img/listas/lista-desciptiva.png, id=236, 584.1825pt x 158.84344pt>
+ [26 <./img/listas/lista-no-ordenad.png> <./img/listas/lista-ordenada.png>]
+<./img/listas/lista-desciptiva.png, id=331, 584.1825pt x 158.84344pt>
 File: ./img/listas/lista-desciptiva.png Graphic file (type png)
 <use ./img/listas/lista-desciptiva.png>
-Package pdftex.def Info: ./img/listas/lista-desciptiva.png  used on input line 1225.
+Package pdftex.def Info: ./img/listas/lista-desciptiva.png  used on input line 1242.
 (pdftex.def)             Requested size: 421.44897pt x 114.59502pt.
-<./img/listas/listas-anidadas.png, id=237, 580.41844pt x 217.5628pt>
+<./img/listas/listas-anidadas.png, id=332, 580.41844pt x 217.5628pt>
 File: ./img/listas/listas-anidadas.png Graphic file (type png)
 <use ./img/listas/listas-anidadas.png>
-Package pdftex.def Info: ./img/listas/listas-anidadas.png  used on input line 1254.
+Package pdftex.def Info: ./img/listas/listas-anidadas.png  used on input line 1271.
 (pdftex.def)             Requested size: 421.44354pt x 157.97299pt.
- [26 </run/media/alf/datos/misrepositorios/docencia/latex-manual/./img/listas/lista-desciptiva.png>] [27 </run/media/alf/datos/misrepositorios/docencia/latex-manual/./img/listas/listas-anidadas.png>]
+ [27 <./img/listas/lista-desciptiva.png>] [28 <./img/listas/listas-anidadas.png>]
 chapter 6.
-
-LaTeX Warning: Command \LaTeX invalid in math mode on input line 1266.
-
-
-LaTeX Warning: Command \TeX invalid in math mode on input line 1266.
-
-/run/media/alf/datos/misrepositorios/docencia/latex-manual/index.tex:1266: You can't use `\spacefactor' in math mode.
-\@->\spacefactor 
-                 \@m {}
-l.1266 ...los elementos m√°s complejos de \(\LaTeX
-                                                  \), ya que,
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no Ë in font lmex10!
-<./img/tablas/tabla-simple.png, id=249, 587.94656pt x 115.18031pt>
+<./img/tablas/tabla-simple.png, id=344, 587.94656pt x 115.18031pt>
 File: ./img/tablas/tabla-simple.png Graphic file (type png)
 <use ./img/tablas/tabla-simple.png>
-Package pdftex.def Info: ./img/tablas/tabla-simple.png  used on input line 1304.
+Package pdftex.def Info: ./img/tablas/tabla-simple.png  used on input line 1321.
 (pdftex.def)             Requested size: 421.43723pt x 82.56067pt.
-[28
+[29
 
- </run/media/alf/datos/misrepositorios/docencia/latex-manual/./img/tablas/tabla-simple.png>]
-<./img/tablas/tabla-delimitada.png, id=256, 594.72188pt x 123.46124pt>
+ <./img/tablas/tabla-simple.png>]
+<./img/tablas/tabla-delimitada.png, id=350, 594.72188pt x 123.46124pt>
 File: ./img/tablas/tabla-delimitada.png Graphic file (type png)
 <use ./img/tablas/tabla-delimitada.png>
-Package pdftex.def Info: ./img/tablas/tabla-delimitada.png  used on input line 1339.
+Package pdftex.def Info: ./img/tablas/tabla-delimitada.png  used on input line 1356.
 (pdftex.def)             Requested size: 421.42969pt x 87.48665pt.
- [29 </run/media/alf/datos/misrepositorios/docencia/latex-manual/./img/tablas/tabla-delimitada.png>]
-<./img/tablas/tabla-multicolumna.png, id=262, 587.19376pt x 122.70844pt>
+ [30 <./img/tablas/tabla-delimitada.png>]
+<./img/tablas/tabla-multicolumna.png, id=356, 587.19376pt x 122.70844pt>
 File: ./img/tablas/tabla-multicolumna.png Graphic file (type png)
 <use ./img/tablas/tabla-multicolumna.png>
-Package pdftex.def Info: ./img/tablas/tabla-multicolumna.png  used on input line 1374.
+Package pdftex.def Info: ./img/tablas/tabla-multicolumna.png  used on input line 1391.
 (pdftex.def)             Requested size: 421.43521pt x 88.06914pt.
- [30 </run/media/alf/datos/misrepositorios/docencia/latex-manual/./img/tablas/tabla-multicolumna.png>]
+ [31 <./img/tablas/tabla-multicolumna.png>]
 chapter 7.
-<./img/imagenes/imganes.png, id=269, 590.95781pt x 283.81032pt>
+<./img/imagenes/imganes.png, id=364, 590.95781pt x 283.81032pt>
 File: ./img/imagenes/imganes.png Graphic file (type png)
 <use ./img/imagenes/imganes.png>
-Package pdftex.def Info: ./img/imagenes/imganes.png  used on input line 1436.
+Package pdftex.def Info: ./img/imagenes/imganes.png  used on input line 1453.
 (pdftex.def)             Requested size: 421.44955pt x 202.40315pt.
-[31
+[32
 
-] [32 </run/media/alf/datos/misrepositorios/docencia/latex-manual/./img/imagenes/imganes.png>]
+] [33 <./img/imagenes/imganes.png>]
 chapter 8.
-
-LaTeX Warning: Command \LaTeX invalid in math mode on input line 1445.
-
-
-LaTeX Warning: Command \TeX invalid in math mode on input line 1445.
-
-/run/media/alf/datos/misrepositorios/docencia/latex-manual/index.tex:1445: You can't use `\spacefactor' in math mode.
-\@->\spacefactor 
-                 \@m {}
-l.1445 \(\LaTeX
-               \), y es por ello que se utiliza tanto para la creaci√≥n de
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no Ë in font lmex10!
-<./img/formulas/entornos-matematicos.png, id=282, 607.51968pt x 183.68625pt>
+<./img/formulas/entornos-matematicos.png, id=375, 607.51968pt x 183.68625pt>
 File: ./img/formulas/entornos-matematicos.png Graphic file (type png)
 <use ./img/formulas/entornos-matematicos.png>
-Package pdftex.def Info: ./img/formulas/entornos-matematicos.png  used on input line 1488.
+Package pdftex.def Info: ./img/formulas/entornos-matematicos.png  used on input line 1508.
 (pdftex.def)             Requested size: 421.44164pt x 127.42471pt.
-[33
+[34
 
-]
-
-LaTeX Warning: Command \LaTeX invalid in math mode on input line 1499.
-
-
-LaTeX Warning: Command \TeX invalid in math mode on input line 1499.
-
-/run/media/alf/datos/misrepositorios/docencia/latex-manual/index.tex:1499: You can't use `\spacefactor' in math mode.
-\@->\spacefactor 
-                 \@m {}
-l.1499   Great, Big List of \(\LaTeX\) Symbols}.}
-                                                 
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no Ë in font lmex10!
-
-LaTeX Warning: Command \LaTeX invalid in math mode on input line 1499.
-
-
-LaTeX Warning: Command \TeX invalid in math mode on input line 1499.
-
-/run/media/alf/datos/misrepositorios/docencia/latex-manual/index.tex:1499: You can't use `\spacefactor' in math mode.
-\@->\spacefactor 
-                 \@m {}
-l.1499   Great, Big List of \(\LaTeX\) Symbols}.}
-                                                 
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no Ë in font lmex10!
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 8.1 on input line 1541.
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 8.2 on input line 1562.
-
-
-Overfull \vbox (0.4453pt too high) has occurred while \output is active []
-
- [34 </run/media/alf/datos/misrepositorios/docencia/latex-manual/./img/formulas/entornos-matematicos.png>]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 8.3 on input line 1576.
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 8.4 on input line 1600.
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 8.5 on input line 1616.
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 8.6 on input line 1634.
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 8.7 on input line 1653.
-
-
-Overfull \hbox (6.53593pt too wide) in paragraph at lines 1675--1675
+] [35 <./img/formulas/entornos-matematicos.png>]
+Overfull \hbox (6.53593pt too wide) in paragraph at lines 1695--1695
 []|\T1/lmtt/m/n/10.95 \longleftrightarrow 
  []
 
 
-Overfull \hbox (6.53593pt too wide) in paragraph at lines 1676--1677
+Overfull \hbox (6.53593pt too wide) in paragraph at lines 1696--1697
 []|\T1/lmtt/m/n/10.95 \Longleftrightarrow 
  []
 
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 8.8 on input line 1684.
-
-[35]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 8.9 on input line 1701.
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 8.10 on input line 1713.
-
-
-Overfull \hbox (18.0334pt too wide) in paragraph at lines 1727--1729
+[36]
+Overfull \hbox (18.0334pt too wide) in paragraph at lines 1747--1749
 []|\T1/lmtt/m/n/10.95 \operatorname{arccsc} 
  []
 
 
-Overfull \hbox (18.0334pt too wide) in paragraph at lines 1731--1733
+Overfull \hbox (18.0334pt too wide) in paragraph at lines 1751--1753
 []|\T1/lmtt/m/n/10.95 \operatorname{arcsec} 
  []
 
 
-Overfull \hbox (18.0334pt too wide) in paragraph at lines 1735--1737
+Overfull \hbox (18.0334pt too wide) in paragraph at lines 1755--1757
 []|\T1/lmtt/m/n/10.95 \operatorname{arccot} 
  []
 
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 8.11 on input line 1740.
-
-[36]
-<./img/formulas/indices.png, id=345, 585.68813pt x 201.00093pt>
+[37]
+<./img/formulas/indices.png, id=425, 585.68813pt x 201.00093pt>
 File: ./img/formulas/indices.png Graphic file (type png)
 <use ./img/formulas/indices.png>
-Package pdftex.def Info: ./img/formulas/indices.png  used on input line 1789.
+Package pdftex.def Info: ./img/formulas/indices.png  used on input line 1818.
 (pdftex.def)             Requested size: 421.45383pt x 144.63774pt.
- [37 </run/media/alf/datos/misrepositorios/docencia/latex-manual/./img/formulas/indices.png>]
-<./img/formulas/fracciones.png, id=354, 593.21625pt x 144.54pt>
+ [38]
+<./img/formulas/fracciones.png, id=431, 593.21625pt x 144.54pt>
 File: ./img/formulas/fracciones.png Graphic file (type png)
 <use ./img/formulas/fracciones.png>
-Package pdftex.def Info: ./img/formulas/fracciones.png  used on input line 1826.
+Package pdftex.def Info: ./img/formulas/fracciones.png  used on input line 1858.
 (pdftex.def)             Requested size: 421.44897pt x 102.68806pt.
- [38 </run/media/alf/datos/misrepositorios/docencia/latex-manual/./img/formulas/fracciones.png>]
-<./img/formulas/sumatorio.png, id=362, 605.26125pt x 165.61874pt>
+ [39 <./img/formulas/indices.png>] [40 <./img/formulas/fracciones.png>]
+<./img/formulas/sumatorio.png, id=444, 605.26125pt x 165.61874pt>
 File: ./img/formulas/sumatorio.png Graphic file (type png)
 <use ./img/formulas/sumatorio.png>
-Package pdftex.def Info: ./img/formulas/sumatorio.png  used on input line 1867.
+Package pdftex.def Info: ./img/formulas/sumatorio.png  used on input line 1905.
 (pdftex.def)             Requested size: 421.43573pt x 115.31822pt.
- [39 </run/media/alf/datos/misrepositorios/docencia/latex-manual/./img/formulas/sumatorio.png>]
-<./img/formulas/integral.png, id=368, 609.77812pt x 182.93344pt>
+<./img/formulas/integral.png, id=445, 609.77812pt x 182.93344pt>
 File: ./img/formulas/integral.png Graphic file (type png)
 <use ./img/formulas/integral.png>
-Package pdftex.def Info: ./img/formulas/integral.png  used on input line 1896.
+Package pdftex.def Info: ./img/formulas/integral.png  used on input line 1940.
 (pdftex.def)             Requested size: 421.4545pt x 126.43634pt.
-<./img/formulas/sombreros.png, id=369, 606.01407pt x 74.52844pt>
+ [41 <./img/formulas/sumatorio.png>]
+<./img/formulas/sombreros.png, id=451, 606.01407pt x 74.52844pt>
 File: ./img/formulas/sombreros.png Graphic file (type png)
 <use ./img/formulas/sombreros.png>
-Package pdftex.def Info: ./img/formulas/sombreros.png  used on input line 1937.
+Package pdftex.def Info: ./img/formulas/sombreros.png  used on input line 1981.
 (pdftex.def)             Requested size: 421.4421pt x 51.82951pt.
-
-
-LaTeX Warning: Reference `sec-tablas' on page 40 undefined on input line 1944.
-
-[40 </run/media/alf/datos/misrepositorios/docencia/latex-manual/./img/formulas/integral.png> </run/media/alf/datos/misrepositorios/docencia/latex-manual/./img/formulas/sombreros.png>]
-<./img/formulas/matriz.png, id=379, 602.25pt x 105.39375pt>
+ [42 <./img/formulas/integral.png> <./img/formulas/sombreros.png>]
+<./img/formulas/matriz.png, id=460, 602.25pt x 105.39375pt>
 File: ./img/formulas/matriz.png Graphic file (type png)
 <use ./img/formulas/matriz.png>
-Package pdftex.def Info: ./img/formulas/matriz.png  used on input line 1969.
+Package pdftex.def Info: ./img/formulas/matriz.png  used on input line 2016.
 (pdftex.def)             Requested size: 421.45265pt x 73.7542pt.
- [41 </run/media/alf/datos/misrepositorios/docencia/latex-manual/./img/formulas/matriz.png>]
-<./img/formulas/determinante.png, id=386, 592.46344pt x 115.18031pt>
+ [43 <./img/formulas/matriz.png>]
+<./img/formulas/determinante.png, id=468, 592.46344pt x 115.18031pt>
 File: ./img/formulas/determinante.png Graphic file (type png)
 <use ./img/formulas/determinante.png>
-Package pdftex.def Info: ./img/formulas/determinante.png  used on input line 2016.
+Package pdftex.def Info: ./img/formulas/determinante.png  used on input line 2066.
 (pdftex.def)             Requested size: 421.44753pt x 81.93323pt.
- [42 </run/media/alf/datos/misrepositorios/docencia/latex-manual/./img/formulas/determinante.png>]
-<./img/formulas/teoremas.png, id=394, 609.02531pt x 183.68625pt>
+ [44 <./img/formulas/determinante.png>]
+<./img/formulas/teoremas.png, id=475, 609.02531pt x 183.68625pt>
 File: ./img/formulas/teoremas.png Graphic file (type png)
 <use ./img/formulas/teoremas.png>
-Package pdftex.def Info: ./img/formulas/teoremas.png  used on input line 2073.
+Package pdftex.def Info: ./img/formulas/teoremas.png  used on input line 2128.
 (pdftex.def)             Requested size: 421.4453pt x 127.1108pt.
-LaTeX Font Info:    Trying to load font information for U+fontawesomefree2 on input line 2076.
- (/usr/local/texlive/2020/texmf-dist/tex/latex/fontawesome5/ufontawesomefree2.fd) [43 </run/media/alf/datos/misrepositorios/docencia/latex-manual/./img/formulas/teoremas.png>] [44]
+ [45]
+LaTeX Font Info:    Trying to load font information for U+fontawesomefree2 on input line 2131.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/fontawesome5/ufontawesomefree2.fd) [46 <./img/formulas/teoremas.png>]
 chapter 9.
-
-LaTeX Warning: Command \LaTeX invalid in math mode on input line 2120.
-
-
-LaTeX Warning: Command \TeX invalid in math mode on input line 2120.
-
-/run/media/alf/datos/misrepositorios/docencia/latex-manual/index.tex:2120: You can't use `\spacefactor' in math mode.
-\@->\spacefactor 
-                 \@m {}
-l.2120 ...t{t} arriba, \texttt{b} abajo). \(\LaTeX
-                                                  \) intentar√° ubicar la
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no Ë in font lmex10!
-[45
+[47
 
 ]
-<./img/entornos-flotantes/figura-flotante.png, id=414, 585.68813pt x 251.43938pt>
+<./img/entornos-flotantes/figura-flotante.png, id=492, 585.68813pt x 251.43938pt>
 File: ./img/entornos-flotantes/figura-flotante.png Graphic file (type png)
 <use ./img/entornos-flotantes/figura-flotante.png>
-Package pdftex.def Info: ./img/entornos-flotantes/figura-flotante.png  used on input line 2149.
+Package pdftex.def Info: ./img/entornos-flotantes/figura-flotante.png  used on input line 2206.
 (pdftex.def)             Requested size: 421.45383pt x 180.93262pt.
- [46 </run/media/alf/datos/misrepositorios/docencia/latex-manual/./img/entornos-flotantes/figura-flotante.png>]
-<./img/entornos-flotantes/tabla-flotante.png, id=422, 578.16pt x 226.59656pt>
+ [48 <./img/entornos-flotantes/figura-flotante.png>]
+<./img/entornos-flotantes/tabla-flotante.png, id=499, 578.16pt x 226.59656pt>
 File: ./img/entornos-flotantes/tabla-flotante.png Graphic file (type png)
 <use ./img/entornos-flotantes/tabla-flotante.png>
-Package pdftex.def Info: ./img/entornos-flotantes/tabla-flotante.png  used on input line 2205.
+Package pdftex.def Info: ./img/entornos-flotantes/tabla-flotante.png  used on input line 2264.
 (pdftex.def)             Requested size: 421.43575pt x 165.17207pt.
- [47 </run/media/alf/datos/misrepositorios/docencia/latex-manual/./img/entornos-flotantes/tabla-flotante.png>] [48]
+ [49] [50 <./img/entornos-flotantes/tabla-flotante.png>]
 chapter 10.
-
-LaTeX Warning: Command \LaTeX invalid in math mode on input line 2217.
-
-
-LaTeX Warning: Command \TeX invalid in math mode on input line 2217.
-
-/run/media/alf/datos/misrepositorios/docencia/latex-manual/index.tex:2217: You can't use `\spacefactor' in math mode.
-\@->\spacefactor 
-                 \@m {}
-l.2217 Otro de los puntos fuertes de \(\LaTeX
-                                             \) es la gesti√≥n de las
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no Ë in font lmex10!
-<./img/referencias-cruzadas/referencias-cruzadas.png, id=433, 578.16pt x 142.28156pt>
-File: ./img/referencias-cruzadas/referencias-cruzadas.png Graphic file (type png)
-<use ./img/referencias-cruzadas/referencias-cruzadas.png>
-Package pdftex.def Info: ./img/referencias-cruzadas/referencias-cruzadas.png  used on input line 2262.
-(pdftex.def)             Requested size: 421.43575pt x 103.71269pt.
-[49
-
-]
-<./img/referencias-cruzadas/nota-pie.png, id=442, 578.16pt x 188.95593pt>
-File: ./img/referencias-cruzadas/nota-pie.png Graphic file (type png)
-<use ./img/referencias-cruzadas/nota-pie.png>
-Package pdftex.def Info: ./img/referencias-cruzadas/nota-pie.png  used on input line 2283.
-(pdftex.def)             Requested size: 421.43575pt x 137.73485pt.
- [50 </run/media/alf/datos/misrepositorios/docencia/latex-manual/./img/referencias-cruzadas/referencias-cruzadas.png> </run/media/alf/datos/misrepositorios/docencia/latex-manual/./img/referencias-cruzadas/nota-pie.png>]
-chapter 11.
-
-LaTeX Warning: Command \LaTeX invalid in math mode on input line 2292.
-
-
-LaTeX Warning: Command \TeX invalid in math mode on input line 2292.
-
-/run/media/alf/datos/misrepositorios/docencia/latex-manual/index.tex:2292: You can't use `\spacefactor' in math mode.
-\@->\spacefactor 
-                 \@m {}
-l.2292 ...e con las referencias cruzadas, \(\LaTeX
-                                                  \) hace un
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no Ë in font lmex10!
-
-LaTeX Warning: Command \LaTeX invalid in math mode on input line 2296.
-
-
-LaTeX Warning: Command \TeX invalid in math mode on input line 2296.
-
-/run/media/alf/datos/misrepositorios/docencia/latex-manual/index.tex:2296: You can't use `\spacefactor' in math mode.
-\@->\spacefactor 
-                 \@m {}
-l.2296 distribuci√≥n est√°ndar de \(\LaTeX
-                                          \). BibTeX permite crear una base de
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no Ë in font lmex10!
 [51
 
 ]
-<./img/bibliografia/bibliografia.png, id=464, 584.1825pt x 227.34938pt>
+<./img/referencias-cruzadas/referencias-cruzadas.png, id=516, 578.16pt x 142.28156pt>
+File: ./img/referencias-cruzadas/referencias-cruzadas.png Graphic file (type png)
+<use ./img/referencias-cruzadas/referencias-cruzadas.png>
+Package pdftex.def Info: ./img/referencias-cruzadas/referencias-cruzadas.png  used on input line 2322.
+(pdftex.def)             Requested size: 421.43575pt x 103.71269pt.
+<./img/referencias-cruzadas/nota-pie.png, id=517, 578.16pt x 188.95593pt>
+File: ./img/referencias-cruzadas/nota-pie.png Graphic file (type png)
+<use ./img/referencias-cruzadas/nota-pie.png>
+Package pdftex.def Info: ./img/referencias-cruzadas/nota-pie.png  used on input line 2343.
+(pdftex.def)             Requested size: 421.43575pt x 137.73485pt.
+ [52 <./img/referencias-cruzadas/referencias-cruzadas.png> <./img/referencias-cruzadas/nota-pie.png>]
+chapter 11.
+[53
+
+]
+<./img/bibliografia/bibliografia.png, id=536, 584.1825pt x 227.34938pt>
 File: ./img/bibliografia/bibliografia.png Graphic file (type png)
 <use ./img/bibliografia/bibliografia.png>
-Package pdftex.def Info: ./img/bibliografia/bibliografia.png  used on input line 2387.
+Package pdftex.def Info: ./img/bibliografia/bibliografia.png  used on input line 2448.
 (pdftex.def)             Requested size: 421.44897pt x 164.01752pt.
- [52]
-<./img/bibliografia/bibliografia2.png, id=470, 574.39594pt x 234.1247pt>
+ [54]
+<./img/bibliografia/bibliografia2.png, id=542, 574.39594pt x 234.1247pt>
 File: ./img/bibliografia/bibliografia2.png Graphic file (type png)
 <use ./img/bibliografia/bibliografia2.png>
-Package pdftex.def Info: ./img/bibliografia/bibliografia2.png  used on input line 2423.
+Package pdftex.def Info: ./img/bibliografia/bibliografia2.png  used on input line 2485.
 (pdftex.def)             Requested size: 421.44409pt x 171.78128pt.
- [53 </run/media/alf/datos/misrepositorios/docencia/latex-manual/./img/bibliografia/bibliografia.png>] [54 </run/media/alf/datos/misrepositorios/docencia/latex-manual/./img/bibliografia/bibliografia2.png>]
+ [55 <./img/bibliografia/bibliografia.png>] [56 <./img/bibliografia/bibliografia2.png>]
 chapter 12.
-[55
+[57
 
 ]
-<./img/dise√±o-pagina/pagina-a5-apaisada.png, id=490, 612.03656pt x 432.11438pt>
+<./img/dise√±o-pagina/pagina-a5-apaisada.png, id=560, 612.03656pt x 432.11438pt>
 File: ./img/dise√±o-pagina/pagina-a5-apaisada.png Graphic file (type png)
 <use ./img/dise√±o-pagina/pagina-a5-apaisada.png>
-Package pdftex.def Info: ./img/dise√±o-pagina/pagina-a5-apaisada.png  used on input line 2489.
+Package pdftex.def Info: ./img/dise√±o-pagina/pagina-a5-apaisada.png  used on input line 2548.
 (pdftex.def)             Requested size: 421.43716pt x 297.54604pt.
- [56 </run/media/alf/datos/misrepositorios/docencia/latex-manual/./img/dise√±o-pagina/pagina-a5-apaisada.png (PNG copy)>]
-<./img/dise√±o-pagina/pagina-margenes-personalizados.png, id=495, 465.23813pt x 650.43pt>
+ [58 <./img/dise√±o-pagina/pagina-a5-apaisada.png (PNG copy)>]
+<./img/dise√±o-pagina/pagina-margenes-personalizados.png, id=565, 465.23813pt x 650.43pt>
 File: ./img/dise√±o-pagina/pagina-margenes-personalizados.png Graphic file (type png)
 <use ./img/dise√±o-pagina/pagina-margenes-personalizados.png>
-Package pdftex.def Info: ./img/dise√±o-pagina/pagina-margenes-personalizados.png  used on input line 2533.
+Package pdftex.def Info: ./img/dise√±o-pagina/pagina-margenes-personalizados.png  used on input line 2589.
 (pdftex.def)             Requested size: 416.46716pt x 582.24536pt.
- [57]
+ [59]
 
-Package tcolorbox Warning: The upper box part has become overfull on input line 2534.
+Package tcolorbox Warning: The upper box part has become overfull on input line 2590.
 
-[58 </run/media/alf/datos/misrepositorios/docencia/latex-manual/./img/dise√±o-pagina/pagina-margenes-personalizados.png (PNG copy)>]
+[60 <./img/dise√±o-pagina/pagina-margenes-personalizados.png (PNG copy)>] [61]
+<./img/dise√±o-pagina/encabezado-pie.png, id=581, 861.3pt x 609.84pt>
+File: ./img/dise√±o-pagina/encabezado-pie.png Graphic file (type png)
+<use ./img/dise√±o-pagina/encabezado-pie.png>
+Package pdftex.def Info: ./img/dise√±o-pagina/encabezado-pie.png  used on input line 2670.
+(pdftex.def)             Requested size: 421.43614pt x 298.39616pt.
+ [62 <./img/dise√±o-pagina/encabezado-pie.png>]
+<./img/dise√±o-pagina/encabezado-pie-2.png, id=587, 576.65437pt x 812.28468pt>
+File: ./img/dise√±o-pagina/encabezado-pie-2.png Graphic file (type png)
+<use ./img/dise√±o-pagina/encabezado-pie-2.png>
+Package pdftex.def Info: ./img/dise√±o-pagina/encabezado-pie-2.png  used on input line 2716.
+(pdftex.def)             Requested size: 413.32542pt x 582.2169pt.
+ [63]
 
-LaTeX Warning: Command \LaTeX invalid in math mode on input line 2573.
+Package tcolorbox Warning: The upper box part has become overfull on input line 2717.
 
+[64 <./img/dise√±o-pagina/encabezado-pie-2.png>] [65
 
-LaTeX Warning: Command \TeX invalid in math mode on input line 2573.
-
-/run/media/alf/datos/misrepositorios/docencia/latex-manual/index.tex:2573: You can't use `\spacefactor' in math mode.
-\@->\spacefactor 
-                 \@m {}
-l.2573 ...ex-project.org/}{The \(\LaTeX\) project}
-                                                  . Sito
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no Ë in font lmex10!
-
-LaTeX Warning: Command \LaTeX invalid in math mode on input line 2574.
-
-
-LaTeX Warning: Command \TeX invalid in math mode on input line 2574.
-
-/run/media/alf/datos/misrepositorios/docencia/latex-manual/index.tex:2574: You can't use `\spacefactor' in math mode.
-\@->\spacefactor 
-                 \@m {}
-l.2574   web principal del proyecto \(\LaTeX
-                                            \) con multitud de materiales para
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no Ë in font lmex10!
-
-LaTeX Warning: Command \TeX invalid in math mode on input line 2577.
-
-/run/media/alf/datos/misrepositorios/docencia/latex-manual/index.tex:2577: You can't use `\spacefactor' in math mode.
-\@->\spacefactor 
-                 \@m {}
-l.2577 ...{Comprehensive \(\TeX\) Archive Network}
-                                                  .
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no Ë in font lmex10!
-
-LaTeX Warning: Command \TeX invalid in math mode on input line 2578.
-
-/run/media/alf/datos/misrepositorios/docencia/latex-manual/index.tex:2578: You can't use `\spacefactor' in math mode.
-\@->\spacefactor 
-                 \@m {}
-l.2578 ...pal repositorios de paquetes para \(\TeX
-                                                  \) y \(\LaTeX\).
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no Ë in font lmex10!
-
-LaTeX Warning: Command \LaTeX invalid in math mode on input line 2578.
-
-
-LaTeX Warning: Command \TeX invalid in math mode on input line 2578.
-
-/run/media/alf/datos/misrepositorios/docencia/latex-manual/index.tex:2578: You can't use `\spacefactor' in math mode.
-\@->\spacefactor 
-                 \@m {}
-l.2578 ...ios de paquetes para \(\TeX\) y \(\LaTeX
-                                                  \).
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no Ë in font lmex10!
-
-LaTeX Warning: Command \LaTeX invalid in math mode on input line 2585.
-
-
-LaTeX Warning: Command \TeX invalid in math mode on input line 2585.
-
-/run/media/alf/datos/misrepositorios/docencia/latex-manual/index.tex:2585: You can't use `\spacefactor' in math mode.
-\@->\spacefactor 
-                 \@m {}
-l.2585   documentos con \(\LaTeX
-                                \).
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no Ë in font lmex10!
-
-LaTeX Warning: Command \LaTeX invalid in math mode on input line 2588.
-
-
-LaTeX Warning: Command \TeX invalid in math mode on input line 2588.
-
-/run/media/alf/datos/misrepositorios/docencia/latex-manual/index.tex:2588: You can't use `\spacefactor' in math mode.
-\@->\spacefactor 
-                 \@m {}
-l.2588 ...ncipales comandos y entornos de \(\LaTeX
-                                                  \).
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no Ë in font lmex10!
-[59
-
-]
-
-Package longtable Warning: Table widths have changed. Rerun LaTeX.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2593.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2593.
-(/run/media/alf/datos/misrepositorios/docencia/latex-manual/index.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2593.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 2593.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+] (./index.aux) ) 
 Here is how much of TeX's memory you used:
- 36738 strings out of 482721
- 725435 string characters out of 5952639
- 1137000 words of memory out of 5000000
- 51191 multiletter control sequences out of 15000+600000
- 612941 words of font info for 143 fonts, out of 8000000 for 9000
+ 36665 strings out of 480376
+ 734600 string characters out of 5895800
+ 1227033 words of memory out of 5000000
+ 53366 multiletter control sequences out of 15000+600000
+ 484291 words of font info for 175 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
- 69i,11n,100p,10669b,1030s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmmi9.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on /run/media/alf/datos/misrepositorios/docencia/latex-manual/index.pdf (59 pages, 1438063 bytes).
+ 122i,11n,122p,10669b,1045s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on index.pdf (65 pages, 1930156 bytes).
 PDF statistics:
- 796 PDF objects out of 1000 (max. 8388607)
- 642 compressed objects within 7 object streams
- 193 named destinations out of 1000 (max. 500000)
- 14977 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 901 PDF objects out of 1000 (max. 8388607)
+ 721 compressed objects within 8 object streams
+ 201 named destinations out of 1000 (max. 500000)
+ 45715 words of extra memory for PDF output out of 51595 (max. 10000000)
 

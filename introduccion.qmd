@@ -84,8 +84,8 @@ En una terminal, la compilación de este documento sería tecleando el comando `
 
 ```sh
 > pdflatex main.tex 
-s is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex)
- restricted \write18 enabled.
+s is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded 
+format=pdflatex) restricted \write18 enabled.
 entering extended mode
 (./main.tex
 LaTeX2e <2021-06-01> patch level 1
@@ -98,10 +98,10 @@ Document Class: article 2021/02/12 v1.4n Standard LaTeX document class
 (/usr/local/texlive/2021/texmf-dist/tex/generic/babel/txtbabel.def))
 (/usr/local/texlive/2021/texmf-dist/tex/generic/babel-spanish/spanish.ldf))
 (/usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
-(./main.aux) [1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdfte
-x.map}] (./main.aux) )</usr/local/texlive/2021/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmr7.pfb>
+(./main.aux) [1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/
+pdftex.map}] (./main.aux) )</usr/local/texlive/2021/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr7.pfb>
 Output written on main.pdf (1 page, 20106 bytes).
 Transcript written on main.log.
 ```
@@ -117,8 +117,8 @@ Si en el documento anterior cambiamos el comando `\LaTeX` por otro que no existe
 
 ```sh
 > pdflatex main.tex
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex)
- restricted \write18 enabled.
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded 
+format=pdflatex) restricted \write18 enabled.
 entering extended mode
 (./main.tex
 LaTeX2e <2021-06-01> patch level 1

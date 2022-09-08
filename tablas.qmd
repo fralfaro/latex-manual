@@ -15,7 +15,7 @@ A continuación se introduce el contenido de la tabla, separando las filas con e
 ```latex
 % CUERPO
 \begin{document}
-% Tabla con tres columnas, justificadas a la izquierda, centrada y derecha, respectivamente.
+% Tabla con tres columnas, justificadas a la izquierda, centrada y derecha.
 \begin{tabular}{lcr}
 Nombre & Ciudad & Edad \\
 María & Valencia & 22 \\

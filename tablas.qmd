@@ -4,7 +4,7 @@ lang: es
 
 # Tablas {#sec-tablas}
 
-Las tablas son uno de los elementos más complejos de $\LaTeX$, ya que, aunque es fácil crear una tabla sencilla, aplicarles un formato más avanzado con justificación de columnas, fusión de columnas o filas, márgenes de columnas, líneas de división, etc. suele ser bastante más difícil, aunque algunos entornos de edición facilitan la tarea.  Existen multitud de paquetes para personalizar las tablas pero en esta sección solo veremos lo más básico.
+Las tablas son uno de los elementos más complejos de $\text{\LaTeX}$, ya que, aunque es fácil crear una tabla sencilla, aplicarles un formato más avanzado con justificación de columnas, fusión de columnas o filas, márgenes de columnas, líneas de división, etc. suele ser bastante más difícil, aunque algunos entornos de edición facilitan la tarea.  Existen multitud de paquetes para personalizar las tablas pero en esta sección solo veremos lo más básico.
 
 Para crear una tabla se utiliza el entorno `tabular`. Este entorno tiene como argumento obligatorio el número de columnas de la tabla y su justificación, que se indica con una letra: `l` izquierda, `r` derecha y `c` centrada, (por ejemplo `lcr` indica tres columnas, la primera justificada a la izquierda, la segunda centrada y la tercera justificada a la derecha).
 

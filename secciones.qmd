@@ -76,7 +76,7 @@ Esto se conoce como \emph{sangría}.
 
 ## Justificación
 
-Los párrafos se justifican por defecto a la izquierda y a la derecha. $\LaTeX$ utiliza un algoritmo que permite partir las palabras al final de una línea para obtener párrafos con una buena estética (sin grandes espacios en blanco entre palabras). Pero también se pueden justificar solo a la izquierda, solo a la derecha o centrados entre los márgenes. Para ello se utilizan los siguientes entornos:
+Los párrafos se justifican por defecto a la izquierda y a la derecha. $\text{\LaTeX}$ utiliza un algoritmo que permite partir las palabras al final de una línea para obtener párrafos con una buena estética (sin grandes espacios en blanco entre palabras). Pero también se pueden justificar solo a la izquierda, solo a la derecha o centrados entre los márgenes. Para ello se utilizan los siguientes entornos:
 
 - `flushleft`: Justifica el texto a la izquierda.
 - `flushright`: Justifica el texto a la derecha.

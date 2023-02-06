@@ -4,7 +4,7 @@ lang: es
 
 # Fórmulas matemáticas
 
-La escritura de fórmulas matemáticas es uno de los puntos fuertes de $\LaTeX$, y es por ello que se utiliza tanto para la creación de documentos científicos o técnicos con contenido matemático.
+La escritura de fórmulas matemáticas es uno de los puntos fuertes de $\text{\LaTeX}$, y es por ello que se utiliza tanto para la creación de documentos científicos o técnicos con contenido matemático.
 
 Para escribir una fórmula es necesario cambiar al modo matemático. Existen distintas formas de activar el modo matemático:
 
@@ -390,4 +390,4 @@ Es una consecuencia directa del teorema de Pitágoras.
 Se recomienda cargar los paquetes `amsmath`, `amssymb` y `amsthm` para documentos extensos o con muchas fórmulas matemáticas.
 :::
 
-[^2]: Para un listado más exhaustivo de los símbolos matemáticos de $\LaTeX$, puede consultarse el documento [The Great, Big List of $\LaTeX$ Symbols](https://www3.nd.edu/~nmark/UsefulFacts/LaTeX_symbols.pdf).
+[^2]: Para un listado más exhaustivo de los símbolos matemáticos de $\text{\LaTeX}$, puede consultarse el documento [The Great, Big List of $\text{\LaTeX}$ Symbols](https://www3.nd.edu/~nmark/UsefulFacts/LaTeX_symbols.pdf).

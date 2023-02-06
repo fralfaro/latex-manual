@@ -22,7 +22,7 @@ El entorno flotante para figuras es `figure` tiene el siguiente esqueleto.
 \end{figure}
 ```
 
-El argumento opcional indica la preferencia de ubicación de la figura en la página (`h` en el lugar en el que aparece en el código fuente, `t` arriba, `b` abajo). $\LaTeX$ intentará ubicar la figura en esa posición salvo que no sea posible.
+El argumento opcional indica la preferencia de ubicación de la figura en la página (`h` en el lugar en el que aparece en el código fuente, `t` arriba, `b` abajo). $\text{\LaTeX}$ intentará ubicar la figura en esa posición salvo que no sea posible.
 
 Las figuras flotantes se numeran automáticamente y el comando `\label{...}` asigna una etiqueta al entorno flotante para poder referenciarlo desde otras partes del documento. Por su parte, el comando `\caption{...}` crea la leyenda de la figura.
 

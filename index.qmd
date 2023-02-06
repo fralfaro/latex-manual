@@ -4,9 +4,9 @@ lang: es
 
 # Prefacio {.unnumbered}
 
-¡Bienvenida/os al manual de $\LaTeX$.!
+¡Bienvenida/os al manual de $\text{\LaTeX}$!
 
-Este libro presenta una introducción al lenguaje de composición de textos [$\LaTeX$](https://www.latex-project.org/) con un enfoque orientado a la creación de documentos científicos y técnicos con contenido matemático.
+Este libro presenta una introducción al lenguaje de composición de textos [$\text{\LaTeX}$](https://www.latex-project.org/) con un enfoque orientado a la creación de documentos científicos y técnicos con contenido matemático.
 
 
 ## Licencia

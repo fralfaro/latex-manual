@@ -4,30 +4,30 @@ lang: es
 
 # Introducción 
 
-## ¿Qué es $\TeX$?
+## ¿Qué es $\text{\TeX}$?
 
-$\TeX$ es un sistema de composición de documentos de alta calidad, orientado especialmente a la creación de documentos científicos y técnicos que incluyen fórmulas matemáticas. Fue creado por [Donald Knuth](https://es.wikipedia.org/wiki/Donald_Knuth) en 1978.
+$\text{\TeX}$ es un sistema de composición de documentos de alta calidad, orientado especialmente a la creación de documentos científicos y técnicos que incluyen fórmulas matemáticas. Fue creado por [Donald Knuth](https://es.wikipedia.org/wiki/Donald_Knuth) en 1978.
 
-A diferencia de un procesador de textos como por ejemplo Microsoft Word, $\TeX$ no es una aplicación sino un lenguaje de programación que require compilar el código fuente para obtener el documento final. Esto, que a priori podría parecer una desventaja, en realidad es la gran ventaja de $\TeX$ frente a los procesadores de texto que siguen el paradigma [WYSIWYG](https://es.wikipedia.org/wiki/WYSIWYG) (_What You See Is What You Get_), ya que permite separar fácilmente el contenido y la estructura de un documento, de su formato, de manera que el usuario puede centrarse en el contenido y la estructura del documento, y dejar que $\TeX$ se encargue del formato. De hecho, $\TeX$ incorpora un potente [lenguaje de marcado](https://es.wikipedia.org/wiki/Lenguaje_de_marcado) para estructurar y formatear el texto de un documento. Por ejemplo, mientras que para poner una palabra en negrita con un procesador de textos como Microsoft Word, bastaría con seleccionar la palabra y hacer clic en el botón de negrita para ver automáticamente la palabra en negrita en la pantalla del ordenador, en $\TeX$ habría que escribir en el fichero con el código fuente `{\bf palabra}` y después compilar el código fuente para obtener un documento final con la palabra en negrita (el comando `\bf`, que permite aplicar la negrita, se conoce como _marca_ o _tag_ en inglés.)
+A diferencia de un procesador de textos como por ejemplo Microsoft Word, $\text{\TeX}$ no es una aplicación sino un lenguaje de programación que require compilar el código fuente para obtener el documento final. Esto, que a priori podría parecer una desventaja, en realidad es la gran ventaja de $\text{\TeX}$ frente a los procesadores de texto que siguen el paradigma [WYSIWYG](https://es.wikipedia.org/wiki/WYSIWYG) (_What You See Is What You Get_), ya que permite separar fácilmente el contenido y la estructura de un documento, de su formato, de manera que el usuario puede centrarse en el contenido y la estructura del documento, y dejar que $\text{\TeX}$ se encargue del formato. De hecho, $\text{\TeX}$ incorpora un potente [lenguaje de marcado](https://es.wikipedia.org/wiki/Lenguaje_de_marcado) para estructurar y formatear el texto de un documento. Por ejemplo, mientras que para poner una palabra en negrita con un procesador de textos como Microsoft Word, bastaría con seleccionar la palabra y hacer clic en el botón de negrita para ver automáticamente la palabra en negrita en la pantalla del ordenador, en $\text{\TeX}$ habría que escribir en el fichero con el código fuente `{\bf palabra}` y después compilar el código fuente para obtener un documento final con la palabra en negrita (el comando `\bf`, que permite aplicar la negrita, se conoce como _marca_ o _tag_ en inglés.)
 
-La página principal con información sobre $\TeX$ es la del [TeX Users Group](https://www.tug.org/).
+La página principal con información sobre $\text{\TeX}$ es la del [TeX Users Group](https://www.tug.org/).
 
-## ¿Qué es $\LaTeX$
+## ¿Qué es $\text{\LaTeX}$?
 
 ![](img/logos/latex-project-logo.png)
 
-$\LaTeX$ es un conjunto de macros para $\TeX$ debido originalmente a [Leslie Lamport](https://en.wikipedia.org/wiki/Leslie_Lamport) para facilitar el uso de $\TeX$.
+$\text{\LaTeX}$ es un conjunto de macros para $\text{\TeX}$ debido originalmente a [Leslie Lamport](https://en.wikipedia.org/wiki/Leslie_Lamport) para facilitar el uso de $\text{\TeX}$.
 
-Tanto $\TeX$ como $\LaTeX$ son programas de código abierto, liberados bajo la [licencia LPPL](https://www.latex-project.org/lppl.txt).
+Tanto $\text{\TeX}$ como $\text{\LaTeX}$ son programas de código abierto, liberados bajo la [licencia LPPL](https://www.latex-project.org/lppl.txt).
 
-Otra de las grandes ventajas de $\LaTeX$ es que existen multitud de paquetes de código libre para generar distintos tipos de documentos que pueden descargarse desde el repositorio [CRAN](https://ctan.org/).
+Otra de las grandes ventajas de $\text{\LaTeX}$ es que existen multitud de paquetes de código libre para generar distintos tipos de documentos que pueden descargarse desde el repositorio [CRAN](https://ctan.org/).
 
-La página principal sobre $\LaTeX$ es [The LaTeX project](https://www.latex-project.org/).
+La página principal sobre $\text{\LaTeX}$ es [The LaTeX project](https://www.latex-project.org/).
 
 
 ## Instalación
 
-Existen distintas distribuciones de $\LaTeX$ y algunas de ellas son multiplataforma, es decir, están disponibles para diferentes sistemas operativos. Las distribuciones más comunes son:
+Existen distintas distribuciones de $\text{\LaTeX}$ y algunas de ellas son multiplataforma, es decir, están disponibles para diferentes sistemas operativos. Las distribuciones más comunes son:
 
 - [TeXLive](https://tug.org/texlive/) para Windows, Mac OSX y Linux.
 - [MiKTeX]() para Windows, Mac OSX y Linux.
@@ -35,19 +35,19 @@ Existen distintas distribuciones de $\LaTeX$ y algunas de ellas son multiplatafo
 
 En sus respectivas páginas está explicado el procedimiento de instalación de cada una.
 
-Junto a la distribución de $\LaTeX$ es también habitual instalar algún editor de texto para escribir el código fuente. En realidad puede usarse cualquier editor de texto que ya esté instalado en nuestro sistema operativo, pero los existen entornos de edición especializados que facilitan muchas de las tareas del proceso de composición de documentos con $\LaTeX$. Los más comunes son:
+Junto a la distribución de $\text{\LaTeX}$ es también habitual instalar algún editor de texto para escribir el código fuente. En realidad puede usarse cualquier editor de texto que ya esté instalado en nuestro sistema operativo, pero los existen entornos de edición especializados que facilitan muchas de las tareas del proceso de composición de documentos con $\text{\LaTeX}$. Los más comunes son:
 
 - [TexMaker](http://www.xm1math.net/texmaker/). Es un editor de texto libre, multiplataforma, con muchos asistentes disponibles que permite previsualizar en tiempo real el documento final en pdf
 - [Texstudio](http://www.texstudio.org/). Es otro editor libre y multiplataforma que incorpora aún más asistentes que el anterior. 
-- [Vim](https://www.vim.org/) Es un editor de texto simple de propósito general que también es libre y multiplataforma. Incorpora paquetes o plugins específicos para facilitar la creación de documentos con $\LaTeX$. Especialmente indicado para trabajar desde la terminal.
+- [Vim](https://www.vim.org/) Es un editor de texto simple de propósito general que también es libre y multiplataforma. Incorpora paquetes o plugins específicos para facilitar la creación de documentos con $\text{\LaTeX}$. Especialmente indicado para trabajar desde la terminal.
 - [Emacs](https://www.gnu.org/software/emacs/). Es otro editor similar a Vim, muy extendido entre los usuarios que prefieren usar la terminal.
-- [Visual Studio Code](https://code.visualstudio.com/). Es un potente entorno de desarrollo multipropósito. Dispone de paquetes para los lenguajes de programación más comunes, entre ellos $\LaTeX$.
+- [Visual Studio Code](https://code.visualstudio.com/). Es un potente entorno de desarrollo multipropósito. Dispone de paquetes para los lenguajes de programación más comunes, entre ellos $\text{\LaTeX}$.
 
 Pero también se puede empezar a componer documentos sin necesidad de instalar nada en el ordenador, usando un editor on-line como por ejemplo [Overleaf](https://www.overleaf.com/)
 
 ## Hola LaTeX
 
-A modo de ejemplo, empezaremos por crear un sencillo documento con el texto "Hola $\LaTeX$".
+A modo de ejemplo, empezaremos por crear un sencillo documento con el texto "Hola $\text{\LaTeX}$".
 
 Para ello utilizaremos nuestro editor de texto preferido para crear un fichero de texto con el nombre `main.tex` y el siguiente contenido:
 
@@ -59,22 +59,22 @@ Hola \LaTeX
 ```
 
 :::{.callout-important}
-El nombre del fichero de texto con el código fuente de $\LaTeX$ puede ser el que queramos, pero es importante que la extensión sea `.tex`,
+El nombre del fichero de texto con el código fuente de $\text{\LaTeX}$ puede ser el que queramos, pero es importante que la extensión sea `.tex`,
 :::
 
-Aunque más adelante se verá la estructura general del código fuente de un documento en $\LaTeX$, a continuación se explica brevemente el contenido de este fichero:
+Aunque más adelante se verá la estructura general del código fuente de un documento en $\text{\LaTeX}$, a continuación se explica brevemente el contenido de este fichero:
 
 1. En la primera línea se especifica el tipo de documento (`article`).
 2. En la segunda línea se especifica el idioma del documento (`spanish`).
 3. La tercera línea marca el comienzo del documento.
-4. La cuarta línea contiene el texto del documento. `\LaTeX` es un comando que produce la salida $\LaTeX$.
+4. La cuarta línea contiene el texto del documento. `\LaTeX` es un comando que produce la salida $\text{\LaTeX}$.
 5. La quinta línea marca el final del documento.
 
 ### Compilación
 
-Para obtener el documento final hay que compilar el fichero fuente. Existen diferentes formas de hacerlo y en los editores anteriores suele ser tan sencillo como hacer clic en un botón o pulsar una combinación de teclas, pero en última instancia todos ellos hacen una llamada al compilador de $\LaTeX$ que es quien se encarga de convertir el código fuente en el documento final. 
+Para obtener el documento final hay que compilar el fichero fuente. Existen diferentes formas de hacerlo y en los editores anteriores suele ser tan sencillo como hacer clic en un botón o pulsar una combinación de teclas, pero en última instancia todos ellos hacen una llamada al compilador de $\text{\LaTeX}$ que es quien se encarga de convertir el código fuente en el documento final. 
 
-Cada distribución de $\LaTeX$ viene con varios compiladores. Los más habituales son:
+Cada distribución de $\text{\LaTeX}$ viene con varios compiladores. Los más habituales son:
 
 - `latex`: Es el compilador más antiguo y genera documentos en [formato `dvi`](https://es.wikipedia.org/wiki/DVI_(TeX)), que es un formato independiente creado mucho antes que el formato `pdf`.
 - [`pdflatex`](https://www.tug.org/applications/pdftex/): Es el compilador más usado y genera documentos en formato `pdf`.

@@ -4,9 +4,8 @@
 \PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
 %
 \documentclass[
-  letterpaper,
-  DIV=11,
-  numbers=noendperiod]{scrreport}
+  a4paper,
+]{scrreport}
 
 \usepackage{amsmath,amssymb}
 \usepackage{lmodern}
@@ -115,7 +114,29 @@
 \def\fps@figure{htbp}
 \makeatother
 
-\KOMAoption{captions}{tableheading}
+%\newfontfamily\Ubuntu[Mapping=tex-text]{Ubuntu}
+\usepackage{pgfplots}
+\usetikzlibrary{arrows.meta,arrows}
+\usetikzlibrary{angles,quotes}
+\pgfplotsset{grid style={dashed,mygray}}
+% Colors
+\definecolor{myblue}{rgb}{0.067,0.529,0.871}
+\definecolor{mypurple}{rgb}{0.859,0.071,0.525}
+\definecolor{myred}{rgb}{1.0, 0.13, 0.32}
+\definecolor{mygreen}{rgb}{0.01, 0.75, 0.24}
+\definecolor{myblack}{gray}{0.1}
+\definecolor{mygray}{gray}{0.8}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\CC}{\mathbb{C}}
+\DeclareMathOperator{\Int}{Int}
+\DeclareMathOperator{\Ext}{Ext}
+\DeclareMathOperator{\Fr}{Fr}
+\DeclareMathOperator{\Adh}{Adh}
+\DeclareMathOperator{\Ac}{Ac}
+\DeclareMathOperator{\sen}{sen}
 \makeatletter
 \@ifpackageloaded{tcolorbox}{}{\usepackage[many]{tcolorbox}}
 \@ifpackageloaded{fontawesome5}{}{\usepackage{fontawesome5}}
@@ -141,9 +162,9 @@
 \@ifpackageloaded{caption}{}{\usepackage{caption}}
 \AtBeginDocument{%
 \ifdefined\contentsname
-  \renewcommand*\contentsname{Indice de contenidos}
+  \renewcommand*\contentsname{Tabla de contenidos}
 \else
-  \newcommand\contentsname{Indice de contenidos}
+  \newcommand\contentsname{Tabla de contenidos}
 \fi
 \ifdefined\listfigurename
   \renewcommand*\listfigurename{Listado de Figuras}
@@ -170,7 +191,7 @@
 \floatstyle{ruled}
 \@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
 \floatname{codelisting}{Listado}
-\newcommand*\listoflistings{\listof{codelisting}{Listado de Listatdos}}
+\newcommand*\listoflistings{\listof{codelisting}{Listado de Listados}}
 \makeatother
 \makeatletter
 \@ifpackageloaded{caption}{}{\usepackage{caption}}
@@ -212,13 +233,39 @@
 
 \title{Manual de LaTeX}
 \author{Alfredo Sánchez Alberca}
-\date{6/1/2022}
+\date{1/6/22}
 
 \begin{document}
-\maketitle
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[breakable, interior hidden, frame hidden, boxrule=0pt, borderline west={3pt}{0pt}{shadecolor}, enhanced, sharp corners]}{\end{tcolorbox}}\fi
+\begin{titlepage}
 
-\renewcommand*\contentsname{Indice de contenidos}
+%\AddToShipoutPicture*{\put(0,0){\includegraphics[scale=0.8]{img/background2}}} % Imagen de fondo, requiere el paquete eso-pic.
+\begin{center}
+\vspace*{5cm}
+
+\Huge
+{\textbf{\textsf{Manual de LaTeX}}}
+
+\vspace{0.5cm}
+\LARGE
+{\textbf{\textsf{}}}
+
+\vspace{1.5cm}
+
+\includegraphics[width=0.4\textwidth]{img/logos/sticker.png}
+\end{center}
+
+\vfill
+
+\begin{flushleft}
+\begin{tabular}{ll}
+\includegraphics[width=0.1\textwidth]{img/logos/aprendeconalf.png} & \parbox[b]{5cm}{\Large\textsf{Alfredo
+Sánchez
+Alberca}\\ \textsf{asalber@ceu.es} \\ \textsf{https://aprendeconalf.es}}
+\end{tabular}
+\end{flushleft}
+\end{titlepage}\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[borderline west={3pt}{0pt}{shadecolor}, frame hidden, interior hidden, breakable, enhanced, sharp corners, boxrule=0pt]}{\end{tcolorbox}}\fi
+
+\renewcommand*\contentsname{Tabla de contenidos}
 {
 \hypersetup{linkcolor=}
 \setcounter{tocdepth}{2}
@@ -230,16 +277,20 @@
 \chapter*{Prefacio}\label{prefacio}}
 \addcontentsline{toc}{chapter}{Prefacio}
 
-¡Bienvenida/os al manual de \LaTeX.!
+\markboth{Prefacio}{Prefacio}
+
+¡Bienvenida/os al manual de \(\text{\LaTeX}\)!
 
 Este libro presenta una introducción al lenguaje de composición de
-textos \href{https://www.latex-project.org/}{\LaTeX} con un enfoque
-orientado a la creación de documentos científicos y técnicos con
+textos \href{https://www.latex-project.org/}{\(\text{\LaTeX}\)} con un
+enfoque orientado a la creación de documentos científicos y técnicos con
 contenido matemático.
 
 \hypertarget{licencia}{%
 \section*{Licencia}\label{licencia}}
 \addcontentsline{toc}{section}{Licencia}
+
+\markright{Licencia}
 
 Esta obra está bajo una licencia Reconocimiento -- No comercial --
 Compartir bajo la misma licencia 3.0 España de Creative Commons. Para
@@ -287,68 +338,70 @@ autor.
 \hypertarget{introducciuxf3n}{%
 \chapter{Introducción}\label{introducciuxf3n}}
 
-\hypertarget{quuxe9-es-tex}{%
+\hypertarget{quuxe9-es-texttex}{%
 \section{\texorpdfstring{¿Qué es
-\TeX?}{¿Qué es \textbackslash TeX?}}\label{quuxe9-es-tex}}
+\(\text{\TeX}\)?}{¿Qué es \textbackslash text\{\textbackslash TeX\}?}}\label{quuxe9-es-texttex}}
 
-\TeX es un sistema de composición de documentos de alta calidad,
-orientado especialmente a la creación de documentos científicos y
-técnicos que incluyen fórmulas matemáticas. Fue creado por
+\(\text{\TeX}\) es un sistema de composición de documentos de alta
+calidad, orientado especialmente a la creación de documentos científicos
+y técnicos que incluyen fórmulas matemáticas. Fue creado por
 \href{https://es.wikipedia.org/wiki/Donald_Knuth}{Donald Knuth} en 1978.
 
 A diferencia de un procesador de textos como por ejemplo Microsoft Word,
-\TeX no es una aplicación sino un lenguaje de programación que
-require compilar el código fuente para obtener el documento final. Esto,
-que a priori podría parecer una desventaja, en realidad es la gran
-ventaja de \TeX frente a los procesadores de texto que siguen el
-paradigma \href{https://es.wikipedia.org/wiki/WYSIWYG}{WYSIWYG}
+\(\text{\TeX}\) no es una aplicación sino un lenguaje de programación
+que require compilar el código fuente para obtener el documento final.
+Esto, que a priori podría parecer una desventaja, en realidad es la gran
+ventaja de \(\text{\TeX}\) frente a los procesadores de texto que siguen
+el paradigma \href{https://es.wikipedia.org/wiki/WYSIWYG}{WYSIWYG}
 (\emph{What You See Is What You Get}), ya que permite separar fácilmente
 el contenido y la estructura de un documento, de su formato, de manera
 que el usuario puede centrarse en el contenido y la estructura del
-documento, y dejar que \TeX se encargue del formato. De hecho,
-\TeX incorpora un potente
+documento, y dejar que \(\text{\TeX}\) se encargue del formato. De
+hecho, \(\text{\TeX}\) incorpora un potente
 \href{https://es.wikipedia.org/wiki/Lenguaje_de_marcado}{lenguaje de
 marcado} para estructurar y formatear el texto de un documento. Por
 ejemplo, mientras que para poner una palabra en negrita con un
 procesador de textos como Microsoft Word, bastaría con seleccionar la
 palabra y hacer clic en el botón de negrita para ver automáticamente la
-palabra en negrita en la pantalla del ordenador, en \TeX habría que
-escribir en el fichero con el código fuente
+palabra en negrita en la pantalla del ordenador, en \(\text{\TeX}\)
+habría que escribir en el fichero con el código fuente
 \texttt{\{\textbackslash{}bf\ palabra\}} y después compilar el código
 fuente para obtener un documento final con la palabra en negrita (el
 comando \texttt{\textbackslash{}bf}, que permite aplicar la negrita, se
 conoce como \emph{marca} o \emph{tag} en inglés.)
 
-La página principal con información sobre \TeX es la del
+La página principal con información sobre \(\text{\TeX}\) es la del
 \href{https://www.tug.org/}{TeX Users Group}.
 
-\hypertarget{quuxe9-es-latex}{%
+\hypertarget{quuxe9-es-textlatex}{%
 \section{\texorpdfstring{¿Qué es
-\LaTeX}{¿Qué es \textbackslash LaTeX}}\label{quuxe9-es-latex}}
+\(\text{\LaTeX}\)?}{¿Qué es \textbackslash text\{\textbackslash LaTeX\}?}}\label{quuxe9-es-textlatex}}
 
 \includegraphics{./img/logos/latex-project-logo.png}
 
-\LaTeX es un conjunto de macros para \TeX debido originalmente a
+\(\text{\LaTeX}\) es un conjunto de macros para \(\text{\TeX}\) debido
+originalmente a
 \href{https://en.wikipedia.org/wiki/Leslie_Lamport}{Leslie Lamport} para
-facilitar el uso de \TeX.
+facilitar el uso de \(\text{\TeX}\).
 
-Tanto \TeX como \LaTeX son programas de código abierto,
-liberados bajo la \href{https://www.latex-project.org/lppl.txt}{licencia
-LPPL}.
+Tanto \(\text{\TeX}\) como \(\text{\LaTeX}\) son programas de código
+abierto, liberados bajo la
+\href{https://www.latex-project.org/lppl.txt}{licencia LPPL}.
 
-Otra de las grandes ventajas de \LaTeX es que existen multitud de
-paquetes de código libre para generar distintos tipos de documentos que
-pueden descargarse desde el repositorio \href{https://ctan.org/}{CRAN}.
+Otra de las grandes ventajas de \(\text{\LaTeX}\) es que existen
+multitud de paquetes de código libre para generar distintos tipos de
+documentos que pueden descargarse desde el repositorio
+\href{https://ctan.org/}{CRAN}.
 
-La página principal sobre \LaTeX es
+La página principal sobre \(\text{\LaTeX}\) es
 \href{https://www.latex-project.org/}{The LaTeX project}.
 
 \hypertarget{instalaciuxf3n}{%
 \section{Instalación}\label{instalaciuxf3n}}
 
-Existen distintas distribuciones de \LaTeX y algunas de ellas son
-multiplataforma, es decir, están disponibles para diferentes sistemas
-operativos. Las distribuciones más comunes son:
+Existen distintas distribuciones de \(\text{\LaTeX}\) y algunas de ellas
+son multiplataforma, es decir, están disponibles para diferentes
+sistemas operativos. Las distribuciones más comunes son:
 
 \begin{itemize}
 \tightlist
@@ -364,12 +417,12 @@ operativos. Las distribuciones más comunes son:
 En sus respectivas páginas está explicado el procedimiento de
 instalación de cada una.
 
-Junto a la distribución de \LaTeX es también habitual instalar algún
-editor de texto para escribir el código fuente. En realidad puede usarse
-cualquier editor de texto que ya esté instalado en nuestro sistema
-operativo, pero los existen entornos de edición especializados que
-facilitan muchas de las tareas del proceso de composición de documentos
-con \LaTeX. Los más comunes son:
+Junto a la distribución de \(\text{\LaTeX}\) es también habitual
+instalar algún editor de texto para escribir el código fuente. En
+realidad puede usarse cualquier editor de texto que ya esté instalado en
+nuestro sistema operativo, pero los existen entornos de edición
+especializados que facilitan muchas de las tareas del proceso de
+composición de documentos con \(\text{\LaTeX}\). Los más comunes son:
 
 \begin{itemize}
 \tightlist
@@ -384,8 +437,8 @@ con \LaTeX. Los más comunes son:
   \href{https://www.vim.org/}{Vim} Es un editor de texto simple de
   propósito general que también es libre y multiplataforma. Incorpora
   paquetes o plugins específicos para facilitar la creación de
-  documentos con \LaTeX. Especialmente indicado para trabajar desde
-  la terminal.
+  documentos con \(\text{\LaTeX}\). Especialmente indicado para trabajar
+  desde la terminal.
 \item
   \href{https://www.gnu.org/software/emacs/}{Emacs}. Es otro editor
   similar a Vim, muy extendido entre los usuarios que prefieren usar la
@@ -393,7 +446,8 @@ con \LaTeX. Los más comunes son:
 \item
   \href{https://code.visualstudio.com/}{Visual Studio Code}. Es un
   potente entorno de desarrollo multipropósito. Dispone de paquetes para
-  los lenguajes de programación más comunes, entre ellos \LaTeX.
+  los lenguajes de programación más comunes, entre ellos
+  \(\text{\LaTeX}\).
 \end{itemize}
 
 Pero también se puede empezar a componer documentos sin necesidad de
@@ -404,7 +458,7 @@ instalar nada en el ordenador, usando un editor on-line como por ejemplo
 \section{Hola LaTeX}\label{hola-latex}}
 
 A modo de ejemplo, empezaremos por crear un sencillo documento con el
-texto ``Hola \LaTeX''.
+texto ``Hola \(\text{\LaTeX}\)''.
 
 Para ello utilizaremos nuestro editor de texto preferido para crear un
 fichero de texto con el nombre \texttt{main.tex} y el siguiente
@@ -419,15 +473,17 @@ contenido:
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-important-color!10!white, breakable, colframe=quarto-callout-important-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-important-color}{\faExclamation}\hspace{0.5em}{Importante}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
-El nombre del fichero de texto con el código fuente de \LaTeX puede
-ser el que queramos, pero es importante que la extensión sea
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, leftrule=.75mm, opacityback=0, titlerule=0mm, bottomtitle=1mm, colbacktitle=quarto-callout-important-color!10!white, arc=.35mm, toprule=.15mm, colframe=quarto-callout-important-color-frame, title=\textcolor{quarto-callout-important-color}{\faExclamation}\hspace{0.5em}{Importante}, coltitle=black, colback=white, breakable, toptitle=1mm, rightrule=.15mm, left=2mm, opacitybacktitle=0.6]
+
+El nombre del fichero de texto con el código fuente de \(\text{\LaTeX}\)
+puede ser el que queramos, pero es importante que la extensión sea
 \texttt{.tex},
+
 \end{tcolorbox}
 
 Aunque más adelante se verá la estructura general del código fuente de
-un documento en \LaTeX, a continuación se explica brevemente el
-contenido de este fichero:
+un documento en \(\text{\LaTeX}\), a continuación se explica brevemente
+el contenido de este fichero:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -443,7 +499,7 @@ contenido de este fichero:
 \item
   La cuarta línea contiene el texto del documento.
   \texttt{\textbackslash{}LaTeX} es un comando que produce la salida
-  \LaTeX.
+  \(\text{\LaTeX}\).
 \item
   La quinta línea marca el final del documento.
 \end{enumerate}
@@ -455,11 +511,11 @@ Para obtener el documento final hay que compilar el fichero fuente.
 Existen diferentes formas de hacerlo y en los editores anteriores suele
 ser tan sencillo como hacer clic en un botón o pulsar una combinación de
 teclas, pero en última instancia todos ellos hacen una llamada al
-compilador de \LaTeX que es quien se encarga de convertir el código
-fuente en el documento final.
+compilador de \(\text{\LaTeX}\) que es quien se encarga de convertir el
+código fuente en el documento final.
 
-Cada distribución de \LaTeX viene con varios compiladores. Los más
-habituales son:
+Cada distribución de \(\text{\LaTeX}\) viene con varios compiladores.
+Los más habituales son:
 
 \begin{itemize}
 \tightlist
@@ -560,11 +616,13 @@ siguiente error.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-warning-color!10!white, breakable, colframe=quarto-callout-warning-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Advertencia}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, leftrule=.75mm, opacityback=0, titlerule=0mm, bottomtitle=1mm, colbacktitle=quarto-callout-warning-color!10!white, arc=.35mm, toprule=.15mm, colframe=quarto-callout-warning-color-frame, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Advertencia}, coltitle=black, colback=white, breakable, toptitle=1mm, rightrule=.15mm, left=2mm, opacitybacktitle=0.6]
+
 Si el documento contiene referencias cruzadas, citaciones
 bibliográficas, tabla de contenidos o índices, es necesario compilar el
 documento dos o tres veces para que se generen automáticamente esas
 partes.
+
 \end{tcolorbox}
 
 \bookmarksetup{startatroot}
@@ -678,8 +736,8 @@ A continuación se explican las partes del esqueleto anterior.
 \hypertarget{clase-de-un-documento}{%
 \subsection{Clase de un documento}\label{clase-de-un-documento}}
 
-La primera línea de un fichero con código \LaTeX indica la clase de
-documento que se va a generar mediante el comando
+La primera línea de un fichero con código \(\text{\LaTeX}\) indica la
+clase de documento que se va a generar mediante el comando
 \texttt{\textbackslash{}documentclass}. En el ejemplo aparece un
 argumento obligatorio que indica el tipo de documento que se desea
 crear, artículo (\texttt{article}), pero se pueden crear otros tipos de
@@ -713,8 +771,8 @@ A continuación, se suelen configurar algunos aspectos del documento como
 podrían ser los márgenes, encabezados y pies, el título, autor y fecha,
 y otras muchas posibilidades.
 
-En el preámbulo también se pueden definir nuevos comandos \LaTeX o
-redefinir los ya existentes.
+En el preámbulo también se pueden definir nuevos comandos
+\(\text{\LaTeX}\) o redefinir los ya existentes.
 
 \hypertarget{cuerpo}{%
 \subsection{Cuerpo}\label{cuerpo}}
@@ -833,8 +891,10 @@ sección sin numerar y que tampoco aparecerán en la tabla de contenidos.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, leftrule=.75mm, opacityback=0, titlerule=0mm, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, arc=.35mm, toprule=.15mm, colframe=quarto-callout-note-color-frame, title={Salida}, coltitle=black, colback=white, breakable, toptitle=1mm, rightrule=.15mm, left=2mm, opacitybacktitle=0.6]
+
 \includegraphics{./img/secciones/secciones.png}
+
 \end{tcolorbox}
 
 \hypertarget{puxe1rrafos-y-cambios-de-luxednea}{%
@@ -863,19 +923,21 @@ utiliza el comando \texttt{\textbackslash{}newline} o
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, leftrule=.75mm, opacityback=0, titlerule=0mm, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, arc=.35mm, toprule=.15mm, colframe=quarto-callout-note-color-frame, title={Salida}, coltitle=black, colback=white, breakable, toptitle=1mm, rightrule=.15mm, left=2mm, opacitybacktitle=0.6]
+
 \includegraphics{./img/secciones/parrafos.png}
+
 \end{tcolorbox}
 
 \hypertarget{justificaciuxf3n}{%
 \section{Justificación}\label{justificaciuxf3n}}
 
 Los párrafos se justifican por defecto a la izquierda y a la derecha.
-\LaTeX utiliza un algoritmo que permite partir las palabras al final
-de una línea para obtener párrafos con una buena estética (sin grandes
-espacios en blanco entre palabras). Pero también se pueden justificar
-solo a la izquierda, solo a la derecha o centrados entre los márgenes.
-Para ello se utilizan los siguientes entornos:
+\(\text{\LaTeX}\) utiliza un algoritmo que permite partir las palabras
+al final de una línea para obtener párrafos con una buena estética (sin
+grandes espacios en blanco entre palabras). Pero también se pueden
+justificar solo a la izquierda, solo a la derecha o centrados entre los
+márgenes. Para ello se utilizan los siguientes entornos:
 
 \begin{itemize}
 \tightlist
@@ -917,15 +979,19 @@ Para ello se utilizan los siguientes entornos:
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, leftrule=.75mm, opacityback=0, titlerule=0mm, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, arc=.35mm, toprule=.15mm, colframe=quarto-callout-note-color-frame, title={Salida}, coltitle=black, colback=white, breakable, toptitle=1mm, rightrule=.15mm, left=2mm, opacitybacktitle=0.6]
+
 \includegraphics{./img/secciones/justificacion.png}
+
 \end{tcolorbox}
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-warning-color!10!white, breakable, colframe=quarto-callout-warning-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Advertencia}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, leftrule=.75mm, opacityback=0, titlerule=0mm, bottomtitle=1mm, colbacktitle=quarto-callout-warning-color!10!white, arc=.35mm, toprule=.15mm, colframe=quarto-callout-warning-color-frame, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Advertencia}, coltitle=black, colback=white, breakable, toptitle=1mm, rightrule=.15mm, left=2mm, opacitybacktitle=0.6]
+
 El algoritmo para partir palabras al final de una línea funciona muy
 bien, pero si alguna vez divide mal una palabra, se puede indicar por
 dónde partir la palabra con el comando \texttt{\textbackslash{}-} (por
 ejemplo \texttt{si\textbackslash{}-la\textbackslash{}-ba}).
+
 \end{tcolorbox}
 
 \bookmarksetup{startatroot}
@@ -972,8 +1038,10 @@ subrayado. Estos formatos se aplican con los siguientes comandos:
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, leftrule=.75mm, opacityback=0, titlerule=0mm, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, arc=.35mm, toprule=.15mm, colframe=quarto-callout-note-color-frame, title={Salida}, coltitle=black, colback=white, breakable, toptitle=1mm, rightrule=.15mm, left=2mm, opacitybacktitle=0.6]
+
 \includegraphics{./img/formateo/resaltado.png}
+
 \end{tcolorbox}
 
 \hypertarget{familias-de-tipos-de-letra}{%
@@ -1005,8 +1073,10 @@ Existen tres tipos de letra que se activan con los siguientes comandos:
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, leftrule=.75mm, opacityback=0, titlerule=0mm, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, arc=.35mm, toprule=.15mm, colframe=quarto-callout-note-color-frame, title={Salida}, coltitle=black, colback=white, breakable, toptitle=1mm, rightrule=.15mm, left=2mm, opacitybacktitle=0.6]
+
 \includegraphics{./img/formateo/tipos-letra.png}
+
 \end{tcolorbox}
 
 En el preámbulo del documento se puede seleccionar la fuente a utilizar
@@ -1027,9 +1097,11 @@ comandos:
   Establece la fuente para el tipo de letra monoespaciado.
 \end{itemize}
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-caution-color!10!white, breakable, colframe=quarto-callout-caution-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-caution-color}{\faFire}\hspace{0.5em}{Precaución}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, leftrule=.75mm, opacityback=0, titlerule=0mm, bottomtitle=1mm, colbacktitle=quarto-callout-caution-color!10!white, arc=.35mm, toprule=.15mm, colframe=quarto-callout-caution-color-frame, title=\textcolor{quarto-callout-caution-color}{\faFire}\hspace{0.5em}{Precaución}, coltitle=black, colback=white, breakable, toptitle=1mm, rightrule=.15mm, left=2mm, opacitybacktitle=0.6]
+
 Las fuentes utilizadas en un documento deben estar previamente
 instaladas en el sistema operativo donde se compile el documento.
+
 \end{tcolorbox}
 
 \textbf{Ejemplo}
@@ -1050,8 +1122,10 @@ instaladas en el sistema operativo donde se compile el documento.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, leftrule=.75mm, opacityback=0, titlerule=0mm, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, arc=.35mm, toprule=.15mm, colframe=quarto-callout-note-color-frame, title={Salida}, coltitle=black, colback=white, breakable, toptitle=1mm, rightrule=.15mm, left=2mm, opacitybacktitle=0.6]
+
 \includegraphics{./img/formateo/tipos-letra-xelatex.png}
+
 \end{tcolorbox}
 
 \hypertarget{perfiles-de-letra}{%
@@ -1093,16 +1167,19 @@ con los siguientes comandos:
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, leftrule=.75mm, opacityback=0, titlerule=0mm, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, arc=.35mm, toprule=.15mm, colframe=quarto-callout-note-color-frame, title={Salida}, coltitle=black, colback=white, breakable, toptitle=1mm, rightrule=.15mm, left=2mm, opacitybacktitle=0.6]
+
 \includegraphics{./img/formateo/perfiles-letra.png}
+
 \end{tcolorbox}
 
 \hypertarget{tamauxf1os-de-letra}{%
 \section{Tamaños de letra}\label{tamauxf1os-de-letra}}
 
 A diferencia de otros procesadores donde el tamaño de la fuente se
-indica en puntos o pixels, en \LaTeX existen 10 tamaños predefinidos
-que se activan con los siguientes comandos, de menor a mayor tamaño:
+indica en puntos o pixels, en \(\text{\LaTeX}\) existen 10 tamaños
+predefinidos que se activan con los siguientes comandos, de menor a
+mayor tamaño:
 
 \begin{itemize}
 \tightlist
@@ -1151,8 +1228,10 @@ pero no suelen ser necesarios en un documento normal.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, leftrule=.75mm, opacityback=0, titlerule=0mm, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, arc=.35mm, toprule=.15mm, colframe=quarto-callout-note-color-frame, title={Salida}, coltitle=black, colback=white, breakable, toptitle=1mm, rightrule=.15mm, left=2mm, opacitybacktitle=0.6]
+
 \includegraphics{./img/formateo/tamaño-fuente.png}
+
 \end{tcolorbox}
 
 \bookmarksetup{startatroot}
@@ -1197,8 +1276,10 @@ Ejemplo de lista no ordenada.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, leftrule=.75mm, opacityback=0, titlerule=0mm, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, arc=.35mm, toprule=.15mm, colframe=quarto-callout-note-color-frame, title={Salida}, coltitle=black, colback=white, breakable, toptitle=1mm, rightrule=.15mm, left=2mm, opacitybacktitle=0.6]
+
 \includegraphics{./img/listas/lista-no-ordenad.png}
+
 \end{tcolorbox}
 
 Ejemplo de lista ordenada.
@@ -1217,8 +1298,10 @@ Ejemplo de lista ordenada.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, leftrule=.75mm, opacityback=0, titlerule=0mm, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, arc=.35mm, toprule=.15mm, colframe=quarto-callout-note-color-frame, title={Salida}, coltitle=black, colback=white, breakable, toptitle=1mm, rightrule=.15mm, left=2mm, opacitybacktitle=0.6]
+
 \includegraphics{./img/listas/lista-ordenada.png}
+
 \end{tcolorbox}
 
 Ejemplo de lista descriptiva.
@@ -1238,8 +1321,10 @@ Ejemplo de lista descriptiva.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, leftrule=.75mm, opacityback=0, titlerule=0mm, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, arc=.35mm, toprule=.15mm, colframe=quarto-callout-note-color-frame, title={Salida}, coltitle=black, colback=white, breakable, toptitle=1mm, rightrule=.15mm, left=2mm, opacitybacktitle=0.6]
+
 \includegraphics{./img/listas/lista-desciptiva.png}
+
 \end{tcolorbox}
 
 Se pueden crear sublistas anidando unos entornos dentro de otros.
@@ -1267,8 +1352,10 @@ Se pueden crear sublistas anidando unos entornos dentro de otros.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, leftrule=.75mm, opacityback=0, titlerule=0mm, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, arc=.35mm, toprule=.15mm, colframe=quarto-callout-note-color-frame, title={Salida}, coltitle=black, colback=white, breakable, toptitle=1mm, rightrule=.15mm, left=2mm, opacitybacktitle=0.6]
+
 \includegraphics{./img/listas/listas-anidadas.png}
+
 \end{tcolorbox}
 
 La indentación en el código fuente del ejemplo anterior no es
@@ -1280,9 +1367,9 @@ entornos.
 \hypertarget{sec-tablas}{%
 \chapter{Tablas}\label{sec-tablas}}
 
-Las tablas son uno de los elementos más complejos de \LaTeX, ya que,
-aunque es fácil crear una tabla sencilla, aplicarles un formato más
-avanzado con justificación de columnas, fusión de columnas o filas,
+Las tablas son uno de los elementos más complejos de \(\text{\LaTeX}\),
+ya que, aunque es fácil crear una tabla sencilla, aplicarles un formato
+más avanzado con justificación de columnas, fusión de columnas o filas,
 márgenes de columnas, líneas de división, etc. suele ser bastante más
 difícil, aunque algunos entornos de edición facilitan la tarea. Existen
 multitud de paquetes para personalizar las tablas pero en esta sección
@@ -1317,8 +1404,10 @@ separando las celdas con el comando \texttt{\&}.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, leftrule=.75mm, opacityback=0, titlerule=0mm, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, arc=.35mm, toprule=.15mm, colframe=quarto-callout-note-color-frame, title={Salida}, coltitle=black, colback=white, breakable, toptitle=1mm, rightrule=.15mm, left=2mm, opacitybacktitle=0.6]
+
 \includegraphics{./img/tablas/tabla-simple.png}
+
 \end{tcolorbox}
 
 Para añadir líneas de división entre columnas, se introduce el carácter
@@ -1352,8 +1441,10 @@ introduzca el comando \texttt{\textbackslash{}hline}.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, leftrule=.75mm, opacityback=0, titlerule=0mm, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, arc=.35mm, toprule=.15mm, colframe=quarto-callout-note-color-frame, title={Salida}, coltitle=black, colback=white, breakable, toptitle=1mm, rightrule=.15mm, left=2mm, opacitybacktitle=0.6]
+
 \includegraphics{./img/tablas/tabla-delimitada.png}
+
 \end{tcolorbox}
 
 El comando \texttt{\textbackslash{}multicolumn\{num\}\{col\}\{texto\}}
@@ -1387,8 +1478,10 @@ divisorias que no abarquen toda la fila, sino desde la columna
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, leftrule=.75mm, opacityback=0, titlerule=0mm, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, arc=.35mm, toprule=.15mm, colframe=quarto-callout-note-color-frame, title={Salida}, coltitle=black, colback=white, breakable, toptitle=1mm, rightrule=.15mm, left=2mm, opacitybacktitle=0.6]
+
 \includegraphics{./img/tablas/tabla-multicolumna.png}
+
 \end{tcolorbox}
 
 \bookmarksetup{startatroot}
@@ -1449,8 +1542,10 @@ siguientes argumentos opcionales para modificar el aspecto de la imagen:
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, leftrule=.75mm, opacityback=0, titlerule=0mm, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, arc=.35mm, toprule=.15mm, colframe=quarto-callout-note-color-frame, title={Salida}, coltitle=black, colback=white, breakable, toptitle=1mm, rightrule=.15mm, left=2mm, opacitybacktitle=0.6]
+
 \includegraphics{./img/imagenes/imganes.png}
+
 \end{tcolorbox}
 
 \bookmarksetup{startatroot}
@@ -1459,8 +1554,8 @@ siguientes argumentos opcionales para modificar el aspecto de la imagen:
 \chapter{Fórmulas matemáticas}\label{fuxf3rmulas-matemuxe1ticas}}
 
 La escritura de fórmulas matemáticas es uno de los puntos fuertes de
-\LaTeX, y es por ello que se utiliza tanto para la creación de
-documentos científicos o técnicos con contenido matemático.
+\(\text{\LaTeX}\), y es por ello que se utiliza tanto para la creación
+de documentos científicos o técnicos con contenido matemático.
 
 Para escribir una fórmula es necesario cambiar al modo matemático.
 Existen distintas formas de activar el modo matemático:
@@ -1492,9 +1587,6 @@ Existen distintas formas de activar el modo matemático:
 \SpecialStringTok{$$ }
 \SpecialStringTok{x+y=0}
 \SpecialStringTok{$$}
-
-
-
 \NormalTok{Ejemplo de fórmula con el entorno }\FunctionTok{\textbackslash{}texttt}\NormalTok{\{equation\}}
 
 \KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{equation}\NormalTok{\}}
@@ -1504,8 +1596,10 @@ Existen distintas formas de activar el modo matemático:
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, leftrule=.75mm, opacityback=0, titlerule=0mm, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, arc=.35mm, toprule=.15mm, colframe=quarto-callout-note-color-frame, title={Salida}, coltitle=black, colback=white, breakable, toptitle=1mm, rightrule=.15mm, left=2mm, opacitybacktitle=0.6]
+
 \includegraphics{./img/formulas/entornos-matematicos.png}
+
 \end{tcolorbox}
 
 \hypertarget{suxedmbolos-matemuxe1ticos}{%
@@ -1513,10 +1607,10 @@ Existen distintas formas de activar el modo matemático:
 
 Existe una infinidad de símbolos matemáticos que escriben mediante
 comandos. A continuación se muestran los más habituales.\footnote{Para
-  un listado más exhaustivo de los símbolos matemáticos de \LaTeX,
-  puede consultarse el documento
+  un listado más exhaustivo de los símbolos matemáticos de
+  \(\text{\LaTeX}\), puede consultarse el documento
   \href{https://www3.nd.edu/~nmark/UsefulFacts/LaTeX_symbols.pdf}{The
-  Great, Big List of \LaTeX Symbols}.}
+  Great, Big List of \(\text{\LaTeX}\) Symbols}.}
 
 \hypertarget{letras-griegas}{%
 \subsection{Letras griegas}\label{letras-griegas}}
@@ -1789,17 +1883,11 @@ de un carácter, hay que ponerlos entre llaves.
 \SpecialStringTok{x\_i+y\_j=0}
 \SpecialStringTok{$$}
 
-
-
-
 \NormalTok{Ejemplo de fórmula con superíndices}
 
 \SpecialStringTok{$$ }
 \SpecialStringTok{x\^{}2+y\^{}2=0}
 \SpecialStringTok{$$}
-
-
-
 
 \NormalTok{Ejemplo de fórmula con subíndices y superíndices}
 
@@ -1807,15 +1895,14 @@ de un carácter, hay que ponerlos entre llaves.
 \SpecialStringTok{x\_i\^{}2+y\_j\^{}2=0}
 \SpecialStringTok{$$}
 
-
-
-
 \KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, leftrule=.75mm, opacityback=0, titlerule=0mm, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, arc=.35mm, toprule=.15mm, colframe=quarto-callout-note-color-frame, title={Salida}, coltitle=black, colback=white, breakable, toptitle=1mm, rightrule=.15mm, left=2mm, opacitybacktitle=0.6]
+
 \includegraphics{./img/formulas/indices.png}
+
 \end{tcolorbox}
 
 Se pueden escribir subíndices de subíndices o superíndices de
@@ -1847,15 +1934,14 @@ denominador, anidando este comando.
 \SpecialCharTok{\textbackslash{}frac}\SpecialStringTok{\{}\SpecialCharTok{\textbackslash{}frac}\SpecialStringTok{\{x\}\{2\}+}\SpecialCharTok{\textbackslash{}frac}\SpecialStringTok{\{2\}\{3\}\}\{x\^{}2{-}2x+1\}}
 \SpecialStringTok{$$}
 
-
-
-
 \KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, leftrule=.75mm, opacityback=0, titlerule=0mm, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, arc=.35mm, toprule=.15mm, colframe=quarto-callout-note-color-frame, title={Salida}, coltitle=black, colback=white, breakable, toptitle=1mm, rightrule=.15mm, left=2mm, opacitybacktitle=0.6]
+
 \includegraphics{./img/formulas/fracciones.png}
+
 \end{tcolorbox}
 
 \hypertarget{sumatorios-productorios-e-integrales}{%
@@ -1887,22 +1973,18 @@ superíndice que indica el final del producto. Si se quieren omitir los
 \SpecialCharTok{\textbackslash{}sum}\SpecialStringTok{\_\{i=1\}\^{}\{}\SpecialCharTok{\textbackslash{}infty}\SpecialStringTok{\} x\^{}i}
 \SpecialStringTok{$$}
 
-
-
-
 \NormalTok{Ejemplo de productorio}
 \SpecialStringTok{$$}
 \SpecialCharTok{\textbackslash{}prod}\SpecialStringTok{\_\{i=1\}\^{}n i}
 \SpecialStringTok{$$}
-
-
-
 \KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, leftrule=.75mm, opacityback=0, titlerule=0mm, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, arc=.35mm, toprule=.15mm, colframe=quarto-callout-note-color-frame, title={Salida}, coltitle=black, colback=white, breakable, toptitle=1mm, rightrule=.15mm, left=2mm, opacitybacktitle=0.6]
+
 \includegraphics{./img/formulas/sumatorio.png}
+
 \end{tcolorbox}
 
 Del mismo modo, para escribir integrales definidas se utiliza el comando
@@ -1922,22 +2004,18 @@ indefinidas, basta con el comando \texttt{\textbackslash{}int}.
 \SpecialCharTok{\textbackslash{}int}\SpecialStringTok{\_a\^{}b f(x)}\SpecialCharTok{\textbackslash{},}\SpecialStringTok{dx}
 \SpecialStringTok{$$}
 
-
-
-
 \NormalTok{Ejemplo de integral indefinida}
 \SpecialStringTok{$$}
 \SpecialCharTok{\textbackslash{}int}\SpecialStringTok{ f(x)}\SpecialCharTok{\textbackslash{},}\SpecialStringTok{dx}
 \SpecialStringTok{$$}
-
-
-
 \KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, leftrule=.75mm, opacityback=0, titlerule=0mm, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, arc=.35mm, toprule=.15mm, colframe=quarto-callout-note-color-frame, title={Salida}, coltitle=black, colback=white, breakable, toptitle=1mm, rightrule=.15mm, left=2mm, opacitybacktitle=0.6]
+
 \includegraphics{./img/formulas/integral.png}
+
 \end{tcolorbox}
 
 \hypertarget{sombreros}{%
@@ -1977,8 +2055,10 @@ tipos de sombreros:
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, leftrule=.75mm, opacityback=0, titlerule=0mm, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, arc=.35mm, toprule=.15mm, colframe=quarto-callout-note-color-frame, title={Salida}, coltitle=black, colback=white, breakable, toptitle=1mm, rightrule=.15mm, left=2mm, opacitybacktitle=0.6]
+
 \includegraphics{./img/formulas/sombreros.png}
+
 \end{tcolorbox}
 
 \hypertarget{matrices}{%
@@ -2005,15 +2085,14 @@ entorno y el comando \texttt{\textbackslash{}right)} después.
 \KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{array}\NormalTok{\}}
 \SpecialCharTok{\textbackslash{}right}\SpecialStringTok{)}
 \SpecialStringTok{$$}
-
-
-
 \KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, leftrule=.75mm, opacityback=0, titlerule=0mm, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, arc=.35mm, toprule=.15mm, colframe=quarto-callout-note-color-frame, title={Salida}, coltitle=black, colback=white, breakable, toptitle=1mm, rightrule=.15mm, left=2mm, opacitybacktitle=0.6]
+
 \includegraphics{./img/formulas/matriz.png}
+
 \end{tcolorbox}
 
 El paquete \texttt{amsmath} incorpora varios entornos más específicos
@@ -2055,15 +2134,14 @@ tampoco los delimitadores:
 \SpecialStringTok{3 \& z \&}\SpecialCharTok{\textbackslash{}gamma}
 \KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{vmatrix}\NormalTok{\}}
 \SpecialStringTok{$$}
-
-
-
 \KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, leftrule=.75mm, opacityback=0, titlerule=0mm, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, arc=.35mm, toprule=.15mm, colframe=quarto-callout-note-color-frame, title={Salida}, coltitle=black, colback=white, breakable, toptitle=1mm, rightrule=.15mm, left=2mm, opacitybacktitle=0.6]
+
 \includegraphics{./img/formulas/determinante.png}
+
 \end{tcolorbox}
 
 \hypertarget{teoremas}{%
@@ -2107,9 +2185,6 @@ Para demostraciones se puede utilizar el entorno \texttt{proof}.
 \SpecialStringTok{$$}
 \SpecialCharTok{\textbackslash{}sen}\SpecialStringTok{\{}\SpecialCharTok{\textbackslash{}alpha}\SpecialStringTok{\}= }\SpecialCharTok{\textbackslash{}frac}\SpecialStringTok{\{b\}\{c\}.}
 \SpecialStringTok{$$}
-
-
-
 \KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{midef}\NormalTok{\}}
 
 \KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{teo}\NormalTok{\}}
@@ -2124,14 +2199,18 @@ Para demostraciones se puede utilizar el entorno \texttt{proof}.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, leftrule=.75mm, opacityback=0, titlerule=0mm, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, arc=.35mm, toprule=.15mm, colframe=quarto-callout-note-color-frame, title={Salida}, coltitle=black, colback=white, breakable, toptitle=1mm, rightrule=.15mm, left=2mm, opacitybacktitle=0.6]
+
 \includegraphics{./img/formulas/teoremas.png}
+
 \end{tcolorbox}
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-tip-color!10!white, breakable, colframe=quarto-callout-tip-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, leftrule=.75mm, opacityback=0, titlerule=0mm, bottomtitle=1mm, colbacktitle=quarto-callout-tip-color!10!white, arc=.35mm, toprule=.15mm, colframe=quarto-callout-tip-color-frame, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, coltitle=black, colback=white, breakable, toptitle=1mm, rightrule=.15mm, left=2mm, opacitybacktitle=0.6]
+
 Se recomienda cargar los paquetes \texttt{amsmath}, \texttt{amssymb} y
 \texttt{amsthm} para documentos extensos o con muchas fórmulas
 matemáticas.
+
 \end{tcolorbox}
 
 \bookmarksetup{startatroot}
@@ -2172,8 +2251,8 @@ esqueleto.
 
 El argumento opcional indica la preferencia de ubicación de la figura en
 la página (\texttt{h} en el lugar en el que aparece en el código fuente,
-\texttt{t} arriba, \texttt{b} abajo). \LaTeX intentará ubicar la
-figura en esa posición salvo que no sea posible.
+\texttt{t} arriba, \texttt{b} abajo). \(\text{\LaTeX}\) intentará ubicar
+la figura en esa posición salvo que no sea posible.
 
 Las figuras flotantes se numeran automáticamente y el comando
 \texttt{\textbackslash{}label\{...\}} asigna una etiqueta al entorno
@@ -2202,8 +2281,10 @@ leyenda de la figura.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, leftrule=.75mm, opacityback=0, titlerule=0mm, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, arc=.35mm, toprule=.15mm, colframe=quarto-callout-note-color-frame, title={Salida}, coltitle=black, colback=white, breakable, toptitle=1mm, rightrule=.15mm, left=2mm, opacitybacktitle=0.6]
+
 \includegraphics{./img/entornos-flotantes/figura-flotante.png}
+
 \end{tcolorbox}
 
 Para incluir el listado de figuras de un documento en cualquier parte se
@@ -2260,8 +2341,10 @@ pueden referenciarse después asignándoles una etiqueta con el comando
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, leftrule=.75mm, opacityback=0, titlerule=0mm, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, arc=.35mm, toprule=.15mm, colframe=quarto-callout-note-color-frame, title={Salida}, coltitle=black, colback=white, breakable, toptitle=1mm, rightrule=.15mm, left=2mm, opacitybacktitle=0.6]
+
 \includegraphics{./img/entornos-flotantes/tabla-flotante.png}
+
 \end{tcolorbox}
 
 Para incluir el listado de figuras de un documento en cualquier parte se
@@ -2273,7 +2356,7 @@ utiliza el comando \texttt{\textbackslash{}listoftables}.
 \chapter{Referencias cruzadas y notas a
 pie}\label{referencias-cruzadas-y-notas-a-pie}}
 
-Otro de los puntos fuertes de \LaTeX es la gestión de las
+Otro de los puntos fuertes de \(\text{\LaTeX}\) es la gestión de las
 referencias cruzadas, es decir, referencias a otras partes del
 documento, así como las notas a pie de página.
 
@@ -2318,8 +2401,10 @@ documento se utiliza el comando
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, leftrule=.75mm, opacityback=0, titlerule=0mm, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, arc=.35mm, toprule=.15mm, colframe=quarto-callout-note-color-frame, title={Salida}, coltitle=black, colback=white, breakable, toptitle=1mm, rightrule=.15mm, left=2mm, opacitybacktitle=0.6]
+
 \includegraphics{./img/referencias-cruzadas/referencias-cruzadas.png}
+
 \end{tcolorbox}
 
 \hypertarget{notas-a-pie-de-puxe1gina}{%
@@ -2334,13 +2419,15 @@ Para insertar una nota a pié de página se utiliza el comando
 \begin{Highlighting}[]
 \CommentTok{\% CUERPO}
 \KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
-\NormalTok{El logotipo de latex es }\SpecialStringTok{$}\SpecialCharTok{\textbackslash{}LaTeX}\SpecialStringTok{$}\NormalTok{.}\FunctionTok{\textbackslash{}footnote}\NormalTok{\{Fue creado por Leslie Lamport.\}}
+\NormalTok{El logotipo de latex es }\SpecialStringTok{$}\SpecialCharTok{\textbackslash{}text}\NormalTok{\{}\SpecialCharTok{\textbackslash{}LaTeX}\NormalTok{\}}\SpecialStringTok{$}\NormalTok{.}\FunctionTok{\textbackslash{}footnote}\NormalTok{\{Fue creado por Leslie Lamport.\}}
 \KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{document}\NormalTok{\}}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, leftrule=.75mm, opacityback=0, titlerule=0mm, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, arc=.35mm, toprule=.15mm, colframe=quarto-callout-note-color-frame, title={Salida}, coltitle=black, colback=white, breakable, toptitle=1mm, rightrule=.15mm, left=2mm, opacitybacktitle=0.6]
+
 \includegraphics{./img/referencias-cruzadas/nota-pie.png}
+
 \end{tcolorbox}
 
 \bookmarksetup{startatroot}
@@ -2349,13 +2436,13 @@ Para insertar una nota a pié de página se utiliza el comando
 \chapter{Citas y referencias
 bibliográficas}\label{citas-y-referencias-bibliogruxe1ficas}}
 
-Al igual que con las referencias cruzadas, \LaTeX hace un
+Al igual que con las referencias cruzadas, \(\text{\LaTeX}\) hace un
 maravilloso trabajo con las citas de referencias bibliográficas. Para
 ello se apoya en otro programa de gestión de referencias bibliográficas
 llamado \href{http://www.bibtex.org/}{BibTeX}, que viene incluido en la
-distribución estándar de \LaTeX. BibTeX permite crear una base de
-datos de distintos tipos de documentos que después se pueden citar en
-nuestro documento y después listar al final del documento las
+distribución estándar de \(\text{\LaTeX}\). BibTeX permite crear una
+base de datos de distintos tipos de documentos que después se pueden
+citar en nuestro documento y después listar al final del documento las
 referencias bibliográficas citadas con diferentes formatos.
 
 También existe otro gestor de referencias bibliográficas llamado
@@ -2444,8 +2531,10 @@ documento basta con insertar el comando
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, leftrule=.75mm, opacityback=0, titlerule=0mm, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, arc=.35mm, toprule=.15mm, colframe=quarto-callout-note-color-frame, title={Salida}, coltitle=black, colback=white, breakable, toptitle=1mm, rightrule=.15mm, left=2mm, opacitybacktitle=0.6]
+
 \includegraphics{./img/bibliografia/bibliografia.png}
+
 \end{tcolorbox}
 
 Existen diferentes estilos para las citaciones y para el listado con las
@@ -2481,8 +2570,10 @@ opcional \texttt{backend=biber}.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, leftrule=.75mm, opacityback=0, titlerule=0mm, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, arc=.35mm, toprule=.15mm, colframe=quarto-callout-note-color-frame, title={Salida}, coltitle=black, colback=white, breakable, toptitle=1mm, rightrule=.15mm, left=2mm, opacitybacktitle=0.6]
+
 \includegraphics{./img/bibliografia/bibliografia2.png}
+
 \end{tcolorbox}
 
 \bookmarksetup{startatroot}
@@ -2544,8 +2635,10 @@ en formato horizontal o apaisado con el argumento \texttt{landscape}.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, leftrule=.75mm, opacityback=0, titlerule=0mm, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, arc=.35mm, toprule=.15mm, colframe=quarto-callout-note-color-frame, title={Salida}, coltitle=black, colback=white, breakable, toptitle=1mm, rightrule=.15mm, left=2mm, opacitybacktitle=0.6]
+
 \includegraphics{./img/diseño-pagina/pagina-a5-apaisada.png}
+
 \end{tcolorbox}
 
 También permite definir los márgenes del documento mediante los
@@ -2585,16 +2678,18 @@ siguientes argumentos:
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, leftrule=.75mm, opacityback=0, titlerule=0mm, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, arc=.35mm, toprule=.15mm, colframe=quarto-callout-note-color-frame, title={Salida}, coltitle=black, colback=white, breakable, toptitle=1mm, rightrule=.15mm, left=2mm, opacitybacktitle=0.6]
+
 \includegraphics{./img/diseño-pagina/pagina-margenes-personalizados.png}
+
 \end{tcolorbox}
 
 \hypertarget{encabezados-y-pies-de-puxe1gina}{%
 \section{Encabezados y pies de
 página}\label{encabezados-y-pies-de-puxe1gina}}
 
-\LaTeX incluye encabezados y pies de página automáticos dependiendo
-del tipo de documento. Para las clases \texttt{article} y
+\(\text{\LaTeX}\) incluye encabezados y pies de página automáticos
+dependiendo del tipo de documento. Para las clases \texttt{article} y
 \texttt{report} no hay encabezado y el pie es el número de página,
 mientras que para la clase \texttt{book} el encabezado incluye la página
 y la sección a la que corresponde la página. No obstante, el usuario
@@ -2630,13 +2725,15 @@ impares añadiendo una \texttt{O}.
 \texttt{texto} al pie en el area que se indique en el argumento opcional
 \texttt{opcion}.
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-warning-color!10!white, breakable, colframe=quarto-callout-warning-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Advertencia}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, leftrule=.75mm, opacityback=0, titlerule=0mm, bottomtitle=1mm, colbacktitle=quarto-callout-warning-color!10!white, arc=.35mm, toprule=.15mm, colframe=quarto-callout-warning-color-frame, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Advertencia}, coltitle=black, colback=white, breakable, toptitle=1mm, rightrule=.15mm, left=2mm, opacitybacktitle=0.6]
+
 El paquete \texttt{fancyhdr} no elimina los encabezados por defecto de
 cada tipo de documento, por lo que si se van a definir encabezados o
 pies personalizados, conviene utilizar los comandos
 \texttt{\textbackslash{}fancyhead\{\}} y
 \texttt{\textbackslash{}fancyfoot\{\}} para eliminar el encabezado y pie
 por defecto antes de definir los propios.
+
 \end{tcolorbox}
 
 \textbf{Ejemplo}
@@ -2666,8 +2763,10 @@ por defecto antes de definir los propios.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, leftrule=.75mm, opacityback=0, titlerule=0mm, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, arc=.35mm, toprule=.15mm, colframe=quarto-callout-note-color-frame, title={Salida}, coltitle=black, colback=white, breakable, toptitle=1mm, rightrule=.15mm, left=2mm, opacitybacktitle=0.6]
+
 \includegraphics{./img/diseño-pagina/encabezado-pie.png}
+
 \end{tcolorbox}
 
 Como se puede observar, por defecto \texttt{fancyhdr} introduce una
@@ -2712,8 +2811,10 @@ cuerpo se controla con la opción \texttt{footskip=x}.
 \end{Highlighting}
 \end{Shaded}
 
-\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, toprule=.15mm, opacitybacktitle=0.6, colback=white, coltitle=black, colbacktitle=quarto-callout-note-color!10!white, breakable, colframe=quarto-callout-note-color-frame, left=2mm, opacityback=0, bottomtitle=1mm, toptitle=1mm, titlerule=0mm, title={Salida}, bottomrule=.15mm, leftrule=.75mm, rightrule=.15mm]
+\begin{tcolorbox}[enhanced jigsaw, bottomrule=.15mm, leftrule=.75mm, opacityback=0, titlerule=0mm, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, arc=.35mm, toprule=.15mm, colframe=quarto-callout-note-color-frame, title={Salida}, coltitle=black, colback=white, breakable, toptitle=1mm, rightrule=.15mm, left=2mm, opacitybacktitle=0.6]
+
 \includegraphics{./img/diseño-pagina/encabezado-pie-2.png}
+
 \end{tcolorbox}
 
 \bookmarksetup{startatroot}
@@ -2722,9 +2823,13 @@ cuerpo se controla con la opción \texttt{footskip=x}.
 \chapter*{Bibliografía y recursos}\label{bibliografuxeda-y-recursos}}
 \addcontentsline{toc}{chapter}{Bibliografía y recursos}
 
+\markboth{Bibliografía y recursos}{Bibliografía y recursos}
+
 \hypertarget{libros}{%
 \section*{Libros}\label{libros}}
 \addcontentsline{toc}{section}{Libros}
+
+\markright{Libros}
 
 \begin{itemize}
 \tightlist
@@ -2750,25 +2855,29 @@ cuerpo se controla con la opción \texttt{footskip=x}.
 \section*{Sitios Web}\label{sitios-web}}
 \addcontentsline{toc}{section}{Sitios Web}
 
+\markright{Sitios Web}
+
 \begin{itemize}
 \tightlist
 \item
-  \href{https://www.latex-project.org/}{The \LaTeX project}. Sito
-  web principal del proyecto \LaTeX con multitud de materiales para
-  aprender y noticias sobre el desarrollo de nuevas versiones.
+  \href{https://www.latex-project.org/}{The \(\text{\LaTeX}\) project}.
+  Sito web principal del proyecto \(\text{\LaTeX}\) con multitud de
+  materiales para aprender y noticias sobre el desarrollo de nuevas
+  versiones.
 \item
-  \href{https://ctan.org/}{Comprehensive \TeX Archive Network}.
-  Principal repositorios de paquetes para \TeX y \LaTeX.
+  \href{https://ctan.org/}{Comprehensive \(\text{\TeX}\) Archive
+  Network}. Principal repositorios de paquetes para \(\text{\TeX}\) y
+  \(\text{\LaTeX}\).
 \item
   \href{www.cervantex.es/}{CervanTeX}. Grupos de usuarios de TeX
   hispanoablantes.
 \item
   \href{https://project-awesome.org/egeerardyn/awesome-LaTeX}{Awesome
   LaTeX}. Sitio web con multitud de recursos curados para escribir
-  documentos con \LaTeX.
+  documentos con \(\text{\LaTeX}\).
 \item
-  \href{chulatex.pdf}{Chuleta de \LaTeX}. Resumen de los principales
-  comandos y entornos de \LaTeX.
+  \href{chulatex.pdf}{Chuleta de \(\text{\LaTeX}\)}. Resumen de los
+  principales comandos y entornos de \(\text{\LaTeX}\).
 \end{itemize}
 
 

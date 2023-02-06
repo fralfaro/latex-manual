@@ -4,7 +4,7 @@ lang: es
 
 # Referencias cruzadas y notas a pie
 
-Otro de los puntos fuertes de $\LaTeX$ es la gestión de las referencias cruzadas, es decir, referencias a otras partes del documento, así como las notas a pie de página.
+Otro de los puntos fuertes de $\text{\LaTeX}$ es la gestión de las referencias cruzadas, es decir, referencias a otras partes del documento, así como las notas a pie de página.
 
 ## Referencias cruzadas
 
@@ -50,7 +50,7 @@ Para insertar una nota a pié de página se utiliza el comando `\footnote{...}`.
 ```latex
 % CUERPO
 \begin{document}
-El logotipo de latex es $\LaTeX$.\footnote{Fue creado por Leslie Lamport.}
+El logotipo de latex es $\text{\LaTeX}$.\footnote{Fue creado por Leslie Lamport.}
 \end{document}
 ```
 

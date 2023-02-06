@@ -64,7 +64,7 @@ A continuación se explican las partes del esqueleto anterior.
 
 ### Clase de un documento
 
-La primera línea de un fichero con código $\LaTeX$ indica la clase de documento que se va a generar mediante el comando `\documentclass`. En el ejemplo aparece un argumento obligatorio que indica el tipo de documento que se desea crear, artículo (`article`), pero se pueden crear otros tipos de documentos como informes (`report`), libros (`book`) o cartas (`letter`). . Y también aparecen dos argumentos opcionales, `a4paper` que indica el tamaño de la hoja en el documento final (a4), y `10pt` que indica el tamaño base de la fuente utilizada en el documento (existe también `11pt` y `12pt`).
+La primera línea de un fichero con código $\text{\LaTeX}$ indica la clase de documento que se va a generar mediante el comando `\documentclass`. En el ejemplo aparece un argumento obligatorio que indica el tipo de documento que se desea crear, artículo (`article`), pero se pueden crear otros tipos de documentos como informes (`report`), libros (`book`) o cartas (`letter`). . Y también aparecen dos argumentos opcionales, `a4paper` que indica el tamaño de la hoja en el documento final (a4), y `10pt` que indica el tamaño base de la fuente utilizada en el documento (existe también `11pt` y `12pt`).
 
 ### Preámbulo
 
@@ -72,7 +72,7 @@ El preámbulo es la parte que va después de la clase y antes del comienzo del c
 
 A continuación, se suelen configurar algunos aspectos del documento como podrían ser los márgenes, encabezados y pies, el título, autor y fecha, y otras muchas posibilidades.
 
-En el preámbulo también se pueden definir nuevos comandos $\LaTeX$ o redefinir los ya existentes.
+En el preámbulo también se pueden definir nuevos comandos $\text{\LaTeX}$ o redefinir los ya existentes.
 
 ### Cuerpo
 

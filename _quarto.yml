@@ -16,22 +16,21 @@ website:
 book:
   title: "Manual de LaTeX"
   author: "Alfredo Sánchez Alberca"
-  date: "6/1/2022"
+  date: "1/6/2022"
   output-file: "manual-latex"
-  image: cover.png
-  cover-image: img/logos/logo-latex.png
+  image: img/logos/sticker.png
+  cover-image: img/logos/sticker.png
   sharing: [twitter, linkedin]
   downloads: [pdf, epub]
-  favicon: "img/logos/favicon.ico"
+  favicon: img/logos/favicon.ico
   sidebar: 
     logo: img/logos/aprendeconalf.png
     tools:
       - icon: house-fill
         href: https://aprendeconalf.es
   open-graph: true
-  twitter-card: 
-    site: "@aprendeconalf"
-  number-sections: true
+  twitter-card: true
+  site-url: https://aprendeconalf.es
   chapters:
     - index.qmd
     - introduccion.qmd
@@ -53,13 +52,32 @@ bibliography: referencias.bib
 
 format:
   html:
-    theme: cosmo
-    dark: darkly
-    light: flatly
+    theme:
+      dark: darkly
+      light: flatly
+    highlight-style: a11y
+    html-math-method: mathjax
   pdf:
     documentclass: scrreport
+    papersize: a4
+    template-partials:
+      - before-body.tex
+    titlegraphic: img/logos/sticker.png
+    institution: CEU San Pablo
+    email: asalber@ceu.es
+    web: https://aprendeconalf.es
+    logo: img/logos/aprendeconalf.png
+    include-in-header:
+      - preamble.tex
+      - macros.tex
+    keep-tex: true
+    #mainfont: TeX Gyre Termes
+    #mainfontoptions:
+    #  - Numbers=Lowercase
+    #  - Numbers=Proportional    
+    
   epub:
-    cover-image: cover.png
+    cover-image: img/logos/sticker.png
 
 
 

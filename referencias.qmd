@@ -13,8 +13,8 @@
 
 ## Sitios Web
 
-- [The $\text{\LaTeX}$ project](https://www.latex-project.org/). Sito web principal del proyecto $\text{\LaTeX}$ con multitud de materiales para aprender y noticias sobre el desarrollo de nuevas versiones.
-- [Comprehensive $\text{\TeX}$ Archive Network](https://ctan.org/). Principal repositorios de paquetes para $\text{\TeX}$ y $\text{\LaTeX}$.
+- [The $\LaTeX$ project](https://www.latex-project.org/). Sito web principal del proyecto $\LaTeX$ con multitud de materiales para aprender y noticias sobre el desarrollo de nuevas versiones.
+- [Comprehensive $\TeX$ Archive Network](https://ctan.org/). Principal repositorios de paquetes para $\TeX$ y $\LaTeX$.
 - [CervanTeX](www.cervantex.es/). Grupos de usuarios de TeX hispanoablantes.
-- [Awesome LaTeX](https://project-awesome.org/egeerardyn/awesome-LaTeX). Sitio web con multitud de recursos curados para escribir documentos con $\text{\LaTeX}$.
-- [Chuleta de $\text{\LaTeX}$](chulatex.pdf). Resumen de los principales comandos y entornos de $\text{\LaTeX}$.
+- [Awesome LaTeX](https://project-awesome.org/egeerardyn/awesome-LaTeX). Sitio web con multitud de recursos curados para escribir documentos con $\LaTeX$.
+- [Chuleta de $\LaTeX$](chulatex.pdf). Resumen de los principales comandos y entornos de $\LaTeX$.

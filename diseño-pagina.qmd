@@ -72,7 +72,7 @@ Este es una página con márgenes personalizados.
 
 ## Encabezados y pies de página
 
-$\text{\LaTeX}$ incluye encabezados y pies de página automáticos dependiendo del tipo de documento. Para las clases `article` y `report` no hay encabezado y el pie es el número de página, mientras que para la clase `book` el encabezado incluye la página y la sección a la que corresponde la página. No obstante, el usuario puede definir sus propios encabezados y pies mediante el paquete `fancyhdr`. 
+$\LaTeX$ incluye encabezados y pies de página automáticos dependiendo del tipo de documento. Para las clases `article` y `report` no hay encabezado y el pie es el número de página, mientras que para la clase `book` el encabezado incluye la página y la sección a la que corresponde la página. No obstante, el usuario puede definir sus propios encabezados y pies mediante el paquete `fancyhdr`. 
 
 Una vez cargado este paquete y antes de definir el texto del encabezado y del pie, hay que cambiar el estilo de página (`plain` por defecto) a `fancy`, y para ello se utiliza el comando `\pagestyle{fancy}` que indica al compilador que se van a usar un encabezado y pie personalizados.
 

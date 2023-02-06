@@ -4,7 +4,7 @@ lang: es
 
 # Citas y referencias bibliográficas
 
-Al igual que con las referencias cruzadas, $\text{\LaTeX}$ hace un maravilloso trabajo con las citas de referencias bibliográficas. Para ello se apoya en otro programa de gestión de referencias bibliográficas llamado [BibTeX](http://www.bibtex.org/), que viene incluido en la distribución estándar de $\text{\LaTeX}$. BibTeX permite crear una base de datos de distintos tipos de documentos que después se pueden citar en nuestro documento y después listar al final del documento las referencias bibliográficas citadas con diferentes formatos.
+Al igual que con las referencias cruzadas, $\LaTeX$ hace un maravilloso trabajo con las citas de referencias bibliográficas. Para ello se apoya en otro programa de gestión de referencias bibliográficas llamado [BibTeX](http://www.bibtex.org/), que viene incluido en la distribución estándar de $\LaTeX$. BibTeX permite crear una base de datos de distintos tipos de documentos que después se pueden citar en nuestro documento y después listar al final del documento las referencias bibliográficas citadas con diferentes formatos.
 
 También existe otro gestor de referencias bibliográficas llamado `biber` que soporta la codificación de caracteres unicode, y por tanto es más apropiado si vamos a compilar nuestro documento con `xelatex`.
 

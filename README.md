@@ -1,2 +1,2 @@
 # latex-manual
-Manual de elaboración de documentos científicos con $\text{\LaTeX}$.
+Manual de elaboración de documentos científicos con $\LaTeX$.

@@ -117,7 +117,7 @@ Texto normal con perfil recto, \textit{itálica}, \textsl{inclinado} y
 
 ## Tamaños de letra
 
-A diferencia de otros procesadores donde el tamaño de la fuente se indica en puntos o pixels, en $\text{\LaTeX}$ existen 10 tamaños predefinidos que se activan con los siguientes comandos, de menor a mayor tamaño:
+A diferencia de otros procesadores donde el tamaño de la fuente se indica en puntos o pixels, en $\LaTeX$ existen 10 tamaños predefinidos que se activan con los siguientes comandos, de menor a mayor tamaño:
 
 - `\tiny `
 - `\scriptsize `

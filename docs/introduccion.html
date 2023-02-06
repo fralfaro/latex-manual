@@ -130,10 +130,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <meta property="og:title" content="Manual de LaTeX - 1&nbsp; Introducción">
-<meta property="og:description" content="\(\text{\TeX}\) es un sistema de composición de documentos de alta calidad, orientado especialmente a la creación de documentos científicos y técnicos que incluyen fórmulas matemáticas.">
+<meta property="og:description" content="\(\TeX\) es un sistema de composición de documentos de alta calidad, orientado especialmente a la creación de documentos científicos y técnicos que incluyen fórmulas matemáticas.">
 <meta property="og:site-name" content="Manual de LaTeX">
 <meta name="twitter:title" content="Manual de LaTeX - 1&nbsp; Introducción">
-<meta name="twitter:description" content="\(\text{\TeX}\) es un sistema de composición de documentos de alta calidad, orientado especialmente a la creación de documentos científicos y técnicos que incluyen fórmulas matemáticas.">
+<meta name="twitter:description" content="\(\TeX\) es un sistema de composición de documentos de alta calidad, orientado especialmente a la creación de documentos científicos y técnicos que incluyen fórmulas matemáticas.">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -282,8 +282,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <h2 id="toc-title">Tabla de contenidos</h2>
    
   <ul>
-  <li><a href="#qué-es-texttex" id="toc-qué-es-texttex" class="nav-link active" data-scroll-target="#qué-es-texttex"><span class="toc-section-number">1.1</span>  ¿Qué es <span class="math inline">\(\text{\TeX}\)</span>?</a></li>
-  <li><a href="#qué-es-textlatex" id="toc-qué-es-textlatex" class="nav-link" data-scroll-target="#qué-es-textlatex"><span class="toc-section-number">1.2</span>  ¿Qué es <span class="math inline">\(\text{\LaTeX}\)</span>?</a></li>
+  <li><a href="#qué-es-tex" id="toc-qué-es-tex" class="nav-link active" data-scroll-target="#qué-es-tex"><span class="toc-section-number">1.1</span>  ¿Qué es <span class="math inline">\(\TeX\)</span>?</a></li>
+  <li><a href="#qué-es-latex" id="toc-qué-es-latex" class="nav-link" data-scroll-target="#qué-es-latex"><span class="toc-section-number">1.2</span>  ¿Qué es <span class="math inline">\(\LaTeX\)</span>?</a></li>
   <li><a href="#instalación" id="toc-instalación" class="nav-link" data-scroll-target="#instalación"><span class="toc-section-number">1.3</span>  Instalación</a></li>
   <li><a href="#hola-latex" id="toc-hola-latex" class="nav-link" data-scroll-target="#hola-latex"><span class="toc-section-number">1.4</span>  Hola LaTeX</a>
   <ul class="collapse">
@@ -312,42 +312,42 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </header>
 
-<section id="qué-es-texttex" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="qué-es-texttex"><span class="header-section-number">1.1</span> ¿Qué es <span class="math inline">\(\text{\TeX}\)</span>?</h2>
-<p><span class="math inline">\(\text{\TeX}\)</span> es un sistema de composición de documentos de alta calidad, orientado especialmente a la creación de documentos científicos y técnicos que incluyen fórmulas matemáticas. Fue creado por <a href="https://es.wikipedia.org/wiki/Donald_Knuth">Donald Knuth</a> en 1978.</p>
-<p>A diferencia de un procesador de textos como por ejemplo Microsoft Word, <span class="math inline">\(\text{\TeX}\)</span> no es una aplicación sino un lenguaje de programación que require compilar el código fuente para obtener el documento final. Esto, que a priori podría parecer una desventaja, en realidad es la gran ventaja de <span class="math inline">\(\text{\TeX}\)</span> frente a los procesadores de texto que siguen el paradigma <a href="https://es.wikipedia.org/wiki/WYSIWYG">WYSIWYG</a> (<em>What You See Is What You Get</em>), ya que permite separar fácilmente el contenido y la estructura de un documento, de su formato, de manera que el usuario puede centrarse en el contenido y la estructura del documento, y dejar que <span class="math inline">\(\text{\TeX}\)</span> se encargue del formato. De hecho, <span class="math inline">\(\text{\TeX}\)</span> incorpora un potente <a href="https://es.wikipedia.org/wiki/Lenguaje_de_marcado">lenguaje de marcado</a> para estructurar y formatear el texto de un documento. Por ejemplo, mientras que para poner una palabra en negrita con un procesador de textos como Microsoft Word, bastaría con seleccionar la palabra y hacer clic en el botón de negrita para ver automáticamente la palabra en negrita en la pantalla del ordenador, en <span class="math inline">\(\text{\TeX}\)</span> habría que escribir en el fichero con el código fuente <code>{\bf palabra}</code> y después compilar el código fuente para obtener un documento final con la palabra en negrita (el comando <code>\bf</code>, que permite aplicar la negrita, se conoce como <em>marca</em> o <em>tag</em> en inglés.)</p>
-<p>La página principal con información sobre <span class="math inline">\(\text{\TeX}\)</span> es la del <a href="https://www.tug.org/">TeX Users Group</a>.</p>
+<section id="qué-es-tex" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="qué-es-tex"><span class="header-section-number">1.1</span> ¿Qué es <span class="math inline">\(\TeX\)</span>?</h2>
+<p><span class="math inline">\(\TeX\)</span> es un sistema de composición de documentos de alta calidad, orientado especialmente a la creación de documentos científicos y técnicos que incluyen fórmulas matemáticas. Fue creado por <a href="https://es.wikipedia.org/wiki/Donald_Knuth">Donald Knuth</a> en 1978.</p>
+<p>A diferencia de un procesador de textos como por ejemplo Microsoft Word, <span class="math inline">\(\TeX\)</span> no es una aplicación sino un lenguaje de programación que require compilar el código fuente para obtener el documento final. Esto, que a priori podría parecer una desventaja, en realidad es la gran ventaja de <span class="math inline">\(\TeX\)</span> frente a los procesadores de texto que siguen el paradigma <a href="https://es.wikipedia.org/wiki/WYSIWYG">WYSIWYG</a> (<em>What You See Is What You Get</em>), ya que permite separar fácilmente el contenido y la estructura de un documento, de su formato, de manera que el usuario puede centrarse en el contenido y la estructura del documento, y dejar que <span class="math inline">\(\TeX\)</span> se encargue del formato. De hecho, <span class="math inline">\(\TeX\)</span> incorpora un potente <a href="https://es.wikipedia.org/wiki/Lenguaje_de_marcado">lenguaje de marcado</a> para estructurar y formatear el texto de un documento. Por ejemplo, mientras que para poner una palabra en negrita con un procesador de textos como Microsoft Word, bastaría con seleccionar la palabra y hacer clic en el botón de negrita para ver automáticamente la palabra en negrita en la pantalla del ordenador, en <span class="math inline">\(\TeX\)</span> habría que escribir en el fichero con el código fuente <code>{\bf palabra}</code> y después compilar el código fuente para obtener un documento final con la palabra en negrita (el comando <code>\bf</code>, que permite aplicar la negrita, se conoce como <em>marca</em> o <em>tag</em> en inglés.)</p>
+<p>La página principal con información sobre <span class="math inline">\(\TeX\)</span> es la del <a href="https://www.tug.org/">TeX Users Group</a>.</p>
 </section>
-<section id="qué-es-textlatex" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="qué-es-textlatex"><span class="header-section-number">1.2</span> ¿Qué es <span class="math inline">\(\text{\LaTeX}\)</span>?</h2>
+<section id="qué-es-latex" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="qué-es-latex"><span class="header-section-number">1.2</span> ¿Qué es <span class="math inline">\(\LaTeX\)</span>?</h2>
 <p><img src="img/logos/latex-project-logo.png" class="img-fluid"></p>
-<p><span class="math inline">\(\text{\LaTeX}\)</span> es un conjunto de macros para <span class="math inline">\(\text{\TeX}\)</span> debido originalmente a <a href="https://en.wikipedia.org/wiki/Leslie_Lamport">Leslie Lamport</a> para facilitar el uso de <span class="math inline">\(\text{\TeX}\)</span>.</p>
-<p>Tanto <span class="math inline">\(\text{\TeX}\)</span> como <span class="math inline">\(\text{\LaTeX}\)</span> son programas de código abierto, liberados bajo la <a href="https://www.latex-project.org/lppl.txt">licencia LPPL</a>.</p>
-<p>Otra de las grandes ventajas de <span class="math inline">\(\text{\LaTeX}\)</span> es que existen multitud de paquetes de código libre para generar distintos tipos de documentos que pueden descargarse desde el repositorio <a href="https://ctan.org/">CRAN</a>.</p>
-<p>La página principal sobre <span class="math inline">\(\text{\LaTeX}\)</span> es <a href="https://www.latex-project.org/">The LaTeX project</a>.</p>
+<p><span class="math inline">\(\LaTeX\)</span> es un conjunto de macros para <span class="math inline">\(\TeX\)</span> debido originalmente a <a href="https://en.wikipedia.org/wiki/Leslie_Lamport">Leslie Lamport</a> para facilitar el uso de <span class="math inline">\(\TeX\)</span>.</p>
+<p>Tanto <span class="math inline">\(\TeX\)</span> como <span class="math inline">\(\LaTeX\)</span> son programas de código abierto, liberados bajo la <a href="https://www.latex-project.org/lppl.txt">licencia LPPL</a>.</p>
+<p>Otra de las grandes ventajas de <span class="math inline">\(\LaTeX\)</span> es que existen multitud de paquetes de código libre para generar distintos tipos de documentos que pueden descargarse desde el repositorio <a href="https://ctan.org/">CRAN</a>.</p>
+<p>La página principal sobre <span class="math inline">\(\LaTeX\)</span> es <a href="https://www.latex-project.org/">The LaTeX project</a>.</p>
 </section>
 <section id="instalación" class="level2" data-number="1.3">
 <h2 data-number="1.3" class="anchored" data-anchor-id="instalación"><span class="header-section-number">1.3</span> Instalación</h2>
-<p>Existen distintas distribuciones de <span class="math inline">\(\text{\LaTeX}\)</span> y algunas de ellas son multiplataforma, es decir, están disponibles para diferentes sistemas operativos. Las distribuciones más comunes son:</p>
+<p>Existen distintas distribuciones de <span class="math inline">\(\LaTeX\)</span> y algunas de ellas son multiplataforma, es decir, están disponibles para diferentes sistemas operativos. Las distribuciones más comunes son:</p>
 <ul>
 <li><a href="https://tug.org/texlive/">TeXLive</a> para Windows, Mac OSX y Linux.</li>
 <li><a href="">MiKTeX</a> para Windows, Mac OSX y Linux.</li>
 <li><a href="https://www.tug.org/mactex/">MacTeX</a> para Mac OSX.</li>
 </ul>
 <p>En sus respectivas páginas está explicado el procedimiento de instalación de cada una.</p>
-<p>Junto a la distribución de <span class="math inline">\(\text{\LaTeX}\)</span> es también habitual instalar algún editor de texto para escribir el código fuente. En realidad puede usarse cualquier editor de texto que ya esté instalado en nuestro sistema operativo, pero los existen entornos de edición especializados que facilitan muchas de las tareas del proceso de composición de documentos con <span class="math inline">\(\text{\LaTeX}\)</span>. Los más comunes son:</p>
+<p>Junto a la distribución de <span class="math inline">\(\LaTeX\)</span> es también habitual instalar algún editor de texto para escribir el código fuente. En realidad puede usarse cualquier editor de texto que ya esté instalado en nuestro sistema operativo, pero los existen entornos de edición especializados que facilitan muchas de las tareas del proceso de composición de documentos con <span class="math inline">\(\LaTeX\)</span>. Los más comunes son:</p>
 <ul>
 <li><a href="http://www.xm1math.net/texmaker/">TexMaker</a>. Es un editor de texto libre, multiplataforma, con muchos asistentes disponibles que permite previsualizar en tiempo real el documento final en pdf</li>
 <li><a href="http://www.texstudio.org/">Texstudio</a>. Es otro editor libre y multiplataforma que incorpora aún más asistentes que el anterior.</li>
-<li><a href="https://www.vim.org/">Vim</a> Es un editor de texto simple de propósito general que también es libre y multiplataforma. Incorpora paquetes o plugins específicos para facilitar la creación de documentos con <span class="math inline">\(\text{\LaTeX}\)</span>. Especialmente indicado para trabajar desde la terminal.</li>
+<li><a href="https://www.vim.org/">Vim</a> Es un editor de texto simple de propósito general que también es libre y multiplataforma. Incorpora paquetes o plugins específicos para facilitar la creación de documentos con <span class="math inline">\(\LaTeX\)</span>. Especialmente indicado para trabajar desde la terminal.</li>
 <li><a href="https://www.gnu.org/software/emacs/">Emacs</a>. Es otro editor similar a Vim, muy extendido entre los usuarios que prefieren usar la terminal.</li>
-<li><a href="https://code.visualstudio.com/">Visual Studio Code</a>. Es un potente entorno de desarrollo multipropósito. Dispone de paquetes para los lenguajes de programación más comunes, entre ellos <span class="math inline">\(\text{\LaTeX}\)</span>.</li>
+<li><a href="https://code.visualstudio.com/">Visual Studio Code</a>. Es un potente entorno de desarrollo multipropósito. Dispone de paquetes para los lenguajes de programación más comunes, entre ellos <span class="math inline">\(\LaTeX\)</span>.</li>
 </ul>
 <p>Pero también se puede empezar a componer documentos sin necesidad de instalar nada en el ordenador, usando un editor on-line como por ejemplo <a href="https://www.overleaf.com/">Overleaf</a></p>
 </section>
 <section id="hola-latex" class="level2" data-number="1.4">
 <h2 data-number="1.4" class="anchored" data-anchor-id="hola-latex"><span class="header-section-number">1.4</span> Hola LaTeX</h2>
-<p>A modo de ejemplo, empezaremos por crear un sencillo documento con el texto “Hola <span class="math inline">\(\text{\LaTeX}\)</span>”.</p>
+<p>A modo de ejemplo, empezaremos por crear un sencillo documento con el texto “Hola <span class="math inline">\(\LaTeX\)</span>”.</p>
 <p>Para ello utilizaremos nuestro editor de texto preferido para crear un fichero de texto con el nombre <code>main.tex</code> y el siguiente contenido:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode latex code-with-copy"><code class="sourceCode latex"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">\documentclass</span>{<span class="ex">article</span>}</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">\begin</span>{<span class="ex">document</span>}</span>
@@ -363,21 +363,21 @@ Importante
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>El nombre del fichero de texto con el código fuente de <span class="math inline">\(\text{\LaTeX}\)</span> puede ser el que queramos, pero es importante que la extensión sea <code>.tex</code>,</p>
+<p>El nombre del fichero de texto con el código fuente de <span class="math inline">\(\LaTeX\)</span> puede ser el que queramos, pero es importante que la extensión sea <code>.tex</code>,</p>
 </div>
 </div>
-<p>Aunque más adelante se verá la estructura general del código fuente de un documento en <span class="math inline">\(\text{\LaTeX}\)</span>, a continuación se explica brevemente el contenido de este fichero:</p>
+<p>Aunque más adelante se verá la estructura general del código fuente de un documento en <span class="math inline">\(\LaTeX\)</span>, a continuación se explica brevemente el contenido de este fichero:</p>
 <ol type="1">
 <li>En la primera línea se especifica el tipo de documento (<code>article</code>).</li>
 <li>En la segunda línea se especifica el idioma del documento (<code>spanish</code>).</li>
 <li>La tercera línea marca el comienzo del documento.</li>
-<li>La cuarta línea contiene el texto del documento. <code>\LaTeX</code> es un comando que produce la salida <span class="math inline">\(\text{\LaTeX}\)</span>.</li>
+<li>La cuarta línea contiene el texto del documento. <code>\LaTeX</code> es un comando que produce la salida <span class="math inline">\(\LaTeX\)</span>.</li>
 <li>La quinta línea marca el final del documento.</li>
 </ol>
 <section id="compilación" class="level3" data-number="1.4.1">
 <h3 data-number="1.4.1" class="anchored" data-anchor-id="compilación"><span class="header-section-number">1.4.1</span> Compilación</h3>
-<p>Para obtener el documento final hay que compilar el fichero fuente. Existen diferentes formas de hacerlo y en los editores anteriores suele ser tan sencillo como hacer clic en un botón o pulsar una combinación de teclas, pero en última instancia todos ellos hacen una llamada al compilador de <span class="math inline">\(\text{\LaTeX}\)</span> que es quien se encarga de convertir el código fuente en el documento final.</p>
-<p>Cada distribución de <span class="math inline">\(\text{\LaTeX}\)</span> viene con varios compiladores. Los más habituales son:</p>
+<p>Para obtener el documento final hay que compilar el fichero fuente. Existen diferentes formas de hacerlo y en los editores anteriores suele ser tan sencillo como hacer clic en un botón o pulsar una combinación de teclas, pero en última instancia todos ellos hacen una llamada al compilador de <span class="math inline">\(\LaTeX\)</span> que es quien se encarga de convertir el código fuente en el documento final.</p>
+<p>Cada distribución de <span class="math inline">\(\LaTeX\)</span> viene con varios compiladores. Los más habituales son:</p>
 <ul>
 <li><code>latex</code>: Es el compilador más antiguo y genera documentos en <a href="https://es.wikipedia.org/wiki/DVI_(TeX)">formato <code>dvi</code></a>, que es un formato independiente creado mucho antes que el formato <code>pdf</code>.</li>
 <li><a href="https://www.tug.org/applications/pdftex/"><code>pdflatex</code></a>: Es el compilador más usado y genera documentos en formato <code>pdf</code>.</li>

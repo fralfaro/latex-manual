@@ -53,6 +53,7 @@ Para ello utilizaremos nuestro editor de texto preferido para crear un fichero d
 
 ```latex
 \documentclass{article}
+\usepackage[spanish]{babel}
 \begin{document}
 Hola \LaTeX
 \end{document}

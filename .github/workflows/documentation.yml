@@ -10,6 +10,16 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    - name: "Install TinyTeX"
+      run: |
+        R -e 'install.packages("tinytex")'
+        R -e 'tinytex::install_tinytex()'
+        R -e 'tinytex:::install_prebuilt()'
+      shell: Rscript {0}
+
+    - name: "Install Quarto and render"
+      uses: pommevilla/quarto-render@main
+
     - name: "Install Quarto and render"
       uses: pommevilla/quarto-render@main
 

@@ -1,6 +1,6 @@
 project:
-  type: book
-  output-dir: "docs"
+  type: website
+  output-dir: docs
 
 website:
   favicon: "img/logos/favicon.ico"

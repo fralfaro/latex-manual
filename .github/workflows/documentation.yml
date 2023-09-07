@@ -1,0 +1,30 @@
+name: Build and Deploy Quarto Document
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Install Quarto
+        run: |
+          npm install -g quarto
+        # Use a specific Quarto version if needed
+
+      - name: Build Quarto Document
+        run: |
+          quarto render
+        # Adjust the render command as needed
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site

@@ -9,13 +9,15 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: "Install TinyTeX"
+      - name: "Install TinyTeX and XeLaTeX"
         run: |
-          R -e 'install.packages("tinytex")'
-          R -e 'tinytex::install_tinytex()'
-          R -e 'tinytex:::install_prebuilt()'
-          tinytex:::install_bin("xelatex", force = TRUE)
-        shell: Rscript {0}
+          R -e 'install.packages("tinytex") && \
+                install.packages("tinytex") && \
+                tinytex::install_tinytex() && \
+                tinytex:::install_prebuilt() && \
+                tinytex:::install_bin("xelatex", force = TRUE)'
+        shell: /usr/bin/Rscript {0}
+
 
       - name: "Install Quarto and render"
         uses: pommevilla/quarto-render@main

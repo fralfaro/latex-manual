@@ -1,31 +1,18 @@
-# https://github.com/pommevilla/friendly-dollop/blob/master/.github/workflows/quarto-render.yml
+# .github/workflows/render-and-publish.yaml
 name: Render and deploy Quarto files
-on: 
-  push:
-  pull_request:
 
 jobs:
   quarto-render-and-deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
 
-    - name: "Install TinyTeX (new)"
-      run: |
-        R -e 'install.packages("tinytex")'
-        R -e 'tinytex::install_tinytex()'
-        R -e 'tinytex:::install_prebuilt()'
-      shell: Rscript {0}
+      - name: "Install Quarto and render"
+        uses: pommevilla/quarto-render@main
 
-    - name: "Install Quarto and render"
-      uses: pommevilla/quarto-render@main
-
-    - name: "Install Quarto and render"
-      uses: pommevilla/quarto-render@main
-
-    - name: "Deploy to gh-pages"
-      uses: peaceiris/actions-gh-pages@v3
-      if: github.ref == 'refs/heads/master'
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./_site
+      - name: "Deploy to gh-pages"
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/main'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site

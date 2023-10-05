@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: "Install TinyTeX"
+    - name: "Install TinyTeX (new)"
       run: |
         R -e 'install.packages("tinytex")'
         R -e 'tinytex::install_tinytex()'

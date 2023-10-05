@@ -11,12 +11,11 @@ jobs:
 
       - name: "Install TinyTeX and XeLaTeX"
         run: |
-          R -e 'install.packages("tinytex") && \
-                install.packages("tinytex") && \
-                tinytex::install_tinytex() && \
-                tinytex:::install_prebuilt() && \
+          R -e 'install.packages("tinytex"); \
+                tinytex::install_tinytex(); \
+                tinytex:::install_prebuilt(); \
                 tinytex:::install_bin("xelatex", force = TRUE)'
-        shell: /usr/bin/Rscript {0}
+        shell: Rscript {0}
 
 
       - name: "Install Quarto and render"

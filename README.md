@@ -6,9 +6,13 @@
 <img src="img/logos/latex-project-logo.png" alt="" align="center" width="500"/>
 
 
-## Prefacio
+Este proyecto te proporcionará una introducción concisa a LaTeX, un sistema 
+de composición de documentos ampliamente utilizado en la comunidad académica 
+y técnica.
 
-Bienvenido a la Guía Rápida de LaTeX. Este documento te proporcionará una introducción concisa a LaTeX, un sistema de composición de documentos ampliamente utilizado en la comunidad académica y técnica. LaTeX es especialmente conocido por su capacidad para producir documentos de alta calidad que incluyen contenido matemático, tablas, figuras y referencias bibliográficas.
+LaTeX es especialmente conocido por su 
+capacidad para producir documentos de alta calidad
+que incluyen contenido matemático, tablas, figuras y referencias bibliográficas.
 
 ## 1. Introducción
 

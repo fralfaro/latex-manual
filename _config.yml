@@ -42,7 +42,7 @@ repository:
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
   favicon: "docs/img/logos/favicon.ico"
-  use_issues_button: true
+  use_issues_button: false
   use_repository_button: true
   use_multitoc_numbering: false
   google_analytics_id: G-TB617QHPDG

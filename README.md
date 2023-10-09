@@ -3,7 +3,7 @@
 ![example workflow](https://github.com/fralfaro/latex-manual/actions/workflows/documentation.yml/badge.svg)
 [![documentation](https://img.shields.io/badge/📖-docs-brightgreen)](https://fralfaro.github.io/latex-manual/)
 
-<img src="docs/img/logos/latex-project-logo.png" alt="" align="center" width="500"/>
+<img src="docs/img/logos/sticker.png" alt="" align="center" width="200"/>
 
 
 Este proyecto te proporcionará una introducción concisa a LaTeX, un sistema 

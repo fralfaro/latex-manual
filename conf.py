@@ -53,7 +53,7 @@ html_theme_options = {
     "analytics": {"google_analytics_id": "G-TB617QHPDG"},
     "use_repository_button": True,
     "use_edit_page_button": False,
-    "use_issues_button": True,
+    "use_issues_button": False,
 }
 html_title = "Data-Driven Mathematical Optimization with AMPL in Python"
 #latex_engine = "pdflatex"

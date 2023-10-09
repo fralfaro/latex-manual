@@ -4,11 +4,11 @@
 :gutter: 2
 
 :::{grid-item-card} AUTOR/A
-Alfredo Sánchez Alberca
+Francisco Alfaro Medina
 :::
 
 :::{grid-item-card} FECHA DE PUBLICACIÓN
-6 de enero de 2022
+Octubre del 2023
 :::
 
 ::::
@@ -29,7 +29,6 @@ Este libro presenta una introducción al lenguaje de
 composición de textos [LaTeX](https://www.latex-project.org/)
 con un enfoque orientado a la creación de documentos científicos 
 y técnicos con contenido matemático. 
-
 
 
 ## Licencia

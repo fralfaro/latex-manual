@@ -32,7 +32,7 @@ external_toc_exclude_missing = True
 external_toc_path = "_toc.yml"
 html_baseurl = ""
 html_favicon = ""
-html_logo = "img/logos/aprendeconalf.png"
+html_logo = "docs/img/logos/aprendeconalf.png"
 html_sourcelink_suffix = ""
 html_theme = "sphinx_book_theme"
 html_theme_options = {
@@ -81,12 +81,4 @@ latex_elements = {
     "extraclassoptions": "oneside",  # do not leave empty pages
     "tableofcontents": "\\sphinxtableofcontents",
 }
-latex_documents = [
-    (
-        "index",
-        "MO-BOOK-With-AMPL.tex",
-        "Data-Driven Mathematical Optimization with AMPL in Python",
-        "The MO Book Group",
-        "manual",
-    ),
-]
+

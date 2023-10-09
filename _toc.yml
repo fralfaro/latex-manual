@@ -1,22 +1,22 @@
 # Table of contents
 
 format: jb-book
-root: index.md
+root: docs/index.md
 options:
   numbered: true
 
 chapters:
-- file: introduccion.md
-- file: estructura.md
-- file: secciones.md
-- file: formateo.md
-- file: listas.md
-- file: tablas.md
-- file: imagenes.md
-- file: formulas.md
-- file: entornos-flotantes.md
-- file: referencias-cruzadas.md
-- file: bibliografia.md
-- file: diseno-pagina.md
-- file: referencias.md
+- file: docs/introduccion.md
+- file: docs/estructura.md
+- file: docs/secciones.md
+- file: docs/formateo.md
+- file: docs/listas.md
+- file: docs/tablas.md
+- file: docs/imagenes.md
+- file: docs/formulas.md
+- file: docs/entornos-flotantes.md
+- file: docs/referencias-cruzadas.md
+- file: docs/bibliografia.md
+- file: docs/diseno-pagina.md
+- file: docs/referencias.md
 

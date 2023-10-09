@@ -3,7 +3,7 @@
 ![example workflow](https://github.com/fralfaro/latex-manual/actions/workflows/documentation.yml/badge.svg)
 [![documentation](https://img.shields.io/badge/📖-docs-brightgreen)](https://fralfaro.github.io/latex-manual/)
 
-<img src="img/logos/latex-project-logo.png" alt="" align="center" width="500"/>
+<img src="docs/img/logos/latex-project-logo.png" alt="" align="center" width="500"/>
 
 
 Este proyecto te proporcionará una introducción concisa a LaTeX, un sistema 
@@ -13,6 +13,10 @@ y técnica.
 LaTeX es especialmente conocido por su 
 capacidad para producir documentos de alta calidad
 que incluyen contenido matemático, tablas, figuras y referencias bibliográficas.
+
+
+
+> **Nota**: Este documento es una adaptación del proyecto original creado por [asalber/latex-manual](https://github.com/asalber/latex-manual).
 
 ## 1. Introducción
 

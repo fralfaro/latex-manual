@@ -4,7 +4,7 @@
 title: Manual de LaTeX
 author: aprendeconalf
 copyright: "2023"
-logo: img/logos/aprendeconalf.png
+logo: docs/img/logos/aprendeconalf.png
 exclude_patterns: [.DS_Store, "**.ipynb_checkpoints", "**.pytest_cache", "tools"]
 
 
@@ -26,7 +26,7 @@ latex:
   latex_engine: pdflatex
   use_jupyterbook_latex: true
   latex_documents:
-    targetname: MO-book.tex
+    targetname: latex-manual.tex
     
 #sphinx:
 #  extra_extensions:
@@ -35,13 +35,13 @@ latex:
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/asalber/latex-manual  # Online location of your book
+  url: https://github.com/fralfaro/latex-manual  # Online location of your book
   branch: dev  # Which branch of the repository should be used when creating links (optional)
 
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
-  favicon: "img/logos/favicon.ico"
+  favicon: "docs/img/logos/favicon.ico"
   use_issues_button: true
   use_repository_button: true
   use_multitoc_numbering: false

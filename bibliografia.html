@@ -1,0 +1,561 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>11. Citas y referencias &#8212; Manual de LaTeX</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-TB617QHPDG"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-TB617QHPDG');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'bibliografia';</script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="12. Diseño de página" href="diseno-pagina.html" />
+    <link rel="prev" title="10. Referencias cruzadas" href="referencias-cruzadas.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/aprendeconalf.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="_static/aprendeconalf.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="index.html">
+                    Manual de LaTeX
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="introduccion.html">1. Introducción</a></li>
+<li class="toctree-l1"><a class="reference internal" href="estructura.html">2. Estructura de un documento</a></li>
+<li class="toctree-l1"><a class="reference internal" href="secciones.html">3. Secciones y párrafos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="formateo.html">4. Formateo básico</a></li>
+<li class="toctree-l1"><a class="reference internal" href="listas.html">5. Listas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tablas.html">6. Tablas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="imagenes.html">7. Imágenes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="formulas.html">8. Fórmulas matemáticas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="entornos-flotantes.html">9. Entornos flotantes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="referencias-cruzadas.html">10. Referencias cruzadas</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">11. Citas y referencias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="diseno-pagina.html">12. Diseño de página</a></li>
+<li class="toctree-l1"><a class="reference internal" href="referencias.html">13. Bibliografía y recursos</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/asalber/latex-manual" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/asalber/latex-manual/issues/new?title=Issue%20on%20page%20%2Fbibliografia.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/bibliografia.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Citas y referencias</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="citas-y-referencias">
+<h1><span class="section-number">11. </span>Citas y referencias<a class="headerlink" href="#citas-y-referencias" title="Permalink to this heading">#</a></h1>
+<p>Al igual que con las referencias cruzadas, <span class="math notranslate nohighlight">\(\LaTeX\)</span> hace un maravilloso trabajo con las citas de referencias bibliográficas. Para ello se apoya en otro programa de gestión de referencias bibliográficas llamado <a class="reference external" href="http://www.bibtex.org/">BibTeX</a>, que viene incluido en la distribución estándar de <span class="math notranslate nohighlight">\(\LaTeX\)</span>. BibTeX permite crear una base de datos de distintos tipos de documentos que después se pueden citar en nuestro documento y después listar al final del documento las referencias bibliográficas citadas con diferentes formatos.</p>
+<p>También existe otro gestor de referencias bibliográficas llamado <code class="docutils literal notranslate"><span class="pre">biber</span></code> que soporta la codificación de caracteres unicode, y por tanto es más apropiado si vamos a compilar nuestro documento con <code class="docutils literal notranslate"><span class="pre">xelatex</span></code>.</p>
+<p>Para incluir referencias bibliográficas en un documento primero hay que crear una base de datos con las fuentes bibliográficas que vayamos a usar en un documento. Esa base de datos se crea en un fichero de texto independiente con el formato que requiere BibTex con extensión <code class="docutils literal notranslate"><span class="pre">.bib</span></code>.</p>
+<p>La sintaxis para crear una nueva entrada bibliográfica en la base de datos es un poco compleja al principio, pero afortunadamente existen bastantes aplicaciones de gestión bibliográfica, como <a class="reference external" href="https://www.zotero.org/">Zotero</a>, <a class="reference external" href="https://www.mendeley.com/">Mendely</a>, <a class="reference external" href="https://endnote.com/">EndNote</a> o <a class="reference external" href="https://refworks.proquest.com/researcher/">RefWorks</a> o <a class="reference external" href="https://www.bibsonomy.org/">BibSonomy</a> que incluyen la posibilidad de exportar la bibliografía en ese formato.</p>
+<p><strong>Ejemplo</strong></p>
+<p>El siguiente fichero contiene una base de datos bibliográfica con dos entradas, un libro y un artículo de una revista.</p>
+<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="c">% Fichero bibliografia.tex</span>
+@book<span class="nb">{</span>lamport<span class="nb">_</span>latex<span class="nb">_</span>1994,
+	edition = <span class="nb">{</span>2nd<span class="nb">}</span>,
+	title = <span class="nb">{{</span>LaTeX<span class="nb">}</span>: <span class="nb">{</span>A<span class="nb">}</span> <span class="nb">{</span>Document<span class="nb">}</span> <span class="nb">{</span>Preparation<span class="nb">}</span> <span class="nb">{</span>System<span class="nb">}</span>, 2nd <span class="nb">{</span>Edition<span class="nb">}}</span>,
+	isbn = <span class="nb">{</span>978-0-201-52983-8<span class="nb">}</span>,
+	publisher = <span class="nb">{</span>Addison-Wesley Professional.<span class="nb">}</span>,
+	author = <span class="nb">{</span>Lamport, Leslie<span class="nb">}</span>,
+	month = jun,
+	year = <span class="nb">{</span>1994<span class="nb">}</span>
+<span class="nb">}</span>
+
+@article<span class="nb">{</span>borbon<span class="nb">_</span>latex<span class="nb">_</span>2022,
+	title = <span class="nb">{{</span>LaTeX<span class="nb">}</span>: <span class="nb">{</span>Primeros<span class="nb">}</span> pasos<span class="nb">}</span>,
+	journal = <span class="nb">{</span>Revista digital Matemática, Educación e Internet.<span class="nb">}</span>,
+	author = <span class="nb">{{</span>Borbón, Alexánder<span class="nb">}</span> and <span class="nb">{</span>Mora, Walter<span class="nb">}}</span>,
+	year = <span class="nb">{</span>2022<span class="nb">}</span>,
+	pages = <span class="nb">{</span>2--7<span class="nb">}</span>,
+<span class="nb">}</span>
+</pre></div>
+</div>
+<p>Obsérvese que cada entrada bibliográfica empieza por el tipo de documento (book, article, etc.) y está descrita por varios campos: title (título), author (autor), journal (revista), year (año), etc. El primer campo es una clave que identifica al documento de manera única y que se utilizará posteriormente para citarlo.</p>
+<p>Una vez creada la base de datos, para citar cualquier referencia contenida en ella, hay que cargar en el preámbulo el paquete <code class="docutils literal notranslate"><span class="pre">biblatex</span></code> e indicar la ubicación de la base de datos con el comando <code class="docutils literal notranslate"><span class="pre">addbibresource{bibliografia.bib}</span></code>, donde <code class="docutils literal notranslate"><span class="pre">bibliografia.bib</span></code> es el nombre del fichero con la base de datos bibliográfica (incluida la ruta), y luego escribir el comando <code class="docutils literal notranslate"><span class="pre">\cite{clave}</span></code>, donde <code class="docutils literal notranslate"><span class="pre">clave</span></code> es la clave de la entrada bibliográfica en la base de datos, en el lugar donde se quiera hacer la referencia.</p>
+<p>Finalmente para listar las referencias bibliográficas citadas en el documento basta con insertar el comando <code class="docutils literal notranslate"><span class="pre">\printbibliography</span></code>.</p>
+<p><strong>Ejemplo</strong></p>
+<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="c">% PREÁMBULO</span>
+<span class="k">\usepackage</span><span class="nb">{</span>biblatex<span class="nb">}</span>
+<span class="k">\addbibresource</span><span class="nb">{</span>bibliografia.bib<span class="nb">}</span>
+<span class="c">% CUERPO</span>
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+El principal libro sobre latex es <span class="k">\cite</span><span class="nb">{</span>lamport<span class="nb">_</span>latex<span class="nb">_</span>1994<span class="nb">}</span>, aunque también 
+es muy interesante el artículo <span class="k">\cite</span><span class="nb">{</span>borbon<span class="nb">_</span>latex<span class="nb">_</span>2022<span class="nb">}</span>
+
+<span class="k">\printbibliography</span>
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</pre></div>
+</div>
+<div class="dropdown admonition">
+<p class="admonition-title">Salida</p>
+<p><img alt="" src="_images/bibliografia.png" /></p>
+</div>
+<p>Existen diferentes estilos para las citaciones y para el listado con las referencias bibliográficas que se pueden indicar en la carga del paquete <code class="docutils literal notranslate"><span class="pre">biblatex</span></code> con el parámetro opcional <code class="docutils literal notranslate"><span class="pre">style</span></code>. Por ejemplo si en lugar de números en las citaciones queremos que aparezca las iniciales del autor y el año, hay que seleccionar el estilo <code class="docutils literal notranslate"><span class="pre">style=alphabetic</span></code>. En el siguiente enlace existe un listado exahustivo de los diferentes <a class="reference external" href="https://www.overleaf.com/learn/latex/Biblatex_citation_styles">estilos de citación</a>.</p>
+<p>Por último si en lugar de <code class="docutils literal notranslate"><span class="pre">bibtex</span></code> se quiere usar <code class="docutils literal notranslate"><span class="pre">biber</span></code> para gestionar las referencias bibliográficas, hay que indicarlo también ebn la carga del paquete <code class="docutils literal notranslate"><span class="pre">biblatex</span></code> mediante el parámetro opcional <code class="docutils literal notranslate"><span class="pre">backend=biber</span></code>.</p>
+<p><strong>Ejemplo</strong></p>
+<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="c">% PREÁMBULO</span>
+<span class="k">\usepackage</span>[
+backend=biber, style=alphabetic]<span class="nb">{</span>biblatex<span class="nb">}</span>
+<span class="k">\addbibresource</span><span class="nb">{</span>bibliografia.bib<span class="nb">}</span>
+<span class="c">% CUERPO</span>
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+El principal libro sobre latex es <span class="k">\cite</span><span class="nb">{</span>lamport<span class="nb">_</span>latex<span class="nb">_</span>1994<span class="nb">}</span>, aunque también 
+es muy interesante el artículo <span class="k">\cite</span><span class="nb">{</span>borbon<span class="nb">_</span>latex<span class="nb">_</span>2022<span class="nb">}</span>
+
+<span class="k">\printbibliography</span>
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</pre></div>
+</div>
+<div class="dropdown admonition">
+<p class="admonition-title">Salida</p>
+<p><img alt="" src="_images/bibliografia2.png" /></p>
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="referencias-cruzadas.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">10. </span>Referencias cruzadas</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="diseno-pagina.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">12. </span>Diseño de página</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By aprendeconalf
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

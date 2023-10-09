@@ -1,0 +1,1131 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>8. Fórmulas matemáticas &#8212; Manual de LaTeX</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-TB617QHPDG"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-TB617QHPDG');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'formulas';</script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="9. Entornos flotantes" href="entornos-flotantes.html" />
+    <link rel="prev" title="7. Imágenes" href="imagenes.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/aprendeconalf.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="_static/aprendeconalf.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="index.html">
+                    Manual de LaTeX
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="introduccion.html">1. Introducción</a></li>
+<li class="toctree-l1"><a class="reference internal" href="estructura.html">2. Estructura de un documento</a></li>
+<li class="toctree-l1"><a class="reference internal" href="secciones.html">3. Secciones y párrafos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="formateo.html">4. Formateo básico</a></li>
+<li class="toctree-l1"><a class="reference internal" href="listas.html">5. Listas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tablas.html">6. Tablas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="imagenes.html">7. Imágenes</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">8. Fórmulas matemáticas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="entornos-flotantes.html">9. Entornos flotantes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="referencias-cruzadas.html">10. Referencias cruzadas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bibliografia.html">11. Citas y referencias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="diseno-pagina.html">12. Diseño de página</a></li>
+<li class="toctree-l1"><a class="reference internal" href="referencias.html">13. Bibliografía y recursos</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/asalber/latex-manual" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/asalber/latex-manual/issues/new?title=Issue%20on%20page%20%2Fformulas.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/formulas.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Fórmulas matemáticas</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#simbolos-matematicos">8.1. Símbolos matemáticos</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#letras-griegas">8.1.1. Letras griegas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operadores-aritmeticos">8.1.2. Operadores aritméticos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#relaciones">8.1.3. Relaciones</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operadores-binarios">8.1.4. Operadores binarios</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#logica">8.1.5. Lógica</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conjuntos">8.1.6. Conjuntos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#flechas">8.1.7. Flechas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#puntos-suspensivos">8.1.8. Puntos suspensivos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#otros-simbolos">8.1.9. Otros símbolos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#funciones">8.1.10. Funciones</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#subindices-y-superindices">8.2. Subíndices y superíndices</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fracciones">8.3. Fracciones</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sumatorios-productorios-e-integrales">8.4. Sumatorios, productorios e integrales</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sombreros">8.5. Sombreros</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matrices">8.6. Matrices</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teoremas">8.7. Teoremas</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="formulas-matematicas">
+<h1><span class="section-number">8. </span>Fórmulas matemáticas<a class="headerlink" href="#formulas-matematicas" title="Permalink to this heading">#</a></h1>
+<p>La escritura de fórmulas matemáticas es uno de los puntos fuertes de <span class="math notranslate nohighlight">\(\LaTeX\)</span>, y es por ello que se utiliza tanto para la creación de documentos científicos o técnicos con contenido matemático.</p>
+<p>Para escribir una fórmula es necesario cambiar al modo matemático. Existen distintas formas de activar el modo matemático:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">$</span></code>: Activa el modo matemático en línea, es decir, las fórmulas aparecerán en la misma línea que el texto que las rodea. Para desactivar este modo hay que volver a escribir <code class="docutils literal notranslate"><span class="pre">$</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">$$</span></code>: Activa el modo matemático <em>display</em> (desplegado), de manera que las fórmulas aparecen en una línea aparte.</p></li>
+<li><p>El entorno <code class="docutils literal notranslate"><span class="pre">equation</span></code> también activa el modo matemático <em>display</em> pero además asigna un número a la ecuación, para poder referenciarla en otras partes del documento.</p></li>
+</ul>
+<p><strong>Ejemplo</strong></p>
+<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="c">% CUERPO</span>
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+Ejemplo de fórmula en línea <span class="s">$</span><span class="nb"> x</span><span class="o">+</span><span class="nb">y</span><span class="o">=</span><span class="m">0</span><span class="nb"> </span><span class="s">$</span>.
+
+Ejemplo de fórmula desplegada
+
+<span class="sb">$$</span><span class="nb"> </span>
+<span class="nb">x</span><span class="o">+</span><span class="nb">y</span><span class="o">=</span><span class="m">0</span>
+<span class="s">$$</span>
+Ejemplo de fórmula con el entorno <span class="k">\texttt</span><span class="nb">{</span>equation<span class="nb">}</span>
+
+<span class="k">\begin</span><span class="nb">{</span>equation<span class="nb">}</span>
+x+y=0
+<span class="k">\end</span><span class="nb">{</span>equation<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</pre></div>
+</div>
+<div class="dropdown admonition">
+<p class="admonition-title">Salida</p>
+<p><img alt="" src="_images/entornos-matematicos.png" /></p>
+</div>
+<section id="simbolos-matematicos">
+<h2><span class="section-number">8.1. </span>Símbolos matemáticos<a class="headerlink" href="#simbolos-matematicos" title="Permalink to this heading">#</a></h2>
+<p>Existe una infinidad de símbolos matemáticos que se escriben mediante comandos. A continuación se muestran los más habituales.<a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a></p>
+<section id="letras-griegas">
+<h3><span class="section-number">8.1.1. </span>Letras griegas<a class="headerlink" href="#letras-griegas" title="Permalink to this heading">#</a></h3>
+<p>Para escribir letras griegas se utilizan los siguientes comandos:</p>
+<p><strong>Minúsculas</strong></p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p></p></th>
+<th class="head text-left"><p></p></th>
+<th class="head text-left"><p></p></th>
+<th class="head text-left"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\alpha</span></code> <span class="math notranslate nohighlight">\(\alpha\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\theta</span></code> <span class="math notranslate nohighlight">\(\theta\)</span></p></td>
+<td class="text-left"><p>o <span class="math notranslate nohighlight">\(o\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\tau</span></code> <span class="math notranslate nohighlight">\(\tau\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\beta</span></code> <span class="math notranslate nohighlight">\(\beta\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\vartheta</span></code> <span class="math notranslate nohighlight">\(\vartheta\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\pi</span></code> <span class="math notranslate nohighlight">\(\pi\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\upsilon</span></code> <span class="math notranslate nohighlight">\(\upsilon\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\gamma</span></code> <span class="math notranslate nohighlight">\(\gamma\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\iota</span></code> <span class="math notranslate nohighlight">\(\iota\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\varpi</span></code> <span class="math notranslate nohighlight">\(\varpi\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\phi</span></code> <span class="math notranslate nohighlight">\(\phi\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\delta</span></code> <span class="math notranslate nohighlight">\(\delta\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\kappa</span></code> <span class="math notranslate nohighlight">\(\kappa\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\rho</span></code> <span class="math notranslate nohighlight">\(\rho\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\varphi</span></code> <span class="math notranslate nohighlight">\(\varphi\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\epsilon</span></code> <span class="math notranslate nohighlight">\(\epsilon\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\lambda</span></code> <span class="math notranslate nohighlight">\(\lambda\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\varrho</span></code> <span class="math notranslate nohighlight">\(\varrho\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\chi</span></code> <span class="math notranslate nohighlight">\(\chi\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\varepsilon</span></code> <span class="math notranslate nohighlight">\(\varepsilon\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\mu</span></code> <span class="math notranslate nohighlight">\(\mu\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\sigma</span></code> <span class="math notranslate nohighlight">\(\sigma\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\psi</span></code> <span class="math notranslate nohighlight">\(\psi\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\zeta</span></code> <span class="math notranslate nohighlight">\(\zeta\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\nu</span></code> <span class="math notranslate nohighlight">\(\nu\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\varsigma</span></code> <span class="math notranslate nohighlight">\(\varsigma\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\omega</span></code> <span class="math notranslate nohighlight">\(\omega\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\eta</span></code> <span class="math notranslate nohighlight">\(\eta\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\xi</span></code> <span class="math notranslate nohighlight">\(\xi\)</span></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Mayúsculas</strong></p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p></p></th>
+<th class="head text-left"><p></p></th>
+<th class="head text-left"><p></p></th>
+<th class="head text-left"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\Gamma</span></code> <span class="math notranslate nohighlight">\(\Gamma\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\Lambda</span></code> <span class="math notranslate nohighlight">\(\Lambda\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\Sigma</span></code> <span class="math notranslate nohighlight">\(\Sigma\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\Psi</span></code> <span class="math notranslate nohighlight">\(\Psi\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\Delta</span></code> <span class="math notranslate nohighlight">\(\Delta\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\Xi</span></code> <span class="math notranslate nohighlight">\(\Xi\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\Upsilon</span></code> <span class="math notranslate nohighlight">\(\Upsilon\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\Omega</span></code> <span class="math notranslate nohighlight">\(\Omega\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\Theta</span></code> <span class="math notranslate nohighlight">\(\Theta\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\Pi</span></code> <span class="math notranslate nohighlight">\(\Pi\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\Phi</span></code> <span class="math notranslate nohighlight">\(Phi\)</span></p></td>
+<td class="text-left"><p></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="operadores-aritmeticos">
+<h3><span class="section-number">8.1.2. </span>Operadores aritméticos<a class="headerlink" href="#operadores-aritmeticos" title="Permalink to this heading">#</a></h3>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p></p></th>
+<th class="head text-left"><p></p></th>
+<th class="head text-left"><p></p></th>
+<th class="head text-left"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">+</span></code> <span class="math notranslate nohighlight">\(+\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">-</span></code> <span class="math notranslate nohighlight">\(-\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\times</span></code> <span class="math notranslate nohighlight">\(\times\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\cdot</span></code> <span class="math notranslate nohighlight">\(\cdot\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">/</span></code> <span class="math notranslate nohighlight">\(/\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\div</span></code> <span class="math notranslate nohighlight">\(\div\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\sqrt{...}</span></code> <span class="math notranslate nohighlight">\(\sqrt{}\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\pm</span></code> <span class="math notranslate nohighlight">\(\pm\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="relaciones">
+<h3><span class="section-number">8.1.3. </span>Relaciones<a class="headerlink" href="#relaciones" title="Permalink to this heading">#</a></h3>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p></p></th>
+<th class="head text-left"><p></p></th>
+<th class="head text-left"><p></p></th>
+<th class="head text-left"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">=</span></code> <span class="math notranslate nohighlight">\(=\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\neq</span></code> <span class="math notranslate nohighlight">\(\neq\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">&lt;</span></code> <span class="math notranslate nohighlight">\(&lt;\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\leq</span></code> <span class="math notranslate nohighlight">\(\leq\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">&gt;</span></code> <span class="math notranslate nohighlight">\(&gt;\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\geq</span></code> <span class="math notranslate nohighlight">\(\geq\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\approx</span></code> <span class="math notranslate nohighlight">\(\approx\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\sim</span></code> <span class="math notranslate nohighlight">\(\sim\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\equiv</span></code> <span class="math notranslate nohighlight">\(\equiv\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\in</span></code> <span class="math notranslate nohighlight">\(\in\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\not\in</span></code> <span class="math notranslate nohighlight">\(\not\in\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\subset</span></code> <span class="math notranslate nohighlight">\(\subset\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\not\subset</span></code> <span class="math notranslate nohighlight">\(\not\subset\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\subseteq</span></code> <span class="math notranslate nohighlight">\(\subseteq\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\subsetneq</span></code> <span class="math notranslate nohighlight">\(\subsetneq\)</span></p></td>
+<td class="text-left"><p></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="operadores-binarios">
+<h3><span class="section-number">8.1.4. </span>Operadores binarios<a class="headerlink" href="#operadores-binarios" title="Permalink to this heading">#</a></h3>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p></p></th>
+<th class="head text-left"><p></p></th>
+<th class="head text-left"><p></p></th>
+<th class="head text-left"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\cup</span></code> <span class="math notranslate nohighlight">\(\cup\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\cap</span></code> <span class="math notranslate nohighlight">\(\cap\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\setminus</span></code> <span class="math notranslate nohighlight">\(\setminus\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\circ</span></code> <span class="math notranslate nohighlight">\(\circ\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="logica">
+<h3><span class="section-number">8.1.5. </span>Lógica<a class="headerlink" href="#logica" title="Permalink to this heading">#</a></h3>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p></p></th>
+<th class="head text-left"><p></p></th>
+<th class="head text-left"><p></p></th>
+<th class="head text-left"><p></p></th>
+<th class="head text-left"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\exists</span></code> <span class="math notranslate nohighlight">\(\exists\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\forall</span></code> <span class="math notranslate nohighlight">\(\forall\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\neg</span></code> <span class="math notranslate nohighlight">\(\neg\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\lor</span></code> <span class="math notranslate nohighlight">\(\lor\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\land</span></code> <span class="math notranslate nohighlight">\(\land\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="conjuntos">
+<h3><span class="section-number">8.1.6. </span>Conjuntos<a class="headerlink" href="#conjuntos" title="Permalink to this heading">#</a></h3>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p></p></th>
+<th class="head text-left"><p></p></th>
+<th class="head text-left"><p></p></th>
+<th class="head text-left"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\emptyset</span></code> <span class="math notranslate nohighlight">\(\emptyset\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\mathbb{N}</span></code> <span class="math notranslate nohighlight">\(\mathbb{N}\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\mathbb{Z}</span></code> <span class="math notranslate nohighlight">\(\mathbb{Z}\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\mathbb{Q}</span></code> <span class="math notranslate nohighlight">\(\mathbb{Q}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\mathbb{R}</span></code> <span class="math notranslate nohighlight">\(\mathbb{R}\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\mathbb{C}</span></code> <span class="math notranslate nohighlight">\(\mathbb{C}\)</span></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="flechas">
+<h3><span class="section-number">8.1.7. </span>Flechas<a class="headerlink" href="#flechas" title="Permalink to this heading">#</a></h3>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p></p></th>
+<th class="head text-left"><p></p></th>
+<th class="head text-left"><p></p></th>
+<th class="head text-left"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\rightarrow</span></code> <span class="math notranslate nohighlight">\(\to\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\Rightarrow</span></code> <span class="math notranslate nohighlight">\(\Rightarrow\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\longrightarrow</span></code> <span class="math notranslate nohighlight">\(\longrightarrow\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\Longrightarrow</span></code> <span class="math notranslate nohighlight">\(\Longrightarrow\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\leftarrow</span></code> <span class="math notranslate nohighlight">\(\leftarrow\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\Leftarrow</span></code> <span class="math notranslate nohighlight">\(\Leftarrow\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\longleftarrow</span></code> <span class="math notranslate nohighlight">\(\longleftarrow\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\Longleftarrow</span></code> <span class="math notranslate nohighlight">\(\Longleftarrow\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\leftrightarrow</span></code> <span class="math notranslate nohighlight">\(\leftrightarrow\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\Leftrightarrow</span></code> <span class="math notranslate nohighlight">\(\Leftrightarrow\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\longleftrightarrow</span></code> <span class="math notranslate nohighlight">\(\longleftrightarrow\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\Longleftrightarrow</span></code> <span class="math notranslate nohighlight">\(\Longleftrightarrow\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\uparrow</span></code> <span class="math notranslate nohighlight">\(\uparrow\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\Uparrow</span></code> <span class="math notranslate nohighlight">\(\Uparrow\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\downarrow</span></code> <span class="math notranslate nohighlight">\(\downarrow\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\Downarrow</span></code> <span class="math notranslate nohighlight">\(\Downarrow\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\updownarrow</span></code> <span class="math notranslate nohighlight">\(\updownarrow\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\Updownarrow</span></code> <span class="math notranslate nohighlight">\(\Updownarrow\)</span></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="puntos-suspensivos">
+<h3><span class="section-number">8.1.8. </span>Puntos suspensivos<a class="headerlink" href="#puntos-suspensivos" title="Permalink to this heading">#</a></h3>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p></p></th>
+<th class="head text-left"><p></p></th>
+<th class="head text-left"><p></p></th>
+<th class="head text-left"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\ldots</span></code> <span class="math notranslate nohighlight">\(\ldots\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\cdots</span></code> <span class="math notranslate nohighlight">\(\cdots\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\vdots</span></code> <span class="math notranslate nohighlight">\(\vdots\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\ddots</span></code> <span class="math notranslate nohighlight">\(\ddots\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="otros-simbolos">
+<h3><span class="section-number">8.1.9. </span>Otros símbolos<a class="headerlink" href="#otros-simbolos" title="Permalink to this heading">#</a></h3>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p></p></th>
+<th class="head text-left"><p></p></th>
+<th class="head text-left"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\infty</span></code> <span class="math notranslate nohighlight">\(\infty\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\partial</span></code> <span class="math notranslate nohighlight">\(\partial\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\nabla</span></code> <span class="math notranslate nohighlight">\(\nabla\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="funciones">
+<h3><span class="section-number">8.1.10. </span>Funciones<a class="headerlink" href="#funciones" title="Permalink to this heading">#</a></h3>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p></p></th>
+<th class="head text-left"><p></p></th>
+<th class="head text-left"><p></p></th>
+<th class="head text-left"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\sin</span></code> <span class="math notranslate nohighlight">\(\sin\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\arcsin</span></code> <span class="math notranslate nohighlight">\(\arcsin\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\csc</span></code> <span class="math notranslate nohighlight">\(\csc\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\operatorname{arccsc}</span></code> <span class="math notranslate nohighlight">\(\operatorname{arccsc}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\cos</span></code> <span class="math notranslate nohighlight">\(\cos\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\arccos</span></code> <span class="math notranslate nohighlight">\(\arccos\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\sec</span></code> <span class="math notranslate nohighlight">\(\sec\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\operatorname{arcsec}</span></code> <span class="math notranslate nohighlight">\(\operatorname{arcsec}\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\tan</span></code> <span class="math notranslate nohighlight">\(\tan\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\arctan</span></code> <span class="math notranslate nohighlight">\(\arctan\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\cot</span></code> <span class="math notranslate nohighlight">\(\cot\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\operatorname{arccot}</span></code> <span class="math notranslate nohighlight">\(\operatorname{arccot}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\exp</span></code> <span class="math notranslate nohighlight">\(\exp\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\log</span></code> <span class="math notranslate nohighlight">\(\log\)</span></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\ln</span></code> <span class="math notranslate nohighlight">\(\ln\)</span></p></td>
+<td class="text-left"><p></p></td>
+</tr>
+</tbody>
+</table>
+<p>Es posible declarar nuevos operadores o funciones cargando el paquete <code class="docutils literal notranslate"><span class="pre">amsmath</span></code> con el comando <code class="docutils literal notranslate"><span class="pre">\DeclareMathOperator{comando}{texto}</span></code>. Por ejemplo, para obtener las versión de la función seno en español se puede definir <code class="docutils literal notranslate"><span class="pre">DeclareMathOperator{\sen}{sen}</span></code> en el preámbulo y luego utilizar el comando <code class="docutils literal notranslate"><span class="pre">\sen</span></code> en el cuerpo para obtener la función seno en español.</p>
+<p>Otro paquete que incorpora aún más símbolos es <code class="docutils literal notranslate"><span class="pre">amssymb</span></code>.</p>
+</section>
+</section>
+<section id="subindices-y-superindices">
+<h2><span class="section-number">8.2. </span>Subíndices y superíndices<a class="headerlink" href="#subindices-y-superindices" title="Permalink to this heading">#</a></h2>
+<p>Para poner subíndices se utiliza el comando <code class="docutils literal notranslate"><span class="pre">_</span></code> y para superíndices <code class="docutils literal notranslate"><span class="pre">^</span></code>. Si el subíndice o superíndice afecta a más de un carácter, hay que ponerlos entre llaves.</p>
+<p><strong>Ejemplo</strong></p>
+<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="c">% CUERPO</span>
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+Ejemplo de fórmula con subíndices
+
+<span class="sb">$$</span><span class="nb"> </span>
+<span class="nb">x_i</span><span class="o">+</span><span class="nb">y_j</span><span class="o">=</span><span class="m">0</span>
+<span class="s">$$</span>
+
+Ejemplo de fórmula con superíndices
+
+<span class="sb">$$</span><span class="nb"> </span>
+<span class="nb">x^</span><span class="m">2</span><span class="o">+</span><span class="nb">y^</span><span class="m">2</span><span class="o">=</span><span class="m">0</span>
+<span class="s">$$</span>
+
+Ejemplo de fórmula con subíndices y superíndices
+
+<span class="sb">$$</span><span class="nb"> </span>
+<span class="nb">x_i^</span><span class="m">2</span><span class="o">+</span><span class="nb">y_j^</span><span class="m">2</span><span class="o">=</span><span class="m">0</span>
+<span class="s">$$</span>
+
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</pre></div>
+</div>
+<div class="dropdown admonition">
+<p class="admonition-title">Salida</p>
+<p><img alt="" src="_images/indices.png" /></p>
+</div>
+<p>Se pueden escribir subíndices de subíndices o superíndices de superíndices anidando los comandos.</p>
+</section>
+<section id="fracciones">
+<h2><span class="section-number">8.3. </span>Fracciones<a class="headerlink" href="#fracciones" title="Permalink to this heading">#</a></h2>
+<p>Para escribir fracciones simples en línea se puede usar el operador aritmético <span class="math notranslate nohighlight">\(/\)</span> (por ejemplo <span class="math notranslate nohighlight">\(3/4\)</span>), pero para fracciones más complejas o fracciones en modo display, conviene utilizar el comando <code class="docutils literal notranslate"><span class="pre">\frac{num}{den}</span></code>, donde <code class="docutils literal notranslate"><span class="pre">num</span></code> es el numerador y <code class="docutils literal notranslate"><span class="pre">den</span></code> el denominador.</p>
+<p>A su vez, se pueden escribir más fracciones en el numerador o el denominador, anidando este comando.</p>
+<p><strong>Ejemplo</strong></p>
+<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="c">% CUERPO</span>
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+Ejemplo de fracción en línea <span class="s">$</span><span class="nv">\frac</span><span class="nb">{x</span><span class="o">+</span><span class="m">2</span><span class="nb">}{x^</span><span class="m">2</span><span class="o">-</span><span class="m">2</span><span class="nb">x</span><span class="o">+</span><span class="m">1</span><span class="nb">}</span><span class="s">$</span>.
+
+Ejemplo de fracción en modo desplegado
+
+<span class="sb">$$</span>
+<span class="nv">\frac</span><span class="nb">{</span><span class="nv">\frac</span><span class="nb">{x}{</span><span class="m">2</span><span class="nb">}</span><span class="o">+</span><span class="nv">\frac</span><span class="nb">{</span><span class="m">2</span><span class="nb">}{</span><span class="m">3</span><span class="nb">}}{x^</span><span class="m">2</span><span class="o">-</span><span class="m">2</span><span class="nb">x</span><span class="o">+</span><span class="m">1</span><span class="nb">}</span>
+<span class="s">$$</span>
+
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</pre></div>
+</div>
+<div class="dropdown admonition">
+<p class="admonition-title">Salida</p>
+<p><img alt="" src="_images/fracciones.png" /></p>
+</div>
+</section>
+<section id="sumatorios-productorios-e-integrales">
+<h2><span class="section-number">8.4. </span>Sumatorios, productorios e integrales<a class="headerlink" href="#sumatorios-productorios-e-integrales" title="Permalink to this heading">#</a></h2>
+<p>Para escribir sumatorios se utiliza el comando <code class="docutils literal notranslate"><span class="pre">\sum_{sub}^{sup}</span></code>, donde <span class="math notranslate nohighlight">\(sub\)</span> es el subíndice  que indica el inicio de la suma y <span class="math notranslate nohighlight">\(sup\)</span> es el superíndice que indica el final de la suma. Si se quieren omitir los índices de inicio y final de la suma, basta con el comando <code class="docutils literal notranslate"><span class="pre">\sum</span></code>.</p>
+<p>De manera análoga, para escribir productorios se utiliza el comando <code class="docutils literal notranslate"><span class="pre">\prod_{sub}^{sup}</span></code>, donde <code class="docutils literal notranslate"><span class="pre">sub</span></code> es el subíndice  que indica el inicio del producto y <code class="docutils literal notranslate"><span class="pre">sup</span></code> es el superíndice que indica el final del producto. Si se quieren omitir los índices de inicio y final del producto, basta con el comando <code class="docutils literal notranslate"><span class="pre">\prod</span></code>.</p>
+<p><strong>Ejemplo</strong></p>
+<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="c">% CUERPO</span>
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+Ejemplo de sumatorio
+<span class="sb">$$</span>
+<span class="nv">\sum</span><span class="nb">_{i</span><span class="o">=</span><span class="m">1</span><span class="nb">}^{</span><span class="nv">\infty</span><span class="nb">} x^i</span>
+<span class="s">$$</span>
+
+Ejemplo de productorio
+<span class="sb">$$</span>
+<span class="nv">\prod</span><span class="nb">_{i</span><span class="o">=</span><span class="m">1</span><span class="nb">}^n i</span>
+<span class="s">$$</span>
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</pre></div>
+</div>
+<div class="dropdown admonition">
+<p class="admonition-title">Salida</p>
+<p><img alt="" src="_images/sumatorio.png" /></p>
+</div>
+<p>Del mismo modo, para escribir integrales definidas se utiliza el comando <code class="docutils literal notranslate"><span class="pre">\int_{sub}^{sup}</span></code>, donde <span class="math notranslate nohighlight">\(sub\)</span> es el subíndice  que indica el inicio de la integral y <span class="math notranslate nohighlight">\(sup\)</span> es el superíndice que indica el final de la integral. Para integrales indefinidas, basta con el comando <code class="docutils literal notranslate"><span class="pre">\int</span></code>.</p>
+<p><strong>Ejemplo</strong></p>
+<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="c">% CUERPO</span>
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+Ejemplo de integral definida
+<span class="sb">$$</span>
+<span class="nv">\int</span><span class="nb">_a^b f</span><span class="o">(</span><span class="nb">x</span><span class="o">)</span><span class="nv">\,</span><span class="nb">dx</span>
+<span class="s">$$</span>
+
+Ejemplo de integral indefinida
+<span class="sb">$$</span>
+<span class="nv">\int</span><span class="nb"> f</span><span class="o">(</span><span class="nb">x</span><span class="o">)</span><span class="nv">\,</span><span class="nb">dx</span>
+<span class="s">$$</span>
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</pre></div>
+</div>
+<div class="dropdown admonition">
+<p class="admonition-title">Salida</p>
+<p><img alt="" src="_images/integral.png" /></p>
+</div>
+</section>
+<section id="sombreros">
+<h2><span class="section-number">8.5. </span>Sombreros<a class="headerlink" href="#sombreros" title="Permalink to this heading">#</a></h2>
+<p>Es posible poner símbolos encima de otros símbolos, más conocidos como <em>sombreros</em>. Los siguientes comandos sirven para poner distintos tipos de sombreros:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">\bar{...}</span></code>: Línea horizontal para un carácter.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">\overline{...}</span></code>: Línea horizontal para varios caracteres.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">\hat</span></code>: Ángulo para un carácter.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">\widehat</span></code>: Ángulo para varios caracteres.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">\vec{...}</span></code>: Flecha para un carácter.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">\overrightarrow{...}</span></code>: Flecha para varios caracteres.</p></li>
+</ul>
+<p><strong>Ejemplo</strong></p>
+<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="c">% CUERPO</span>
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+Ejemplos de sombreros: <span class="s">$</span><span class="nv">\overline</span><span class="nb">{xy}</span><span class="s">$</span>, <span class="s">$</span><span class="nv">\hat</span><span class="nb">{a}</span><span class="s">$</span>, <span class="s">$</span><span class="nv">\widehat</span><span class="nb">{abc}</span><span class="s">$</span>, <span class="s">$</span><span class="nv">\vec</span><span class="nb">{u}</span><span class="s">$</span>.
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</pre></div>
+</div>
+<div class="dropdown admonition">
+<p class="admonition-title">Salida</p>
+<p><img alt="" src="_images/sombreros.png" /></p>
+</div>
+</section>
+<section id="matrices">
+<h2><span class="section-number">8.6. </span>Matrices<a class="headerlink" href="#matrices" title="Permalink to this heading">#</a></h2>
+<p>Las matrices se crean de manera similar a como se crean las tablas (ver &#64;sec-tablas), pero utilizando el entorno <code class="docutils literal notranslate"><span class="pre">array</span></code> en lugar del entorno <code class="docutils literal notranslate"><span class="pre">tabular</span></code>. Para encerrar la matriz entre paréntesis se pone el comando <code class="docutils literal notranslate"><span class="pre">\left(</span></code> antes del entorno y el comando <code class="docutils literal notranslate"><span class="pre">\right)</span></code> después.</p>
+<p><strong>Ejemplo</strong></p>
+<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="c">% CUERPO</span>
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+Ejemplo de matriz
+<span class="sb">$$</span>
+<span class="nv">\left</span><span class="o">(</span>
+<span class="nv">\begin</span><span class="nb">{array}{rrr}</span>
+<span class="m">1</span><span class="nb"> &amp; </span><span class="m">2</span><span class="nb"> &amp; </span><span class="m">3</span><span class="nb"> </span><span class="nv">\\</span>
+<span class="nb">x &amp; y &amp; z </span><span class="nv">\\</span>
+<span class="nv">\end</span><span class="nb">{array}</span>
+<span class="nv">\right</span><span class="o">)</span>
+<span class="s">$$</span>
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</pre></div>
+</div>
+<div class="dropdown admonition">
+<p class="admonition-title">Salida</p>
+<p><img alt="" src="_images/matriz.png" /></p>
+</div>
+<p>El paquete <code class="docutils literal notranslate"><span class="pre">amsmath</span></code> incorpora varios entornos más específicos para matrices donde no es necesario especificar el número de columnas, y tampoco los delimitadores:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">matrix</span></code>: Matriz sin delimitadores (equivalente al entorno <code class="docutils literal notranslate"><span class="pre">array</span></code>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pmatrix</span></code>: Matriz encerrada entre paréntesis.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">vmatrix</span></code>: Matriz encerrada entre barras verticales (por ejemplo para determinantes).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Vmatrix</span></code>: Matriz encerrada entre dobles barras verticales.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">bmatrix</span></code>: Matriz encerrada entre corchetes.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Bmatrix</span></code>: Matriz encerrada entre llaves.</p></li>
+</ul>
+<p><strong>Ejemplo</strong></p>
+<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="c">% PREÁMBULO</span>
+<span class="k">\usepackage</span><span class="nb">{</span>amsmath<span class="nb">}</span>
+<span class="c">% CUERPO</span>
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+Ejemplo de determinante
+
+<span class="sb">$$</span>
+<span class="nv">\begin</span><span class="nb">{vmatrix}</span>
+<span class="m">1</span><span class="nb"> &amp; x &amp; </span><span class="nv">\alpha</span><span class="nb"> </span><span class="nv">\\</span>
+<span class="m">2</span><span class="nb"> &amp; y &amp; </span><span class="nv">\beta</span><span class="nb"> </span><span class="nv">\\</span>
+<span class="m">3</span><span class="nb"> &amp; z &amp;</span><span class="nv">\gamma</span>
+<span class="nv">\end</span><span class="nb">{vmatrix}</span>
+<span class="s">$$</span>
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</pre></div>
+</div>
+<div class="dropdown admonition">
+<p class="admonition-title">Salida</p>
+<p><img alt="" src="_images/determinante.png" /></p>
+</div>
+</section>
+<section id="teoremas">
+<h2><span class="section-number">8.7. </span>Teoremas<a class="headerlink" href="#teoremas" title="Permalink to this heading">#</a></h2>
+<p>Para crear definiciones, teoremas, proposiciones, corolarios y otros tipos de enunciados se debe cargar el paquete <code class="docutils literal notranslate"><span class="pre">amsthm</span></code> y definir los tipos de enunciados en el preámbulo con el comando <code class="docutils literal notranslate"><span class="pre">\newtheorem{entorno}{texto}</span></code>, donde <code class="docutils literal notranslate"><span class="pre">entorno</span></code> es el nombre del entorno y <code class="docutils literal notranslate"><span class="pre">texto</span></code> es el texto que aparecerá en el documento final como encabezado del enunciado.</p>
+<p>Estos entornos admiten como argumento opcional un texto que se utiliza para dar nombre al enunciado.</p>
+<p>Los enunciados definidos con este comando aparecen por defecto numerados para poder referenciarlos en otras partes del documento, pero se pueden definir entornos no numerados con la variante del comando anterior <code class="docutils literal notranslate"><span class="pre">\newtheorem*{entorno}{texto}</span></code></p>
+<p>Para demostraciones se puede utilizar el entorno <code class="docutils literal notranslate"><span class="pre">proof</span></code>.</p>
+<p><strong>Ejemplo</strong></p>
+<div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="c">% PREÁMBULO</span>
+<span class="k">\usepackage</span><span class="nb">{</span>amsmath<span class="nb">}</span>
+<span class="k">\DeclareMathOperator</span><span class="nb">{</span><span class="k">\sen</span><span class="nb">}{</span>sen<span class="nb">}</span>
+<span class="k">\usepackage</span><span class="nb">{</span>amsthm<span class="nb">}</span>
+<span class="k">\newtheorem</span><span class="nb">{</span>midef<span class="nb">}{</span>Definición<span class="nb">}</span>
+newtheorem<span class="nb">{</span>teo<span class="nb">}{</span>Teorema<span class="nb">}</span>
+
+<span class="c">% CUERPO</span>
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+
+<span class="k">\begin</span><span class="nb">{</span>midef<span class="nb">}</span>
+Dado un triángulo rectángulo de catetos <span class="s">$</span><span class="nb">a</span><span class="s">$</span>, <span class="s">$</span><span class="nb">b</span><span class="s">$</span> e hipotenusa <span class="s">$</span><span class="nb">c</span><span class="s">$</span>, se define
+el seno del ángulo <span class="s">$</span><span class="nv">\alpha</span><span class="s">$</span> opuesto al cateto <span class="s">$</span><span class="nb">b</span><span class="s">$</span> como 
+
+<span class="sb">$$</span>
+<span class="nv">\sen</span><span class="nb">{</span><span class="nv">\alpha</span><span class="nb">}</span><span class="o">=</span><span class="nb"> </span><span class="nv">\frac</span><span class="nb">{b}{c}.</span>
+<span class="s">$$</span>
+<span class="k">\end</span><span class="nb">{</span>midef<span class="nb">}</span>
+
+<span class="k">\begin</span><span class="nb">{</span>teo<span class="nb">}</span>
+Para cualquier ángulo <span class="s">$</span><span class="nv">\alpha</span><span class="s">$</span> se cumple 
+<span class="s">$</span><span class="nv">\sen</span><span class="o">(</span><span class="nv">\alpha</span><span class="o">)</span><span class="nb">^</span><span class="m">2</span><span class="nb"> </span><span class="o">+</span><span class="nb"> </span><span class="nv">\cos</span><span class="o">(</span><span class="nv">\alpha</span><span class="o">)</span><span class="nb">^</span><span class="m">2</span><span class="nb"> </span><span class="o">=</span><span class="nb"> </span><span class="m">1</span><span class="s">$</span>.
+<span class="k">\end</span><span class="nb">{</span>teo<span class="nb">}</span>
+
+<span class="k">\begin</span><span class="nb">{</span>proof<span class="nb">}</span>
+Es una consecuencia directa del teorema de Pitágoras.
+<span class="k">\end</span><span class="nb">{</span>proof<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</pre></div>
+</div>
+<div class="dropdown admonition">
+<p class="admonition-title">Salida</p>
+<p><img alt="" src="_images/teoremas.png" /></p>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">Tip</p>
+<p>Se recomienda cargar los paquetes <code class="docutils literal notranslate"><span class="pre">amsmath</span></code>, <code class="docutils literal notranslate"><span class="pre">amssymb</span></code> y <code class="docutils literal notranslate"><span class="pre">amsthm</span></code> para documentos extensos o con muchas fórmulas matemáticas.</p>
+</div>
+<hr class="footnotes docutils" />
+<aside class="footnote brackets" id="id2" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">2</a><span class="fn-bracket">]</span></span>
+<p>Para un listado más exhaustivo de los símbolos matemáticos de <span class="math notranslate nohighlight">\(\LaTeX\)</span>, puede consultarse el documento <a class="reference external" href="https://www3.nd.edu/~nmark/UsefulFacts/LaTeX_symbols.pdf">The Great, Big List of <span class="math notranslate nohighlight">\(\LaTeX\)</span> Symbols</a>.</p>
+</aside>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="imagenes.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">7. </span>Imágenes</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="entornos-flotantes.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">9. </span>Entornos flotantes</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#simbolos-matematicos">8.1. Símbolos matemáticos</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#letras-griegas">8.1.1. Letras griegas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operadores-aritmeticos">8.1.2. Operadores aritméticos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#relaciones">8.1.3. Relaciones</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operadores-binarios">8.1.4. Operadores binarios</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#logica">8.1.5. Lógica</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conjuntos">8.1.6. Conjuntos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#flechas">8.1.7. Flechas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#puntos-suspensivos">8.1.8. Puntos suspensivos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#otros-simbolos">8.1.9. Otros símbolos</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#funciones">8.1.10. Funciones</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#subindices-y-superindices">8.2. Subíndices y superíndices</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fracciones">8.3. Fracciones</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sumatorios-productorios-e-integrales">8.4. Sumatorios, productorios e integrales</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sombreros">8.5. Sombreros</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matrices">8.6. Matrices</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teoremas">8.7. Teoremas</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By aprendeconalf
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

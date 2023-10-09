@@ -13,6 +13,8 @@ Octubre del 2023
 
 ::::
 
+> **Nota**: Este documento es una adaptación del proyecto original [asalber/latex-manual](https://github.com/asalber/latex-manual).
+
 ## Prefacio
 
 

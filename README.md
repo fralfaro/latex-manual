@@ -16,7 +16,7 @@ que incluyen contenido matemático, tablas, figuras y referencias bibliográfica
 
 
 
-> **Nota**: Este documento es una adaptación del proyecto original creado por [asalber/latex-manual](https://github.com/asalber/latex-manual).
+> **Nota**: Este documento es una adaptación del proyecto original  [asalber/latex-manual](https://github.com/asalber/latex-manual).
 
 ## 1. Introducción
 

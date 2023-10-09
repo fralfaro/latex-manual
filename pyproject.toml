@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "jupyterbook"
+version = "0.1.0"
+description = "Gihub actions"
+authors = ["Francisco Alfaro <francisco.alfaro.496@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+jupyterlab = "*"
+jupyter-book = "*"
+
+
+
+
+

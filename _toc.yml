@@ -1,0 +1,22 @@
+# Table of contents
+
+format: jb-book
+root: index.md
+options:
+  numbered: true
+
+chapters:
+- file: introduccion.md
+- file: estructura.md
+- file: secciones.md
+- file: formateo.md
+- file: listas.md
+- file: tablas.md
+- file: imagenes.md
+- file: formulas.md
+- file: entornos-flotantes.md
+- file: referencias-cruzadas.md
+- file: bibliografia.md
+- file: diseno-pagina.md
+- file: referencias.md
+
